@@ -26,6 +26,10 @@ jobs:
           channel: stable
           cache: true
       - run: flutter pub get
+      - name: Bundle the checklist data for the server app
+        # Its pubspec lists assets/data/, which only exists after this copy.
+        working-directory: host
+        run: dart run tool/sync_data.dart
       - name: Analyze
         run: |
           dart analyze packages server
@@ -42,6 +46,4 @@ jobs:
         working-directory: app
       - name: Test server app
         working-directory: host
-        run: |
-          dart run tool/sync_data.dart
-          flutter test
+        run: flutter test

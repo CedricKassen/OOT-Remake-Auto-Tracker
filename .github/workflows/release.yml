@@ -75,12 +75,16 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        # Windows is pinned to the 2022 image: it has Visual Studio 2022, the
+        # newest that this Flutter version can find. Newer images ship a
+        # newer Visual Studio and the build fails with "could not find any
+        # instance of Visual Studio".
         include:
           - { project: app, title: App, file: OoT-Tracker, product: 'OoT Tracker', os: macos-latest, name: macos-arm64 }
-          - { project: app, title: App, file: OoT-Tracker, product: 'OoT Tracker', os: windows-latest, name: windows-x64 }
+          - { project: app, title: App, file: OoT-Tracker, product: 'OoT Tracker', os: windows-2022, name: windows-x64 }
           - { project: app, title: App, file: OoT-Tracker, product: 'OoT Tracker', os: ubuntu-latest, name: linux-x64 }
           - { project: host, title: Server app, file: OoT-Tracker-Server, product: 'OoT Tracker Server', os: macos-latest, name: macos-arm64 }
-          - { project: host, title: Server app, file: OoT-Tracker-Server, product: 'OoT Tracker Server', os: windows-latest, name: windows-x64 }
+          - { project: host, title: Server app, file: OoT-Tracker-Server, product: 'OoT Tracker Server', os: windows-2022, name: windows-x64 }
           - { project: host, title: Server app, file: OoT-Tracker-Server, product: 'OoT Tracker Server', os: ubuntu-latest, name: linux-x64 }
     steps:
       - uses: actions/checkout@v4
