@@ -1,0 +1,7 @@
+#include "../../Flutter/Flutter-Release.xcconfig"
+#include "Warnings.xcconfig"
+
+// Apple silicon only. Besides halving the download, this sidesteps a break
+// between Flutter 3.38 and Xcode 27: Flutter checks a universal build with
+// `lipo -verify_arch arm64 x86_64`, which the newer lipo rejects.
+EXCLUDED_ARCHS = x86_64

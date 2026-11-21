@@ -1,0 +1,33 @@
+name: oot_tracker_host
+description: "Tray app that runs and configures the OoT Tracker server"
+publish_to: 'none'
+version: 1.0.0+1
+resolution: workspace
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ootd: ^0.1.0
+  oot_save: ^0.1.0
+  oot_tracker: ^0.1.0
+  tray_manager: ^0.5.3
+  window_manager: ^0.5.2
+  launch_at_startup: ^0.5.1
+  file_selector: ^1.1.0
+  path: ^1.9.1
+  macos_ui: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    # The checklist data, copied from ../data by tool/sync_data.dart.
+    - assets/data/

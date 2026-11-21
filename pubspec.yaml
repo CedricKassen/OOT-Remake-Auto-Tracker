@@ -7,3 +7,4 @@ workspace:
   - packages/oot_tracker
   - server
   - app
+  - host

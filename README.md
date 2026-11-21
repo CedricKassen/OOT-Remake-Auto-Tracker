@@ -1,33 +1,64 @@
 # OoT Auto Tracker
 
 A 100% progress tracker for the Ocarina of Time remake (Switch 2) that reads
-your save file live. A small server on the Mac watches the save and serves the
-progress; a native app for macOS and Android shows it, with a spoiler-free
-mode and a map of Hyrule.
+your save file live. A small server on the computer that has the save watches
+it and serves the progress; a native app shows it, with a spoiler-free mode
+and a map of Hyrule.
+
+| | macOS | Windows | Linux | Android | iOS |
+|---|---|---|---|---|---|
+| Tracker app | yes | yes | yes | yes | yes (unsigned) |
+| Server, tray app | yes | yes | yes | | |
+| Server, command line (`ootd`) | yes | yes | yes | | |
 
 Unofficial fan project, not affiliated with or endorsed by Nintendo.
 
-## Run it
+## Use it
+
+Ready-made builds are attached to each release; [RELEASING.md](RELEASING.md)
+says what each file is and how to install it.
+
+1. On the computer with the save, start **OoT Tracker Server**. It sits in
+   the menu bar / notification area and finds the save of the PC port or of
+   a known emulator by itself. Its window lets you pick another save folder
+   (an emulator's data folder, a Switch backup, a folder of backups) or a
+   fixed slot, change the port, set an access token, and have it start at
+   login. Closing the window keeps the server running.
+2. Start the **OoT Tracker** app on any device in the same network. It finds
+   the server on its own. If it does not, switch off "Find the server
+   automatically" in its settings and enter the address and port shown in
+   the server's window.
+
+The server only ever reads save files.
+
+## Run it from source
 
 ```sh
-# 1. Server (on the Mac that has the save)
+# Server, with the tray window
+cd host
+dart run tool/sync_data.dart   # copies ../data into the app's assets
+flutter run -d macos           # or: -d windows, -d linux
+
+# Server, command line
 cd server
 dart compile exe bin/ootd.dart -o ootd
-./ootd                      # finds the nxnative save by itself
+./ootd                      # finds the save by itself
 ./ootd --save-dir <folder>  # or: an emulator's data folder, a Switch backup, a folder of backups
-./install-launchd.sh        # optional: start at login
+./install-launchd.sh        # macOS, optional: start at login
 
-# 2. App
+# App
 cd app
-flutter run -d macos
-flutter build apk --release && flutter install   # Android phone on the same Wi-Fi
+flutter run -d macos           # or: -d windows, -d linux, an iPhone
+flutter build apk --release && flutter install   # Android phone
 ```
 
-The app finds the server through Bonjour. If that fails, switch off "Find the
-server automatically" in Settings and enter the Mac's address and port 7437.
-
 `ootd --help` lists the options (`--slot`, `--port`, `--bind`, `--token`, …).
-The server only ever reads save files.
+The tray app and `ootd` are the same server; run one of them, not both.
+
+Building for Linux needs `clang cmake ninja-build pkg-config libgtk-3-dev
+liblzma-dev libayatana-appindicator3-dev`. On GNOME the tray icon only shows
+with the AppIndicator extension; the server works without it, and starting
+the app again brings its window back.
 
 ## What is tracked
 
@@ -38,7 +69,7 @@ The server only ever reads save files.
 | Cuccos, Epona, Scarecrow's Song | Ticked by hand |
 
 Spoiler-free mode (the default) shows only how many are missing per area and
-category. Switch it off with the eye icon to see every entry with its location.
+category. Switch it off in the app's settings to see every entry with its location.
 
 ## Map
 
@@ -47,24 +78,29 @@ area, and the area and dungeon-floor maps with a pin for every Gold Skulltula
 and Heart Piece (only with spoilers shown) and your position at the last save.
 The artwork is not part of this repository. It is extracted from your own copy
 of the game into `data/local/maps/` (ignored by git) and served to the apps by
-`ootd`:
+the server:
 
 ```sh
 pip install Pillow texture2ddecoder numpy zstandard
 python3 tools/extract_maps.py
 ```
 
+The tray app reads the artwork from `data/local/maps/` inside its settings
+folder (see below) instead; copy the PNG files there.
+
 Without it the apps show a drawn diagram of the areas instead. On macOS the
-app has its own desktop interface (sidebar, toolbar); Android uses Material.
+app has its own desktop interface (sidebar, toolbar); the other platforms use
+Material.
 
 ## Layout
 
 | Path | |
 |---|---|
 | `packages/oot_save` | Save parser (pure Dart), save-folder discovery, `ootsave` research CLI |
-| `packages/oot_tracker` | Game data model, save → progress rules, API models |
-| `server` | `ootd`: watcher, HTTP + WebSocket API, Bonjour, manual ticks, change journal |
-| `app` | Flutter app (macOS, Android) |
+| `packages/oot_tracker` | Game data model, save → progress rules, API models, network discovery (`mdns.dart`) |
+| `server` | The server: watcher, HTTP + WebSocket API, network announcement, manual ticks, change journal; `ootd` is its command line |
+| `host` | Flutter tray app around the same server (macOS, Windows, Linux) |
+| `app` | Flutter tracker app (macOS, Windows, Linux, Android, iOS) |
 | `data` | `areas.json`, `checks.json` (the checklist), `collectibles.json` (save flags and positions per collectible), `maps.json` (map calibration), `check_links.json` (which collectible is which checklist entry) |
 | `tools` | Python scripts that derive `collectibles.json` from your own game files |
 | `fixtures/save` | A real save used by the tests |
@@ -82,8 +118,10 @@ app has its own desktop interface (sidebar, toolbar); Android uses Material.
 | `GET /api/v1/fields[?all]` | Raw save fields |
 | `POST /api/v1/reload` | Re-read `data/` after editing it |
 
-Manual ticks and a journal of every save-field change are kept in
-`~/Library/Application Support/oot-tracker/`.
+Manual ticks, a journal of every save-field change and the tray app's
+settings (`server.json`) are kept in `~/Library/Application Support/oot-tracker/`
+on macOS, `%APPDATA%\oot-tracker\` on Windows and `~/.local/share/oot-tracker/`
+on Linux.
 
 ## Editing the checklist
 
@@ -99,6 +137,7 @@ against the remake. After editing: `curl -X POST localhost:7437/api/v1/reload`.
 (cd packages/oot_save && dart test)
 (cd packages/oot_tracker && dart test)
 (cd app && flutter test)     # OOT_SHOTS=<dir> also writes a PNG of every screen
+(cd host && dart run tool/sync_data.dart && flutter test)
 ```
 
 ## Regenerating the collectible flags
@@ -109,8 +148,8 @@ See the usage comment at the top of each script in `tools/`, then run
 
 ## Releases
 
-GitHub Actions run the tests on every push and build the server and both apps
-when a `v*` tag is pushed. Setup and usage: [RELEASING.md](RELEASING.md).
+GitHub Actions run the tests on every push and build the server and the apps
+for every platform when a `v*` tag is pushed. Setup and usage: [RELEASING.md](RELEASING.md).
 
 ## Credits
 

@@ -6,3 +6,5 @@ build/
 /server/ootd
 __pycache__/
 data/local/
+# Copied from data/ by host/tool/sync_data.dart
+/host/assets/data/

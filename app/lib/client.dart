@@ -5,6 +5,7 @@ import 'dart:typed_data';
 
 import 'package:flutter/foundation.dart';
 import 'package:nsd/nsd.dart' as nsd;
+import 'package:oot_tracker/mdns.dart';
 import 'package:oot_tracker/oot_tracker.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -70,6 +71,7 @@ class TrackerClient extends ChangeNotifier {
   WebSocket? _socket;
   Timer? _retry;
   nsd.Discovery? _discovery;
+  MdnsBrowser? _browser;
   String? _screenshotOf;
   int _generation = 0;
   bool _disposed = false;
@@ -90,28 +92,48 @@ class TrackerClient extends ChangeNotifier {
     _connect();
   }
 
-  Future<void> _startDiscovery() async {
+  void _setFound(Iterable<FoundServer> servers) {
+    if (_disposed) return;
+    found
+      ..clear()
+      ..addAll(servers);
+    notifyListeners();
+    if (autoDiscover && _socket == null) _connect();
+  }
+
+  /// Looks for servers without help from the system; used where the system
+  /// has no service discovery to offer (Linux) or it fails.
+  Future<void> _startBrowser() async {
     try {
-      final discovery = await nsd.startDiscovery('_oottracker._tcp', ipLookupType: nsd.IpLookupType.v4);
-      _discovery = discovery;
-      discovery.addListener(() {
-        found
-          ..clear()
-          ..addAll([
-            for (final s in discovery.services)
-              if (s.port != null && (s.addresses?.isNotEmpty == true || s.host != null))
-                FoundServer(
-                  s.name ?? 'OoT Tracker',
-                  s.addresses?.isNotEmpty == true ? s.addresses!.first.address : s.host!,
-                  s.port!,
-                ),
-          ]);
-        notifyListeners();
-        if (autoDiscover && _socket == null) _connect();
-      });
+      final browser = MdnsBrowser(
+        onChange: (services) => _setFound([for (final s in services) FoundServer(s.name, s.host, s.port)]),
+      );
+      await browser.start();
+      _browser = browser;
     } catch (e) {
       lastError = 'Network discovery is unavailable: $e';
       notifyListeners();
+    }
+  }
+
+  Future<void> _startDiscovery() async {
+    if (Platform.isLinux) return _startBrowser();
+    try {
+      final discovery = await nsd.startDiscovery(trackerServiceType, ipLookupType: nsd.IpLookupType.v4);
+      _discovery = discovery;
+      discovery.addListener(() {
+        _setFound([
+          for (final s in discovery.services)
+            if (s.port != null && (s.addresses?.isNotEmpty == true || s.host != null))
+              FoundServer(
+                s.name ?? 'OoT Tracker',
+                s.addresses?.isNotEmpty == true ? s.addresses!.first.address : s.host!,
+                s.port!,
+              ),
+        ]);
+      });
+    } catch (e) {
+      await _startBrowser();
     }
   }
 
@@ -304,6 +326,7 @@ class TrackerClient extends ChangeNotifier {
     _socket?.close();
     final discovery = _discovery;
     if (discovery != null) nsd.stopDiscovery(discovery);
+    _browser?.stop();
     super.dispose();
   }
 }

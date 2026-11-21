@@ -1,7 +1,8 @@
 name: Release
 
-# Pushing a tag like v1.2.0 builds the server and both apps and publishes
-# them as a GitHub release.
+# Pushing a tag like v1.2.0 builds the server (command line and tray app)
+# and the tracker app for every platform, and publishes them as a GitHub
+# release.
 on:
   push:
     tags: ['v*']
@@ -11,10 +12,17 @@ permissions:
 
 env:
   FLUTTER_VERSION: 3.38.1
+  # What the Flutter Linux builds need; the tray icon needs the last one.
+  LINUX_PACKAGES: clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libayatana-appindicator3-dev
+
+defaults:
+  run:
+    shell: bash
 
 jobs:
+  # The command-line server, `ootd`.
   server:
-    name: Server (${{ matrix.name }})
+    name: ootd (${{ matrix.name }})
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -22,6 +30,7 @@ jobs:
         include:
           - { os: macos-latest, name: macos-arm64 }
           - { os: ubuntu-latest, name: linux-x64 }
+          - { os: windows-latest, name: windows-x64 }
     steps:
       - uses: actions/checkout@v4
       - uses: subosito/flutter-action@v2
@@ -37,52 +46,94 @@ jobs:
       - name: Build
         run: |
           out="ootd-${GITHUB_REF_NAME}-${{ matrix.name }}"
-          mkdir -p "dist/$out"
-          dart compile exe server/bin/ootd.dart -o "dist/$out/ootd"
+          mkdir -p "dist/$out/data"
+          exe=ootd
+          if [ "$RUNNER_OS" = Windows ]; then exe=ootd.exe; fi
+          dart compile exe server/bin/ootd.dart -o "dist/$out/$exe"
           # The checklist data the server reads at start; it looks for a
           # `data` folder next to the executable.
-          mkdir "dist/$out/data"
           cp data/*.json "dist/$out/data/"
-          cp server/install-launchd.sh README.md NOTICE "dist/$out/"
-          tar -C dist -czf "dist/$out.tar.gz" "$out"
+          cp README.md NOTICE "dist/$out/"
+          if [ "$RUNNER_OS" = macOS ]; then cp server/install-launchd.sh "dist/$out/"; fi
+          if [ "$RUNNER_OS" = Windows ]; then
+            (cd dist && 7z a -tzip "$out.zip" "$out")
+          else
+            tar -C dist -czf "dist/$out.tar.gz" "$out"
+          fi
+          rm -r "dist/$out"
       - uses: actions/upload-artifact@v4
         with:
-          name: server-${{ matrix.name }}
-          path: dist/*.tar.gz
+          name: ootd-${{ matrix.name }}
+          path: dist/*
           if-no-files-found: error
 
-  macos-app:
-    name: macOS app
-    runs-on: macos-latest
+  # The desktop builds of the tracker app (`app`) and of the server's tray
+  # app (`host`).
+  desktop:
+    name: ${{ matrix.title }} (${{ matrix.name }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { project: app, title: App, file: OoT-Tracker, product: 'OoT Tracker', os: macos-latest, name: macos-arm64 }
+          - { project: app, title: App, file: OoT-Tracker, product: 'OoT Tracker', os: windows-latest, name: windows-x64 }
+          - { project: app, title: App, file: OoT-Tracker, product: 'OoT Tracker', os: ubuntu-latest, name: linux-x64 }
+          - { project: host, title: Server app, file: OoT-Tracker-Server, product: 'OoT Tracker Server', os: macos-latest, name: macos-arm64 }
+          - { project: host, title: Server app, file: OoT-Tracker-Server, product: 'OoT Tracker Server', os: windows-latest, name: windows-x64 }
+          - { project: host, title: Server app, file: OoT-Tracker-Server, product: 'OoT Tracker Server', os: ubuntu-latest, name: linux-x64 }
     steps:
       - uses: actions/checkout@v4
+      - name: Install Linux build packages
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y $LINUX_PACKAGES
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: ${{ env.FLUTTER_VERSION }}
           channel: stable
           cache: true
       - run: flutter pub get
+      - name: Bundle the checklist data
+        if: matrix.project == 'host'
+        working-directory: host
+        run: dart run tool/sync_data.dart
       - name: Test
+        # Once is enough: the tests do not depend on the platform.
+        if: runner.os == 'macOS'
+        working-directory: ${{ matrix.project }}
         run: flutter test
-        working-directory: app
       - name: Build
-        working-directory: app
+        working-directory: ${{ matrix.project }}
         run: |
-          flutter build macos --release \
-            --build-name "${GITHUB_REF_NAME#v}" --build-number "${GITHUB_RUN_NUMBER}"
+          out="${{ matrix.file }}-${GITHUB_REF_NAME}-${{ matrix.name }}"
+          version=(--build-name "${GITHUB_REF_NAME#v}" --build-number "${GITHUB_RUN_NUMBER}")
           mkdir -p ../dist
-          # ditto keeps the bundle's symlinks and signature intact.
-          ditto -c -k --sequesterRsrc --keepParent \
-            "build/macos/Build/Products/Release/OoT Tracker.app" \
-            "../dist/OoT-Tracker-${GITHUB_REF_NAME}-macos.zip"
+          case "$RUNNER_OS" in
+            macOS)
+              flutter build macos --release "${version[@]}"
+              # ditto keeps the bundle's symlinks and signature intact.
+              ditto -c -k --sequesterRsrc --keepParent \
+                "build/macos/Build/Products/Release/${{ matrix.product }}.app" "../dist/$out.zip"
+              ;;
+            Windows)
+              flutter build windows --release "${version[@]}"
+              mv build/windows/x64/runner/Release "../dist/$out"
+              (cd ../dist && 7z a -tzip "$out.zip" "$out" && rm -r "$out")
+              ;;
+            Linux)
+              flutter build linux --release "${version[@]}"
+              mv build/linux/x64/release/bundle "../dist/$out"
+              (cd ../dist && tar -czf "$out.tar.gz" "$out" && rm -r "$out")
+              ;;
+          esac
       - uses: actions/upload-artifact@v4
         with:
-          name: app-macos
-          path: dist/*.zip
+          name: ${{ matrix.project }}-${{ matrix.name }}
+          path: dist/*
           if-no-files-found: error
 
   android-app:
-    name: Android app
+    name: App (android)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -133,9 +184,37 @@ jobs:
           path: dist/*.apk
           if-no-files-found: error
 
+  ios-app:
+    name: App (ios, unsigned)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - name: Build
+        working-directory: app
+        run: |
+          # Apple only lets signed apps run on a device, and signing needs a
+          # paid developer account. This builds the app without a signature;
+          # whoever installs it signs it with their own Apple ID.
+          flutter build ios --release --no-codesign \
+            --build-name "${GITHUB_REF_NAME#v}" --build-number "${GITHUB_RUN_NUMBER}"
+          mkdir -p ../dist Payload
+          cp -R build/ios/iphoneos/Runner.app Payload/
+          zip -qry "../dist/OoT-Tracker-${GITHUB_REF_NAME}-ios-unsigned.ipa" Payload
+      - uses: actions/upload-artifact@v4
+        with:
+          name: app-ios
+          path: dist/*.ipa
+          if-no-files-found: error
+
   release:
     name: Publish release
-    needs: [server, macos-app, android-app]
+    needs: [server, desktop, android-app, ios-app]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4

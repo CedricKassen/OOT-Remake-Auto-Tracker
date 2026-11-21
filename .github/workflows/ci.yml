@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # The repository is one Dart workspace that includes the Flutter app,
+      # The repository is one Dart workspace that includes the Flutter apps,
       # so the Flutter SDK (which brings Dart) resolves all of it.
       - uses: subosito/flutter-action@v2
         with:
@@ -30,6 +30,7 @@ jobs:
         run: |
           dart analyze packages server
           (cd app && flutter analyze)
+          (cd host && flutter analyze)
       - name: Test save parser
         run: dart test
         working-directory: packages/oot_save
@@ -39,3 +40,8 @@ jobs:
       - name: Test app
         run: flutter test
         working-directory: app
+      - name: Test server app
+        working-directory: host
+        run: |
+          dart run tool/sync_data.dart
+          flutter test

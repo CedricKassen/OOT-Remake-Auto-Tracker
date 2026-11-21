@@ -5,7 +5,7 @@ Two GitHub Actions workflows live in `.github/workflows/`:
 | Workflow | Runs on | Does |
 |---|---|---|
 | `ci.yml` | every push to `main` and every pull request | analyzes the code and runs all tests |
-| `release.yml` | every pushed tag that starts with `v` | builds the server and both apps and publishes a GitHub release |
+| `release.yml` | every pushed tag that starts with `v` | builds the server and the apps for every platform and publishes a GitHub release |
 
 ## One-time setup
 
@@ -65,28 +65,59 @@ git push origin v0.1.0
 ```
 
 The version of the apps is taken from the tag (`v0.1.0` → `0.1.0`). After
-about ten minutes the release appears under *Releases* with:
+about fifteen minutes the release appears under *Releases* with:
 
 | File | What it is |
 |---|---|
-| `ootd-<tag>-macos-arm64.tar.gz` | the server for Apple-silicon Macs, with the `data` folder it needs and `install-launchd.sh` |
-| `ootd-<tag>-linux-x64.tar.gz` | the same for Linux (no network announcement there; enter the address in the app) |
-| `OoT-Tracker-<tag>-macos.zip` | the macOS app, for Apple-silicon Macs |
-| `OoT-Tracker-<tag>-android.apk` | the Android app |
+| `OoT-Tracker-Server-<tag>-macos-arm64.zip` | the server as a menu-bar app, for Apple-silicon Macs |
+| `OoT-Tracker-Server-<tag>-windows-x64.zip` | the server as a tray app for Windows |
+| `OoT-Tracker-Server-<tag>-linux-x64.tar.gz` | the server as a tray app for Linux |
+| `OoT-Tracker-<tag>-macos-arm64.zip` | the tracker app for Apple-silicon Macs |
+| `OoT-Tracker-<tag>-windows-x64.zip` | the tracker app for Windows |
+| `OoT-Tracker-<tag>-linux-x64.tar.gz` | the tracker app for Linux |
+| `OoT-Tracker-<tag>-android.apk` | the tracker app for Android |
+| `OoT-Tracker-<tag>-ios-unsigned.ipa` | the tracker app for iPhone and iPad, without a signature (see below) |
+| `ootd-<tag>-macos-arm64.tar.gz`, `-linux-x64.tar.gz`, `-windows-x64.zip` | the command-line server with the `data` folder it needs, for headless machines |
 
 ## Installing from a release
 
-- **Server:** unpack, then run `./ootd`, or `./install-launchd.sh` to start it
-  at login. macOS may block the downloaded binary; clear that once with
-  `xattr -dr com.apple.quarantine ootd`.
-- **macOS app:** unpack and move it to Applications. It is not notarized by
-  Apple, so the first start needs right-click → Open (or
-  `xattr -dr com.apple.quarantine "OoT Tracker.app"`).
+- **Server app (the easy way):** unpack it and start *OoT Tracker Server*.
+  It lives in the menu bar (macOS), the notification area (Windows) or the
+  system tray (Linux); its window has all the settings, including "Start
+  when I log in".
+  - macOS: move it to Applications first. It is not notarized by Apple, so
+    the first start needs right-click → Open (or
+    `xattr -dr com.apple.quarantine "OoT Tracker Server.app"`).
+  - Windows: keep the whole unpacked folder together and start
+    `oot_tracker_host.exe`. SmartScreen warns about an unknown publisher
+    ("More info" → "Run anyway"), and the firewall asks once whether the
+    server may be reached from the network: allow it for private networks.
+  - Linux: keep the folder together and start `oot_tracker_host`. It needs
+    `libayatana-appindicator3-1` (`libayatana-appindicator-gtk3` on Fedora).
+    GNOME shows tray icons only with the AppIndicator extension; without it
+    the server still runs, and starting the app again shows its window.
+- **Command-line server:** unpack, then run `./ootd` (`ootd.exe` on Windows).
+  On macOS `./install-launchd.sh` starts it at login, and a blocked download
+  is cleared with `xattr -dr com.apple.quarantine ootd`. Run either this or
+  the server app, not both.
+- **macOS app:** unpack and move it to Applications; first start as above
+  (`xattr -dr com.apple.quarantine "OoT Tracker.app"`).
+- **Windows app:** unpack, keep the folder together, start
+  `oot_tracker_app.exe`.
+- **Linux app:** unpack, keep the folder together, start `oot_tracker_app`.
 - **Android app:** open the APK on the phone and allow installing from that
   source, or `adb install -r OoT-Tracker-<tag>-android.apk`.
+- **iOS app:** Apple only runs signed apps, and the release cannot be signed
+  without a paid developer account. Sign the `.ipa` with your own Apple ID
+  using a sideloading tool such as AltStore or Sideloadly (with a free Apple
+  ID the signature lasts seven days), or build and install from source with
+  Xcode: `cd app && flutter run --release` with the iPhone connected and
+  your team selected in `ios/Runner.xcworkspace`. On first start, allow
+  access to the local network.
 - **Maps:** the game's map artwork is never part of a release. Extract it from
-  your own copy of the game into the server's `data/local/maps/` folder as the
-  main README describes; without it the apps show the drawn diagram.
+  your own copy of the game as the main README describes. `ootd` reads it
+  from `data/local/maps/` next to itself, the server app from
+  `data/local/maps/` in its settings folder.
 
 ## If a build fails
 
@@ -98,3 +129,10 @@ about ten minutes the release appears under *Releases* with:
   a newer Flutter fixes it, remove those two settings for a universal app.
 - `app/android/gradle.properties` may contain an `org.gradle.java.home` line
   for your own machine. The Android job removes it and uses its own JDK 21.
+- The server app bundles the checklist from `host/assets/data/`, which
+  `dart run tool/sync_data.dart` (in `host`) copies from `data/`. The
+  workflows run it; a local build that skips it fails on the missing folder.
+- The iOS and macOS projects require iOS 15 and macOS 13, the oldest that
+  Xcode 27 still builds for.
+- Linux builds install their packages from the `LINUX_PACKAGES` line at the
+  top of `release.yml`.

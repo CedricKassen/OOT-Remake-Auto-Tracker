@@ -19,17 +19,24 @@ import 'service.dart';
 ///   GET    /api/v1/fields[?all=1]  raw save fields, for research
 ///   POST   /api/v1/reload          re-read the game data files
 class ApiServer {
-  ApiServer(this.service, {this.token});
+  ApiServer(this.service, {this.token, this.onShow});
 
   final TrackerService service;
 
   /// When set, requests need `Authorization: Bearer <token>` or `?token=`.
   final String? token;
+
+  /// Called when another copy of the server app on this computer asks the
+  /// running one to show its window.
+  final void Function()? onShow;
   final Set<WebSocket> _sockets = {};
   HttpServer? _server;
   StreamSubscription<String>? _subscription;
 
   int get port => _server!.port;
+
+  /// How many apps are connected right now.
+  int get clients => _sockets.length;
 
   Future<void> start(InternetAddress address, int port) async {
     _server = await HttpServer.bind(address, port);
@@ -89,6 +96,11 @@ class ApiServer {
 
     if (path == '/api/v1/health') {
       return _send(request, 200, {'ok': true, 'name': 'oot-tracker', 'api': 1});
+    }
+    if (path == '/api/v1/show' && method == 'POST' && onShow != null) {
+      if (request.connectionInfo?.remoteAddress.isLoopback != true) return _send(request, 403, {'error': 'Local only'});
+      onShow!();
+      return _send(request, 200, {'ok': true});
     }
     if (!_authorized(request)) return _send(request, 401, {'error': 'Token required'});
 
