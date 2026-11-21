@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:oot_save/oot_save.dart';
 import 'package:oot_tracker/mdns.dart';
+import 'package:ootd/extract/maps.dart';
 import 'package:ootd/runner.dart';
 import 'package:path/path.dart' as p;
 
@@ -70,6 +71,59 @@ class HostController extends ChangeNotifier {
   String? get saveDir => runner.service?.saveDir;
   SaveSlot? get slot => runner.service?.slot;
 
+  /// Where the server looks for map pictures, and how many it found.
+  String get mapsDir => runner.service?.mapsDir ?? config.mapsDir ?? p.join(stateDir, 'data', 'local', 'maps');
+  int mapCount = 0;
+
+  /// Reading the map pictures from the game: whether it is running, how
+  /// far it is, and how the last run ended.
+  bool extracting = false;
+  String extractProgress = '';
+  String? extractResult;
+  bool extractFailed = false;
+
+  /// Reads the map pictures from the game files at [source] (the PC port's
+  /// RomFS.img, or a folder with the unpacked game) into the maps folder.
+  Future<void> extractMaps(String source) async {
+    if (extracting) return;
+    extracting = true;
+    extractFailed = false;
+    extractResult = null;
+    extractProgress = 'Looking at the game files…';
+    notifyListeners();
+    try {
+      final result = await extractMapsInBackground(
+        source: source,
+        dataDir: runner.dataDir,
+        outDir: mapsDir,
+        onProgress: (done, total, title) {
+          if (title.isEmpty) return;
+          extractProgress = 'Reading map ${done + 1} of $total: $title';
+          notifyListeners();
+        },
+      );
+      extractResult = [
+        'Saved ${result.written} map pictures.',
+        if (result.missing.isNotEmpty) '${result.missing.length} were not in the game files.',
+        if (result.resized.isNotEmpty)
+          'This looks like another version of the game: markers on ${result.resized.length} maps may be slightly off.',
+      ].join(' ');
+    } on ExtractException catch (e) {
+      extractFailed = true;
+      extractResult = e.message;
+    } catch (e) {
+      extractFailed = true;
+      extractResult = 'Something went wrong: $e';
+    }
+    extracting = false;
+    // A restart makes the connected apps fetch the new list of maps.
+    if (!extractFailed) {
+      await apply(config);
+    } else {
+      notifyListeners();
+    }
+  }
+
   /// The slots of the save being tracked, for the slot picker.
   List<String> get slotIds => saveDir == null ? const [] : SaveLocator.slotIds(saveDir!);
 
@@ -78,11 +132,14 @@ class HostController extends ChangeNotifier {
     if (starting) return 'Starting…';
     if (!running) return runner.error ?? 'Stopped';
     if (saveDir == null) return 'Running · no save found yet';
-    return clients == 0 ? 'Running · no app connected' : 'Running · $clients ${clients == 1 ? 'app' : 'apps'} connected';
+    return clients == 0
+        ? 'Running · no app connected'
+        : 'Running · $clients ${clients == 1 ? 'app' : 'apps'} connected';
   }
 
   Future<void> start() async {
     await runner.start(config);
+    mapCount = runner.service?.mapCount ?? 0;
     starting = false;
     autostartEnabled = await autostart.isEnabled();
     addresses = [for (final a in await localAddresses()) a.address];
@@ -90,7 +147,8 @@ class HostController extends ChangeNotifier {
     // The save, the connected apps and the network change on their own.
     _tick = Timer.periodic(const Duration(seconds: 2), (_) async {
       addresses = [for (final a in await localAddresses()) a.address];
-      final shown = '$summary|$saveDir|${slot?.id}|${slot?.time}|$addresses';
+      mapCount = runner.service?.mapCount ?? 0;
+      final shown = '$summary|$saveDir|${slot?.id}|${slot?.time}|$addresses|$mapCount';
       if (shown != _shown) {
         _shown = shown;
         notifyListeners();
@@ -109,6 +167,7 @@ class HostController extends ChangeNotifier {
     starting = true;
     notifyListeners();
     await runner.start(next);
+    mapCount = runner.service?.mapCount ?? 0;
     starting = false;
     notifyListeners();
   }

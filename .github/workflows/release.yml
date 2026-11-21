@@ -12,8 +12,9 @@ permissions:
 
 env:
   FLUTTER_VERSION: 3.38.1
-  # What the Flutter Linux builds need; the tray icon needs the last one.
-  LINUX_PACKAGES: clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libayatana-appindicator3-dev
+  # What the Flutter Linux builds need; the tray icon needs the appindicator
+  # library, and patchelf is used to ship that library with the server app.
+  LINUX_PACKAGES: clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libayatana-appindicator3-dev patchelf file
 
 defaults:
   run:
@@ -43,6 +44,7 @@ jobs:
         run: |
           (cd packages/oot_save && dart test)
           (cd packages/oot_tracker && dart test)
+          (cd server && dart test)
       - name: Build
         run: |
           out="ootd-${GITHUB_REF_NAME}-${{ matrix.name }}"
@@ -127,7 +129,25 @@ jobs:
             Linux)
               flutter build linux --release "${version[@]}"
               mv build/linux/x64/release/bundle "../dist/$out"
-              (cd ../dist && tar -czf "$out.tar.gz" "$out" && rm -r "$out")
+              if [ "${{ matrix.project }}" = host ]; then
+                # Ship the tray-icon libraries with the app: many systems do
+                # not have them installed, and without them it does not
+                # start. Each copy looks for the others next to itself.
+                lib="../dist/$out/lib"
+                ldd "$lib/libtray_manager_plugin.so" | awk '/ayatana|dbusmenu/ { print $3 }' | while read -r so; do
+                  cp -L "$so" "$lib/"
+                  patchelf --set-rpath '$ORIGIN' "$lib/$(basename "$so")"
+                done
+                ls "$lib" | grep -q libayatana-appindicator3 || { echo "::error::tray libraries were not bundled"; exit 1; }
+              fi
+              (cd ../dist && tar -czf "$out.tar.gz" "$out")
+              # The same build once more as a single file that runs anywhere.
+              curl -fsSL -o "$RUNNER_TEMP/appimagetool" \
+                https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage
+              chmod +x "$RUNNER_TEMP/appimagetool"
+              APPIMAGETOOL="$RUNNER_TEMP/appimagetool" ../tools/appimage/make.sh \
+                "../dist/$out" "oot_tracker_${{ matrix.project }}" "${{ matrix.product }}" "../dist/$out.AppImage"
+              rm -r "../dist/$out"
               ;;
           esac
       - uses: actions/upload-artifact@v4

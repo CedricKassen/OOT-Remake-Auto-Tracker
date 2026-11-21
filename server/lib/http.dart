@@ -124,16 +124,15 @@ class ApiServer {
           ? _send(request, 404, {'error': 'No screenshot'})
           : _send(request, 200, image, type: ContentType('image', 'jpeg'));
     }
-    // Map artwork is extracted from the user's own game into data/local/maps
-    // and only ever served from there.
+    // Map artwork is extracted from the user's own game (by default into
+    // data/local/maps) and only ever served from that folder.
     const maps = '/api/v1/maps';
     if (path == maps && method == 'GET') {
-      final index = File('${service.dataDir}/maps.json');
-      return _send(request, 200, index.existsSync() ? index.readAsStringSync() : '{"maps":[]}');
+      return _send(request, 200, service.mapsJson());
     }
     if (path.startsWith('$maps/') && method == 'GET') {
       final name = path.substring(maps.length + 1);
-      final file = File('${service.dataDir}/local/maps/$name');
+      final file = File('${service.mapsDir}/$name');
       if (!RegExp(r'^[A-Za-z0-9_.-]+\.png$').hasMatch(name) || !file.existsSync()) {
         return _send(request, 404, {'error': 'No such map'});
       }

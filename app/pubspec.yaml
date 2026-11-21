@@ -33,6 +33,7 @@ dependencies:
   flutter:
     sdk: flutter
   oot_tracker: ^0.1.0
+  oot_ui: ^0.1.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -41,6 +42,8 @@ dependencies:
   shared_preferences: ^2.5.5
   macos_ui: ^2.2.2
   path_provider: ^2.1.6
+  # Pinned: later releases need a newer Flutter than this project builds with.
+  fluent_ui: 4.13.0
 
 dev_dependencies:
   flutter_test:

@@ -14,7 +14,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:macos_ui/macos_ui.dart' show MacosIcon;
 import 'package:oot_tracker/oot_tracker.dart';
 import 'package:oot_tracker_app/client.dart';
-import 'package:oot_tracker_app/desktop/desktop_app.dart';
+import 'package:oot_tracker_app/desktop/linux_app.dart';
+import 'package:oot_tracker_app/desktop/mac_app.dart';
+import 'package:oot_tracker_app/desktop/windows_app.dart';
 import 'package:oot_tracker_app/main.dart';
 import 'package:oot_tracker_app/screens/area_detail.dart';
 import 'package:oot_tracker_app/screens/map.dart';
@@ -29,11 +31,18 @@ Future<void> loadFonts() async {
         ..addFont(font('Roboto-Medium.ttf')))
       .load();
   await (FontLoader('MaterialIcons')..addFont(font('MaterialIcons-Regular.otf'))).load();
-  // Stand-ins for the fonts of the macOS interface.
-  await (FontLoader('.AppleSystemUIFont')
-        ..addFont(font('Roboto-Regular.ttf'))
-        ..addFont(font('Roboto-Medium.ttf')))
-      .load();
+  // Stand-ins for the interface fonts of macOS, Windows and GNOME.
+  for (final family in ['.AppleSystemUIFont', 'Segoe UI Variable Text', 'Segoe UI', 'Adwaita Sans']) {
+    await (FontLoader(family)
+          ..addFont(font('Roboto-Regular.ttf'))
+          ..addFont(font('Roboto-Medium.ttf')))
+        .load();
+  }
+  for (final icons in ['FluentIcons', 'SegoeIcons']) {
+    await (FontLoader(
+      'packages/fluent_ui/$icons',
+    )..addFont(rootBundle.load('packages/fluent_ui/fonts/$icons.ttf'))).load();
+  }
   await (FontLoader(
     'packages/cupertino_icons/CupertinoIcons',
   )..addFont(rootBundle.load('packages/cupertino_icons/assets/CupertinoIcons.ttf'))).load();
@@ -184,7 +193,7 @@ void main() {
       }
     });
 
-    testWidgets('desktop panes render: $mode', (tester) async {
+    testWidgets('macOS panes render: $mode', (tester) async {
       tester.view
         ..physicalSize = const Size(1120, 740)
         ..devicePixelRatio = 1;
@@ -194,7 +203,7 @@ void main() {
       await tester.pumpWidget(
         RepaintBoundary(
           key: boundary,
-          child: DesktopApp(client: c),
+          child: MacApp(client: c),
         ),
       );
       await shot(tester, 'desktop-$mode-overview');
@@ -202,7 +211,7 @@ void main() {
       await tester.tap(find.byWidgetPredicate((w) => w is MacosIcon && w.icon == CupertinoIcons.gear));
       await shot(tester, 'desktop-$mode-settings');
       for (final row in ['Map', 'Heart Pieces', 'Gerudo Valley']) {
-        await tester.tap(find.text(row).first);
+        await tapSidebar(tester, row);
         await shot(tester, 'desktop-$mode-${row.toLowerCase().replaceAll(' ', '-')}');
         if (spoilerFree && row != 'Map') expectNoSpoilers(c, 'gerudo_valley');
       }
@@ -212,7 +221,57 @@ void main() {
         await tester.pump(const Duration(milliseconds: 50));
       }
     });
+
+    // The Windows and GNOME looks, one in light and one in dark mode each.
+    for (final system in ['windows', 'linux']) {
+      testWidgets('$system panes render: $mode', (tester) async {
+        tester.view
+          ..physicalSize = const Size(1280, 720)
+          ..devicePixelRatio = 1;
+        addTearDown(tester.view.reset);
+        tester.platformDispatcher.platformBrightnessTestValue = spoilerFree ? Brightness.light : Brightness.dark;
+        addTearDown(tester.platformDispatcher.clearPlatformBrightnessTestValue);
+        final c = await client(spoilerFree: spoilerFree);
+        await warmMaps(tester, c);
+        await tester.pumpWidget(
+          RepaintBoundary(
+            key: boundary,
+            child: system == 'windows' ? WindowsApp(client: c) : LinuxApp(client: c),
+          ),
+        );
+        await shot(tester, '$system-$mode-overview');
+        // Settings is the last item of the navigation pane on Windows and a
+        // button in the bar on GNOME.
+        await tester.tap(system == 'windows' ? find.text('Settings', findRichText: true) : find.byTooltip('Settings'));
+        await shot(tester, '$system-$mode-settings');
+        expect(find.text('Spoiler-free mode'), findsOneWidget);
+        for (final row in ['Map', 'Heart Pieces', 'Gerudo Valley']) {
+          await tapSidebar(tester, row);
+          await shot(tester, '$system-$mode-${row.toLowerCase().replaceAll(' ', '-')}');
+          if (spoilerFree && row != 'Map') expectNoSpoilers(c, 'gerudo_valley');
+        }
+        expect(find.textContaining('collected'), findsOneWidget);
+        for (var i = 0; i < 3; i++) {
+          await tester.pump(const Duration(milliseconds: 50));
+        }
+      });
+    }
   }
+}
+
+/// Taps the sidebar row called [label], scrolling the sidebar to it first.
+Future<void> tapSidebar(WidgetTester tester, String label) async {
+  final sidebar = find.byType(Scrollable).first;
+  final rows = find.descendant(of: sidebar, matching: find.text(label, findRichText: true));
+  // Rows far down the list are only built once they are scrolled near.
+  for (var i = 0; i < 40 && rows.evaluate().isEmpty; i++) {
+    await tester.drag(sidebar, const Offset(0, -200));
+    await tester.pump();
+  }
+  final row = rows.first;
+  await tester.ensureVisible(row);
+  await tester.pump();
+  await tester.tap(row);
 }
 
 /// Counts only: no title of a missing check of [area] may be on screen.

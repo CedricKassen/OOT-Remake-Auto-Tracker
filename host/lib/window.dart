@@ -1,9 +1,11 @@
 import 'dart:io';
 
 import 'package:file_selector/file_selector.dart';
+import 'package:fluent_ui/fluent_ui.dart' as fluent;
 import 'package:flutter/material.dart';
 import 'package:macos_ui/macos_ui.dart' show MacosTheme, MacosThemeData;
 import 'package:oot_save/oot_save.dart';
+import 'package:oot_ui/oot_ui.dart';
 import 'package:ootd/runner.dart';
 
 import 'controller.dart';
@@ -23,14 +25,13 @@ class HostApp extends StatelessWidget {
   final HostController controller;
   final VoidCallback onQuit;
 
-  ThemeData _theme(Brightness brightness) => ThemeData(
-    colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF3E8E5A), brightness: brightness),
-    useMaterial3: true,
-    fontFamily: mac ? '.AppleSystemUIFont' : null,
-    scaffoldBackgroundColor: mac
-        ? (brightness == Brightness.dark ? const Color(0xFF1E1E1E) : const Color(0xFFECECEC))
-        : null,
-  );
+  ThemeData _theme(Brightness brightness) => desktopLook == DesktopLook.linux
+      ? adwaitaTheme(brightness)
+      : ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF3E8E5A), brightness: brightness),
+          useMaterial3: true,
+          fontFamily: Look.fontFamily,
+        );
 
   @override
   Widget build(BuildContext context) => MaterialApp(
@@ -38,12 +39,28 @@ class HostApp extends StatelessWidget {
     debugShowCheckedModeBanner: false,
     theme: _theme(Brightness.light),
     darkTheme: _theme(Brightness.dark),
-    builder: (context, child) => mac
-        ? MacosTheme(
-            data: Theme.of(context).brightness == Brightness.dark ? MacosThemeData.dark() : MacosThemeData.light(),
-            child: child!,
-          )
-        : child!,
+    // The Windows controls bring their own texts, e.g. for a field's menu.
+    localizationsDelegates: fluent.FluentLocalizations.localizationsDelegates,
+    // The Mac and the Windows controls take their colours from their own
+    // themes.
+    builder: (context, child) {
+      final brightness = Theme.of(context).brightness;
+      return switch (desktopLook) {
+        DesktopLook.mac => MacosTheme(
+          data: brightness == Brightness.dark ? MacosThemeData.dark() : MacosThemeData.light(),
+          child: child!,
+        ),
+        DesktopLook.windows => fluent.FluentTheme(
+          data: fluent.FluentThemeData(
+            brightness: brightness,
+            accentColor: fluent.Colors.blue,
+            fontFamily: Look.fontFamily,
+          ),
+          child: child!,
+        ),
+        DesktopLook.linux => child!,
+      };
+    },
     home: SettingsWindow(controller: controller, onQuit: onQuit),
   );
 }
@@ -99,11 +116,29 @@ class _SettingsWindowState extends State<SettingsWindow> {
     });
   }
 
-  Future<void> _chooseFolder() async {
-    final path = await getDirectoryPath(
-      confirmButtonText: 'Choose',
-      initialDirectory: c.config.saveDir ?? c.saveDir,
+  Future<void> _extractFromFile() async {
+    final file = await openFile(
+      confirmButtonText: 'Read maps',
+      acceptedTypeGroups: const [
+        XTypeGroup(label: 'Game image (RomFS.img)', extensions: ['img']),
+      ],
     );
+    if (file != null) await c.extractMaps(file.path);
+  }
+
+  Future<void> _extractFromFolder() async {
+    final path = await getDirectoryPath(confirmButtonText: 'Read maps');
+    if (path != null) await c.extractMaps(path);
+  }
+
+  Future<void> _chooseMapsFolder() async {
+    final path = await getDirectoryPath(confirmButtonText: 'Choose', initialDirectory: c.config.mapsDir);
+    if (path == null || !mounted) return;
+    _change((config) => config.mapsDir = path);
+  }
+
+  Future<void> _chooseFolder() async {
+    final path = await getDirectoryPath(confirmButtonText: 'Choose', initialDirectory: c.config.saveDir ?? c.saveDir);
     if (path == null || !mounted) return;
     setState(
       () => _folderNote = SaveLocator.resolve(path) == null
@@ -135,6 +170,7 @@ class _SettingsWindowState extends State<SettingsWindow> {
       final addresses = c.addresses.isEmpty ? 'No network connection' : c.addresses.join('  ·  ');
 
       return Scaffold(
+        backgroundColor: look.window,
         body: ListView(
           padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
           children: [
@@ -225,16 +261,58 @@ class _SettingsWindowState extends State<SettingsWindow> {
                 ),
               ],
             ),
+            const GroupHeader('Maps'),
+            Group(
+              children: [
+                SettingRow(
+                  title: c.mapCount == 0 ? 'No map pictures' : '${c.mapCount} map pictures',
+                  detail: c.extracting
+                      ? c.extractProgress
+                      : c.extractResult ??
+                            (c.mapCount == 0
+                                ? 'The apps show a drawn diagram until the maps are read from your own copy of '
+                                      'the game: the RomFS.img file of the PC port, or a folder with the unpacked '
+                                      'game files.'
+                                : 'Read from your copy of the game.'),
+                  detailColor: c.extractFailed && !c.extracting ? look.scheme.error : null,
+                  below: Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      ActionButton(
+                        c.mapCount == 0 ? 'Read from game file…' : 'Read again from game file…',
+                        primary: c.mapCount == 0,
+                        onPressed: c.extracting ? null : _extractFromFile,
+                      ),
+                      ActionButton('From a folder…', onPressed: c.extracting ? null : _extractFromFolder),
+                    ],
+                  ),
+                ),
+                SettingRow(
+                  title: 'Maps folder',
+                  detail: c.mapsDir,
+                  below: Row(
+                    children: [
+                      ActionButton('Choose folder…', onPressed: c.extracting ? null : _chooseMapsFolder),
+                      if (config.mapsDir != null) ...[
+                        const SizedBox(width: 8),
+                        ActionButton(
+                          'Use default folder',
+                          onPressed: c.extracting ? null : () => _change((config) => config.mapsDir = null),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              ],
+            ),
             const GroupHeader('Network'),
             Group(
               children: [
                 SettingRow(
                   title: 'Let apps find this computer',
                   detail: 'The tracker apps on your network then connect on their own.',
-                  control: Toggle(
-                    value: config.advertise,
-                    onChanged: (v) => _change((config) => config.advertise = v),
-                  ),
+                  control: Toggle(value: config.advertise, onChanged: (v) => _change((config) => config.advertise = v)),
                 ),
                 SettingRow(
                   title: 'Address for manual setup',

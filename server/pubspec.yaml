@@ -7,8 +7,10 @@ environment:
   sdk: ^3.10.0
 dependencies:
   args: ^2.5.0
+  image: ^4.13.1
   oot_save: ^0.1.0
   oot_tracker: ^0.1.0
   path: ^1.9.0
 dev_dependencies:
   test: ^1.25.0
+  crypto: ^3.0.8

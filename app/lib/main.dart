@@ -5,7 +5,9 @@ import 'package:macos_ui/macos_ui.dart' show MacosWindowUtilsConfig;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'client.dart';
-import 'desktop/desktop_app.dart';
+import 'desktop/linux_app.dart';
+import 'desktop/mac_app.dart';
+import 'desktop/windows_app.dart';
 import 'screens/areas.dart';
 import 'screens/map.dart';
 import 'screens/overview.dart';
@@ -19,12 +21,17 @@ Future<void> main() async {
   if (Platform.isMacOS) {
     // A native-looking window: unified toolbar, translucent sidebar.
     await const MacosWindowUtilsConfig().apply();
-    runApp(DesktopApp(client: client));
+    runApp(MacApp(client: client));
+  } else if (Platform.isWindows) {
+    runApp(WindowsApp(client: client));
+  } else if (Platform.isLinux) {
+    runApp(LinuxApp(client: client));
   } else {
     runApp(TrackerApp(client: client));
   }
 }
 
+/// The phone and tablet app. Each desktop system has its own in `desktop/`.
 class TrackerApp extends StatelessWidget {
   const TrackerApp({super.key, required this.client});
   final TrackerClient client;

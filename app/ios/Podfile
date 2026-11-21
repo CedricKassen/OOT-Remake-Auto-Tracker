@@ -42,6 +42,8 @@ post_install do |installer|
     # Current Xcode no longer builds for the plugins' older deployment targets.
     target.build_configurations.each do |config|
       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+      # Match the app: simulator builds are arm64 only (see Debug.xcconfig).
+      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'x86_64'
     end
   end
 end

@@ -13,12 +13,15 @@ dependencies:
   ootd: ^0.1.0
   oot_save: ^0.1.0
   oot_tracker: ^0.1.0
+  oot_ui: ^0.1.0
   tray_manager: ^0.5.3
   window_manager: ^0.5.2
   launch_at_startup: ^0.5.1
   file_selector: ^1.1.0
   path: ^1.9.1
   macos_ui: ^2.2.2
+  # Pinned: later releases need a newer Flutter than this project builds with.
+  fluent_ui: 4.13.0
 
 dev_dependencies:
   flutter_test:

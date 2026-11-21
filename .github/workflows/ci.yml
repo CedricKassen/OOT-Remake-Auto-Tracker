@@ -41,6 +41,9 @@ jobs:
       - name: Test tracker rules
         run: dart test
         working-directory: packages/oot_tracker
+      - name: Test server
+        run: dart test
+        working-directory: server
       - name: Test app
         run: flutter test
         working-directory: app

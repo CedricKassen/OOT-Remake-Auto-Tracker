@@ -80,7 +80,8 @@ class TrackerService {
     this.saveDirArg,
     this.pinnedSlot,
     this.journalPath,
-  }) {
+    String? mapsDir,
+  }) : mapsDir = mapsDir ?? p.join(dataDir, 'local', 'maps') {
     final (data, flagMap) = loadGameData(dataDir);
     _data = data;
     _flagMap = flagMap;
@@ -88,6 +89,38 @@ class TrackerService {
 
   final String dataDir;
   final ManualStore manual;
+
+  /// Folder with the map pictures extracted from the user's own game.
+  final String mapsDir;
+
+  /// The index of the game maps (`maps.json`), reduced to the maps whose
+  /// picture is actually in [mapsDir]. Without pictures it is empty and the
+  /// apps draw their own diagram instead of showing maps that cannot load.
+  String mapsJson() {
+    final file = File(p.join(dataDir, 'maps.json'));
+    if (!file.existsSync()) return '{"maps":[]}';
+    try {
+      final index = (jsonDecode(file.readAsStringSync()) as Map).cast<String, Object?>();
+      index['maps'] = [
+        for (final map in index['maps'] as List? ?? const [])
+          if (map is Map && File(p.join(mapsDir, '${map['file']}')).existsSync()) map,
+      ];
+      return jsonEncode(index);
+    } on FormatException {
+      return '{"maps":[]}';
+    }
+  }
+
+  /// How many map pictures are available.
+  int get mapCount {
+    final dir = Directory(mapsDir);
+    if (!dir.existsSync()) return 0;
+    try {
+      return dir.listSync().where((e) => e.path.toLowerCase().endsWith('.png')).length;
+    } on FileSystemException {
+      return 0;
+    }
+  }
 
   /// What the user pointed at; null means the default locations.
   final String? saveDirArg;

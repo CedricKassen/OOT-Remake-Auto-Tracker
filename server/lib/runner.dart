@@ -26,7 +26,15 @@ String defaultStateDir() {
 
 /// What a user can configure about the server.
 class ServerConfig {
-  ServerConfig({this.saveDir, this.slot, this.port = 7437, this.bind = '0.0.0.0', this.token, this.advertise = true});
+  ServerConfig({
+    this.saveDir,
+    this.slot,
+    this.port = 7437,
+    this.bind = '0.0.0.0',
+    this.token,
+    this.advertise = true,
+    this.mapsDir,
+  });
 
   /// Save folder to track; null looks in the usual places.
   String? saveDir;
@@ -42,6 +50,10 @@ class ServerConfig {
   /// Announce the server on the local network.
   bool advertise;
 
+  /// Folder with the extracted map pictures; null is `local/maps` in the
+  /// data folder.
+  String? mapsDir;
+
   static String? _text(Object? value) => value is String && value.trim().isNotEmpty ? value.trim() : null;
 
   factory ServerConfig.fromJson(Map<String, Object?> json) => ServerConfig(
@@ -51,6 +63,7 @@ class ServerConfig {
     bind: _text(json['bind']) ?? '0.0.0.0',
     token: _text(json['token']),
     advertise: json['advertise'] != false,
+    mapsDir: _text(json['mapsDir']),
   );
 
   Map<String, Object?> toJson() => {
@@ -60,6 +73,7 @@ class ServerConfig {
     'bind': bind,
     'token': token,
     'advertise': advertise,
+    'mapsDir': mapsDir,
   };
 
   ServerConfig copy() => ServerConfig.fromJson(toJson());
@@ -92,7 +106,20 @@ class Advertiser {
 
   Future<void> start(int port, {bool builtin = false, String name = 'OoT Tracker'}) async {
     if (Platform.isMacOS && !builtin) {
-      _process = await Process.start('dns-sd', ['-R', name, trackerServiceType, 'local', '$port']);
+      // dns-sd announces for as long as it runs. The shell around it ends it
+      // when this server is gone, also if the server was killed and could
+      // not clean up; a leftover would keep announcing a dead server.
+      _process = await Process.start('/bin/sh', [
+        '-c',
+        'dns-sd -R "\$1" "\$2" local "\$3" & child=\$!; '
+            'trap "kill \$child; exit 0" TERM INT; '
+            'while kill -0 "\$4" 2>/dev/null; do sleep 2; done; kill \$child',
+        'sh',
+        name,
+        trackerServiceType,
+        '$port',
+        '$pid',
+      ]);
     } else {
       _responder = MdnsResponder(name: name, port: port);
       await _responder!.start();
@@ -140,6 +167,7 @@ class ServerRunner {
       saveDirArg: config.saveDir,
       pinnedSlot: config.slot,
       journalPath: p.join(stateDir, 'journal.jsonl'),
+      mapsDir: config.mapsDir,
     );
     final api = ApiServer(service, token: config.token, onShow: onShow);
     try {

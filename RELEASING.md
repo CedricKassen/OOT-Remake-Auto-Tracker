@@ -71,10 +71,12 @@ about fifteen minutes the release appears under *Releases* with:
 |---|---|
 | `OoT-Tracker-Server-<tag>-macos-arm64.zip` | the server as a menu-bar app, for Apple-silicon Macs |
 | `OoT-Tracker-Server-<tag>-windows-x64.zip` | the server as a tray app for Windows |
-| `OoT-Tracker-Server-<tag>-linux-x64.tar.gz` | the server as a tray app for Linux |
+| `OoT-Tracker-Server-<tag>-linux-x64.AppImage` | the server as a tray app for Linux, as a single file |
+| `OoT-Tracker-Server-<tag>-linux-x64.tar.gz` | the same as a folder |
 | `OoT-Tracker-<tag>-macos-arm64.zip` | the tracker app for Apple-silicon Macs |
 | `OoT-Tracker-<tag>-windows-x64.zip` | the tracker app for Windows |
-| `OoT-Tracker-<tag>-linux-x64.tar.gz` | the tracker app for Linux |
+| `OoT-Tracker-<tag>-linux-x64.AppImage` | the tracker app for Linux, as a single file |
+| `OoT-Tracker-<tag>-linux-x64.tar.gz` | the same as a folder |
 | `OoT-Tracker-<tag>-android.apk` | the tracker app for Android |
 | `OoT-Tracker-<tag>-ios-unsigned.ipa` | the tracker app for iPhone and iPad, without a signature (see below) |
 | `ootd-<tag>-macos-arm64.tar.gz`, `-linux-x64.tar.gz`, `-windows-x64.zip` | the command-line server with the `data` folder it needs, for headless machines |
@@ -92,8 +94,13 @@ about fifteen minutes the release appears under *Releases* with:
     `oot_tracker_host.exe`. SmartScreen warns about an unknown publisher
     ("More info" → "Run anyway"), and the firewall asks once whether the
     server may be reached from the network: allow it for private networks.
-  - Linux: keep the folder together and start `oot_tracker_host`. It needs
-    `libayatana-appindicator3-1` (`libayatana-appindicator-gtk3` on Fedora).
+  - Linux: make the `.AppImage` executable (`chmod +x`, or in the file
+    manager's properties) and start it. "Start when I log in" remembers
+    where the file is, so move it to its final place first. Or unpack the
+    `.tar.gz`, keep the folder together and start `oot_tracker_host`. The
+    tray-icon libraries come with both. (A build from source needs
+    `libayatana-appindicator3-1` installed, `libayatana-appindicator-gtk3`
+    on Fedora.)
     GNOME shows tray icons only with the AppIndicator extension; without it
     the server still runs, and starting the app again shows its window.
 - **Command-line server:** unpack, then run `./ootd` (`ootd.exe` on Windows).
@@ -104,7 +111,8 @@ about fifteen minutes the release appears under *Releases* with:
   (`xattr -dr com.apple.quarantine "OoT Tracker.app"`).
 - **Windows app:** unpack, keep the folder together, start
   `oot_tracker_app.exe`.
-- **Linux app:** unpack, keep the folder together, start `oot_tracker_app`.
+- **Linux app:** make the `.AppImage` executable and start it, or unpack the
+  `.tar.gz`, keep the folder together and start `oot_tracker_app`.
 - **Android app:** open the APK on the phone and allow installing from that
   source, or `adb install -r OoT-Tracker-<tag>-android.apk`.
 - **iOS app:** Apple only runs signed apps, and the release cannot be signed
@@ -114,10 +122,11 @@ about fifteen minutes the release appears under *Releases* with:
   Xcode: `cd app && flutter run --release` with the iPhone connected and
   your team selected in `ios/Runner.xcworkspace`. On first start, allow
   access to the local network.
-- **Maps:** the game's map artwork is never part of a release. Extract it from
-  your own copy of the game as the main README describes. `ootd` reads it
-  from `data/local/maps/` next to itself, the server app from
-  `data/local/maps/` in its settings folder.
+- **Maps:** the game's map artwork is never part of a release. In the server
+  app, open "Maps" and choose "Read from game file…": pick the `RomFS.img`
+  of the PC port (or "From a folder…" for unpacked game files). With the
+  command-line server it is `ootd --extract-maps <RomFS.img or folder>`.
+  Without the pictures the apps show a drawn diagram.
 
 ## If a build fails
 
@@ -136,3 +145,7 @@ about fifteen minutes the release appears under *Releases* with:
   Xcode 27 still builds for.
 - Linux builds install their packages from the `LINUX_PACKAGES` line at the
   top of `release.yml`.
+- The AppImages are made by `tools/appimage/make.sh` with `appimagetool`,
+  which the workflow downloads from its project's rolling "continuous"
+  release; if a build breaks there without a change on our side, pin a
+  dated release in `release.yml`.

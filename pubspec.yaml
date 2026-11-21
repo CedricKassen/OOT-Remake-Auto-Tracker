@@ -5,6 +5,7 @@ environment:
 workspace:
   - packages/oot_save
   - packages/oot_tracker
+  - packages/oot_ui
   - server
   - app
   - host

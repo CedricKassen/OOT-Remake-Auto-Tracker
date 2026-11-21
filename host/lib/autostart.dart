@@ -10,15 +10,20 @@ const hiddenArg = '--hidden';
 class Autostart {
   Autostart() {
     if (!Platform.isMacOS) {
-      launchAtStartup.setup(appName: 'OoT Tracker Server', appPath: Platform.resolvedExecutable, args: [hiddenArg]);
+      launchAtStartup.setup(
+        appName: 'OoT Tracker Server',
+        // Inside an AppImage the executable sits in a mount that is gone
+        // after it quits; the image file itself is what has to be started.
+        appPath: Platform.environment['APPIMAGE'] ?? Platform.resolvedExecutable,
+        args: [hiddenArg],
+      );
     }
   }
 
   // macOS: a launch agent, which also works for an app that is not signed.
   static const _label = 'dev.oottracker.server';
 
-  File get _agent =>
-      File(p.join(Platform.environment['HOME'] ?? '', 'Library', 'LaunchAgents', '$_label.plist'));
+  File get _agent => File(p.join(Platform.environment['HOME'] ?? '', 'Library', 'LaunchAgents', '$_label.plist'));
 
   static String _xml(String text) => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 

@@ -8,3 +8,13 @@ __pycache__/
 data/local/
 # Copied from data/ by host/tool/sync_data.dart
 /host/assets/data/
+
+# AI assistant setup: local only
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+AGENTS.md
+.cursor/
+.cursorrules
+.github/copilot-instructions.md
+.aider*

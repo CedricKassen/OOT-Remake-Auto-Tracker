@@ -1,9 +1,9 @@
-import 'package:flutter/cupertino.dart';
-import 'package:macos_ui/macos_ui.dart';
+import 'package:flutter/widgets.dart';
 import 'package:oot_tracker/oot_tracker.dart';
 
 import '../client.dart';
 import '../widgets.dart';
+import 'controls.dart';
 import 'style.dart';
 
 const double _contentWidth = 860;
@@ -36,12 +36,12 @@ class DesktopEmptyState extends StatelessWidget {
     final style = DesktopStyle.of(context);
     final (icon, title, detail) = switch (client.status) {
       LinkStatus.searching => (
-        CupertinoIcons.wifi,
+        style.icons.searching,
         'Looking for the tracker server…',
-        'Start ootd on this Mac, or on another Mac in the same network.',
+        'Start ootd on this ${style.computer}, or on another ${style.computer} in the same network.',
       ),
-      LinkStatus.connecting => (CupertinoIcons.arrow_2_circlepath, 'Connecting…', client.targetLabel),
-      _ => (CupertinoIcons.wifi_slash, 'Not connected', client.lastError ?? 'Set the server address in Settings.'),
+      LinkStatus.connecting => (style.icons.connecting, 'Connecting…', client.targetLabel),
+      _ => (style.icons.offline, 'Not connected', client.lastError ?? 'Set the server address in Settings.'),
     };
     return Center(
       child: Column(
@@ -114,10 +114,10 @@ class OverviewPane extends StatelessWidget {
                 spacing: 18,
                 runSpacing: 6,
                 children: [
-                  _Stat(CupertinoIcons.heart_fill, const Color(0xFFE5645E), '${save.hearts} hearts'),
+                  _Stat(style.icons.heart, const Color(0xFFE5645E), '${save.hearts} hearts'),
                   _Stat(Glyph.rupee, const Color(0xFF5FBF77), '${save.rupees} rupees'),
                   _Stat(Glyph.skull, gold, '${save.tokens} tokens'),
-                  _Stat(CupertinoIcons.person_fill, style.secondary, save.era == 'adult' ? 'Adult' : 'Child'),
+                  _Stat(style.icons.person, style.secondary, save.era == 'adult' ? 'Adult' : 'Child'),
                 ],
               ),
             ],
@@ -153,11 +153,11 @@ class OverviewPane extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 18),
             child: GroupBox(
-              padding: const EdgeInsets.all(12),
+              padding: style.rowPadding,
               children: [
                 Row(
                   children: [
-                    const Icon(CupertinoIcons.exclamationmark_triangle_fill, size: 16, color: Color(0xFFFF9F0A)),
+                    Icon(style.icons.warning, size: 16, color: const Color(0xFFFF9F0A)),
                     const SizedBox(width: 10),
                     Expanded(
                       child: Text(
@@ -255,7 +255,7 @@ class _ProgressRowState extends State<_ProgressRow> {
     final p = widget.progress;
     final row = Container(
       color: _hover && widget.onTap != null ? style.hover : null,
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 9),
+      padding: style.rowPadding,
       child: Row(
         children: [
           AppIcon(widget.icon, size: 15, color: widget.color),
@@ -282,7 +282,7 @@ class _ProgressRowState extends State<_ProgressRow> {
           if (widget.onTap != null)
             Padding(
               padding: const EdgeInsets.only(left: 6),
-              child: Icon(CupertinoIcons.chevron_right, size: 11, color: style.tertiary),
+              child: Icon(style.icons.chevron, size: style.look == DesktopLook.linux ? 16 : 11, color: style.tertiary),
             ),
         ],
       ),
@@ -345,7 +345,7 @@ class AreaPane extends StatelessWidget {
               spacing: 14,
               children: [
                 for (final e in area.byCategory.entries)
-                  MacosTooltip(
+                  DesktopTooltip(
                     message: '${categoryName(e.key)}: ${e.value.missing} missing',
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
@@ -422,27 +422,27 @@ class _CategoryGroup extends StatelessWidget {
     final rows = <Widget>[
       if (spoilerFree && progress.missing > 0)
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          padding: style.rowPadding,
           child: Row(
             children: [
-              Icon(CupertinoIcons.question_circle, size: 15, color: style.tertiary),
+              Icon(style.icons.unknown, size: 15, color: style.tertiary),
               const SizedBox(width: 10),
               Expanded(child: Text('${progress.missing} still missing', style: style.body)),
               if (hasManual && !counted) ...[
                 // Counts only: mark a find without revealing which ones exist.
-                PushButton(
-                  controlSize: ControlSize.small,
-                  secondary: true,
+                DesktopButton(
+                  'Undo',
+                  small: true,
+                  primary: false,
                   onPressed: client.canEdit && anonymous > 0 ? () => client.addAnonymous(area.id, category, -1) : null,
-                  child: const Text('Undo'),
                 ),
                 const SizedBox(width: 8),
-                PushButton(
-                  controlSize: ControlSize.small,
+                DesktopButton(
+                  'Found one',
+                  small: true,
                   onPressed: client.canEdit && anonymous < manualOpen
                       ? () => client.addAnonymous(area.id, category, 1)
                       : null,
-                  child: const Text('Found one'),
                 ),
               ],
             ],
@@ -502,18 +502,18 @@ class _CheckRow extends StatelessWidget {
     final details = !spoilerFree && !check.done;
 
     final Widget leading = check.auto
-        ? MacosTooltip(
+        ? DesktopTooltip(
             message: 'Read from your save',
             child: Icon(
-              check.done ? CupertinoIcons.checkmark_circle_fill : CupertinoIcons.circle,
+              check.done ? style.icons.done : style.icons.open,
               size: 16,
               color: check.done ? gold : style.tertiary,
             ),
           )
-        : MacosCheckbox(value: check.done, size: 15, onChanged: client.canEdit ? (v) => client.tick(def.id, v) : null);
+        : DesktopCheckbox(value: check.done, onChanged: client.canEdit ? (v) => client.tick(def.id, v) : null);
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      padding: style.rowPadding,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -678,7 +678,7 @@ class _SettingsPaneState extends State<SettingsPane> {
   Widget _row(BuildContext context, String title, String? detail, Widget control) {
     final style = DesktopStyle.of(context);
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 9),
+      padding: style.rowPadding,
       child: Row(
         children: [
           Expanded(
@@ -721,7 +721,7 @@ class _SettingsPaneState extends State<SettingsPane> {
               context,
               'Spoiler-free mode',
               'Show only how many are missing per area, never where or how.',
-              MacosSwitch(value: client.spoilerFree, onChanged: client.setSpoilerFree),
+              DesktopSwitch(value: client.spoilerFree, onChanged: client.setSpoilerFree),
             ),
           ],
         ),
@@ -742,7 +742,7 @@ class _SettingsPaneState extends State<SettingsPane> {
               client.found.isEmpty
                   ? 'No server found yet'
                   : client.found.map((s) => '${s.name} (${s.host}:${s.port})').join(', '),
-              MacosSwitch(
+              DesktopSwitch(
                 value: client.autoDiscover,
                 onChanged: (v) => _apply(client, auto: v),
               ),
@@ -757,7 +757,7 @@ class _SettingsPaneState extends State<SettingsPane> {
                   children: [
                     SizedBox(
                       width: 190,
-                      child: MacosTextField(
+                      child: DesktopTextField(
                         controller: _host,
                         placeholder: '192.168.1.20',
                         onSubmitted: (_) => _apply(client),
@@ -766,7 +766,7 @@ class _SettingsPaneState extends State<SettingsPane> {
                     const SizedBox(width: 8),
                     SizedBox(
                       width: 70,
-                      child: MacosTextField(controller: _port, onSubmitted: (_) => _apply(client)),
+                      child: DesktopTextField(controller: _port, onSubmitted: (_) => _apply(client)),
                     ),
                   ],
                 ),
@@ -777,7 +777,7 @@ class _SettingsPaneState extends State<SettingsPane> {
               'Only needed if the server was started with --token.',
               SizedBox(
                 width: 268,
-                child: MacosTextField(controller: _token, obscureText: true, onSubmitted: (_) => _apply(client)),
+                child: DesktopTextField(controller: _token, obscure: true, onSubmitted: (_) => _apply(client)),
               ),
             ),
           ],
@@ -786,11 +786,7 @@ class _SettingsPaneState extends State<SettingsPane> {
           padding: const EdgeInsets.only(top: 12),
           child: Align(
             alignment: Alignment.centerRight,
-            child: PushButton(
-              controlSize: ControlSize.regular,
-              onPressed: () => _apply(client),
-              child: const Text('Connect'),
-            ),
+            child: DesktopButton('Connect', onPressed: () => _apply(client)),
           ),
         ),
         Padding(

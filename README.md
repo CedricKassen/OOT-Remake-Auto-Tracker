@@ -76,20 +76,23 @@ category. Switch it off in the app's settings to see every entry with its locati
 The map uses the game's own artwork: the world illustration with a badge per
 area, and the area and dungeon-floor maps with a pin for every Gold Skulltula
 and Heart Piece (only with spoilers shown) and your position at the last save.
-The artwork is not part of this repository. It is extracted from your own copy
-of the game into `data/local/maps/` (ignored by git) and served to the apps by
-the server:
+The artwork is not part of this repository or of any release. The server reads
+it from your own copy of the game: the `RomFS.img` of the PC port, or a folder
+with the unpacked game files.
 
-```sh
-pip install Pillow texture2ddecoder numpy zstandard
-python3 tools/extract_maps.py
-```
+- Tray app: "Maps" → "Read from game file…" (or "From a folder…"). It takes
+  about ten seconds and the connected apps reload on their own.
+- Command line: `ootd --extract-maps <RomFS.img or folder>`, which writes to
+  `data/local/maps/` (ignored by git) or to `--maps-dir`.
 
-The tray app reads the artwork from `data/local/maps/` inside its settings
-folder (see below) instead; copy the PNG files there.
+The decoders for this (zstd, BNTX, ASTC) are plain Dart in
+`server/lib/extract/`. `tools/extract_maps.py` does the same in Python and
+additionally regenerates `data/maps.json`; it is only needed when that file
+has to change. A server without the pictures offers no maps at all.
 
-Without it the apps show a drawn diagram of the areas instead. On macOS the
-app has its own desktop interface (sidebar, toolbar); the other platforms use
+Without it the apps show a drawn diagram of the areas instead. On the desktop
+the app has an interface of its own in the look of each system (macOS,
+Windows 11, GNOME), with a sidebar of all areas; phones and tablets use
 Material.
 
 ## Layout
@@ -98,6 +101,8 @@ Material.
 |---|---|
 | `packages/oot_save` | Save parser (pure Dart), save-folder discovery, `ootsave` research CLI |
 | `packages/oot_tracker` | Game data model, save → progress rules, API models, network discovery (`mdns.dart`) |
+| `packages/oot_ui` | What both apps share of their desktop looks; the GNOME (Adwaita) theme and controls for Linux |
+| `server/lib/extract` | Map extraction from the game files: zstd, BNTX and ASTC decoders |
 | `server` | The server: watcher, HTTP + WebSocket API, network announcement, manual ticks, change journal; `ootd` is its command line |
 | `host` | Flutter tray app around the same server (macOS, Windows, Linux) |
 | `app` | Flutter tracker app (macOS, Windows, Linux, Android, iOS) |
@@ -114,7 +119,7 @@ Material.
 | `GET /api/v1/screenshot` | Screenshot of the current slot (JPEG) |
 | `PUT`/`DELETE /api/v1/manual/{checkId}` | Tick / untick a manual check |
 | `POST /api/v1/anonymous/{area}/{category}?delta=±1` | Count a find without naming the entry |
-| `GET /api/v1/maps`, `/api/v1/maps/{file}` | Map index and map images |
+| `GET /api/v1/maps`, `/api/v1/maps/{file}` | Map index (only maps whose picture the server has) and map images |
 | `GET /api/v1/fields[?all]` | Raw save fields |
 | `POST /api/v1/reload` | Re-read `data/` after editing it |
 
@@ -136,6 +141,7 @@ against the remake. After editing: `curl -X POST localhost:7437/api/v1/reload`.
 ```sh
 (cd packages/oot_save && dart test)
 (cd packages/oot_tracker && dart test)
+(cd server && dart test)      # OOT_GAME_FILES=<RomFS.img> also extracts every map from the real game
 (cd app && flutter test)     # OOT_SHOTS=<dir> also writes a PNG of every screen
 (cd host && dart run tool/sync_data.dart && flutter test)
 ```
