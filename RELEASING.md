@@ -69,11 +69,11 @@ about fifteen minutes the release appears under *Releases* with:
 
 | File | What it is |
 |---|---|
-| `OoT-Tracker-Server-<tag>-macos-arm64.zip` | the server as a menu-bar app, for Apple-silicon Macs |
+| `OoT-Tracker-Server-<tag>-macos-universal.zip` | the server as a menu-bar app, for Apple-silicon and Intel Macs |
 | `OoT-Tracker-Server-<tag>-windows-x64.zip` | the server as a tray app for Windows |
 | `OoT-Tracker-Server-<tag>-linux-x64.AppImage` | the server as a tray app for Linux, as a single file |
 | `OoT-Tracker-Server-<tag>-linux-x64.tar.gz` | the same as a folder |
-| `OoT-Tracker-<tag>-macos-arm64.zip` | the tracker app for Apple-silicon Macs |
+| `OoT-Tracker-<tag>-macos-universal.zip` | the tracker app for Apple-silicon and Intel Macs |
 | `OoT-Tracker-<tag>-windows-x64.zip` | the tracker app for Windows |
 | `OoT-Tracker-<tag>-linux-x64.AppImage` | the tracker app for Linux, as a single file |
 | `OoT-Tracker-<tag>-linux-x64.tar.gz` | the same as a folder |
@@ -132,12 +132,19 @@ about fifteen minutes the release appears under *Releases* with:
 
 - The Flutter version is pinned as `FLUTTER_VERSION` at the top of both
   workflow files; change it there when you upgrade locally.
-- The macOS app is built for Apple silicon only (`EXCLUDED_ARCHS` in
-  `app/macos/Runner/Configs/Release.xcconfig` and the Podfile). That is also a
-  workaround: Flutter 3.38 cannot verify a universal build with Xcode 27. Once
-  a newer Flutter fixes it, remove those two settings for a universal app.
-- `app/android/gradle.properties` may contain an `org.gradle.java.home` line
-  for your own machine. The Android job removes it and uses its own JDK 21.
+- The macOS apps are universal (Apple silicon and Intel). Flutter will make
+  Apple-silicon-only builds its default at some point; then the `macos-universal`
+  names in `release.yml` are no longer right.
+- The Apple projects take their plugins as Swift packages; there are no
+  Podfiles and CocoaPods is not needed.
+- Android builds with Gradle 9.5, the Android Gradle plugin 9.3.1 and Kotlin
+  2.4.20 (`app/android/settings.gradle.kts`, `gradle-wrapper.properties`),
+  the versions of Flutter's own template. Any JDK from 17 on works.
+- On iOS the toolbar, back button, tab bar, switches and segmented controls
+  are the system's own (`adaptive_platform_ui`): Liquid Glass from iOS 26 on,
+  the classic Cupertino ones before. They are native views, so they can only
+  be checked on a device or in the simulator; the render tests show Cupertino
+  stand-ins.
 - The server app bundles the checklist from `host/assets/data/`, which
   `dart run tool/sync_data.dart` (in `host`) copies from `data/`. The
   workflows run it; a local build that skips it fails on the missing folder.

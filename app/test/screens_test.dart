@@ -6,8 +6,8 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:ui' as ui;
 
-import 'package:flutter/cupertino.dart' show CupertinoIcons;
-import 'package:flutter/material.dart';
+import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoIcons, CupertinoNavigationBarBackButton;
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -17,6 +17,8 @@ import 'package:oot_tracker_app/client.dart';
 import 'package:oot_tracker_app/desktop/linux_app.dart';
 import 'package:oot_tracker_app/desktop/mac_app.dart';
 import 'package:oot_tracker_app/desktop/windows_app.dart';
+import 'package:oot_tracker_app/ios/ios_app.dart';
+import 'package:oot_tracker_app/ios/pages.dart';
 import 'package:oot_tracker_app/main.dart';
 import 'package:oot_tracker_app/screens/area_detail.dart';
 import 'package:oot_tracker_app/screens/map.dart';
@@ -31,8 +33,15 @@ Future<void> loadFonts() async {
         ..addFont(font('Roboto-Medium.ttf')))
       .load();
   await (FontLoader('MaterialIcons')..addFont(font('MaterialIcons-Regular.otf'))).load();
-  // Stand-ins for the interface fonts of macOS, Windows and GNOME.
-  for (final family in ['.AppleSystemUIFont', 'Segoe UI Variable Text', 'Segoe UI', 'Adwaita Sans']) {
+  // Stand-ins for the interface fonts of macOS, iOS, Windows and GNOME.
+  for (final family in [
+    '.AppleSystemUIFont',
+    'CupertinoSystemText',
+    'CupertinoSystemDisplay',
+    'Segoe UI Variable Text',
+    'Segoe UI',
+    'Adwaita Sans',
+  ]) {
     await (FontLoader(family)
           ..addFont(font('Roboto-Regular.ttf'))
           ..addFont(font('Roboto-Medium.ttf')))
@@ -161,6 +170,57 @@ void main() {
       await shot(tester, 'phone-$mode-area');
       if (spoilerFree) expectNoSpoilers(c, 'gerudo_valley');
     });
+
+    // The iOS app on an iPhone and on an iPad, one in light and one in dark
+    // mode each.
+    for (final (device, size) in [('iphone', Size(393, 852)), ('ipad', Size(1024, 768))]) {
+      testWidgets('iOS screens render: $device, $mode', (tester) async {
+        tester.view
+          ..physicalSize = size
+          ..devicePixelRatio = 1;
+        addTearDown(tester.view.reset);
+        tester.platformDispatcher.platformBrightnessTestValue = spoilerFree ? Brightness.light : Brightness.dark;
+        addTearDown(tester.platformDispatcher.clearPlatformBrightnessTestValue);
+        final c = await client(spoilerFree: spoilerFree);
+        await warmMaps(tester, c);
+        await tester.pumpWidget(
+          RepaintBoundary(
+            key: boundary,
+            child: IosApp(client: c),
+          ),
+        );
+        await shot(tester, '$device-$mode-overview');
+        // A category row opens the list of that category across all areas.
+        await tester.ensureVisible(find.text('Heart Pieces'));
+        await tester.pump();
+        await tester.tap(find.text('Heart Pieces'));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 700)); // page transition
+        await shot(tester, '$device-$mode-category');
+        expect(find.byType(IosCategoryPage), findsOneWidget);
+        if (spoilerFree) expectNoSpoilers(c, 'gerudo_valley');
+        await tester.tap(find.byType(CupertinoNavigationBarBackButton));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 700));
+        expect(find.byType(IosCategoryPage), findsNothing);
+        for (final tab in ['Areas', 'Map', 'Settings']) {
+          await tester.tap(find.text(tab).last);
+          await shot(tester, '$device-$mode-${tab.toLowerCase()}');
+        }
+        expect(find.text('Spoiler-free mode'), findsOneWidget);
+        // An area with many entries of several categories.
+        await tester.tap(find.text('Areas').last);
+        await tester.pump(const Duration(milliseconds: 100));
+        await tester.ensureVisible(find.text('Gerudo Valley'));
+        await tester.pump();
+        await tester.tap(find.text('Gerudo Valley'));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 700));
+        await shot(tester, '$device-$mode-area');
+        expect(find.byType(IosAreaPage), findsOneWidget);
+        if (spoilerFree) expectNoSpoilers(c, 'gerudo_valley');
+      });
+    }
 
     testWidgets('area maps render: $mode', (tester) async {
       tester.view

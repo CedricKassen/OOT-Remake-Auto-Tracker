@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:oot_tracker/oot_tracker.dart';
 
+import '../checks.dart';
 import '../widgets.dart';
 
 class AreaDetailScreen extends StatefulWidget {
@@ -218,27 +219,21 @@ class _CategorySection extends StatelessWidget {
     final client = ClientScope.of(context);
     final theme = Theme.of(context);
     final style = CategoryStyle.of(category);
-    final anonymous = area.anonymous[category] ?? 0;
-    final manualOpen = checks.where((c) => !c.auto && !c.done).length;
-    final hasManual = checks.any((c) => !c.auto);
-    // The save counts this category here but cannot say which checks they are.
-    final counted = area.counted.contains(category);
-    final unidentified = counted ? progress.done - checks.where((c) => c.done).length : anonymous;
-
-    // Missing first, then by number or title.
-    final sorted = [...checks]
-      ..sort((a, b) {
-        if (a.done != b.done) return a.done ? 1 : -1;
-        final byNumber = (a.def.number ?? 0).compareTo(b.def.number ?? 0);
-        return byNumber != 0 ? byNumber : a.def.title.compareTo(b.def.title);
-      });
-    final visible = [
-      for (final c in sorted)
-        if (spoilerFree
-            ? c.done
-            : (!missingOnly || !c.done) && (era == 'any' || c.def.era.isEmpty || c.def.era.contains(era)))
-          c,
-    ];
+    final section = CheckSection(
+      area: area,
+      category: category,
+      progress: progress,
+      checks: checks,
+      spoilerFree: spoilerFree,
+      missingOnly: missingOnly,
+      era: era,
+    );
+    final anonymous = section.anonymous;
+    final counted = section.counted;
+    final manualOpen = section.manualOpen;
+    final hasManual = section.hasManual;
+    final unidentified = section.unidentified;
+    final visible = section.visible;
 
     return Padding(
       padding: const EdgeInsets.only(top: 20),
@@ -295,10 +290,7 @@ class _CategorySection extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 4),
               child: Text(
-                counted
-                    ? 'Your save has $unidentified more of these than are ticked. '
-                          'It does not say which, so tick the ones you have.'
-                    : '$unidentified found without saying which. Tick the ones you have.',
+                section.unidentifiedNote!,
                 style: theme.textTheme.bodySmall!.copyWith(color: theme.colorScheme.tertiary),
               ),
             ),
@@ -320,11 +312,7 @@ class _CheckTile extends StatelessWidget {
     final theme = Theme.of(context);
     final def = check.def;
     final title = def.number == null ? def.title : '#${def.number} · ${def.title}';
-    final tags = [
-      if (def.era.length == 1) def.era.first == 'child' ? 'Child' : 'Adult',
-      if (def.night) 'Night',
-      ...def.requires,
-    ];
+    final tags = checkTags(def);
     final dim = check.done ? theme.colorScheme.onSurfaceVariant : null;
 
     final Widget leading = check.auto

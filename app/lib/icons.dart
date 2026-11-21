@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:oot_tracker/oot_tracker.dart';
 
 /// Icons drawn by this app, for things the stock icon sets have no fitting

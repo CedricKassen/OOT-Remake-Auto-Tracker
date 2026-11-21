@@ -20,8 +20,8 @@ dependencies:
   file_selector: ^1.1.0
   path: ^1.9.1
   macos_ui: ^2.2.2
-  # Pinned: later releases need a newer Flutter than this project builds with.
-  fluent_ui: 4.13.0
+  fluent_ui: ^4.17.0
+  material_ui: ^1.11.1
 
 dev_dependencies:
   flutter_test:

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:oot_tracker/oot_tracker.dart';
 
 import '../client.dart';

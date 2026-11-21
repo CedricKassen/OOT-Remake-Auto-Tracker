@@ -143,7 +143,10 @@ class _WindowState extends DesktopShellState<_Window> {
         ),
         paneBodyBuilder: (item, body) => ScaffoldPage(
           padding: const EdgeInsets.only(top: 20),
-          header: PageHeader(title: Text(title), commandBar: commands, padding: 28),
+          header: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 28),
+            child: PageHeader(title: Text(title), commandBar: commands),
+          ),
           content: content(style, material: sharedWidgetTheme(style)),
         ),
       ),

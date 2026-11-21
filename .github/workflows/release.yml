@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 env:
-  FLUTTER_VERSION: 3.38.1
+  FLUTTER_VERSION: 3.50.1
   # What the Flutter Linux builds need; the tray icon needs the appindicator
   # library, and patchelf is used to ship that library with the server app.
   LINUX_PACKAGES: clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libayatana-appindicator3-dev patchelf file
@@ -82,10 +82,10 @@ jobs:
         # newer Visual Studio and the build fails with "could not find any
         # instance of Visual Studio".
         include:
-          - { project: app, title: App, file: OoT-Tracker, product: 'OoT Tracker', os: macos-latest, name: macos-arm64 }
+          - { project: app, title: App, file: OoT-Tracker, product: 'OoT Tracker', os: macos-latest, name: macos-universal }
           - { project: app, title: App, file: OoT-Tracker, product: 'OoT Tracker', os: windows-2022, name: windows-x64 }
           - { project: app, title: App, file: OoT-Tracker, product: 'OoT Tracker', os: ubuntu-latest, name: linux-x64 }
-          - { project: host, title: Server app, file: OoT-Tracker-Server, product: 'OoT Tracker Server', os: macos-latest, name: macos-arm64 }
+          - { project: host, title: Server app, file: OoT-Tracker-Server, product: 'OoT Tracker Server', os: macos-latest, name: macos-universal }
           - { project: host, title: Server app, file: OoT-Tracker-Server, product: 'OoT Tracker Server', os: windows-2022, name: windows-x64 }
           - { project: host, title: Server app, file: OoT-Tracker-Server, product: 'OoT Tracker Server', os: ubuntu-latest, name: linux-x64 }
     steps:
@@ -132,13 +132,21 @@ jobs:
               if [ "${{ matrix.project }}" = host ]; then
                 # Ship the tray-icon libraries with the app: many systems do
                 # not have them installed, and without them it does not
-                # start. Each copy looks for the others next to itself.
-                lib="../dist/$out/lib"
-                ldd "$lib/libtray_manager_plugin.so" | awk '/ayatana|dbusmenu/ { print $3 }' | while read -r so; do
+                # start. Each copy looks for the others next to itself, and so
+                # does the plugin that needs them: a library is only searched
+                # for where the one asking for it says, and the plugin is
+                # built without such a place (the app's own does not count).
+                lib="$(realpath "../dist/$out/lib")"
+                plugin="$lib/libtray_manager_plugin.so"
+                ldd "$plugin" | awk '/ayatana|dbusmenu/ { print $3 }' | while read -r so; do
                   cp -L "$so" "$lib/"
                   patchelf --set-rpath '$ORIGIN' "$lib/$(basename "$so")"
                 done
-                ls "$lib" | grep -q libayatana-appindicator3 || { echo "::error::tray libraries were not bundled"; exit 1; }
+                patchelf --set-rpath '$ORIGIN' "$plugin"
+                # The plugin has to find the copy in the bundle, not the one
+                # installed on this build machine.
+                ldd "$plugin" | grep libayatana-appindicator3 | grep -qF "$lib/" \
+                  || { echo "::error::the tray plugin does not use the bundled libraries"; ldd "$plugin"; exit 1; }
               fi
               (cd ../dist && tar -czf "$out.tar.gz" "$out")
               # The same build once more as a single file that runs anywhere.
@@ -171,9 +179,6 @@ jobs:
           channel: stable
           cache: true
       - run: flutter pub get
-      - name: Use the runner's JDK
-        # gradle.properties may pin a JDK path of the developer's machine.
-        run: sed -i '/^org\.gradle\.java\.home=/d' app/android/gradle.properties
       - name: Set up release signing
         # Optional: without these secrets the APK is signed with a debug key
         # that differs on every run, so it cannot update an installed copy.

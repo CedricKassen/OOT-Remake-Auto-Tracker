@@ -16,7 +16,8 @@ mkdir -p "$appdir"
 cp -a "$bundle/." "$appdir/"
 [ -x "$appdir/$exe" ] || { echo "No executable $exe in $bundle" >&2; exit 66; }
 
-cp "$here/icon.png" "$appdir/$exe.png"
+# app.png and host.png come from tools/icons/make.py.
+cp "$here/${exe#oot_tracker_}.png" "$appdir/$exe.png"
 cat > "$appdir/$exe.desktop" <<DESKTOP
 [Desktop Entry]
 Type=Application

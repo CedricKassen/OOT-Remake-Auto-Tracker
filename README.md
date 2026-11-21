@@ -92,8 +92,8 @@ has to change. A server without the pictures offers no maps at all.
 
 Without it the apps show a drawn diagram of the areas instead. On the desktop
 the app has an interface of its own in the look of each system (macOS,
-Windows 11, GNOME), with a sidebar of all areas; phones and tablets use
-Material.
+Windows 11, GNOME), with a sidebar of all areas; iPhone and iPad get an iOS
+interface with a tab bar, Android uses Material.
 
 ## Layout
 

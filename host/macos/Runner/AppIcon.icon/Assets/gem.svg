@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><defs><linearGradient id="table" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#a5f2bd"/>
+    <stop offset="1" stop-color="#3cbd73"/>
+  </linearGradient>
+  <linearGradient id="f_ul" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e2ffe9"/><stop offset="1" stop-color="#93eaae"/>
+  </linearGradient>
+  <linearGradient id="f_ur" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#8fe8ab"/><stop offset="1" stop-color="#4ccb81"/>
+  </linearGradient>
+  <linearGradient id="f_r" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#36b06c"/><stop offset="1" stop-color="#218a51"/>
+  </linearGradient>
+  <linearGradient id="f_lr" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1f8950"/><stop offset="1" stop-color="#12613a"/>
+  </linearGradient>
+  <linearGradient id="f_ll" x1="1" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#2ba463"/><stop offset="1" stop-color="#187345"/>
+  </linearGradient>
+  <linearGradient id="f_l" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#74dd98"/><stop offset="1" stop-color="#3fbd75"/>
+  </linearGradient>
+  </defs><g>
+<polygon points="512.0,252.2 671.0,382.1 591.5,447.0 512.0,382.1" fill="url(#f_ur)" stroke="url(#f_ur)" stroke-width="1.5"/>
+<polygon points="671.0,382.1 671.0,641.9 591.5,577.0 591.5,447.0" fill="url(#f_r)" stroke="url(#f_r)" stroke-width="1.5"/>
+<polygon points="671.0,641.9 512.0,771.8 512.0,641.9 591.5,577.0" fill="url(#f_lr)" stroke="url(#f_lr)" stroke-width="1.5"/>
+<polygon points="512.0,771.8 353.0,641.9 432.5,577.0 512.0,641.9" fill="url(#f_ll)" stroke="url(#f_ll)" stroke-width="1.5"/>
+<polygon points="353.0,641.9 353.0,382.1 432.5,447.0 432.5,577.0" fill="url(#f_l)" stroke="url(#f_l)" stroke-width="1.5"/>
+<polygon points="353.0,382.1 512.0,252.2 512.0,382.1 432.5,447.0" fill="url(#f_ul)" stroke="url(#f_ul)" stroke-width="1.5"/>
+<polygon points="512.0,382.1 591.5,447.0 591.5,577.0 512.0,641.9 432.5,577.0 432.5,447.0" fill="url(#table)"/>
+</g>
+<g stroke="#eafff0" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round"><line x1="512.0" y1="252.2" x2="512.0" y2="382.1"/><line x1="671.0" y1="382.1" x2="591.5" y2="447.0"/><line x1="671.0" y1="641.9" x2="591.5" y2="577.0"/><line x1="512.0" y1="771.8" x2="512.0" y2="641.9"/><line x1="353.0" y1="641.9" x2="432.5" y2="577.0"/><line x1="353.0" y1="382.1" x2="432.5" y2="447.0"/></g>
+<polygon points="512.0,382.1 591.5,447.0 591.5,577.0 512.0,641.9 432.5,577.0 432.5,447.0" fill="none" stroke="#eafff0" stroke-opacity="0.5" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="353.0,641.9 353.0,382.1 512.0,252.2" fill="none" stroke="#ffffff" stroke-opacity="0.75" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="413.4,304.6 419.2,350.3 464.9,356.1 419.2,361.9 413.4,407.6 407.6,361.9 361.9,356.1 407.6,350.3" fill="#ffffff" fill-opacity="0.95"/></svg>

@@ -3,7 +3,7 @@
 /// Material has no close match for.
 library;
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// GNOME's interface font, then what other desktops ship.
 const adwaitaFont = 'Adwaita Sans';

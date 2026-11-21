@@ -2,6 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:oot_tracker/oot_tracker.dart';
 
 import '../client.dart';
+import '../checks.dart';
 import '../widgets.dart';
 import 'controls.dart';
 import 'style.dart';
@@ -402,22 +403,20 @@ class _CategoryGroup extends StatelessWidget {
     final client = ClientScope.of(context);
     final style = DesktopStyle.of(context);
     final look = CategoryStyle.of(category);
-    final anonymous = area.anonymous[category] ?? 0;
-    final counted = area.counted.contains(category);
-    final manualOpen = checks.where((c) => !c.auto && !c.done).length;
-    final hasManual = checks.any((c) => !c.auto);
-    final unidentified = counted ? progress.done - checks.where((c) => c.done).length : anonymous;
-
-    final sorted = [...checks]
-      ..sort((a, b) {
-        if (a.done != b.done) return a.done ? 1 : -1;
-        final byNumber = (a.def.number ?? 0).compareTo(b.def.number ?? 0);
-        return byNumber != 0 ? byNumber : a.def.title.compareTo(b.def.title);
-      });
-    final visible = [
-      for (final c in sorted)
-        if (spoilerFree ? c.done : !(missingOnly && c.done)) c,
-    ];
+    final section = CheckSection(
+      area: area,
+      category: category,
+      progress: progress,
+      checks: checks,
+      spoilerFree: spoilerFree,
+      missingOnly: missingOnly,
+    );
+    final anonymous = section.anonymous;
+    final counted = section.counted;
+    final manualOpen = section.manualOpen;
+    final hasManual = section.hasManual;
+    final unidentified = section.unidentified;
+    final visible = section.visible;
 
     final rows = <Widget>[
       if (spoilerFree && progress.missing > 0)
@@ -463,13 +462,7 @@ class _CategoryGroup extends StatelessWidget {
         if (!spoilerFree && unidentified > 0)
           Padding(
             padding: const EdgeInsets.fromLTRB(4, 0, 4, 8),
-            child: Text(
-              counted
-                  ? 'Your save has $unidentified more of these than are ticked. '
-                        'It does not say which, so tick the ones you have.'
-                  : '$unidentified found without saying which. Tick the ones you have.',
-              style: style.caption,
-            ),
+            child: Text(section.unidentifiedNote!, style: style.caption),
           ),
         if (rows.isEmpty)
           Padding(
@@ -494,11 +487,7 @@ class _CheckRow extends StatelessWidget {
     final style = DesktopStyle.of(context);
     final def = check.def;
     final title = def.number == null ? def.title : '#${def.number}  ${def.title}';
-    final tags = [
-      if (def.era.length == 1) def.era.first == 'child' ? 'Child' : 'Adult',
-      if (def.night) 'Night',
-      ...def.requires,
-    ];
+    final tags = checkTags(def);
     final details = !spoilerFree && !check.done;
 
     final Widget leading = check.auto

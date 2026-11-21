@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:file_selector/file_selector.dart';
 import 'package:fluent_ui/fluent_ui.dart' as fluent;
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:macos_ui/macos_ui.dart' show MacosTheme, MacosThemeData;
 import 'package:oot_save/oot_save.dart';
 import 'package:oot_ui/oot_ui.dart';

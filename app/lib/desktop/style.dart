@@ -1,6 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart' show FluentIcons;
-import 'package:flutter/cupertino.dart' show CupertinoIcons;
-import 'package:flutter/material.dart';
+import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoIcons;
+import 'package:material_ui/material_ui.dart';
 import 'package:oot_ui/oot_ui.dart';
 
 import '../icons.dart';

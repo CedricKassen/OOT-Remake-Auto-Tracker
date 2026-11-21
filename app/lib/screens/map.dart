@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:oot_tracker/oot_tracker.dart';
 
 import '../widgets.dart';
@@ -192,7 +192,8 @@ class _MapScreenState extends State<MapScreen> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 10),
+          // Clear of whatever covers the lower edge (the tab bar on iOS).
+          padding: EdgeInsets.fromLTRB(16, 8, 16, 10 + MediaQuery.paddingOf(context).bottom),
           child: Text(caption, style: theme.textTheme.bodySmall),
         ),
       ],
