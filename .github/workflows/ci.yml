@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FLUTTER_VERSION: 3.38.1
+
+jobs:
+  test:
+    name: Analyze and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # The repository is one Dart workspace that includes the Flutter app,
+      # so the Flutter SDK (which brings Dart) resolves all of it.
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - name: Analyze
+        run: |
+          dart analyze packages server
+          (cd app && flutter analyze)
+      - name: Test save parser
+        run: dart test
+        working-directory: packages/oot_save
+      - name: Test tracker rules
+        run: dart test
+        working-directory: packages/oot_tracker
+      - name: Test app
+        run: flutter test
+        working-directory: app

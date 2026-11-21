@@ -1,0 +1,5090 @@
+{
+ "maps": [
+  {
+   "id": "KokiriForest",
+   "file": "KokiriForest.png",
+   "width": 1882,
+   "height": 988,
+   "title": "Kokiri Forest",
+   "kind": "field",
+   "location": "KokiriForest",
+   "scenes": [
+    "KokiriForest"
+   ],
+   "bancs": [
+    "KokiriForest_Adult",
+    "KokiriForest_Child"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/KokiriForest_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 6.666667,
+     "bx": 940.333,
+     "az": 6.666667,
+     "bz": 531.0
+    }
+   },
+   "world": {
+    "xmin": -141.05,
+    "xmax": 141.25,
+    "zmin": -79.65,
+    "zmax": 68.55
+   },
+   "floor": null,
+   "areas": [
+    "kokiri_forest"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "KakarikoVillage",
+   "file": "KakarikoVillage.png",
+   "width": 1401,
+   "height": 1360,
+   "title": "Kakariko Village",
+   "kind": "field",
+   "location": "KakarikoVillage",
+   "scenes": [
+    "KakarikoVillage"
+   ],
+   "bancs": [
+    "KakarikoVillage_Adult",
+    "KakarikoVillage_Child",
+    "KakarikoVillage_Adult_Alternative"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/KakarikoVillage_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 8.130081,
+     "bx": 1134.504,
+     "az": 8.130081,
+     "bz": 317.537
+    }
+   },
+   "world": {
+    "xmin": -139.54,
+    "xmax": 32.78,
+    "zmin": -39.06,
+    "zmax": 128.22
+   },
+   "floor": null,
+   "areas": [
+    "kakariko_village"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "LonLonRanch",
+   "file": "LonLonRanch.png",
+   "width": 1200,
+   "height": 1084,
+   "title": "Lon Lon Ranch",
+   "kind": "field",
+   "location": "LonLonRanch",
+   "scenes": [
+    "HyruleField"
+   ],
+   "bancs": [
+    "HyruleField_Child",
+    "HyruleField_Adult"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/LonLonRanch_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 7.246377,
+     "bx": 1238.188,
+     "az": 7.246377,
+     "bz": -1188.884
+    }
+   },
+   "world": {
+    "xmin": -170.87,
+    "xmax": -5.27,
+    "zmin": 164.07,
+    "zmax": 313.66
+   },
+   "floor": null,
+   "areas": [
+    "lon_lon_ranch"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "Market_Child",
+   "file": "Market_Child.png",
+   "width": 1575,
+   "height": 1289,
+   "title": "Castle Town Market",
+   "kind": "field",
+   "location": "Market",
+   "scenes": [
+    "Market"
+   ],
+   "bancs": [
+    "Market_Child"
+   ],
+   "era": "child",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/Market_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 9.345794,
+     "bx": 808.0,
+     "az": 9.345794,
+     "bz": 588.963
+    }
+   },
+   "world": {
+    "xmin": -86.46,
+    "xmax": 82.07,
+    "zmin": -63.02,
+    "zmax": 74.9
+   },
+   "floor": null,
+   "areas": [
+    "castle_town"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "Market_Adult",
+   "file": "Market_Adult.png",
+   "width": 1014,
+   "height": 1289,
+   "title": "Castle Town Market",
+   "kind": "field",
+   "location": "Market",
+   "scenes": [
+    "Market"
+   ],
+   "bancs": [
+    "Market_Adult"
+   ],
+   "era": "adult",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/Market_Adult_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 9.345794,
+     "bx": 247.0,
+     "az": 9.345794,
+     "bz": 588.963
+    }
+   },
+   "world": {
+    "xmin": -26.43,
+    "xmax": 82.07,
+    "zmin": -63.02,
+    "zmax": 74.9
+   },
+   "floor": null,
+   "areas": [
+    "castle_town"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "GoronCity_Child",
+   "file": "GoronCity_Child.png",
+   "width": 1326,
+   "height": 1248,
+   "title": "Goron City",
+   "kind": "field",
+   "location": "GoronCity",
+   "scenes": [
+    "GoronCity"
+   ],
+   "bancs": [
+    "GoronCity_Child"
+   ],
+   "era": "child",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/GoronCity_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 12.820513,
+     "bx": 719.103,
+     "az": 12.820513,
+     "bz": 666.0
+    }
+   },
+   "world": {
+    "xmin": -56.09,
+    "xmax": 47.34,
+    "zmin": -51.95,
+    "zmax": 45.4
+   },
+   "floor": null,
+   "areas": [
+    "goron_city"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "GoronCity_Adult",
+   "file": "GoronCity_Adult.png",
+   "width": 1326,
+   "height": 1289,
+   "title": "Goron City",
+   "kind": "field",
+   "location": "GoronCity",
+   "scenes": [
+    "GoronCity"
+   ],
+   "bancs": [
+    "GoronCity_Adult"
+   ],
+   "era": "adult",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/GoronCity_Adult_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 12.820513,
+     "bx": 719.103,
+     "az": 12.820513,
+     "bz": 707.0
+    }
+   },
+   "world": {
+    "xmin": -56.09,
+    "xmax": 47.34,
+    "zmin": -55.15,
+    "zmax": 45.4
+   },
+   "floor": null,
+   "areas": [
+    "goron_city"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ZoraDomain_Child",
+   "file": "ZoraDomain_Child.png",
+   "width": 1812,
+   "height": 1131,
+   "title": "Zora's Domain",
+   "kind": "field",
+   "location": "ZoraDomain",
+   "scenes": [
+    "ZoraDomain"
+   ],
+   "bancs": [
+    "ZoraDomain_Child"
+   ],
+   "era": "child",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/ZoraDomain_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 13.245033,
+     "bx": 503.649,
+     "az": 13.245033,
+     "bz": 647.43
+    }
+   },
+   "world": {
+    "xmin": -38.03,
+    "xmax": 98.78,
+    "zmin": -48.88,
+    "zmax": 36.51
+   },
+   "floor": null,
+   "areas": [
+    "zoras_domain"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ZoraDomain_Adult",
+   "file": "ZoraDomain_Adult.png",
+   "width": 1812,
+   "height": 1131,
+   "title": "Zora's Domain",
+   "kind": "field",
+   "location": "ZoraDomain",
+   "scenes": [
+    "ZoraDomain"
+   ],
+   "bancs": [
+    "ZoraDomain_Adult",
+    "ZoraDomain_Adult_Alternative"
+   ],
+   "era": "adult",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/ZoraDomain_Adult_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 13.245033,
+     "bx": 503.649,
+     "az": 13.245033,
+     "bz": 647.43
+    }
+   },
+   "world": {
+    "xmin": -38.03,
+    "xmax": 98.78,
+    "zmin": -48.88,
+    "zmax": 36.51
+   },
+   "floor": null,
+   "areas": [
+    "zoras_domain"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "GerudoFortress_Adult",
+   "file": "GerudoFortress_Adult.png",
+   "width": 1638,
+   "height": 1370,
+   "title": "Gerudo's Fortress",
+   "kind": "field",
+   "location": "GerudoFortress",
+   "scenes": [
+    "GerudoFortress"
+   ],
+   "bancs": [
+    "GerudoFortress_Adult"
+   ],
+   "era": "adult",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/GerudoFortress_Adult_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 5.882353,
+     "bx": 329.118,
+     "az": 5.882353,
+     "bz": 786.412
+    }
+   },
+   "world": {
+    "xmin": -55.95,
+    "xmax": 222.51,
+    "zmin": -133.69,
+    "zmax": 99.21
+   },
+   "floor": null,
+   "areas": [
+    "gerudo_fortress"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "LostWood",
+   "file": "LostWood.png",
+   "width": 1234,
+   "height": 1234,
+   "title": "Lost Woods",
+   "kind": "field",
+   "location": "LostWood",
+   "scenes": [
+    "LostWood"
+   ],
+   "bancs": [
+    "LostWood_Adult",
+    "LostWood_Child"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/LostWood_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 5.0,
+     "bx": 587.0,
+     "az": 5.0,
+     "bz": 622.0
+    }
+   },
+   "world": {
+    "xmin": -117.4,
+    "xmax": 129.4,
+    "zmin": -124.4,
+    "zmax": 122.4
+   },
+   "floor": null,
+   "areas": [
+    "lost_woods"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "SacredForestMeadow",
+   "file": "SacredForestMeadow.png",
+   "width": 386,
+   "height": 1434,
+   "title": "Sacred Forest Meadow",
+   "kind": "field",
+   "location": "SacredForestMeadow",
+   "scenes": [
+    "SacredForestMeadow"
+   ],
+   "bancs": [
+    "SacredForestMeadow_Adult",
+    "SacredForestMeadow_Child"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/SacredForestMeadow_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 6.309148,
+     "bx": 226.71,
+     "az": 6.309148,
+     "bz": 872.729
+    }
+   },
+   "world": {
+    "xmin": -35.93,
+    "xmax": 25.25,
+    "zmin": -138.33,
+    "zmax": 88.96
+   },
+   "floor": null,
+   "areas": [
+    "lost_woods"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "HyruleField",
+   "file": "HyruleField.png",
+   "width": 1609,
+   "height": 1276,
+   "title": "Hyrule Field",
+   "kind": "field",
+   "location": "HyruleField",
+   "scenes": [
+    "HyruleField"
+   ],
+   "bancs": [
+    "HyruleField_Adult",
+    "HyruleField_Child"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/HyruleField_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 2.717391,
+     "bx": 929.5,
+     "az": 2.717391,
+     "bz": 75.674
+    }
+   },
+   "world": {
+    "xmin": -342.06,
+    "xmax": 250.06,
+    "zmin": -27.85,
+    "zmax": 441.72
+   },
+   "floor": null,
+   "areas": [
+    "hyrule_field"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "HyruleCastle_Child",
+   "file": "HyruleCastle_Child.png",
+   "width": 957,
+   "height": 1389,
+   "title": "Hyrule Castle",
+   "kind": "field",
+   "location": "HyruleCastle",
+   "scenes": [
+    "HyruleCastle"
+   ],
+   "bancs": [
+    "HyruleCastle"
+   ],
+   "era": "child",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/HyruleCastle_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 8.264463,
+     "bx": 342.0,
+     "az": 8.264463,
+     "bz": 1362.157
+    }
+   },
+   "world": {
+    "xmin": -41.38,
+    "xmax": 74.42,
+    "zmin": -164.82,
+    "zmax": 3.25
+   },
+   "floor": null,
+   "areas": [
+    "hyrule_castle"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "Graveyard",
+   "file": "Graveyard.png",
+   "width": 1868,
+   "height": 758,
+   "title": "Kakariko Graveyard",
+   "kind": "field",
+   "location": "Graveyard",
+   "scenes": [
+    "Graveyard"
+   ],
+   "bancs": [
+    "Graveyard_Adult",
+    "Graveyard_Child"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/Graveyard_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 13.513514,
+     "bx": 630.757,
+     "az": 13.513514,
+     "bz": 322.892
+    }
+   },
+   "world": {
+    "xmin": -46.68,
+    "xmax": 91.56,
+    "zmin": -23.89,
+    "zmax": 32.2
+   },
+   "floor": null,
+   "areas": [
+    "graveyard"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "DeathMountainTrail",
+   "file": "DeathMountainTrail.png",
+   "width": 584,
+   "height": 1328,
+   "title": "Death Mountain Trail",
+   "kind": "field",
+   "location": "DeathMountainTrail",
+   "scenes": [
+    "DeathMountainTrail"
+   ],
+   "bancs": [
+    "DeathMountainTrail_Adult",
+    "DeathMountainTrail_Child"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/DeathMountainTrail_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 5.128205,
+     "bx": 442.692,
+     "az": 5.128205,
+     "bz": 870.615
+    }
+   },
+   "world": {
+    "xmin": -86.32,
+    "xmax": 27.56,
+    "zmin": -169.77,
+    "zmax": 89.19
+   },
+   "floor": null,
+   "areas": [
+    "death_mountain_trail"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "DeathMountainCrater_Child",
+   "file": "DeathMountainCrater_Child.png",
+   "width": 1177,
+   "height": 1346,
+   "title": "Death Mountain Crater",
+   "kind": "field",
+   "location": "DeathMountainCrater",
+   "scenes": [
+    "DeathMountainCrater"
+   ],
+   "bancs": [
+    "DeathMountainCrater_Child"
+   ],
+   "era": "child",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/DeathMountainCrater_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 10.638298,
+     "bx": 650.66,
+     "az": 10.638298,
+     "bz": 578.34
+    }
+   },
+   "world": {
+    "xmin": -61.16,
+    "xmax": 49.48,
+    "zmin": -54.36,
+    "zmax": 72.16
+   },
+   "floor": null,
+   "areas": [
+    "death_mountain_crater"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "DeathMountainCrater_Adult",
+   "file": "DeathMountainCrater_Adult.png",
+   "width": 1287,
+   "height": 1346,
+   "title": "Death Mountain Crater",
+   "kind": "field",
+   "location": "DeathMountainCrater",
+   "scenes": [
+    "DeathMountainCrater"
+   ],
+   "bancs": [
+    "DeathMountainCrater_Adult"
+   ],
+   "era": "adult",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/DeathMountainCrater_Adult_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 10.638298,
+     "bx": 760.66,
+     "az": 10.638298,
+     "bz": 578.34
+    }
+   },
+   "world": {
+    "xmin": -71.5,
+    "xmax": 49.48,
+    "zmin": -54.36,
+    "zmax": 72.16
+   },
+   "floor": null,
+   "areas": [
+    "death_mountain_crater"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ZoraRiver",
+   "file": "ZoraRiver.png",
+   "width": 1947,
+   "height": 934,
+   "title": "Zora's River",
+   "kind": "field",
+   "location": "ZoraRiver",
+   "scenes": [
+    "ZoraRiver"
+   ],
+   "bancs": [
+    "ZoraRiver_Adult",
+    "ZoraRiver_Child"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/ZoraRiver_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 7.54717,
+     "bx": 812.057,
+     "az": 7.54717,
+     "bz": 552.208
+    }
+   },
+   "world": {
+    "xmin": -107.6,
+    "xmax": 150.38,
+    "zmin": -73.17,
+    "zmax": 50.59
+   },
+   "floor": null,
+   "areas": [
+    "zoras_river"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ZoraFountain_Child",
+   "file": "ZoraFountain_Child.png",
+   "width": 1310,
+   "height": 1268,
+   "title": "Zora's Fountain",
+   "kind": "field",
+   "location": "ZoraFountain",
+   "scenes": [
+    "ZoraFountain"
+   ],
+   "bancs": [
+    "ZoraFountain_Child"
+   ],
+   "era": "child",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/ZoraFountain_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 10.25641,
+     "bx": 313.308,
+     "az": 10.25641,
+     "bz": 688.333
+    }
+   },
+   "world": {
+    "xmin": -30.55,
+    "xmax": 97.18,
+    "zmin": -67.11,
+    "zmax": 56.52
+   },
+   "floor": null,
+   "areas": [
+    "zoras_domain"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ZoraFountain_Adult",
+   "file": "ZoraFountain_Adult.png",
+   "width": 1310,
+   "height": 1354,
+   "title": "Zora's Fountain",
+   "kind": "field",
+   "location": "ZoraFountain",
+   "scenes": [
+    "ZoraFountain"
+   ],
+   "bancs": [
+    "ZoraFountain_Adult"
+   ],
+   "era": "adult",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/ZoraFountain_Adult_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 10.25641,
+     "bx": 313.308,
+     "az": 10.25641,
+     "bz": 774.333
+    }
+   },
+   "world": {
+    "xmin": -30.55,
+    "xmax": 97.18,
+    "zmin": -75.5,
+    "zmax": 56.52
+   },
+   "floor": null,
+   "areas": [
+    "zoras_domain"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "LakeHylia_Child",
+   "file": "LakeHylia_Child.png",
+   "width": 1489,
+   "height": 1172,
+   "title": "Lake Hylia",
+   "kind": "field",
+   "location": "LakeHylia",
+   "scenes": [
+    "HyruleField"
+   ],
+   "bancs": [
+    "HyruleField_Child"
+   ],
+   "era": "child",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/LakeHylia_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 4.739336,
+     "bx": 1643.867,
+     "az": 4.739336,
+     "bz": -1749.275
+    }
+   },
+   "world": {
+    "xmin": -346.86,
+    "xmax": -32.68,
+    "zmin": 369.1,
+    "zmax": 616.39
+   },
+   "floor": null,
+   "areas": [
+    "lake_hylia"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "LakeHylia_Adult",
+   "file": "LakeHylia_Adult.png",
+   "width": 1489,
+   "height": 1170,
+   "title": "Lake Hylia",
+   "kind": "field",
+   "location": "LakeHylia",
+   "scenes": [
+    "HyruleField"
+   ],
+   "bancs": [
+    "HyruleField_Adult"
+   ],
+   "era": "adult",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/LakeHylia_Adult_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 4.739336,
+     "bx": 1643.867,
+     "az": 4.739336,
+     "bz": -1749.275
+    }
+   },
+   "world": {
+    "xmin": -346.86,
+    "xmax": -32.68,
+    "zmin": 369.1,
+    "zmax": 615.97
+   },
+   "floor": null,
+   "areas": [
+    "lake_hylia"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "GerudoValley_Child",
+   "file": "GerudoValley_Child.png",
+   "width": 1297,
+   "height": 1428,
+   "title": "Gerudo Valley",
+   "kind": "field",
+   "location": "GerudoValley",
+   "scenes": [
+    "GerudoValley"
+   ],
+   "bancs": [
+    "GerudoValley_Child"
+   ],
+   "era": "child",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/GerudoValley_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 8.333333,
+     "bx": 538.0,
+     "az": 8.333333,
+     "bz": 816.333
+    }
+   },
+   "world": {
+    "xmin": -64.56,
+    "xmax": 91.08,
+    "zmin": -97.96,
+    "zmax": 73.4
+   },
+   "floor": null,
+   "areas": [
+    "gerudo_valley"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "GerudoValley_Adult",
+   "file": "GerudoValley_Adult.png",
+   "width": 1395,
+   "height": 1428,
+   "title": "Gerudo Valley",
+   "kind": "field",
+   "location": "GerudoValley",
+   "scenes": [
+    "GerudoValley"
+   ],
+   "bancs": [
+    "GerudoValley_Adult"
+   ],
+   "era": "adult",
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/GerudoValley_Adult_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 8.333333,
+     "bx": 636.0,
+     "az": 8.333333,
+     "bz": 816.333
+    }
+   },
+   "world": {
+    "xmin": -76.32,
+    "xmax": 91.08,
+    "zmin": -97.96,
+    "zmax": 73.4
+   },
+   "floor": null,
+   "areas": [
+    "gerudo_valley"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "HountedWasteland",
+   "file": "HountedWasteland.png",
+   "width": 1234,
+   "height": 1234,
+   "title": "Haunted Wasteland",
+   "kind": "field",
+   "location": "HountedWasteland",
+   "scenes": [
+    "HountedWasteland"
+   ],
+   "bancs": [
+    "HountedWasteland_Adult",
+    "HountedWasteland_Child"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/HountedWasteland_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 3.100775,
+     "bx": 598.395,
+     "az": 3.100775,
+     "bz": 778.24
+    }
+   },
+   "world": {
+    "xmin": -192.98,
+    "xmax": 204.98,
+    "zmin": -250.98,
+    "zmax": 146.98
+   },
+   "floor": null,
+   "areas": [
+    "desert_colossus"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "DesertColossus",
+   "file": "DesertColossus.png",
+   "width": 1477,
+   "height": 1214,
+   "title": "Desert Colossus",
+   "kind": "field",
+   "location": "DesertColossus",
+   "scenes": [
+    "DesertColossus"
+   ],
+   "bancs": [
+    "DesertColossus_Adult",
+    "DesertColossus_Child"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/DesertColossus_Child_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 6.557377,
+     "bx": 1378.049,
+     "az": 6.557377,
+     "bz": 518.311
+    }
+   },
+   "world": {
+    "xmin": -210.15,
+    "xmax": 15.09,
+    "zmin": -79.04,
+    "zmax": 106.09
+   },
+   "floor": null,
+   "areas": [
+    "desert_colossus"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "InsideTheDekuTree_B2",
+   "file": "InsideTheDekuTree_B2.png",
+   "width": 409,
+   "height": 819,
+   "title": "Inside the Deku Tree B2",
+   "kind": "dungeon",
+   "location": "InsideTheDekuTree",
+   "scenes": [
+    "InsideTheDekuTree"
+   ],
+   "bancs": [
+    "InsideTheDekuTree"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B2",
+    "index": 0,
+    "ymin": null,
+    "ymax": 73.0
+   },
+   "variant": "State00",
+   "variants": [
+    "State00"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/InsideTheDekuTree_B2_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 16.0,
+     "bx": 675.0,
+     "az": 16.0,
+     "bz": 70.0
+    }
+   },
+   "world": {
+    "xmin": -42.19,
+    "xmax": -16.62,
+    "zmin": -4.38,
+    "zmax": 46.81
+   },
+   "areas": [
+    "deku_tree"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "InsideTheDekuTree_B1",
+   "file": "InsideTheDekuTree_B1.png",
+   "width": 1409,
+   "height": 1052,
+   "title": "Inside the Deku Tree B1",
+   "kind": "dungeon",
+   "location": "InsideTheDekuTree",
+   "scenes": [
+    "InsideTheDekuTree"
+   ],
+   "bancs": [
+    "InsideTheDekuTree"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B1",
+    "index": 1,
+    "ymin": 73.0,
+    "ymax": 93.5
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/InsideTheDekuTree_B1_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 16.0,
+     "bx": 1336.0,
+     "az": 16.0,
+     "bz": 228.0
+    }
+   },
+   "world": {
+    "xmin": -83.5,
+    "xmax": 4.56,
+    "zmin": -14.25,
+    "zmax": 51.5
+   },
+   "areas": [
+    "deku_tree"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "InsideTheDekuTree_1F",
+   "file": "InsideTheDekuTree_1F.png",
+   "width": 371,
+   "height": 539,
+   "title": "Inside the Deku Tree 1F",
+   "kind": "dungeon",
+   "location": "InsideTheDekuTree",
+   "scenes": [
+    "InsideTheDekuTree"
+   ],
+   "bancs": [
+    "InsideTheDekuTree"
+   ],
+   "era": null,
+   "floor": {
+    "label": "1F",
+    "index": 2,
+    "ymin": 93.5,
+    "ymax": 106.5
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/InsideTheDekuTree_1F_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 16.0,
+     "bx": 166.0,
+     "az": 16.0,
+     "bz": 232.0
+    }
+   },
+   "world": {
+    "xmin": -10.38,
+    "xmax": 12.81,
+    "zmin": -14.5,
+    "zmax": 19.19
+   },
+   "areas": [
+    "deku_tree"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "InsideTheDekuTree_2F",
+   "file": "InsideTheDekuTree_2F.png",
+   "width": 1164,
+   "height": 566,
+   "title": "Inside the Deku Tree 2F",
+   "kind": "dungeon",
+   "location": "InsideTheDekuTree",
+   "scenes": [
+    "InsideTheDekuTree"
+   ],
+   "bancs": [
+    "InsideTheDekuTree"
+   ],
+   "era": null,
+   "floor": {
+    "label": "2F",
+    "index": 3,
+    "ymin": 106.5,
+    "ymax": 118.0
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/InsideTheDekuTree_2F_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 16.0,
+     "bx": 969.0,
+     "az": 16.0,
+     "bz": 204.0
+    }
+   },
+   "world": {
+    "xmin": -60.56,
+    "xmax": 12.19,
+    "zmin": -12.75,
+    "zmax": 22.62
+   },
+   "areas": [
+    "deku_tree"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "InsideTheDekuTree_3F",
+   "file": "InsideTheDekuTree_3F.png",
+   "width": 1276,
+   "height": 459,
+   "title": "Inside the Deku Tree 3F",
+   "kind": "dungeon",
+   "location": "InsideTheDekuTree",
+   "scenes": [
+    "InsideTheDekuTree"
+   ],
+   "bancs": [
+    "InsideTheDekuTree"
+   ],
+   "era": null,
+   "floor": {
+    "label": "3F",
+    "index": 4,
+    "ymin": 118.0,
+    "ymax": null
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/InsideTheDekuTree_3F_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 16.0,
+     "bx": 1068.0,
+     "az": 16.0,
+     "bz": 240.0
+    }
+   },
+   "world": {
+    "xmin": -66.75,
+    "xmax": 13.0,
+    "zmin": -15.0,
+    "zmax": 13.69
+   },
+   "areas": [
+    "deku_tree"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "DodongoCavern_1F",
+   "file": "DodongoCavern_1F.png",
+   "width": 1388,
+   "height": 1271,
+   "title": "Dodongo's Cavern 1F",
+   "kind": "dungeon",
+   "location": "DodongoCavern",
+   "scenes": [
+    "DodongoCavern"
+   ],
+   "bancs": [
+    "DodongoCavern"
+   ],
+   "era": null,
+   "floor": {
+    "label": "1F",
+    "index": 0,
+    "ymin": null,
+    "ymax": 108.017
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/DodongoCavern_1F_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 7.8125,
+     "bx": 471.812,
+     "az": 7.8125,
+     "bz": 894.375
+    }
+   },
+   "world": {
+    "xmin": -60.39,
+    "xmax": 117.27,
+    "zmin": -114.48,
+    "zmax": 48.21
+   },
+   "areas": [
+    "dodongos_cavern"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "DodongoCavern_2F",
+   "file": "DodongoCavern_2F.png",
+   "width": 1479,
+   "height": 632,
+   "title": "Dodongo's Cavern 2F",
+   "kind": "dungeon",
+   "location": "DodongoCavern",
+   "scenes": [
+    "DodongoCavern"
+   ],
+   "bancs": [
+    "DodongoCavern"
+   ],
+   "era": null,
+   "floor": {
+    "label": "2F",
+    "index": 1,
+    "ymin": 108.017,
+    "ymax": null
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/DodongoCavern_2F_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 7.8125,
+     "bx": 487.812,
+     "az": 7.8125,
+     "bz": 576.375
+    }
+   },
+   "world": {
+    "xmin": -62.44,
+    "xmax": 126.87,
+    "zmin": -73.78,
+    "zmax": 7.12
+   },
+   "areas": [
+    "dodongos_cavern"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "InsideJabuJabuBelly_B1",
+   "file": "InsideJabuJabuBelly_B1.png",
+   "width": 525,
+   "height": 437,
+   "title": "Inside Jabu-Jabu's Belly B1",
+   "kind": "dungeon",
+   "location": "InsideJabuJabuBelly",
+   "scenes": [
+    "InsideJabuJabuBelly"
+   ],
+   "bancs": [
+    "InsideJabuJabuBelly"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B1",
+    "index": 0,
+    "ymin": null,
+    "ymax": 88.524
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/InsideJabuJabuBelly_B1_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 6.097561,
+     "bx": 267.098,
+     "az": 6.097561,
+     "bz": 638.976
+    }
+   },
+   "world": {
+    "xmin": -43.8,
+    "xmax": 42.3,
+    "zmin": -104.79,
+    "zmax": -33.12
+   },
+   "areas": [
+    "jabu_jabu"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "InsideJabuJabuBelly_1F",
+   "file": "InsideJabuJabuBelly_1F.png",
+   "width": 542,
+   "height": 1307,
+   "title": "Inside Jabu-Jabu's Belly 1F",
+   "kind": "dungeon",
+   "location": "InsideJabuJabuBelly",
+   "scenes": [
+    "InsideJabuJabuBelly"
+   ],
+   "bancs": [
+    "InsideJabuJabuBelly"
+   ],
+   "era": null,
+   "floor": {
+    "label": "1F",
+    "index": 1,
+    "ymin": 88.524,
+    "ymax": 95.925
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/InsideJabuJabuBelly_1F_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 6.097561,
+     "bx": 266.098,
+     "az": 6.097561,
+     "bz": 1251.976
+    }
+   },
+   "world": {
+    "xmin": -43.64,
+    "xmax": 45.25,
+    "zmin": -205.32,
+    "zmax": 9.02
+   },
+   "areas": [
+    "jabu_jabu"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "InsideJabuJabuBelly_2F",
+   "file": "InsideJabuJabuBelly_2F.png",
+   "width": 599,
+   "height": 452,
+   "title": "Inside Jabu-Jabu's Belly 2F",
+   "kind": "dungeon",
+   "location": "InsideJabuJabuBelly",
+   "scenes": [
+    "InsideJabuJabuBelly"
+   ],
+   "bancs": [
+    "InsideJabuJabuBelly"
+   ],
+   "era": null,
+   "floor": {
+    "label": "2F",
+    "index": 2,
+    "ymin": 95.925,
+    "ymax": null
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/InsideJabuJabuBelly_2F_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 6.097561,
+     "bx": 266.098,
+     "az": 6.097561,
+     "bz": 636.976
+    }
+   },
+   "world": {
+    "xmin": -43.64,
+    "xmax": 54.6,
+    "zmin": -104.46,
+    "zmax": -30.34
+   },
+   "areas": [
+    "jabu_jabu"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ForestTemple_B2",
+   "file": "ForestTemple_B2.png",
+   "width": 395,
+   "height": 527,
+   "title": "Forest Temple B2",
+   "kind": "dungeon",
+   "location": "ForestTemple",
+   "scenes": [
+    "ForestTemple"
+   ],
+   "bancs": [
+    "ForestTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B2",
+    "index": 0,
+    "ymin": null,
+    "ymax": 69.165
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/ForestTemple_B2_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 8.163265,
+     "bx": 178.49,
+     "az": 8.163265,
+     "bz": 342.02
+    }
+   },
+   "world": {
+    "xmin": -21.86,
+    "xmax": 26.52,
+    "zmin": -41.9,
+    "zmax": 22.66
+   },
+   "areas": [
+    "forest_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ForestTemple_B1",
+   "file": "ForestTemple_B1.png",
+   "width": 464,
+   "height": 465,
+   "title": "Forest Temple B1",
+   "kind": "dungeon",
+   "location": "ForestTemple",
+   "scenes": [
+    "ForestTemple"
+   ],
+   "bancs": [
+    "ForestTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B1",
+    "index": 1,
+    "ymin": 69.165,
+    "ymax": 94.52
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/ForestTemple_B1_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 8.163265,
+     "bx": 307.49,
+     "az": 8.163265,
+     "bz": 369.02
+    }
+   },
+   "world": {
+    "xmin": -37.67,
+    "xmax": 19.17,
+    "zmin": -45.2,
+    "zmax": 11.76
+   },
+   "areas": [
+    "forest_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ForestTemple_1F",
+   "file": "ForestTemple_1F.png",
+   "width": 1219,
+   "height": 1251,
+   "title": "Forest Temple 1F",
+   "kind": "dungeon",
+   "location": "ForestTemple",
+   "scenes": [
+    "ForestTemple"
+   ],
+   "bancs": [
+    "ForestTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "1F",
+    "index": 2,
+    "ymin": 94.52,
+    "ymax": 112.198
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/ForestTemple_1F_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 8.163265,
+     "bx": 662.49,
+     "az": 8.163265,
+     "bz": 566.02
+    }
+   },
+   "world": {
+    "xmin": -81.15,
+    "xmax": 68.17,
+    "zmin": -69.34,
+    "zmax": 83.91
+   },
+   "areas": [
+    "forest_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ForestTemple_2F",
+   "file": "ForestTemple_2F.png",
+   "width": 1184,
+   "height": 1267,
+   "title": "Forest Temple 2F",
+   "kind": "dungeon",
+   "location": "ForestTemple",
+   "scenes": [
+    "ForestTemple"
+   ],
+   "bancs": [
+    "ForestTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "2F",
+    "index": 3,
+    "ymin": 112.198,
+    "ymax": 122.544
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01",
+    "State02",
+    "State03"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/ForestTemple_2F_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 8.163265,
+     "bx": 662.49,
+     "az": 8.163265,
+     "bz": 582.02
+    }
+   },
+   "world": {
+    "xmin": -81.15,
+    "xmax": 63.89,
+    "zmin": -71.3,
+    "zmax": 83.91
+   },
+   "areas": [
+    "forest_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ForestTemple_3F",
+   "file": "ForestTemple_3F.png",
+   "width": 1193,
+   "height": 727,
+   "title": "Forest Temple 3F",
+   "kind": "dungeon",
+   "location": "ForestTemple",
+   "scenes": [
+    "ForestTemple"
+   ],
+   "bancs": [
+    "ForestTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "3F",
+    "index": 4,
+    "ymin": 122.544,
+    "ymax": null
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01",
+    "State02",
+    "State03"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/ForestTemple_3F_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 8.163265,
+     "bx": 662.49,
+     "az": 8.163265,
+     "bz": 560.02
+    }
+   },
+   "world": {
+    "xmin": -81.15,
+    "xmax": 64.99,
+    "zmin": -68.6,
+    "zmax": 20.46
+   },
+   "areas": [
+    "forest_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "FireTemple_1F",
+   "file": "FireTemple_1F.png",
+   "width": 1476,
+   "height": 987,
+   "title": "Fire Temple 1F",
+   "kind": "dungeon",
+   "location": "FireTemple",
+   "scenes": [
+    "FireTemple"
+   ],
+   "bancs": [
+    "FireTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "1F",
+    "index": 0,
+    "ymin": null,
+    "ymax": 126.954
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/FireTemple_1F_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 9.090909,
+     "bx": 403.455,
+     "az": 9.090909,
+     "bz": 483.273
+    }
+   },
+   "world": {
+    "xmin": -44.38,
+    "xmax": 117.98,
+    "zmin": -53.16,
+    "zmax": 55.41
+   },
+   "areas": [
+    "fire_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "FireTemple_2F",
+   "file": "FireTemple_2F.png",
+   "width": 1356,
+   "height": 401,
+   "title": "Fire Temple 2F",
+   "kind": "dungeon",
+   "location": "FireTemple",
+   "scenes": [
+    "FireTemple"
+   ],
+   "bancs": [
+    "FireTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "2F",
+    "index": 1,
+    "ymin": 126.954,
+    "ymax": 145.014
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/FireTemple_2F_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 9.090909,
+     "bx": 357.455,
+     "az": 9.090909,
+     "bz": 199.273
+    }
+   },
+   "world": {
+    "xmin": -39.32,
+    "xmax": 109.84,
+    "zmin": -21.92,
+    "zmax": 22.19
+   },
+   "areas": [
+    "fire_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "FireTemple_3F",
+   "file": "FireTemple_3F.png",
+   "width": 1592,
+   "height": 842,
+   "title": "Fire Temple 3F",
+   "kind": "dungeon",
+   "location": "FireTemple",
+   "scenes": [
+    "FireTemple"
+   ],
+   "bancs": [
+    "FireTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "3F",
+    "index": 2,
+    "ymin": 145.014,
+    "ymax": 166.91
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/FireTemple_3F_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 9.090909,
+     "bx": 768.455,
+     "az": 9.090909,
+     "bz": 436.273
+    }
+   },
+   "world": {
+    "xmin": -84.53,
+    "xmax": 90.59,
+    "zmin": -47.99,
+    "zmax": 44.63
+   },
+   "areas": [
+    "fire_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "FireTemple_4F",
+   "file": "FireTemple_4F.png",
+   "width": 1121,
+   "height": 525,
+   "title": "Fire Temple 4F",
+   "kind": "dungeon",
+   "location": "FireTemple",
+   "scenes": [
+    "FireTemple"
+   ],
+   "bancs": [
+    "FireTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "4F",
+    "index": 3,
+    "ymin": 166.91,
+    "ymax": 185.399
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/FireTemple_4F_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 9.090909,
+     "bx": 700.455,
+     "az": 9.090909,
+     "bz": 339.273
+    }
+   },
+   "world": {
+    "xmin": -77.05,
+    "xmax": 46.26,
+    "zmin": -37.32,
+    "zmax": 20.43
+   },
+   "areas": [
+    "fire_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "FireTemple_5F",
+   "file": "FireTemple_5F.png",
+   "width": 1273,
+   "height": 446,
+   "title": "Fire Temple 5F",
+   "kind": "dungeon",
+   "location": "FireTemple",
+   "scenes": [
+    "FireTemple"
+   ],
+   "bancs": [
+    "FireTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "5F",
+    "index": 4,
+    "ymin": 185.399,
+    "ymax": null
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/FireTemple_5F_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 9.090909,
+     "bx": 677.455,
+     "az": 9.090909,
+     "bz": 221.273
+    }
+   },
+   "world": {
+    "xmin": -74.52,
+    "xmax": 65.51,
+    "zmin": -24.34,
+    "zmax": 24.72
+   },
+   "areas": [
+    "fire_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "WaterTemple_B1",
+   "file": "WaterTemple_B1.png",
+   "width": 651,
+   "height": 568,
+   "title": "Water Temple B1",
+   "kind": "dungeon",
+   "location": "WaterTemple",
+   "scenes": [
+    "WaterTemple"
+   ],
+   "bancs": [
+    "WaterTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B1",
+    "index": 0,
+    "ymin": null,
+    "ymax": 96.974
+   },
+   "variant": "Lv1",
+   "variants": [
+    "Lv1",
+    "Lv2",
+    "Lv3"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/WaterTemple_B1_Lv1_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 7.604563,
+     "bx": 535.51,
+     "az": 7.604563,
+     "bz": 358.205
+    }
+   },
+   "world": {
+    "xmin": -70.42,
+    "xmax": 15.19,
+    "zmin": -47.1,
+    "zmax": 27.59
+   },
+   "areas": [
+    "water_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "WaterTemple_1F",
+   "file": "WaterTemple_1F.png",
+   "width": 939,
+   "height": 1191,
+   "title": "Water Temple 1F",
+   "kind": "dungeon",
+   "location": "WaterTemple",
+   "scenes": [
+    "WaterTemple"
+   ],
+   "bancs": [
+    "WaterTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "1F",
+    "index": 1,
+    "ymin": 96.974,
+    "ymax": 108.7
+   },
+   "variant": "Lv1_State00",
+   "variants": [
+    "Lv1_State00",
+    "Lv1_State01",
+    "Lv2_State00",
+    "Lv2_State01",
+    "Lv3_State00",
+    "Lv3_State01"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/WaterTemple_1F_Lv1_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 7.604563,
+     "bx": 535.51,
+     "az": 7.604563,
+     "bz": 980.205
+    }
+   },
+   "world": {
+    "xmin": -70.42,
+    "xmax": 53.06,
+    "zmin": -128.9,
+    "zmax": 27.72
+   },
+   "areas": [
+    "water_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "WaterTemple_2F",
+   "file": "WaterTemple_2F.png",
+   "width": 1214,
+   "height": 1110,
+   "title": "Water Temple 2F",
+   "kind": "dungeon",
+   "location": "WaterTemple",
+   "scenes": [
+    "WaterTemple"
+   ],
+   "bancs": [
+    "WaterTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "2F",
+    "index": 2,
+    "ymin": 108.7,
+    "ymax": 115.61
+   },
+   "variant": "Lv1",
+   "variants": [
+    "Lv1",
+    "Lv2",
+    "Lv3"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/WaterTemple_2F_Lv1_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 7.604563,
+     "bx": 757.51,
+     "az": 7.604563,
+     "bz": 968.205
+    }
+   },
+   "world": {
+    "xmin": -99.61,
+    "xmax": 60.03,
+    "zmin": -127.32,
+    "zmax": 18.65
+   },
+   "areas": [
+    "water_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "WaterTemple_3F",
+   "file": "WaterTemple_3F.png",
+   "width": 1115,
+   "height": 1380,
+   "title": "Water Temple 3F",
+   "kind": "dungeon",
+   "location": "WaterTemple",
+   "scenes": [
+    "WaterTemple"
+   ],
+   "bancs": [
+    "WaterTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "3F",
+    "index": 3,
+    "ymin": 115.61,
+    "ymax": null
+   },
+   "variant": "Lv1",
+   "variants": [
+    "Lv1",
+    "Lv2",
+    "Lv3"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/WaterTemple_3F_Lv1_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 7.604563,
+     "bx": 788.51,
+     "az": 7.604563,
+     "bz": 1002.205
+    }
+   },
+   "world": {
+    "xmin": -103.69,
+    "xmax": 42.93,
+    "zmin": -131.79,
+    "zmax": 49.68
+   },
+   "areas": [
+    "water_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ShadowTemple_B4",
+   "file": "ShadowTemple_B4.png",
+   "width": 1946,
+   "height": 688,
+   "title": "Shadow Temple B4",
+   "kind": "dungeon",
+   "location": "ShadowTemple",
+   "scenes": [
+    "ShadowTemple"
+   ],
+   "bancs": [
+    "ShadowTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B4",
+    "index": 0,
+    "ymin": null,
+    "ymax": 49.342
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/ShadowTemple_B4_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 4.618938,
+     "bx": 1085.617,
+     "az": 4.618938,
+     "bz": 592.667
+    }
+   },
+   "world": {
+    "xmin": -235.04,
+    "xmax": 186.27,
+    "zmin": -128.31,
+    "zmax": 20.64
+   },
+   "areas": [
+    "shadow_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ShadowTemple_B3",
+   "file": "ShadowTemple_B3.png",
+   "width": 878,
+   "height": 752,
+   "title": "Shadow Temple B3",
+   "kind": "dungeon",
+   "location": "ShadowTemple",
+   "scenes": [
+    "ShadowTemple"
+   ],
+   "bancs": [
+    "ShadowTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B3",
+    "index": 1,
+    "ymin": 49.342,
+    "ymax": 72.853
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/ShadowTemple_B3_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 4.618938,
+     "bx": 24.617,
+     "az": 4.618938,
+     "bz": 230.667
+    }
+   },
+   "world": {
+    "xmin": -5.33,
+    "xmax": 184.76,
+    "zmin": -49.94,
+    "zmax": 112.87
+   },
+   "areas": [
+    "shadow_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ShadowTemple_B2",
+   "file": "ShadowTemple_B2.png",
+   "width": 324,
+   "height": 445,
+   "title": "Shadow Temple B2",
+   "kind": "dungeon",
+   "location": "ShadowTemple",
+   "scenes": [
+    "ShadowTemple"
+   ],
+   "bancs": [
+    "ShadowTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B2",
+    "index": 2,
+    "ymin": 72.853,
+    "ymax": 89.854
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/ShadowTemple_B2_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 4.618938,
+     "bx": -276.383,
+     "az": 4.618938,
+     "bz": 226.667
+    }
+   },
+   "world": {
+    "xmin": 59.84,
+    "xmax": 129.98,
+    "zmin": -49.07,
+    "zmax": 47.27
+   },
+   "areas": [
+    "shadow_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "ShadowTemple_B1",
+   "file": "ShadowTemple_B1.png",
+   "width": 765,
+   "height": 491,
+   "title": "Shadow Temple B1",
+   "kind": "dungeon",
+   "location": "ShadowTemple",
+   "scenes": [
+    "ShadowTemple"
+   ],
+   "bancs": [
+    "ShadowTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B1",
+    "index": 3,
+    "ymin": 89.854,
+    "ymax": null
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/ShadowTemple_B1_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 4.618938,
+     "bx": 396.617,
+     "az": 4.618938,
+     "bz": 155.667
+    }
+   },
+   "world": {
+    "xmin": -85.87,
+    "xmax": 79.76,
+    "zmin": -33.7,
+    "zmax": 72.6
+   },
+   "areas": [
+    "shadow_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "SpiritTemple_1F",
+   "file": "SpiritTemple_1F.png",
+   "width": 1187,
+   "height": 1078,
+   "title": "Spirit Temple 1F",
+   "kind": "dungeon",
+   "location": "SpiritTemple",
+   "scenes": [
+    "SpiritTemple"
+   ],
+   "bancs": [
+    "SpiritTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "1F",
+    "index": 0,
+    "ymin": null,
+    "ymax": 113.764
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/SpiritTemple_1F_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 9.90099,
+     "bx": 593.0,
+     "az": 9.90099,
+     "bz": 919.624
+    }
+   },
+   "world": {
+    "xmin": -59.89,
+    "xmax": 59.99,
+    "zmin": -92.88,
+    "zmax": 16.0
+   },
+   "areas": [
+    "spirit_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "SpiritTemple_2F",
+   "file": "SpiritTemple_2F.png",
+   "width": 893,
+   "height": 429,
+   "title": "Spirit Temple 2F",
+   "kind": "dungeon",
+   "location": "SpiritTemple",
+   "scenes": [
+    "SpiritTemple"
+   ],
+   "bancs": [
+    "SpiritTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "2F",
+    "index": 1,
+    "ymin": 113.764,
+    "ymax": 128.0
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/SpiritTemple_2F_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 9.90099,
+     "bx": 429.0,
+     "az": 9.90099,
+     "bz": 713.624
+    }
+   },
+   "world": {
+    "xmin": -43.33,
+    "xmax": 46.86,
+    "zmin": -72.08,
+    "zmax": -28.75
+   },
+   "areas": [
+    "spirit_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "SpiritTemple_3F",
+   "file": "SpiritTemple_3F.png",
+   "width": 1291,
+   "height": 1224,
+   "title": "Spirit Temple 3F",
+   "kind": "dungeon",
+   "location": "SpiritTemple",
+   "scenes": [
+    "SpiritTemple"
+   ],
+   "bancs": [
+    "SpiritTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "3F",
+    "index": 2,
+    "ymin": 128.0,
+    "ymax": 150.269
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01",
+    "State02"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/SpiritTemple_3F_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 9.90099,
+     "bx": 644.0,
+     "az": 9.90099,
+     "bz": 763.624
+    }
+   },
+   "world": {
+    "xmin": -65.04,
+    "xmax": 65.35,
+    "zmin": -77.13,
+    "zmax": 46.5
+   },
+   "areas": [
+    "spirit_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "SpiritTemple_4F",
+   "file": "SpiritTemple_4F.png",
+   "width": 601,
+   "height": 766,
+   "title": "Spirit Temple 4F",
+   "kind": "dungeon",
+   "location": "SpiritTemple",
+   "scenes": [
+    "SpiritTemple"
+   ],
+   "bancs": [
+    "SpiritTemple"
+   ],
+   "era": null,
+   "floor": {
+    "label": "4F",
+    "index": 3,
+    "ymin": 150.269,
+    "ymax": null
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/SpiritTemple_4F_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 9.90099,
+     "bx": 304.0,
+     "az": 9.90099,
+     "bz": 868.624
+    }
+   },
+   "world": {
+    "xmin": -30.7,
+    "xmax": 30.0,
+    "zmin": -87.73,
+    "zmax": -10.37
+   },
+   "areas": [
+    "spirit_temple"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "BottomOfTheWell_B2",
+   "file": "BottomOfTheWell_B2.png",
+   "width": 565,
+   "height": 1029,
+   "title": "Bottom of the Well B2",
+   "kind": "dungeon",
+   "location": "BottomOfTheWell",
+   "scenes": [
+    "BottomOfTheWell"
+   ],
+   "bancs": [
+    "BottomOfTheWell"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B2",
+    "index": 0,
+    "ymin": null,
+    "ymax": 96.04
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/BottomOfTheWell_B2_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 8.403361,
+     "bx": 255.84,
+     "az": 8.403361,
+     "bz": 953.908
+    }
+   },
+   "world": {
+    "xmin": -30.44,
+    "xmax": 36.79,
+    "zmin": -113.51,
+    "zmax": 8.94
+   },
+   "areas": [
+    "bottom_of_the_well"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "BottomOfTheWell_B1",
+   "file": "BottomOfTheWell_B1.png",
+   "width": 848,
+   "height": 1312,
+   "title": "Bottom of the Well B1",
+   "kind": "dungeon",
+   "location": "BottomOfTheWell",
+   "scenes": [
+    "BottomOfTheWell"
+   ],
+   "bancs": [
+    "BottomOfTheWell"
+   ],
+   "era": null,
+   "floor": {
+    "label": "B1",
+    "index": 1,
+    "ymin": 96.04,
+    "ymax": null
+   },
+   "variant": "State00",
+   "variants": [
+    "State00",
+    "State01"
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/BottomOfTheWell_B1_State00_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 8.403361,
+     "bx": 540.84,
+     "az": 8.403361,
+     "bz": 871.908
+    }
+   },
+   "world": {
+    "xmin": -64.36,
+    "xmax": 36.55,
+    "zmin": -103.76,
+    "zmax": 52.37
+   },
+   "areas": [
+    "bottom_of_the_well"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "IceCavern_1F",
+   "file": "IceCavern_1F.png",
+   "width": 1088,
+   "height": 1368,
+   "title": "Ice Cavern 1F",
+   "kind": "dungeon",
+   "location": "IceCavern",
+   "scenes": [
+    "IceCavern"
+   ],
+   "bancs": [
+    "IceCavern"
+   ],
+   "era": null,
+   "floor": {
+    "label": "1F",
+    "index": 0,
+    "ymin": null,
+    "ymax": null
+   },
+   "variant": null,
+   "variants": [
+    null
+   ],
+   "source": "UI/CustomTex/Map/Dungeon/IceCavern_1F_Main.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 6.968641,
+     "bx": 434.345,
+     "az": 6.968641,
+     "bz": 609.376
+    }
+   },
+   "world": {
+    "xmin": -62.33,
+    "xmax": 93.8,
+    "zmin": -87.45,
+    "zmax": 108.86
+   },
+   "areas": [
+    "ice_cavern"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "GanonCastle",
+   "file": "GanonCastle.png",
+   "width": 947,
+   "height": 1183,
+   "title": "Ganon's Castle (outside)",
+   "kind": "field",
+   "location": "GanonCastle",
+   "scenes": [
+    "GanonCastle"
+   ],
+   "bancs": [
+    "GanonCastle"
+   ],
+   "era": null,
+   "variant": null,
+   "source": "UI/CustomTex/Map/Field/GanonCastle_Adult_00.bntx.zs",
+   "transform": {
+    "*": {
+     "ax": 7.462687,
+     "bx": -35.224,
+     "az": 7.462687,
+     "bz": -1563.418
+    }
+   },
+   "world": {
+    "xmin": 4.72,
+    "xmax": 131.62,
+    "zmin": 209.5,
+    "zmax": 368.02
+   },
+   "floor": null,
+   "areas": [
+    "hyrule_castle"
+   ],
+   "confidence": "exact"
+  },
+  {
+   "id": "world",
+   "file": "world.png",
+   "width": 2048,
+   "height": 1493,
+   "title": "Hyrule",
+   "kind": "world",
+   "location": null,
+   "scenes": [],
+   "bancs": [],
+   "era": null,
+   "transform": {},
+   "world": null,
+   "floor": null,
+   "variant": null,
+   "source": "UI/Layout2Archive/Common.Product.100.Nin_Ounce_NVN2.bntx.zs:MapTexWorldAll_00",
+   "confidence": "none"
+  }
+ ],
+ "instances": {
+  "9623998892552467148": {
+   "maps": [
+    "KokiriForest"
+   ],
+   "pos": [
+    8.242,
+    112.638,
+    -23.306
+   ]
+  },
+  "17067594426901953848": {
+   "maps": [
+    "KokiriForest"
+   ],
+   "pos": [
+    -83.79,
+    117.854,
+    -17.619
+   ]
+  },
+  "7116603238806634901": {
+   "maps": [
+    "KokiriForest"
+   ],
+   "pos": [
+    18.04,
+    117.175,
+    18.876
+   ]
+  },
+  "14107117960174262321": {
+   "maps": [
+    "KakarikoVillage"
+   ],
+   "pos": [
+    -60.712,
+    102.131,
+    59.55
+   ]
+  },
+  "15314554401574296838": {
+   "maps": [
+    "KakarikoVillage"
+   ],
+   "pos": [
+    -29.076,
+    103.087,
+    60.512
+   ]
+  },
+  "7677963516305772491": {
+   "maps": [
+    "KakarikoVillage"
+   ],
+   "pos": [
+    -73.6,
+    104.458,
+    43.477
+   ]
+  },
+  "11629189455828560791": {
+   "maps": [
+    "KakarikoVillage"
+   ],
+   "pos": [
+    -75.007,
+    105.288,
+    2.173
+   ]
+  },
+  "15118290503807073158": {
+   "maps": [
+    "KakarikoVillage"
+   ],
+   "pos": [
+    -48.108,
+    110.91,
+    18.4
+   ]
+  },
+  "12012336414699946951": {
+   "maps": [
+    "KakarikoVillage"
+   ],
+   "pos": [
+    -27.759,
+    103.207,
+    80.588
+   ]
+  },
+  "1416092057268113387": {
+   "maps": [
+    "KakarikoVillage"
+   ],
+   "pos": [
+    -36.104,
+    107.505,
+    28.966
+   ]
+  },
+  "1051454338871863592": {
+   "maps": [
+    "KakarikoVillage"
+   ],
+   "pos": [
+    -44.077,
+    107.971,
+    112.002
+   ]
+  },
+  "3518965357024502806": {
+   "maps": [
+    "KakarikoVillage"
+   ],
+   "pos": [
+    1.482,
+    108.897,
+    37.522
+   ]
+  },
+  "3310819903461047792": {
+   "maps": [
+    "KakarikoVillage"
+   ],
+   "pos": [
+    -38.738,
+    113.699,
+    115.476
+   ]
+  },
+  "15889002414176907668": {
+   "maps": [
+    "LonLonRanch"
+   ],
+   "pos": [
+    -63.216,
+    156.388,
+    212.386
+   ]
+  },
+  "341792603838029977": {
+   "maps": [
+    "LonLonRanch"
+   ],
+   "pos": [
+    -39.552,
+    158.25,
+    200.673
+   ]
+  },
+  "2730878115209290675": {
+   "maps": [
+    "LonLonRanch"
+   ],
+   "pos": [
+    -147.439,
+    159.206,
+    268.232
+   ]
+  },
+  "11156084763374250886": {
+   "maps": [
+    "LonLonRanch"
+   ],
+   "pos": [
+    -157.154,
+    150.931,
+    266.443
+   ]
+  },
+  "8942465719711548237": {
+   "maps": [
+    "Market_Child",
+    "Market_Adult"
+   ],
+   "pos": [
+    17.381,
+    102.096,
+    58.357
+   ]
+  },
+  "8568137720802848289": {
+   "maps": [
+    "Market_Child",
+    "Market_Adult"
+   ],
+   "pos": [
+    1.661,
+    100.086,
+    26.596
+   ]
+  },
+  "11628104451986877978": {
+   "maps": [
+    "Market_Child",
+    "Market_Adult"
+   ],
+   "pos": [
+    -22.007,
+    109.966,
+    9.208
+   ]
+  },
+  "5215133574889185473": {
+   "maps": [
+    "Market_Child",
+    "Market_Adult"
+   ],
+   "pos": [
+    -62.895,
+    110.669,
+    12.553
+   ]
+  },
+  "569390966671955163": {
+   "maps": [
+    "GoronCity_Child",
+    "GoronCity_Adult"
+   ],
+   "pos": [
+    -48.25,
+    113.675,
+    -7.84
+   ]
+  },
+  "3483734707455267135": {
+   "maps": [
+    "GoronCity_Child",
+    "GoronCity_Adult"
+   ],
+   "pos": [
+    0.0,
+    105.5,
+    0.0
+   ]
+  },
+  "18139423190738716302": {
+   "maps": [
+    "GoronCity_Child",
+    "GoronCity_Adult"
+   ],
+   "pos": [
+    0.488,
+    113.358,
+    -1.228
+   ]
+  },
+  "12099229167357371868": {
+   "maps": [
+    "ZoraDomain_Child",
+    "ZoraDomain_Adult"
+   ],
+   "pos": [
+    28.8,
+    100.5,
+    -4.877
+   ]
+  },
+  "9600417828645642589": {
+   "maps": [
+    "ZoraDomain_Child",
+    "ZoraDomain_Adult"
+   ],
+   "pos": [
+    24.77,
+    116.25,
+    3.401
+   ]
+  },
+  "13037049463363052038": {
+   "maps": [
+    "GerudoFortress_Adult"
+   ],
+   "pos": [
+    181.695,
+    125.557,
+    -88.605
+   ]
+  },
+  "9362225887419425752": {
+   "maps": [
+    "GerudoFortress_Adult"
+   ],
+   "pos": [
+    55.298,
+    131.872,
+    -70.22
+   ]
+  },
+  "3389467775572858537": {
+   "maps": [
+    "GerudoFortress_Adult"
+   ],
+   "pos": [
+    70.48,
+    115.001,
+    37.423
+   ]
+  },
+  "267586701490681000": {
+   "maps": [
+    "GerudoFortress_Adult"
+   ],
+   "pos": [
+    28.978,
+    131.524,
+    -93.672
+   ]
+  },
+  "9333354743976439033": {
+   "maps": [
+    "LostWood"
+   ],
+   "pos": [
+    -33.188,
+    100.168,
+    31.417
+   ]
+  },
+  "17796658857969527112": {
+   "maps": [
+    "LostWood"
+   ],
+   "pos": [
+    14.454,
+    101.733,
+    -52.066
+   ]
+  },
+  "4335656213162247230": {
+   "maps": [
+    "LostWood"
+   ],
+   "pos": [
+    8.576,
+    105.733,
+    -55.373
+   ]
+  },
+  "18092305056327665421": {
+   "maps": [
+    "LostWood"
+   ],
+   "pos": [
+    48.757,
+    98.341,
+    16.034
+   ]
+  },
+  "605877630645816565": {
+   "maps": [
+    "LostWood"
+   ],
+   "pos": [
+    -34.015,
+    104.5,
+    -3.745
+   ]
+  },
+  "14473218207379268379": {
+   "maps": [
+    "SacredForestMeadow"
+   ],
+   "pos": [
+    7.753,
+    107.376,
+    13.21
+   ]
+  },
+  "12007978132755687032": {
+   "maps": [
+    "HyruleField"
+   ],
+   "pos": [
+    -156.406,
+    144.205,
+    338.323
+   ]
+  },
+  "2177746409373494991": {
+   "maps": [
+    "HyruleField"
+   ],
+   "pos": [
+    70.53,
+    167.407,
+    263.838
+   ]
+  },
+  "14128250030289710996": {
+   "maps": [
+    "HyruleField"
+   ],
+   "pos": [
+    -213.447,
+    133.423,
+    138.388
+   ]
+  },
+  "14825051130171187671": {
+   "maps": [
+    "HyruleField"
+   ],
+   "pos": [
+    39.86,
+    152.447,
+    26.58
+   ]
+  },
+  "9047381233010434881": {
+   "maps": [
+    "HyruleField"
+   ],
+   "pos": [
+    40.078,
+    144.808,
+    342.286
+   ]
+  },
+  "9162653017526462607": {
+   "maps": [
+    "HyruleCastle_Child"
+   ],
+   "pos": [
+    35.93,
+    117.335,
+    -106.168
+   ]
+  },
+  "2504273934093629549": {
+   "maps": [
+    "HyruleCastle_Child"
+   ],
+   "pos": [
+    -12.365,
+    121.776,
+    -94.949
+   ]
+  },
+  "16798263777516949500": {
+   "maps": [
+    "Graveyard"
+   ],
+   "pos": [
+    -12.147,
+    103.369,
+    -12.197
+   ]
+  },
+  "229475726653285413": {
+   "maps": [
+    "Graveyard"
+   ],
+   "pos": [
+    -20.2,
+    104.3,
+    26.4
+   ]
+  },
+  "10075158462075677237": {
+   "maps": [
+    "Graveyard"
+   ],
+   "pos": [
+    -4.635,
+    103.13,
+    -1.82
+   ]
+  },
+  "9353003823584590464": {
+   "maps": [
+    "Graveyard"
+   ],
+   "pos": [
+    21.394,
+    105.051,
+    23.154
+   ]
+  },
+  "77201491298807580": {
+   "maps": [
+    "Graveyard"
+   ],
+   "pos": [
+    -16.58,
+    108.06,
+    -8.92
+   ]
+  },
+  "13358460016985463621": {
+   "maps": [
+    "Graveyard"
+   ],
+   "pos": [
+    -7.661,
+    103.42,
+    -10.921
+   ]
+  },
+  "351345377871782696": {
+   "maps": [
+    "DeathMountainTrail"
+   ],
+   "pos": [
+    -51.194,
+    102.795,
+    27.21
+   ]
+  },
+  "17425319789138387506": {
+   "maps": [
+    "DeathMountainTrail"
+   ],
+   "pos": [
+    -45.5,
+    109.196,
+    -20.25
+   ]
+  },
+  "15856934019904510189": {
+   "maps": [
+    "DeathMountainTrail"
+   ],
+   "pos": [
+    -39.661,
+    122.212,
+    -26.001
+   ]
+  },
+  "832677387023638406": {
+   "maps": [
+    "DeathMountainTrail"
+   ],
+   "pos": [
+    3.173,
+    187.298,
+    -111.294
+   ]
+  },
+  "17669199296215821346": {
+   "maps": [
+    "DeathMountainTrail"
+   ],
+   "pos": [
+    -30.968,
+    125.081,
+    -17.965
+   ]
+  },
+  "6397182598322965076": {
+   "maps": [
+    "DeathMountainCrater_Child",
+    "DeathMountainCrater_Adult"
+   ],
+   "pos": [
+    3.75,
+    111.223,
+    -0.75
+   ]
+  },
+  "18219295034534354574": {
+   "maps": [
+    "DeathMountainCrater_Child",
+    "DeathMountainCrater_Adult"
+   ],
+   "pos": [
+    -2.872,
+    128.194,
+    48.671
+   ]
+  },
+  "16784485264831565984": {
+   "maps": [
+    "DeathMountainCrater_Child",
+    "DeathMountainCrater_Adult"
+   ],
+   "pos": [
+    -0.5,
+    116.773,
+    32.34
+   ]
+  },
+  "12493798230772313904": {
+   "maps": [
+    "DeathMountainCrater_Child",
+    "DeathMountainCrater_Adult"
+   ],
+   "pos": [
+    -23.0,
+    121.099,
+    33.0
+   ]
+  },
+  "12975373498949047978": {
+   "maps": [
+    "DeathMountainCrater_Child",
+    "DeathMountainCrater_Adult"
+   ],
+   "pos": [
+    -17.5,
+    127.151,
+    3.95
+   ]
+  },
+  "12370559827741970774": {
+   "maps": [
+    "ZoraRiver"
+   ],
+   "pos": [
+    -54.718,
+    100.469,
+    -10.403
+   ]
+  },
+  "8695975724114049706": {
+   "maps": [
+    "ZoraRiver"
+   ],
+   "pos": [
+    112.6,
+    111.8,
+    -48.8
+   ]
+  },
+  "18246168067761770276": {
+   "maps": [
+    "ZoraRiver"
+   ],
+   "pos": [
+    8.985,
+    101.886,
+    -50.852
+   ]
+  },
+  "4877056571307262080": {
+   "maps": [
+    "ZoraRiver"
+   ],
+   "pos": [
+    8.985,
+    101.886,
+    -50.852
+   ]
+  },
+  "3814878871658269103": {
+   "maps": [
+    "ZoraRiver"
+   ],
+   "pos": [
+    -4.0,
+    111.422,
+    -34.3
+   ]
+  },
+  "6961804965205481566": {
+   "maps": [
+    "ZoraRiver"
+   ],
+   "pos": [
+    99.5,
+    120.101,
+    -61.74
+   ]
+  },
+  "9450239379321634455": {
+   "maps": [
+    "ZoraRiver"
+   ],
+   "pos": [
+    76.285,
+    126.801,
+    -46.407
+   ]
+  },
+  "10917372215719266172": {
+   "maps": [
+    "ZoraRiver"
+   ],
+   "pos": [
+    -35.0,
+    118.75,
+    12.5
+   ]
+  },
+  "7152962033963346563": {
+   "maps": [
+    "ZoraFountain_Child",
+    "ZoraFountain_Adult"
+   ],
+   "pos": [
+    14.037,
+    107.789,
+    22.818
+   ]
+  },
+  "17355397719442343054": {
+   "maps": [
+    "ZoraFountain_Child",
+    "ZoraFountain_Adult"
+   ],
+   "pos": [
+    49.305,
+    110.365,
+    32.041
+   ]
+  },
+  "9537398183107003742": {
+   "maps": [
+    "ZoraFountain_Child",
+    "ZoraFountain_Adult"
+   ],
+   "pos": [
+    71.202,
+    125.717,
+    4.797
+   ]
+  },
+  "11514535765115882860": {
+   "maps": [
+    "ZoraFountain_Child",
+    "ZoraFountain_Adult"
+   ],
+   "pos": [
+    56.832,
+    70.929,
+    -27.396
+   ]
+  },
+  "12439817999368518552": {
+   "maps": [
+    "ZoraFountain_Child",
+    "ZoraFountain_Adult"
+   ],
+   "pos": [
+    85.028,
+    103.071,
+    -34.741
+   ]
+  },
+  "8655370827943125875": {
+   "maps": [
+    "LakeHylia_Child",
+    "LakeHylia_Adult"
+   ],
+   "pos": [
+    -289.137,
+    130.938,
+    590.851
+   ]
+  },
+  "7014193622407727514": {
+   "maps": [
+    "LakeHylia_Child",
+    "LakeHylia_Adult"
+   ],
+   "pos": [
+    -166.364,
+    137.902,
+    412.43
+   ]
+  },
+  "13944703896577680014": {
+   "maps": [
+    "LakeHylia_Child",
+    "LakeHylia_Adult"
+   ],
+   "pos": [
+    -178.253,
+    141.958,
+    426.404
+   ]
+  },
+  "6175378250368022556": {
+   "maps": [
+    "LakeHylia_Child",
+    "LakeHylia_Adult"
+   ],
+   "pos": [
+    -98.82,
+    134.764,
+    493.293
+   ]
+  },
+  "3889886157160285015": {
+   "maps": [
+    "LakeHylia_Child",
+    "LakeHylia_Adult"
+   ],
+   "pos": [
+    -174.393,
+    138.0,
+    418.017
+   ]
+  },
+  "789492162651991711": {
+   "maps": [
+    "LakeHylia_Child",
+    "LakeHylia_Adult"
+   ],
+   "pos": [
+    -196.95,
+    150.28,
+    517.385
+   ]
+  },
+  "7388645484070660331": {
+   "maps": [
+    "LakeHylia_Child",
+    "LakeHylia_Adult"
+   ],
+   "pos": [
+    -175.699,
+    128.462,
+    410.685
+   ]
+  },
+  "8693044901437535425": {
+   "maps": [
+    "LakeHylia_Child",
+    "LakeHylia_Adult"
+   ],
+   "pos": [
+    -180.582,
+    163.088,
+    424.972
+   ]
+  },
+  "8326970197618554626": {
+   "maps": [
+    "GerudoValley_Child",
+    "GerudoValley_Adult"
+   ],
+   "pos": [
+    -11.041,
+    48.041,
+    2.447
+   ]
+  },
+  "15265071047503310220": {
+   "maps": [
+    "GerudoValley_Child",
+    "GerudoValley_Adult"
+   ],
+   "pos": [
+    50.806,
+    97.403,
+    5.091
+   ]
+  },
+  "1077480308077338993": {
+   "maps": [
+    "GerudoValley_Child",
+    "GerudoValley_Adult"
+   ],
+   "pos": [
+    4.853,
+    59.164,
+    -78.161
+   ]
+  },
+  "14813002874583645116": {
+   "maps": [
+    "GerudoValley_Child",
+    "GerudoValley_Adult"
+   ],
+   "pos": [
+    -9.791,
+    90.432,
+    34.982
+   ]
+  },
+  "11535915511003753934": {
+   "maps": [
+    "GerudoValley_Child",
+    "GerudoValley_Adult"
+   ],
+   "pos": [
+    -34.535,
+    109.962,
+    10.282
+   ]
+  },
+  "13584527502619061465": {
+   "maps": [
+    "GerudoValley_Child",
+    "GerudoValley_Adult"
+   ],
+   "pos": [
+    -45.682,
+    106.233,
+    -35.558
+   ]
+  },
+  "14910672274965350769": {
+   "maps": [
+    "HountedWasteland"
+   ],
+   "pos": [
+    16.013,
+    88.845,
+    -99.8
+   ]
+  },
+  "234735562946824289": {
+   "maps": [
+    "DesertColossus"
+   ],
+   "pos": [
+    -157.464,
+    95.659,
+    17.185
+   ]
+  },
+  "15057756765324812936": {
+   "maps": [
+    "DesertColossus"
+   ],
+   "pos": [
+    -170.117,
+    101.764,
+    -47.874
+   ]
+  },
+  "11160993739666517210": {
+   "maps": [
+    "DesertColossus"
+   ],
+   "pos": [
+    -73.9,
+    105.3,
+    -5.677
+   ]
+  },
+  "2308531337658761834": {
+   "maps": [
+    "DesertColossus"
+   ],
+   "pos": [
+    -137.14,
+    103.5,
+    10.5
+   ]
+  },
+  "10012167258643363548": {
+   "maps": [
+    "DesertColossus"
+   ],
+   "pos": [
+    -168.629,
+    113.25,
+    -8.629
+   ]
+  },
+  "2490063409521505179": {
+   "maps": [
+    "DesertColossus"
+   ],
+   "pos": [
+    -168.637,
+    113.25,
+    29.546
+   ]
+  },
+  "18075358844331090388": {
+   "maps": [
+    "InsideTheDekuTree_B1"
+   ],
+   "pos": [
+    -18.129,
+    78.695,
+    -12.981
+   ]
+  },
+  "17501688996789643983": {
+   "maps": [
+    "InsideTheDekuTree_B1"
+   ],
+   "pos": [
+    -81.904,
+    86.694,
+    -7.401
+   ]
+  },
+  "16101480770659370603": {
+   "maps": [
+    "InsideTheDekuTree_B1"
+   ],
+   "pos": [
+    3.323,
+    86.862,
+    1.133
+   ]
+  },
+  "12889104996486369065": {
+   "maps": [
+    "InsideTheDekuTree_B1"
+   ],
+   "pos": [
+    -10.399,
+    79.384,
+    -12.56
+   ]
+  },
+  "8579518566955184384": {
+   "maps": [
+    "InsideTheDekuTree_2F"
+   ],
+   "pos": [
+    6.514,
+    108.4,
+    7.246
+   ]
+  },
+  "821372075822700622": {
+   "maps": [
+    "InsideTheDekuTree_2F"
+   ],
+   "pos": [
+    -54.387,
+    111.958,
+    12.21
+   ]
+  },
+  "13027331340815880287": {
+   "maps": [
+    "InsideTheDekuTree_2F"
+   ],
+   "pos": [
+    -42.916,
+    116.2,
+    19.346
+   ]
+  },
+  "13609975487234437568": {
+   "maps": [
+    "InsideTheDekuTree_3F"
+   ],
+   "pos": [
+    -29.765,
+    121.003,
+    13.04
+   ]
+  },
+  "9284193025315608699": {
+   "maps": [
+    "InsideTheDekuTree_3F"
+   ],
+   "pos": [
+    -48.294,
+    120.365,
+    0.0
+   ]
+  },
+  "11368028582977069031": {
+   "maps": [
+    "InsideTheDekuTree_3F"
+   ],
+   "pos": [
+    -65.241,
+    125.625,
+    0.024
+   ]
+  },
+  "13690401647626643497": {
+   "maps": [
+    "DodongoCavern_1F"
+   ],
+   "pos": [
+    -48.835,
+    96.6,
+    -104.25
+   ]
+  },
+  "1171854281537584829": {
+   "maps": [
+    "DodongoCavern_1F"
+   ],
+   "pos": [
+    64.0,
+    98.55,
+    15.854
+   ]
+  },
+  "960362013021648957": {
+   "maps": [
+    "DodongoCavern_1F"
+   ],
+   "pos": [
+    58.177,
+    104.5,
+    -19.874
+   ]
+  },
+  "8607798771661947511": {
+   "maps": [
+    "DodongoCavern_1F"
+   ],
+   "pos": [
+    -30.131,
+    100.0,
+    -8.003
+   ]
+  },
+  "8291119063305855945": {
+   "maps": [
+    "DodongoCavern_1F"
+   ],
+   "pos": [
+    -26.5,
+    100.25,
+    -38.0
+   ]
+  },
+  "7764016096998075927": {
+   "maps": [
+    "DodongoCavern_1F"
+   ],
+   "pos": [
+    82.993,
+    100.6,
+    -55.625
+   ]
+  },
+  "17531994809974271603": {
+   "maps": [
+    "DodongoCavern_1F"
+   ],
+   "pos": [
+    -49.0,
+    103.619,
+    7.5
+   ]
+  },
+  "4565265801822094851": {
+   "maps": [
+    "DodongoCavern_2F"
+   ],
+   "pos": [
+    21.473,
+    112.4,
+    -55.926
+   ]
+  },
+  "8470399761714006011": {
+   "maps": [
+    "DodongoCavern_2F"
+   ],
+   "pos": [
+    -48.421,
+    120.308,
+    -40.117
+   ]
+  },
+  "11582649900854566065": {
+   "maps": [
+    "DodongoCavern_2F"
+   ],
+   "pos": [
+    43.044,
+    113.156,
+    -8.75
+   ]
+  },
+  "7524527082521156886": {
+   "maps": [
+    "DodongoCavern_2F"
+   ],
+   "pos": [
+    -20.75,
+    113.275,
+    -36.5
+   ]
+  },
+  "850464708089653824": {
+   "maps": [
+    "DodongoCavern_2F"
+   ],
+   "pos": [
+    92.5,
+    114.975,
+    -50.25
+   ]
+  },
+  "12161709650443144121": {
+   "maps": [
+    "DodongoCavern_2F"
+   ],
+   "pos": [
+    39.0,
+    115.718,
+    -23.0
+   ]
+  },
+  "12253889300578348965": {
+   "maps": [
+    "DodongoCavern_2F"
+   ],
+   "pos": [
+    -48.979,
+    116.011,
+    -63.933
+   ]
+  },
+  "11513774157335944149": {
+   "maps": [
+    "InsideJabuJabuBelly_B1"
+   ],
+   "pos": [
+    17.372,
+    81.719,
+    -59.275
+   ]
+  },
+  "11283202900158580106": {
+   "maps": [
+    "InsideJabuJabuBelly_B1"
+   ],
+   "pos": [
+    -15.493,
+    84.623,
+    -83.384
+   ]
+  },
+  "13852835165271311030": {
+   "maps": [
+    "InsideJabuJabuBelly_B1"
+   ],
+   "pos": [
+    -2.213,
+    88.409,
+    -94.956
+   ]
+  },
+  "14933854942830098290": {
+   "maps": [
+    "InsideJabuJabuBelly_B1"
+   ],
+   "pos": [
+    37.7,
+    77.55,
+    -57.118
+   ]
+  },
+  "3609242017501283521": {
+   "maps": [
+    "InsideJabuJabuBelly_B1"
+   ],
+   "pos": [
+    -34.184,
+    82.469,
+    -51.981
+   ]
+  },
+  "3510516276638146208": {
+   "maps": [
+    "InsideJabuJabuBelly_1F"
+   ],
+   "pos": [
+    25.517,
+    92.294,
+    -175.931
+   ]
+  },
+  "5527401621172639818": {
+   "maps": [
+    "InsideJabuJabuBelly_1F"
+   ],
+   "pos": [
+    -31.304,
+    92.393,
+    -131.909
+   ]
+  },
+  "15983944335296207002": {
+   "maps": [
+    "InsideJabuJabuBelly_2F"
+   ],
+   "pos": [
+    38.289,
+    106.124,
+    -49.085
+   ]
+  },
+  "3072474196008424241": {
+   "maps": [
+    "ForestTemple_B2"
+   ],
+   "pos": [
+    -3.429,
+    65.603,
+    17.167
+   ]
+  },
+  "9038700938965170329": {
+   "maps": [
+    "ForestTemple_B2"
+   ],
+   "pos": [
+    -16.259,
+    60.714,
+    12.605
+   ]
+  },
+  "6449977980406424425": {
+   "maps": [
+    "ForestTemple_B1"
+   ],
+   "pos": [
+    16.442,
+    88.025,
+    -42.56
+   ]
+  },
+  "10970805784153267902": {
+   "maps": [
+    "ForestTemple_1F"
+   ],
+   "pos": [
+    -38.061,
+    100.128,
+    -4.23
+   ]
+  },
+  "17612196129225973969": {
+   "maps": [
+    "ForestTemple_1F"
+   ],
+   "pos": [
+    8.815,
+    109.558,
+    -23.557
+   ]
+  },
+  "2014780391754316762": {
+   "maps": [
+    "ForestTemple_1F"
+   ],
+   "pos": [
+    44.275,
+    112.066,
+    -38.245
+   ]
+  },
+  "3174893090599461927": {
+   "maps": [
+    "ForestTemple_1F"
+   ],
+   "pos": [
+    38.753,
+    101.413,
+    -35.75
+   ]
+  },
+  "15117164073907033527": {
+   "maps": [
+    "ForestTemple_1F"
+   ],
+   "pos": [
+    56.03,
+    103.997,
+    -22.796
+   ]
+  },
+  "14776684749746592758": {
+   "maps": [
+    "ForestTemple_1F"
+   ],
+   "pos": [
+    0.014,
+    105.785,
+    -62.75
+   ]
+  },
+  "7535137041266964235": {
+   "maps": [
+    "ForestTemple_1F"
+   ],
+   "pos": [
+    -70.232,
+    107.1,
+    -26.486
+   ]
+  },
+  "11081821111317815057": {
+   "maps": [
+    "ForestTemple_2F"
+   ],
+   "pos": [
+    11.277,
+    119.844,
+    64.0
+   ]
+  },
+  "11082303891540711688": {
+   "maps": [
+    "ForestTemple_2F"
+   ],
+   "pos": [
+    0.2,
+    114.761,
+    -68.5
+   ]
+  },
+  "3433400840978782007": {
+   "maps": [
+    "ForestTemple_2F"
+   ],
+   "pos": [
+    -17.095,
+    114.816,
+    -63.643
+   ]
+  },
+  "6948525240950728236": {
+   "maps": [
+    "ForestTemple_2F"
+   ],
+   "pos": [
+    17.085,
+    114.819,
+    -63.616
+   ]
+  },
+  "15920957434854338961": {
+   "maps": [
+    "ForestTemple_2F"
+   ],
+   "pos": [
+    -52.826,
+    115.0,
+    4.234
+   ]
+  },
+  "1171460703078800858": {
+   "maps": [
+    "ForestTemple_2F"
+   ],
+   "pos": [
+    -9.854,
+    117.51,
+    64.372
+   ]
+  },
+  "5306318520835485827": {
+   "maps": [
+    "ForestTemple_3F"
+   ],
+   "pos": [
+    -49.46,
+    129.5,
+    -63.706
+   ]
+  },
+  "14706322686481615109": {
+   "maps": [
+    "FireTemple_1F"
+   ],
+   "pos": [
+    11.25,
+    101.5,
+    -43.236
+   ]
+  },
+  "6789992996625105554": {
+   "maps": [
+    "FireTemple_1F"
+   ],
+   "pos": [
+    67.728,
+    115.3,
+    -47.0
+   ]
+  },
+  "14060099092170010696": {
+   "maps": [
+    "FireTemple_1F"
+   ],
+   "pos": [
+    -5.063,
+    100.9,
+    -8.7
+   ]
+  },
+  "8757492004108970488": {
+   "maps": [
+    "FireTemple_1F"
+   ],
+   "pos": [
+    -6.98,
+    102.01,
+    -33.265
+   ]
+  },
+  "5634724236470386190": {
+   "maps": [
+    "FireTemple_1F"
+   ],
+   "pos": [
+    -39.161,
+    104.991,
+    24.639
+   ]
+  },
+  "1705064956286753527": {
+   "maps": [
+    "FireTemple_1F"
+   ],
+   "pos": [
+    39.449,
+    105.289,
+    51.247
+   ]
+  },
+  "3949488292768750868": {
+   "maps": [
+    "FireTemple_1F"
+   ],
+   "pos": [
+    34.215,
+    105.3,
+    -46.457
+   ]
+  },
+  "16785682308850448108": {
+   "maps": [
+    "FireTemple_2F"
+   ],
+   "pos": [
+    77.43,
+    141.126,
+    0.192
+   ]
+  },
+  "12751796212121957464": {
+   "maps": [
+    "FireTemple_3F"
+   ],
+   "pos": [
+    59.044,
+    148.395,
+    -29.982
+   ]
+  },
+  "10521366928524045067": {
+   "maps": [
+    "FireTemple_3F"
+   ],
+   "pos": [
+    -37.835,
+    145.234,
+    -0.552
+   ]
+  },
+  "12945617941305968586": {
+   "maps": [
+    "FireTemple_3F"
+   ],
+   "pos": [
+    -17.109,
+    146.985,
+    -31.074
+   ]
+  },
+  "12567412825200613393": {
+   "maps": [
+    "FireTemple_3F"
+   ],
+   "pos": [
+    48.499,
+    146.997,
+    -43.392
+   ]
+  },
+  "16713240760352215634": {
+   "maps": [
+    "FireTemple_3F"
+   ],
+   "pos": [
+    34.136,
+    147.066,
+    -5.746
+   ]
+  },
+  "3688520809244472975": {
+   "maps": [
+    "FireTemple_3F"
+   ],
+   "pos": [
+    58.228,
+    147.081,
+    40.552
+   ]
+  },
+  "9634924691849556346": {
+   "maps": [
+    "FireTemple_3F"
+   ],
+   "pos": [
+    46.555,
+    150.5,
+    33.415
+   ]
+  },
+  "9172014785497046138": {
+   "maps": [
+    "FireTemple_5F"
+   ],
+   "pos": [
+    36.573,
+    187.7,
+    -5.178
+   ]
+  },
+  "5556173334779815044": {
+   "maps": [
+    "FireTemple_5F"
+   ],
+   "pos": [
+    40.046,
+    189.1,
+    -19.75
+   ]
+  },
+  "862385681502746018": {
+   "maps": [
+    "FireTemple_5F"
+   ],
+   "pos": [
+    30.754,
+    194.352,
+    -11.142
+   ]
+  },
+  "17001858340376096722": {
+   "maps": [
+    "FireTemple_5F"
+   ],
+   "pos": [
+    36.245,
+    194.352,
+    -10.223
+   ]
+  },
+  "15073195886628236505": {
+   "maps": [
+    "FireTemple_5F"
+   ],
+   "pos": [
+    30.839,
+    194.352,
+    -5.531
+   ]
+  },
+  "12083259659219538030": {
+   "maps": [
+    "FireTemple_5F"
+   ],
+   "pos": [
+    -31.766,
+    196.1,
+    -12.711
+   ]
+  },
+  "16157272130665282352": {
+   "maps": [
+    "WaterTemple_B1"
+   ],
+   "pos": [
+    1.396,
+    95.152,
+    0.545
+   ]
+  },
+  "11682974908842171598": {
+   "maps": [
+    "WaterTemple_B1"
+   ],
+   "pos": [
+    12.0,
+    92.709,
+    -4.5
+   ]
+  },
+  "186694424287048567": {
+   "maps": [
+    "WaterTemple_1F"
+   ],
+   "pos": [
+    18.646,
+    107.5,
+    -65.66
+   ]
+  },
+  "18099019250896853049": {
+   "maps": [
+    "WaterTemple_1F"
+   ],
+   "pos": [
+    43.75,
+    99.979,
+    -4.5
+   ]
+  },
+  "2503861086004941173": {
+   "maps": [
+    "WaterTemple_1F"
+   ],
+   "pos": [
+    -44.0,
+    102.3,
+    -19.504
+   ]
+  },
+  "10378828369334876242": {
+   "maps": [
+    "WaterTemple_1F"
+   ],
+   "pos": [
+    33.12,
+    103.655,
+    -81.489
+   ]
+  },
+  "16424266294822218796": {
+   "maps": [
+    "WaterTemple_1F"
+   ],
+   "pos": [
+    -68.256,
+    104.26,
+    20.15
+   ]
+  },
+  "4399424945134189769": {
+   "maps": [
+    "WaterTemple_2F"
+   ],
+   "pos": [
+    35.08,
+    112.5,
+    -9.549
+   ]
+  },
+  "15506432733081566465": {
+   "maps": [
+    "WaterTemple_2F"
+   ],
+   "pos": [
+    -54.542,
+    114.007,
+    -59.252
+   ]
+  },
+  "3693930347660122883": {
+   "maps": [
+    "WaterTemple_2F"
+   ],
+   "pos": [
+    -1.214,
+    112.0,
+    -51.85
+   ]
+  },
+  "16490222392193949581": {
+   "maps": [
+    "WaterTemple_2F"
+   ],
+   "pos": [
+    56.865,
+    118.39,
+    -28.12
+   ]
+  },
+  "11571778270592589517": {
+   "maps": [
+    "WaterTemple_3F"
+   ],
+   "pos": [
+    -1.189,
+    125.954,
+    -7.896
+   ]
+  },
+  "16384925224245172970": {
+   "maps": [
+    "WaterTemple_3F"
+   ],
+   "pos": [
+    33.893,
+    119.51,
+    -4.49
+   ]
+  },
+  "18059711820131847165": {
+   "maps": [
+    "WaterTemple_3F"
+   ],
+   "pos": [
+    -77.9,
+    126.6,
+    -99.166
+   ]
+  },
+  "10270336409167849808": {
+   "maps": [
+    "ShadowTemple_B4"
+   ],
+   "pos": [
+    -215.409,
+    41.826,
+    -43.618
+   ]
+  },
+  "8823884712433934372": {
+   "maps": [
+    "ShadowTemple_B4"
+   ],
+   "pos": [
+    104.611,
+    42.049,
+    -39.64
+   ]
+  },
+  "9852624243105848451": {
+   "maps": [
+    "ShadowTemple_B4"
+   ],
+   "pos": [
+    -190.057,
+    41.288,
+    -69.427
+   ]
+  },
+  "17902550525792072472": {
+   "maps": [
+    "ShadowTemple_B4"
+   ],
+   "pos": [
+    -181.861,
+    41.388,
+    -12.583
+   ]
+  },
+  "9221365632831348137": {
+   "maps": [
+    "ShadowTemple_B4"
+   ],
+   "pos": [
+    -173.23,
+    41.41,
+    -69.1
+   ]
+  },
+  "15564367841356014861": {
+   "maps": [
+    "ShadowTemple_B3"
+   ],
+   "pos": [
+    75.836,
+    53.409,
+    6.328
+   ]
+  },
+  "15148554628675590606": {
+   "maps": [
+    "ShadowTemple_B3"
+   ],
+   "pos": [
+    32.928,
+    56.468,
+    86.325
+   ]
+  },
+  "16933078188088206331": {
+   "maps": [
+    "ShadowTemple_B3"
+   ],
+   "pos": [
+    184.883,
+    61.912,
+    96.864
+   ]
+  },
+  "12345747231768877602": {
+   "maps": [
+    "ShadowTemple_B3"
+   ],
+   "pos": [
+    128.019,
+    51.98,
+    10.487
+   ]
+  },
+  "5681107746948738726": {
+   "maps": [
+    "ShadowTemple_B3"
+   ],
+   "pos": [
+    101.19,
+    52.1,
+    -17.6
+   ]
+  },
+  "169081039115821925": {
+   "maps": [
+    "ShadowTemple_B3"
+   ],
+   "pos": [
+    118.387,
+    52.136,
+    -17.669
+   ]
+  },
+  "8858270325665149688": {
+   "maps": [
+    "ShadowTemple_B3"
+   ],
+   "pos": [
+    21.131,
+    56.4,
+    98.359
+   ]
+  },
+  "10344372963276519235": {
+   "maps": [
+    "ShadowTemple_B3"
+   ],
+   "pos": [
+    175.763,
+    60.905,
+    92.239
+   ]
+  },
+  "3718790579351798247": {
+   "maps": [
+    "ShadowTemple_B3"
+   ],
+   "pos": [
+    175.763,
+    60.905,
+    100.611
+   ]
+  },
+  "5781953901224064730": {
+   "maps": [
+    "ShadowTemple_B3"
+   ],
+   "pos": [
+    -1.47,
+    63.5,
+    98.646
+   ]
+  },
+  "1111717451118505545": {
+   "maps": [
+    "ShadowTemple_B2"
+   ],
+   "pos": [
+    98.895,
+    87.187,
+    -25.659
+   ]
+  },
+  "1733372171176975157": {
+   "maps": [
+    "ShadowTemple_B2"
+   ],
+   "pos": [
+    84.082,
+    87.315,
+    22.875
+   ]
+  },
+  "14535080241831873137": {
+   "maps": [
+    "ShadowTemple_B1"
+   ],
+   "pos": [
+    -72.624,
+    90.521,
+    -10.149
+   ]
+  },
+  "13528903653876646082": {
+   "maps": [
+    "ShadowTemple_B1"
+   ],
+   "pos": [
+    2.631,
+    90.542,
+    -26.214
+   ]
+  },
+  "8120267919866495114": {
+   "maps": [
+    "SpiritTemple_1F"
+   ],
+   "pos": [
+    38.956,
+    104.171,
+    -62.89
+   ]
+  },
+  "10530233152473742636": {
+   "maps": [
+    "SpiritTemple_1F"
+   ],
+   "pos": [
+    -9.585,
+    107.422,
+    -55.997
+   ]
+  },
+  "4277978357934400600": {
+   "maps": [
+    "SpiritTemple_1F"
+   ],
+   "pos": [
+    48.889,
+    100.28,
+    -77.98
+   ]
+  },
+  "5703423643219134246": {
+   "maps": [
+    "SpiritTemple_1F"
+   ],
+   "pos": [
+    -15.323,
+    104.739,
+    -60.245
+   ]
+  },
+  "5309180490719879013": {
+   "maps": [
+    "SpiritTemple_1F"
+   ],
+   "pos": [
+    -56.028,
+    104.748,
+    -67.569
+   ]
+  },
+  "15633505270333176438": {
+   "maps": [
+    "SpiritTemple_1F"
+   ],
+   "pos": [
+    13.0,
+    104.761,
+    -63.743
+   ]
+  },
+  "12959656942046734931": {
+   "maps": [
+    "SpiritTemple_2F"
+   ],
+   "pos": [
+    14.746,
+    115.153,
+    -68.787
+   ]
+  },
+  "13852283723126411131": {
+   "maps": [
+    "SpiritTemple_2F"
+   ],
+   "pos": [
+    0.0,
+    114.15,
+    -57.581
+   ]
+  },
+  "1501288453962537671": {
+   "maps": [
+    "SpiritTemple_2F"
+   ],
+   "pos": [
+    -39.248,
+    119.15,
+    -39.617
+   ]
+  },
+  "12909857529499414969": {
+   "maps": [
+    "SpiritTemple_2F"
+   ],
+   "pos": [
+    43.402,
+    119.15,
+    -47.54
+   ]
+  },
+  "2203243501006528435": {
+   "maps": [
+    "SpiritTemple_2F"
+   ],
+   "pos": [
+    -10.895,
+    124.759,
+    -60.569
+   ]
+  },
+  "5086449036385341804": {
+   "maps": [
+    "SpiritTemple_3F"
+   ],
+   "pos": [
+    -23.085,
+    129.668,
+    -66.679
+   ]
+  },
+  "10127391959410674946": {
+   "maps": [
+    "SpiritTemple_3F"
+   ],
+   "pos": [
+    -55.69,
+    136.629,
+    -7.304
+   ]
+  },
+  "12042193296697281461": {
+   "maps": [
+    "SpiritTemple_3F"
+   ],
+   "pos": [
+    55.8,
+    130.892,
+    -50.026
+   ]
+  },
+  "14040210993541550542": {
+   "maps": [
+    "SpiritTemple_3F"
+   ],
+   "pos": [
+    58.758,
+    132.1,
+    4.736
+   ]
+  },
+  "9143177002861777924": {
+   "maps": [
+    "SpiritTemple_3F"
+   ],
+   "pos": [
+    52.958,
+    132.1,
+    4.736
+   ]
+  },
+  "17407066694905911064": {
+   "maps": [
+    "SpiritTemple_3F"
+   ],
+   "pos": [
+    -61.225,
+    132.75,
+    -27.679
+   ]
+  },
+  "16272168033146555902": {
+   "maps": [
+    "SpiritTemple_4F"
+   ],
+   "pos": [
+    19.8,
+    151.02,
+    -65.09
+   ]
+  },
+  "13828480906010430010": {
+   "maps": [
+    "SpiritTemple_4F"
+   ],
+   "pos": [
+    -25.433,
+    158.214,
+    -51.285
+   ]
+  },
+  "9466613428674883506": {
+   "maps": [
+    "BottomOfTheWell_B2"
+   ],
+   "pos": [
+    18.319,
+    87.449,
+    1.155
+   ]
+  },
+  "16654774376625985726": {
+   "maps": [
+    "BottomOfTheWell_B2"
+   ],
+   "pos": [
+    -0.045,
+    92.421,
+    -110.269
+   ]
+  },
+  "7460556442932201772": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    -8.221,
+    103.8,
+    -31.854
+   ]
+  },
+  "12165938013608963606": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    2.646,
+    103.8,
+    -30.5
+   ]
+  },
+  "3889761319471426870": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    31.991,
+    104.8,
+    -14.92
+   ]
+  },
+  "5429815628949128345": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    -0.201,
+    96.193,
+    -5.0
+   ]
+  },
+  "12988877782812797760": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    19.858,
+    97.811,
+    -18.574
+   ]
+  },
+  "8397646530660039355": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    10.57,
+    99.98,
+    -4.5
+   ]
+  },
+  "8975637636514249074": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    -11.0,
+    99.98,
+    -5.431
+   ]
+  },
+  "874970148260328653": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    33.85,
+    100.0,
+    -22.543
+   ]
+  },
+  "631709185320708287": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    11.973,
+    100.0,
+    -11.061
+   ]
+  },
+  "10905582354954996284": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    -29.59,
+    100.0,
+    -36.977
+   ]
+  },
+  "14911602953212243797": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    -12.395,
+    100.117,
+    -10.959
+   ]
+  },
+  "6064359710907908886": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    0.008,
+    102.17,
+    -100.469
+   ]
+  },
+  "11718708984125260282": {
+   "maps": [
+    "BottomOfTheWell_B1"
+   ],
+   "pos": [
+    0.022,
+    105.78,
+    -77.055
+   ]
+  },
+  "7165255787572043804": {
+   "maps": [
+    "IceCavern_1F"
+   ],
+   "pos": [
+    -1.417,
+    107.227,
+    -6.201
+   ]
+  },
+  "1612219105489330028": {
+   "maps": [
+    "IceCavern_1F"
+   ],
+   "pos": [
+    83.674,
+    108.252,
+    -0.451
+   ]
+  },
+  "14822647495538506998": {
+   "maps": [
+    "IceCavern_1F"
+   ],
+   "pos": [
+    -18.128,
+    108.677,
+    -16.562
+   ]
+  },
+  "13542013937093159888": {
+   "maps": [
+    "IceCavern_1F"
+   ],
+   "pos": [
+    90.216,
+    104.513,
+    2.922
+   ]
+  },
+  "4128092231168513176": {
+   "maps": [
+    "IceCavern_1F"
+   ],
+   "pos": [
+    -53.109,
+    107.193,
+    -34.196
+   ]
+  },
+  "6859289214373847284": {
+   "maps": [
+    "IceCavern_1F"
+   ],
+   "pos": [
+    -46.225,
+    109.71,
+    42.527
+   ]
+  },
+  "11498802739257120175": {
+   "maps": [
+    "IceCavern_1F"
+   ],
+   "pos": [
+    3.38,
+    113.713,
+    -80.2
+   ]
+  },
+  "5626064870824758772": {
+   "maps": [
+    "GanonCastle"
+   ],
+   "pos": [
+    78.401,
+    94.097,
+    328.381
+   ]
+  }
+ }
+}

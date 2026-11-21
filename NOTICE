@@ -1,0 +1,8 @@
+The field-name catalog in packages/oot_save (tool/catalog.json and the
+generated lib/src/catalog.g.dart) and the description of the save format come
+from OOT-SW2SE, https://github.com/Traiver/OOT-SW2SE
+MIT License, Copyright (c) 2026 Traiver and contributors.
+
+This is an unofficial fan project, not affiliated with or endorsed by Nintendo.
+No game assets are included. data/collectibles.json holds only facts derived
+from the user's own copy of the game (flag keys, scene names, coordinates).

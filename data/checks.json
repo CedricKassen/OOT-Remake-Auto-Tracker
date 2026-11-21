@@ -1,0 +1,3439 @@
+[
+  {
+    "id": "gs-012",
+    "area": "kokiri_forest",
+    "category": "skulltula",
+    "number": 12,
+    "title": "Soil patch behind the shop",
+    "description": "Drop a bottled bug onto the soft soil patch at the back of the Kokiri Shop.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bottled Bug"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-014",
+    "area": "kokiri_forest",
+    "category": "skulltula",
+    "number": 14,
+    "title": "Back of the Know-It-All Brothers' house",
+    "description": "On the rear wall of the Know-It-All Brothers' house in the southwest of the village.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-043",
+    "area": "kokiri_forest",
+    "category": "skulltula",
+    "number": 43,
+    "title": "Far southeast house, high on the back",
+    "description": "High on the wall at the back of the house in the forest's far southeast corner.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-001",
+    "area": "deku_tree",
+    "category": "skulltula",
+    "number": 1,
+    "title": "Side alcove off the Compass room",
+    "description": "On the upper floor, press the switch in the Compass room and hop across the gap. It sits in the nook on the left, guarded by an ordinary Skulltula.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-002",
+    "area": "deku_tree",
+    "category": "skulltula",
+    "number": 2,
+    "title": "Basement vines below the web",
+    "description": "Break through the web in the lobby floor by jumping from the top level. After splashing down, turn around and check the climbable vines.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Slingshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-003",
+    "area": "deku_tree",
+    "category": "skulltula",
+    "number": 3,
+    "title": "Grating over the basement water",
+    "description": "Clinging to the grate at the northern edge of the pool in the basement.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Slingshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-004",
+    "area": "deku_tree",
+    "category": "skulltula",
+    "number": 4,
+    "title": "Cobwebbed corner, larva chamber",
+    "description": "The basement's northwest chamber, where Gohma larvae fall from above. Set the web in the corner alight with a burning Deku Stick to expose it.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Deku Sticks",
+      "Slingshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-098",
+    "area": "hyrule_field",
+    "category": "skulltula",
+    "number": 98,
+    "title": "Tree at the end of the little stream",
+    "description": "Along the route between Kokiri Forest and Castle Town, find where the small stream stops and roll into the tree on its left.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "night": true,
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-100",
+    "area": "hyrule_field",
+    "category": "skulltula",
+    "number": 100,
+    "title": "Grotto in the grove south of the ranch",
+    "description": "In the cluster of trees south of Lon Lon Ranch, on the Lake Hylia side, bomb the cracked ground to open a grotto.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs",
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "mask-bunny-hood",
+    "area": "hyrule_field",
+    "category": "mask",
+    "title": "Bunny Hood",
+    "description": "Borrowed from the Happy Mask Shop and sold to the Running Man, who jogs laps around Hyrule Field (mornings between Castle Town and Lon Lon Ranch are a good bet). Completing the sale opens up the Mask of Truth.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "flag": "IsGet.Armor_Child_Mask_Bunny"
+    }
+  },
+  {
+    "id": "gs-046",
+    "area": "hyrule_field",
+    "category": "skulltula",
+    "number": 46,
+    "title": "Crate in the southeast marsh grotto",
+    "description": "The grotto lies in the swampy southeast of the field. Bomb it open as a child and kill the normal Skulltula inside, then return as an adult and roll into the crate that shakes.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "requires": [
+      "Bombs"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-29",
+    "area": "hyrule_field",
+    "category": "heart_piece",
+    "number": 29,
+    "title": "Secret phrase for the Business Scrub",
+    "description": "East of Castle Town is a strip of land with a lone tree; bomb the cracked rock there to open a grotto. An adult reads the Fairy Note on the tree to learn the phrase \"Sell somethin', will ya?\", and a child says it to the scrub and pays 100 Rupees.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "requires": [
+      "Bombs",
+      "100 Rupees"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-30",
+    "area": "hyrule_field",
+    "category": "heart_piece",
+    "number": 30,
+    "title": "Fairy Note chest near Gerudo Valley",
+    "description": "Close to the entrance of Gerudo Valley. An adult has to read the Fairy Note next to the chest before a child can return and open it.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-005",
+    "area": "castle_town",
+    "category": "skulltula",
+    "number": 5,
+    "title": "Guardhouse crates",
+    "description": "Go into the first building on the right after the drawbridge and roll into the stacked crates.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-seed-bag-40",
+    "area": "castle_town",
+    "category": "upgrade",
+    "title": "Deku Seed Bag (40)",
+    "description": "Hit all ten targets in a single round at the Shooting Gallery in Castle Town.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Slingshot"
+    ],
+    "verified": true,
+    "source": {
+      "flag": "MiniGame_HitTarget_HrlCity_Get_BulletBag"
+    }
+  },
+  {
+    "id": "bottle-potion-shop",
+    "area": "castle_town",
+    "category": "bottle",
+    "title": "Bottle: Potion Shop errand",
+    "description": "The owner of the Potion Shop is frightened by a bug in the store. Agree to catch it and the bottle is yours.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "bottle": 1
+    }
+  },
+  {
+    "id": "hp-06",
+    "area": "castle_town",
+    "category": "heart_piece",
+    "number": 6,
+    "title": "Walking Richard home",
+    "description": "At night, find the correct little white dog in town and bring it to the lady near the town gate. A dog follows you once you talk to it.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [],
+    "verified": true,
+    "source": {
+      "flag": "SubEvent_FindRichard_GetHeartPiece"
+    }
+  },
+  {
+    "id": "upgrade-bomb-bag-40",
+    "area": "castle_town",
+    "category": "upgrade",
+    "title": "Bomb Bag (40)",
+    "description": "Comes up as one of the rotating prizes at the Bombchu Bowling Alley; win the round when it is on offer.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_BombBag_Large"
+    }
+  },
+  {
+    "id": "hp-07",
+    "area": "castle_town",
+    "category": "heart_piece",
+    "number": 7,
+    "title": "Bowling alley prize",
+    "description": "Keep playing Bombchu Bowling at 10 Rupees a round until the heart piece is the prize on offer, then win.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "mask-mask-of-truth",
+    "area": "castle_town",
+    "category": "mask",
+    "title": "Mask of Truth",
+    "description": "The Happy Mask Shop owner lends it once the Keaton Mask, Skull Mask, Spooky Mask and Bunny Hood have all been sold. It lets you talk to Gossip Stones and read people's thoughts.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "flag": "IsGet.Armor_Child_Mask_Truth"
+    }
+  },
+  {
+    "id": "bottle-poe-shop",
+    "area": "castle_town",
+    "category": "bottle",
+    "title": "Bottle: Poe Shop reward",
+    "description": "On Epona, ride over the purple lantern glows in Hyrule Field, shoot the Big Poe that appears and bottle it. Each one sold at the Poe Shop in Castle Town is worth 100 points, and 500 points earns the bottle.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona",
+      "Bow",
+      "Bottle"
+    ],
+    "verified": true,
+    "source": {
+      "bottle": 4
+    }
+  },
+  {
+    "id": "hp-33",
+    "area": "castle_town",
+    "category": "heart_piece",
+    "number": 33,
+    "title": "Treasure chest game",
+    "description": "The Treasure Chest Shop in the back alley opens at night. Look through the Lens of Truth to see the contents of each chest and pick correctly to the end.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [
+      "Lens of Truth"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-006",
+    "area": "hyrule_castle",
+    "category": "skulltula",
+    "number": 6,
+    "title": "Tree beside the moat climb",
+    "description": "To the right of the vines by the moat is a small enclosed corner with barrels and sacks. Roll into the tree standing there.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-spin-attack",
+    "area": "hyrule_castle",
+    "category": "upgrade",
+    "title": "Improved Spin Attack",
+    "description": "Past the castle gate, climb the vines, blow up the wall and crawl through to a Great Fairy Fountain. Play Zelda's Lullaby on the Triforce mark and pay the fairy 50 Rupees.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs",
+      "Zelda's Lullaby",
+      "50 Rupees"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_FairyBless_MP"
+    }
+  },
+  {
+    "id": "gs-041",
+    "area": "hyrule_castle",
+    "category": "skulltula",
+    "number": 41,
+    "title": "Back of the ruined archway",
+    "description": "In the ruins in front of Ganon's Castle, look at the rear of the old gatehouse arch over the pit and pull it in with the Hookshot.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-090",
+    "area": "hyrule_castle",
+    "category": "skulltula",
+    "number": 90,
+    "title": "Storm grotto in the southeast corner",
+    "description": "Beyond the spot where Talon naps, in the southeast corner, play the Song of Storms next to the plant with whirling leaves. Blow up the cracked walls in the grotto that appears.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Song of Storms",
+      "Bombs"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "bottle-super-cucco",
+    "area": "lon_lon_ranch",
+    "category": "bottle",
+    "title": "Bottle: Super Cucco game",
+    "description": "Through the left-hand door at the ranch entrance, beat the Super Cucco game. The bottle is handed over full of Lon Lon Milk.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "bottle": 2
+    }
+  },
+  {
+    "id": "song-eponas-song",
+    "area": "lon_lon_ranch",
+    "category": "song",
+    "title": "Epona's Song",
+    "description": "Speak to Malon in the middle of the corral and take out the Ocarina so she can teach it. It summons Epona and makes cows give milk.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "flag": "IsGet.Item_Melody_EponaSong"
+    }
+  },
+  {
+    "id": "hp-01",
+    "area": "lon_lon_ranch",
+    "category": "heart_piece",
+    "number": 1,
+    "title": "Back of the silo, past the crates",
+    "description": "In the southwest silo, shove the crates out of the way and crawl through the small opening to the area behind the grate.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-099",
+    "area": "lon_lon_ranch",
+    "category": "skulltula",
+    "number": 99,
+    "title": "Thin tree next to the wooden tower",
+    "description": "Behind the ranch house in the northeast yard, roll into the thinner of the trees near the wooden tower.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-033",
+    "area": "lon_lon_ranch",
+    "category": "skulltula",
+    "number": 33,
+    "title": "Window of the ranch house",
+    "description": "On the outside of the house, sitting on the window.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-034",
+    "area": "lon_lon_ranch",
+    "category": "skulltula",
+    "number": 34,
+    "title": "Inside the old southwest silo",
+    "description": "Go into the old silo at the southwest corner of the ranch.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "equipment-epona",
+    "area": "lon_lon_ranch",
+    "category": "equipment",
+    "title": "Epona",
+    "description": "As an adult, pay Ingo for a ride, call Epona with her song and win both of his races. Leave the ranch by jumping a fence.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona's Song"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-007",
+    "area": "kakariko_village",
+    "category": "skulltula",
+    "number": 7,
+    "title": "Tree in the middle of the village",
+    "description": "Roll into the tree in the centre of Kakariko to shake it loose.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-008",
+    "area": "kakariko_village",
+    "category": "skulltula",
+    "number": 8,
+    "title": "Next to the Skulltula house door",
+    "description": "Clinging to the wall right beside the entrance of the House of Skulltula.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-009",
+    "area": "kakariko_village",
+    "category": "skulltula",
+    "number": 9,
+    "title": "Construction scaffolding",
+    "description": "Climb up the scaffolding of the half-built house to reach it.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-010",
+    "area": "kakariko_village",
+    "category": "skulltula",
+    "number": 10,
+    "title": "Ladder of the lookout tower",
+    "description": "Sitting on the ladder of the tall watchtower in the middle of the village. Shoot it down or climb past it.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [
+      "Slingshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-011",
+    "area": "kakariko_village",
+    "category": "skulltula",
+    "number": 11,
+    "title": "Back wall of the far northwest house",
+    "description": "Walk around behind the house in the village's far northwest corner.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "bottle-cucco-lady",
+    "area": "kakariko_village",
+    "category": "bottle",
+    "title": "Bottle: Cucco Lady",
+    "description": "Collect the Cucco Lady's seven escaped Cuccos and return them to the pen in the southwest of Kakariko.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "bottle": 3
+    }
+  },
+  {
+    "id": "item-cucco-1",
+    "area": "kakariko_village",
+    "category": "item",
+    "title": "Cucco at the building site",
+    "description": "Standing at the construction site right next to the Cucco Lady's pen.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "item-cucco-2",
+    "area": "kakariko_village",
+    "category": "item",
+    "title": "Cucco at the village entrance",
+    "description": "Wandering in plain sight near the entrance to the village.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "item-cucco-3",
+    "area": "kakariko_village",
+    "category": "item",
+    "title": "Cucco on the Death Mountain road",
+    "description": "On the path up to the Death Mountain gate; it sometimes wanders into the guard's post.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "item-cucco-4",
+    "area": "kakariko_village",
+    "category": "item",
+    "title": "Cucco in the crate",
+    "description": "Hidden in a crate next to the building in the centre of the village. Roll into the crate to free it.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "item-cucco-5",
+    "area": "kakariko_village",
+    "category": "item",
+    "title": "Cucco on the brick pile",
+    "description": "On top of the bricks at the construction site. Glide there with another Cucco from the ledge at the House of Skulltula and throw both down.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "item-cucco-6",
+    "area": "kakariko_village",
+    "category": "item",
+    "title": "Cucco behind the windmill fence",
+    "description": "Fenced in near the windmill. Glide in with another Cucco, then throw this one and then the other back over toward the well.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "item-cucco-7",
+    "area": "kakariko_village",
+    "category": "item",
+    "title": "Cucco on the hill behind the windmill",
+    "description": "From the fenced area behind the windmill, climb the ladder up the hillside.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-02",
+    "area": "kakariko_village",
+    "category": "heart_piece",
+    "number": 2,
+    "title": "Man sitting on the blue roof",
+    "description": "Take a Cucco up the hill behind the windmill, glide over to the blue roof and speak with the man up there.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-adults-wallet",
+    "area": "kakariko_village",
+    "category": "upgrade",
+    "title": "Adult's Wallet",
+    "description": "Holds 500 Rupees. Given in the House of Skulltula for 10 Gold Skulltula tokens.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "requires": [
+      "10 Skulltulas"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_Wallet_Medium"
+    }
+  },
+  {
+    "id": "mask-keaton-mask",
+    "area": "kakariko_village",
+    "category": "mask",
+    "title": "Keaton Mask",
+    "description": "Borrowed from the Happy Mask Shop and sold to the guard at the gate to Death Mountain. Completing the sale opens up the Skull Mask.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "flag": "IsGet.Armor_Child_Mask_Keaton"
+    }
+  },
+  {
+    "id": "hp-35",
+    "area": "kakariko_village",
+    "category": "heart_piece",
+    "number": 35,
+    "title": "Roof of the cow pen",
+    "description": "As a child, have the owl on the mountain summit carry you to Impa's roof and step down onto the cow pen roof behind. As an adult, hookshot the vines to the left of Impa's house instead.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-echo-gem",
+    "area": "kakariko_village",
+    "category": "upgrade",
+    "title": "Echo Gem",
+    "description": "Given in the House of Skulltula for 20 Gold Skulltula tokens. While equipped it alerts you to Gold Skulltulas close by.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "requires": [
+      "20 Skulltulas"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_AgonyStone"
+    }
+  },
+  {
+    "id": "upgrade-giants-wallet",
+    "area": "kakariko_village",
+    "category": "upgrade",
+    "title": "Giant's Wallet",
+    "description": "Holds 1000 Rupees. Given in the House of Skulltula for 30 Gold Skulltula tokens.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "requires": [
+      "30 Skulltulas"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_Wallet_Large"
+    }
+  },
+  {
+    "id": "hp-17",
+    "area": "kakariko_village",
+    "category": "heart_piece",
+    "number": 17,
+    "title": "Upper floor of the windmill",
+    "description": "On the ledge inside the top of the windmill, the place Dampe's race tunnel comes out.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-042",
+    "area": "kakariko_village",
+    "category": "skulltula",
+    "number": 42,
+    "title": "Behind the southernmost house",
+    "description": "Hookshot the vines on the left of the village's southernmost house to get onto its roof, then look down the back of the building.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-quiver-40",
+    "area": "kakariko_village",
+    "category": "upgrade",
+    "title": "Quiver (40)",
+    "description": "Prize for clearing the Shooting Gallery in Kakariko Village as an adult.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Bow"
+    ],
+    "verified": true,
+    "source": {
+      "flag": "MiniGame_HitTarget_Kakariko_Get_Quiver"
+    }
+  },
+  {
+    "id": "hp-36",
+    "area": "kakariko_village",
+    "category": "heart_piece",
+    "number": 36,
+    "title": "Reward for 50 tokens",
+    "description": "Handed over in the House of Skulltula once 50 Gold Skulltula tokens are collected.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "requires": [
+      "50 Skulltulas"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-03",
+    "area": "graveyard",
+    "category": "heart_piece",
+    "number": 3,
+    "title": "Gravedigging tour",
+    "description": "Pay Dampe 10 Rupees a dig on his evening tour. When he strikes the heart piece he claims it is stuck and asks for another 20 Rupees to pull it out.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "song-suns-song",
+    "area": "graveyard",
+    "category": "song",
+    "title": "Sun's Song",
+    "description": "Play Zelda's Lullaby on the Triforce mark to open the Royal Family's Tomb and walk to the back wall. The song flips day and night.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Zelda's Lullaby"
+    ],
+    "verified": true,
+    "source": {
+      "flag": "IsGet.Item_Melody_SunSong"
+    }
+  },
+  {
+    "id": "gs-013",
+    "area": "graveyard",
+    "category": "skulltula",
+    "number": 13,
+    "title": "Soil patch in the northwest corner",
+    "description": "Drop a bottled bug onto the soft soil in the northwest of the graveyard. The same patch takes the Magic Bean needed for a later heart piece.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bottled Bug"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-34",
+    "area": "graveyard",
+    "category": "heart_piece",
+    "number": 34,
+    "title": "Grave on the far right",
+    "description": "Looking toward the Royal Tomb, pull back the regular grave furthest to the right and drop into the hole.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-035",
+    "area": "graveyard",
+    "category": "skulltula",
+    "number": 35,
+    "title": "Behind the gravekeeper's hut",
+    "description": "On the back wall of Dampe's hut.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "mask-spooky-mask",
+    "area": "graveyard",
+    "category": "mask",
+    "title": "Spooky Mask",
+    "description": "Borrowed from the Happy Mask Shop and sold to the boy who plays in the graveyard in the daytime. Completing the sale opens up the Bunny Hood.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "flag": "IsGet.Armor_Child_Mask_Spooky"
+    }
+  },
+  {
+    "id": "hp-18",
+    "area": "graveyard",
+    "category": "heart_piece",
+    "number": 18,
+    "title": "Bean plant flight",
+    "description": "Needs a Magic Bean planted next to the tree in the north as a child. Ride the grown plant as an adult.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Magic Beans"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-19",
+    "area": "graveyard",
+    "category": "heart_piece",
+    "number": 19,
+    "title": "Beat Dampe in under a minute",
+    "description": "Pull back the grave beside the dead tree and complete the race against Dampe's ghost in less than 60 seconds.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "flag": "UnderTheGrave_DampeRace_HeartGeted"
+    }
+  },
+  {
+    "id": "gs-016",
+    "area": "death_mountain_trail",
+    "category": "skulltula",
+    "number": 16,
+    "title": "Soil patch outside Dodongo's Cavern",
+    "description": "Drop a bottled bug on the soft soil at the cavern entrance. The patch is also where the bean for a later heart piece goes.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bottled Bug"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-021",
+    "area": "death_mountain_trail",
+    "category": "skulltula",
+    "number": 21,
+    "title": "Hidden cave on the lower trail",
+    "description": "On the stretch leading back down to Kakariko, blow open the cracked rock face and step inside.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-dins-fire",
+    "area": "death_mountain_trail",
+    "category": "upgrade",
+    "title": "Din's Fire",
+    "description": "On the mountain summit, bomb the wall to the left of the owl to find a Great Fairy Fountain. Play Zelda's Lullaby on the Triforce mark and pay 25 Rupees; she also grants the Magic Meter.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs",
+      "Zelda's Lullaby",
+      "25 Rupees"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_DinFire"
+    }
+  },
+  {
+    "id": "hp-21",
+    "area": "death_mountain_trail",
+    "category": "heart_piece",
+    "number": 21,
+    "title": "Bean plant flight over the cavern",
+    "description": "Ride the bean plant grown from the soil in front of Dodongo's Cavern to the ledge above the entrance.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Magic Beans"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-059",
+    "area": "death_mountain_trail",
+    "category": "skulltula",
+    "number": 59,
+    "title": "Boulder on the high trail",
+    "description": "On the falling-rock stretch below the crater entrance, break the boulders beside the path with the hammer.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Megaton Hammer"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-060",
+    "area": "death_mountain_trail",
+    "category": "skulltula",
+    "number": 60,
+    "title": "Boulder near the cavern's broken fence",
+    "description": "Close to the Dodongo's Cavern entrance, at the gap blasted in the fence, break the boulder with the hammer.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Megaton Hammer"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "equipment-biggoron-sword",
+    "area": "death_mountain_trail",
+    "category": "equipment",
+    "title": "Biggoron's Sword",
+    "description": "The end of the adult trading chain. Three days after getting the receipt (the Sun's Song passes time), show it to Biggoron on the summit for an unbreakable two-handed blade.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Weapon_Sword_Biggoron"
+    }
+  },
+  {
+    "id": "item-giants-knife",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Giant's Knife",
+    "description": "Sold by Medigoron in his workshop to the right of the Goron City entrance for 200 Rupees. Powerful, but it wears out and snaps.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "200 Rupees"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Weapon_Sword_Giant"
+    }
+  },
+  {
+    "id": "item-pocket-egg",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Pocket Egg",
+    "description": "Speak with the Cucco Lady in Kakariko Village as an adult.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Item_PocketEgg"
+    }
+  },
+  {
+    "id": "item-pocket-cucco",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Pocket Cucco",
+    "description": "Let a night go by (or play the Sun's Song) so the egg hatches. Use it to wake Talon, who is sleeping in the house in the middle of Kakariko.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Item_PocketCucco"
+    }
+  },
+  {
+    "id": "item-cojiro",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Cojiro",
+    "description": "Return the Pocket Cucco to the Cucco Lady and she entrusts you with Cojiro.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Item_CojiroCucco"
+    }
+  },
+  {
+    "id": "item-odd-mushroom",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Odd Mushroom",
+    "description": "Enter the Lost Woods from Kokiri Forest, go left and show Cojiro to the man dozing there.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Item_OddMushroom"
+    }
+  },
+  {
+    "id": "item-odd-poultice",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Odd Poultice",
+    "description": "Deliver the mushroom to the old woman at the Potion Shop in Kakariko before the 4-minute timer ends; warp songs are not allowed.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Item_OddPowder"
+    }
+  },
+  {
+    "id": "item-poachers-saw",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Poacher's Saw",
+    "description": "Return to the same spot in the Lost Woods and hand the poultice to Fado.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Item_PoacherSaw"
+    }
+  },
+  {
+    "id": "item-broken-gorons-sword",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Broken Goron's Sword",
+    "description": "Get over the broken bridge in Gerudo Valley, by jumping it on Epona or with the Longshot, and show the saw to the boss carpenter.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_BrokenSword"
+    }
+  },
+  {
+    "id": "item-prescription",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Prescription",
+    "description": "Bring the broken sword to Biggoron at the top of Death Mountain.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Item_Prescription"
+    }
+  },
+  {
+    "id": "item-eyeball-frog",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Eyeball Frog",
+    "description": "Unfreeze King Zora with Blue Fire, then show him the Prescription.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Blue Fire"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_EyeballFrog"
+    }
+  },
+  {
+    "id": "item-eye-drops",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Eye Drops",
+    "description": "Get the frog to the scientist at the Lakeside Laboratory before the 2.5-minute timer ends. Warp songs are out, but the underwater shortcut from Zora's Domain is allowed.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Item_EyeDrop"
+    }
+  },
+  {
+    "id": "item-biggorons-receipt",
+    "area": "death_mountain_trail",
+    "category": "item",
+    "title": "Biggoron's Receipt",
+    "description": "Carry the Eye Drops to Biggoron on the summit before the 3.5-minute timer ends, without warp songs.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Item_ClaimCheck"
+    }
+  },
+  {
+    "id": "gs-022",
+    "area": "goron_city",
+    "category": "skulltula",
+    "number": 22,
+    "title": "Crate in the upper western maze",
+    "description": "Bomb a path into the maze on the west side of the top floor and smash the crate inside.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-bomb-bag-30",
+    "area": "goron_city",
+    "category": "upgrade",
+    "title": "Bomb Bag (30)",
+    "description": "Stop the Goron rolling around the middle floor by setting off a bomb as he passes the sign, then talk to him.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs"
+    ],
+    "verified": true,
+    "source": {
+      "flag": "GoronCity_GetBombBag_fromGoron006"
+    }
+  },
+  {
+    "id": "hp-08",
+    "area": "goron_city",
+    "category": "heart_piece",
+    "number": 8,
+    "title": "Spinning urn",
+    "description": "Use a Deku Stick to light all four torches around the giant urn. From a ledge on the floor above Darunia's room, drop a bomb into the urn while it turns.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Deku Sticks",
+      "Bombs"
+    ],
+    "verified": true,
+    "source": {
+      "flag": "GoronLargePot_IsGetHeartPiece"
+    }
+  },
+  {
+    "id": "gs-052",
+    "area": "goron_city",
+    "category": "skulltula",
+    "number": 52,
+    "title": "Dangling rock by the central platform",
+    "description": "A floor down from the uppermost ring, look behind the tall middle platform for a rock hanging from above.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-seed-bag-50",
+    "area": "lost_woods",
+    "category": "upgrade",
+    "title": "Deku Seed Bag (50)",
+    "description": "Go right from the Kokiri Forest entrance and hit the bullseye of the hanging target three times with the Slingshot.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Slingshot"
+    ],
+    "verified": true,
+    "source": {
+      "flag": "LostWood_HitTargetOfDekuScrub_FirstClear"
+    }
+  },
+  {
+    "id": "hp-04",
+    "area": "lost_woods",
+    "category": "heart_piece",
+    "number": 4,
+    "title": "Play for the Skull Kid",
+    "description": "Go left from the Kokiri Forest entrance and perform Saria's Song for the Skull Kid on the stump.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Saria's Song"
+    ],
+    "verified": true,
+    "source": {
+      "flag": "Npc_SkullKid_Child_IsGetHeartPiece"
+    }
+  },
+  {
+    "id": "hp-05",
+    "area": "lost_woods",
+    "category": "heart_piece",
+    "number": 5,
+    "title": "Ocarina memory game",
+    "description": "Go right from the Kokiri Forest entrance and drop to the area under the hanging target. From the stump, echo the Skull Kids' melodies; winning round three pays out.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "flag": "Minigame_SkullKidSession_IsGetHeartPiece"
+    }
+  },
+  {
+    "id": "gs-015",
+    "area": "lost_woods",
+    "category": "skulltula",
+    "number": 15,
+    "title": "Soil patch above the forest bridge",
+    "description": "From the Skull Kid's stump take the left exit and then the tunnel to come out on the ledge overlooking the bridge. Drop a bottled bug on the soft soil there.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bottled Bug"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-stick-bag-20",
+    "area": "lost_woods",
+    "category": "upgrade",
+    "title": "Deku Stick Bag (20)",
+    "description": "On the ledge above the forest bridge (left at the Skull Kid's stump, then through the tunnel), beat the Business Scrub and buy the upgrade for 40 Rupees.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "40 Rupees"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_StickBag_Medium"
+    }
+  },
+  {
+    "id": "upgrade-nut-bag-scrub",
+    "area": "lost_woods",
+    "category": "upgrade",
+    "title": "Deku Nut Bag (Business Scrub)",
+    "description": "In the clearing just ahead of the Sacred Forest Meadow, bomb the boulder to uncover a grotto. A Business Scrub inside sells the upgrade for 40 Rupees.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs",
+      "40 Rupees"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_NutBag_Medium"
+    }
+  },
+  {
+    "id": "gs-036",
+    "area": "lost_woods",
+    "category": "skulltula",
+    "number": 36,
+    "title": "Soil patch near the Forest Stage",
+    "description": "From the Kokiri Forest entrance go right, left, right, left, left. Drop a bottled bug on the soft soil, and plant a Magic Bean here for another Skulltula later.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bottled Bug"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-stick-bag-30",
+    "area": "lost_woods",
+    "category": "upgrade",
+    "title": "Deku Stick Bag (30)",
+    "description": "Drop into the Forest Stage hole (right, left, right, left, left from the Kokiri Forest entrance, in the grass) wearing the Skull Mask and talk to the large scrub.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Skull Mask"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_StickBag_Large"
+    }
+  },
+  {
+    "id": "mask-skull-mask",
+    "area": "lost_woods",
+    "category": "mask",
+    "title": "Skull Mask",
+    "description": "Borrowed from the Happy Mask Shop. Put it on and sell it to the Skull Kid on the stump to the left of the Lost Woods entrance; completing the sale opens up the Spooky Mask.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "flag": "IsGet.Armor_Child_Mask_Skull"
+    }
+  },
+  {
+    "id": "upgrade-nut-bag-forest-stage",
+    "area": "lost_woods",
+    "category": "upgrade",
+    "title": "Deku Nut Bag (Forest Stage)",
+    "description": "Drop into the Forest Stage hole (right, left, right, left, left from the Kokiri Forest entrance, in the grass) wearing the Mask of Truth and talk to the large scrub.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Mask of Truth"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_NutBag_Large"
+    }
+  },
+  {
+    "id": "gs-044",
+    "area": "lost_woods",
+    "category": "skulltula",
+    "number": 44,
+    "title": "Bean plant flight near the Forest Stage",
+    "description": "As an adult, ride the bean plant grown from the soil near the Forest Stage (right, left, right, left, left from the Kokiri Forest entrance).",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Magic Beans"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-045",
+    "area": "lost_woods",
+    "category": "skulltula",
+    "number": 45,
+    "title": "Halfway through the meadow maze",
+    "description": "Roughly at the midpoint of the hedge maze in the Sacred Forest Meadow, high on the wall to the right.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-017",
+    "area": "dodongos_cavern",
+    "category": "skulltula",
+    "number": 17,
+    "title": "Bombable alcove, first Baby Dodongo room",
+    "description": "East side of the dungeon: blow up the wall of the southern alcove in the first room full of Baby Dodongos.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-018",
+    "area": "dodongos_cavern",
+    "category": "skulltula",
+    "number": 18,
+    "title": "Behind the stairs you raise",
+    "description": "In the western room, detonate the ring of Bomb Flowers at the pillar so a staircase drops into place. Go to the far side of the stairs and look up.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Slingshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-019",
+    "area": "dodongos_cavern",
+    "category": "skulltula",
+    "number": 19,
+    "title": "Side room near the giant skull",
+    "description": "On the upper level of the main hall, blast the cracked wall in the northeast corner near the big skull. It is in the chamber beyond, along with a pair of Dodongos.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-020",
+    "area": "dodongos_cavern",
+    "category": "skulltula",
+    "number": 20,
+    "title": "Timed bomb wall, block puzzle room",
+    "description": "Once inside the skull, go to the room with the block puzzle and lob a bomb with the right timing to break the wall hiding it.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-053",
+    "area": "dodongos_cavern",
+    "category": "skulltula",
+    "number": 53,
+    "title": "Scarecrow ledge over the Baby Dodongo corridor",
+    "description": "About midway along the Baby Dodongo corridor east of the main hall, play the Scarecrow's Song and hookshot up to Pierre.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Scarecrow's Song",
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-023",
+    "area": "death_mountain_crater",
+    "category": "skulltula",
+    "number": 23,
+    "title": "Crates just inside the top entrance",
+    "description": "Come into the crater from the mountain summit and break the pair of crates to the left. Get back out before the heat timer expires.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-09",
+    "area": "death_mountain_crater",
+    "category": "heart_piece",
+    "number": 9,
+    "title": "Alcove below the wall mesh",
+    "description": "Right after entering from the summit, head down the slope and pass between the two large rocks on the right. Climb down the mesh to reach an alcove.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-10",
+    "area": "death_mountain_crater",
+    "category": "heart_piece",
+    "number": 10,
+    "title": "Business Scrub in the crater",
+    "description": "Coming in from the summit, go west and downhill to find a Business Scrub who sells it for 100 Rupees.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "100 Rupees"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-089",
+    "area": "death_mountain_crater",
+    "category": "skulltula",
+    "number": 89,
+    "title": "Soil patch at the crater warp point",
+    "description": "Arrive as a child with the Bolero of Fire and drop a bottled bug on the soft soil beside the warp platform. Plant a bean for the later heart piece and leave before the heat timer runs out.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bolero of Fire",
+      "Bottled Bug"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-double-magic",
+    "area": "death_mountain_crater",
+    "category": "upgrade",
+    "title": "Doubled Magic Meter",
+    "description": "Partway up the western side of the crater, smash the rock with the hammer to open a Great Fairy Fountain. Play Zelda's Lullaby on the Triforce mark and pay 200 Rupees.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Megaton Hammer",
+      "Zelda's Lullaby",
+      "200 Rupees"
+    ],
+    "verified": true,
+    "source": {
+      "magic": 48
+    }
+  },
+  {
+    "id": "hp-22",
+    "area": "death_mountain_crater",
+    "category": "heart_piece",
+    "number": 22,
+    "title": "Bean plant flight in the crater",
+    "description": "Warp in with the Bolero of Fire and ride the bean plant growing beside the warp platform.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Bolero of Fire",
+      "Magic Beans"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-024",
+    "area": "zoras_river",
+    "category": "skulltula",
+    "number": 24,
+    "title": "Soil patch by the bean seller",
+    "description": "Drop a bottled bug on the soft soil next to the man selling Magic Beans.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs",
+      "Bottled Bug"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-11",
+    "area": "zoras_river",
+    "category": "heart_piece",
+    "number": 11,
+    "title": "Ledge reached from the tall-grass grotto",
+    "description": "Carry the Cucco from near the bean seller and glide to the vines part of the way upriver. At the top, pick up the Cucco from the grotto in the tall grass and glide across to the ledge.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-12",
+    "area": "zoras_river",
+    "category": "heart_piece",
+    "number": 12,
+    "title": "Glide from the high switchback",
+    "description": "Carry the Cucco from near the bean seller upriver to the high ledge where the path doubles back near the top. Glide from there to the heart piece behind you.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-025",
+    "area": "zoras_river",
+    "category": "skulltula",
+    "number": 25,
+    "title": "Rock under the Triforce platform",
+    "description": "Climb down carefully from the Triforce platform. It hides on the far side of the rock formation underneath.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [
+      "Bombs"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-061",
+    "area": "zoras_river",
+    "category": "skulltula",
+    "number": 61,
+    "title": "Western ledge above the bean seller",
+    "description": "Get onto the raised ground near the bean seller, either by bean plant or by gliding with a Cucco, and walk west in the direction of Hyrule Field.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-062",
+    "area": "zoras_river",
+    "category": "skulltula",
+    "number": 62,
+    "title": "High wall at the river's eastern end",
+    "description": "At the eastern end of the river, turn to face the way you arrived and look upward.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-31",
+    "area": "zoras_river",
+    "category": "heart_piece",
+    "number": 31,
+    "title": "Rain for the frogs",
+    "description": "Play the Song of Storms to the frogs in the nook on the river's north bank.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Song of Storms"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-32",
+    "area": "zoras_river",
+    "category": "heart_piece",
+    "number": 32,
+    "title": "Frog choir button game",
+    "description": "In the same nook on the north bank, play each of the six non-warp songs so all five frogs grow, then beat their follow-the-buttons game.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Zelda's Lullaby",
+      "Epona's Song",
+      "Saria's Song",
+      "Sun's Song",
+      "Song of Time",
+      "Song of Storms"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-13",
+    "area": "zoras_domain",
+    "category": "heart_piece",
+    "number": 13,
+    "title": "Torches behind the waterfall",
+    "description": "Light a Deku Stick near the Audience Chamber entrance and hurry down to the bottom level, relighting it on the torches along the way. Lighting both torches behind the waterfall in time spawns a chest.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Deku Sticks"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-silver-scale",
+    "area": "zoras_domain",
+    "category": "upgrade",
+    "title": "Silver Scale",
+    "description": "Follow the path on King Zora's left to the top of the waterfall and win the rupee diving game. It allows deeper dives.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Item_Scale_Silver"
+    }
+  },
+  {
+    "id": "gs-026",
+    "area": "zoras_domain",
+    "category": "skulltula",
+    "number": 26,
+    "title": "Trees in the fountain's southeast",
+    "description": "Roll into the trees standing in the southeast corner of Zora's Fountain.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-farores-wind",
+    "area": "zoras_domain",
+    "category": "upgrade",
+    "title": "Farore's Wind",
+    "description": "At Zora's Fountain, bomb the large rock beyond the island to enter a Great Fairy Fountain, play Zelda's Lullaby and pay 100 Rupees. The fountain stays empty until you have met the fairy on Death Mountain or at Hyrule Castle.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bombs",
+      "Zelda's Lullaby",
+      "100 Rupees"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_FaroreWind"
+    }
+  },
+  {
+    "id": "gs-037",
+    "area": "zoras_domain",
+    "category": "skulltula",
+    "number": 37,
+    "title": "To the right of Jabu-Jabu",
+    "description": "On the wall to the right-hand side of Lord Jabu-Jabu at Zora's Fountain.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-063",
+    "area": "zoras_domain",
+    "category": "skulltula",
+    "number": 63,
+    "title": "Next to the former diving ledge",
+    "description": "Zora's Domain is frozen over. Look to the left of the ledge the diving game used to start from.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-23",
+    "area": "zoras_domain",
+    "category": "heart_piece",
+    "number": 23,
+    "title": "Over the drifting ice",
+    "description": "At the frozen Zora's Fountain, hop eastward over the floating chunks of ice.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-24",
+    "area": "zoras_domain",
+    "category": "heart_piece",
+    "number": 24,
+    "title": "Bottom of the fountain",
+    "description": "Swim out to the centre of Zora's Fountain and put on the Iron Boots to sink to the floor.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Iron Boots"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "equipment-zora-tunic",
+    "area": "zoras_domain",
+    "category": "equipment",
+    "title": "Zora Tunic",
+    "description": "Bring Blue Fire from the Ice Cavern and pour it on the frozen King Zora. He gives you the tunic, which allows breathing underwater.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Blue Fire"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Armor_Adult_Zora"
+    }
+  },
+  {
+    "id": "gs-088",
+    "area": "zoras_domain",
+    "category": "skulltula",
+    "number": 88,
+    "title": "Hidden cave behind the silver boulder",
+    "description": "Pick up the silver boulder next to the Great Fairy Fountain at Zora's Fountain and fight through the cave beyond, where the enemies are invisible.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Silver Gauntlets",
+      "Lens of Truth"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-027",
+    "area": "lake_hylia",
+    "category": "skulltula",
+    "number": 27,
+    "title": "Soil patch next to the laboratory",
+    "description": "Drop a bottled bug on the soft soil beside the Lakeside Laboratory. Plant a Magic Bean here as well for a later heart piece.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bottled Bug"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-14",
+    "area": "lake_hylia",
+    "category": "heart_piece",
+    "number": 14,
+    "title": "Child's fishing prize",
+    "description": "As a child, catch a fish measuring at least 55 cm in the Fishing Pond.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "flag": "MiniGame_Fishing_GetHeartPiece"
+    }
+  },
+  {
+    "id": "gs-028",
+    "area": "lake_hylia",
+    "category": "skulltula",
+    "number": 28,
+    "title": "Crawl tunnel in the southwest rocks",
+    "description": "At the far southwest end of the lake, squeeze through the small crawl tunnel in the rocks.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-038",
+    "area": "lake_hylia",
+    "category": "skulltula",
+    "number": 38,
+    "title": "Outside wall of the laboratory",
+    "description": "Stand on the bridge and look at the exterior wall of the Lakeside Laboratory.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "song-scarecrows-song",
+    "area": "lake_hylia",
+    "category": "song",
+    "title": "Scarecrow's Song",
+    "description": "As a child, invent a melody for the scarecrows by the lake. As an adult, play the same melody to them again to make it permanent; it summons Pierre as a Hookshot target.",
+    "era": [
+      "child",
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-20",
+    "area": "lake_hylia",
+    "category": "heart_piece",
+    "number": 20,
+    "title": "Roof of the laboratory",
+    "description": "Ride the bean plant growing by the Lakeside Laboratory and hop off as it floats over the roof.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Magic Beans"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-072",
+    "area": "lake_hylia",
+    "category": "skulltula",
+    "number": 72,
+    "title": "Bottom of the laboratory tank",
+    "description": "Put on the Iron Boots, sink into the tank in the Lakeside Laboratory and hookshot it from the floor.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Iron Boots",
+      "Hookshot",
+      "Zora Tunic"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "equipment-fire-arrows",
+    "area": "lake_hylia",
+    "category": "equipment",
+    "title": "Fire Arrows",
+    "description": "After the Water Temple has refilled the lake, stand on the large island at sunrise and shoot an arrow into the sun. Swim out to pick up the arrows where they drop.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Bow"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_Arrow_Fire"
+    }
+  },
+  {
+    "id": "upgrade-golden-scale",
+    "area": "lake_hylia",
+    "category": "upgrade",
+    "title": "Golden Scale",
+    "description": "As an adult, catch a fish measuring at least 65 cm in the Fishing Pond. It allows even deeper dives than the Silver Scale.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "stock": "Item_Scale_Gold"
+    }
+  },
+  {
+    "id": "gs-073",
+    "area": "lake_hylia",
+    "category": "skulltula",
+    "number": 73,
+    "title": "Tree on the large island",
+    "description": "Go to the large island at the centre of the lake and Longshot the vines up in the tree.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Longshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-25",
+    "area": "lake_hylia",
+    "category": "heart_piece",
+    "number": 25,
+    "title": "Deep dive for the scientist",
+    "description": "Reach the floor of the Lakeside Laboratory tank by diving alone, with no Iron Boots, and the scientist rewards you.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Golden Scale"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-029",
+    "area": "jabu_jabu",
+    "category": "skulltula",
+    "number": 29,
+    "title": "Vines opposite the map chest",
+    "description": "Raise the water level, then climb the vines on the wall facing the Dungeon Map chest.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-030",
+    "area": "jabu_jabu",
+    "category": "skulltula",
+    "number": 30,
+    "title": "North wall of the ledge under the blue pit",
+    "description": "With the tentacles defeated, jump into the blue pit and land on the ledge. It is on the northern wall and needs a manually aimed Boomerang throw.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-031",
+    "area": "jabu_jabu",
+    "category": "skulltula",
+    "number": 31,
+    "title": "Ceiling of the northwest passage",
+    "description": "Jump into the blue pit, land on the ledge and look up at the ceiling of the passage that leads northwest.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-032",
+    "area": "jabu_jabu",
+    "category": "skulltula",
+    "number": 32,
+    "title": "Vines in the room before the boss",
+    "description": "Clinging to the climbable vines in the last room ahead of the boss door.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-039",
+    "area": "gerudo_valley",
+    "category": "skulltula",
+    "number": 39,
+    "title": "Underside of the small bridge",
+    "description": "Below the little wooden bridge near the entrance of the valley.",
+    "era": [
+      "child"
+    ],
+    "night": true,
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-15",
+    "area": "gerudo_valley",
+    "category": "heart_piece",
+    "number": 15,
+    "title": "Chest on the southwest ledge",
+    "description": "Pick up the Cucco standing to the left of the long bridge and glide southwest to a chest.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-040",
+    "area": "gerudo_valley",
+    "category": "skulltula",
+    "number": 40,
+    "title": "Soil patch on the ledge with the cow",
+    "description": "Use the Cucco next to the long bridge to glide down to the ledge where a cow and a Gerudo stand. Drop a bottled bug on the soft soil.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Bottled Bug"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-16",
+    "area": "gerudo_valley",
+    "category": "heart_piece",
+    "number": 16,
+    "title": "Hidden spot north of the cow ledge",
+    "description": "Glide by Cucco from the long bridge down to the ledge with the cow. Stairs next to the waterfall lead to a concealed corner further north.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-079",
+    "area": "gerudo_valley",
+    "category": "skulltula",
+    "number": 79,
+    "title": "Ruin wall behind the carpenters' tent",
+    "description": "Check the ruined wall at the back of the tent where the carpenters camp.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Epona"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-080",
+    "area": "gerudo_valley",
+    "category": "skulltula",
+    "number": 80,
+    "title": "Beneath the stone arch",
+    "description": "South of the carpenters' camp, look under the natural stone arch.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Epona"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-047",
+    "area": "forest_temple",
+    "category": "skulltula",
+    "number": 47,
+    "title": "Above the vines in the entry room",
+    "description": "Climb the vines in the temple's first room and pull it down with the Hookshot.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-048",
+    "area": "forest_temple",
+    "category": "skulltula",
+    "number": 48,
+    "title": "Lobby wall beside the back door",
+    "description": "Stand with the lobby's back door behind you and check the wall on your left.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-049",
+    "area": "forest_temple",
+    "category": "skulltula",
+    "number": 49,
+    "title": "Courtyard ledge below the balcony",
+    "description": "It can be hooked from one exact position on the courtyard floor. Otherwise fall through the hole after the untwisted corridor onto the courtyard balcony and walk the ledge southward.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-050",
+    "area": "forest_temple",
+    "category": "skulltula",
+    "number": 50,
+    "title": "Above the door of the eastern chamber",
+    "description": "Inside the east chamber, turn around: it sits over the doorway you came through. Play the Scarecrow's Song to call Pierre and hookshot up to him.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Scarecrow's Song",
+      "Hookshot",
+      "Bow"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-051",
+    "area": "forest_temple",
+    "category": "skulltula",
+    "number": 51,
+    "title": "Alcove of the turning basement room",
+    "description": "In the basement room whose walls rotate, right before the boss, check the alcoves.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot",
+      "Bow"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-054",
+    "area": "fire_temple",
+    "category": "skulltula",
+    "number": 54,
+    "title": "Ledge reached by the rising lava platform",
+    "description": "East of the entrance is a large lava room; take the lifting platform in its northeast corner up to a ledge. Shift the block with the Song of Time and kill the Like Like.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Goron Tunic",
+      "Song of Time"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-055",
+    "area": "fire_temple",
+    "category": "skulltula",
+    "number": 55,
+    "title": "North wall of the rolling boulder maze",
+    "description": "Bomb the northern wall inside the maze where boulders roll around.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Goron Tunic",
+      "Bombs"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-056",
+    "area": "fire_temple",
+    "category": "skulltula",
+    "number": 56,
+    "title": "Mesh climb over the upper maze",
+    "description": "On the maze's upper level, face southwest, play the Scarecrow's Song and hookshot to Pierre. Ride the lift from there and climb the mesh walls.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Goron Tunic",
+      "Scarecrow's Song",
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-057",
+    "area": "fire_temple",
+    "category": "skulltula",
+    "number": 57,
+    "title": "Past the door at the top of the scarecrow climb",
+    "description": "Follow the scarecrow route from the upper maze level right up to the door at its end. It waits just beyond the corner.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Goron Tunic",
+      "Scarecrow's Song",
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-058",
+    "area": "fire_temple",
+    "category": "skulltula",
+    "number": 58,
+    "title": "Breakable stones in the north room",
+    "description": "Use the hammer on the statue at the lower right of the first room and go through the locked door. Break the stones at the back of the room to the north.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Megaton Hammer"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-064",
+    "area": "ice_cavern",
+    "category": "skulltula",
+    "number": 64,
+    "title": "Up high in the spinning blade room",
+    "description": "The room with the rotating blade where crystals have to be gathered. Look high on the wall.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-065",
+    "area": "ice_cavern",
+    "category": "skulltula",
+    "number": 65,
+    "title": "Wall over the Compass chest",
+    "description": "Thaw the red ice on the east side of the blade room. From the Compass chest, look up toward the northwest.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot",
+      "Blue Fire"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-066",
+    "area": "ice_cavern",
+    "category": "skulltula",
+    "number": 66,
+    "title": "Above the entrance of the ice puzzle room",
+    "description": "Thaw the red ice on the west side of the blade room. Inside the sliding-block room, look above the opening you just walked through.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot",
+      "Blue Fire"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-067",
+    "area": "water_temple",
+    "category": "skulltula",
+    "number": 67,
+    "title": "Lower room behind the risen block",
+    "description": "With the water at the middle level, drop to the bottom of the central pillar room where a block has floated up. Pass behind it, strike the switch and rise into the room above.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Zelda's Lullaby",
+      "Iron Boots",
+      "Zora Tunic"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-068",
+    "area": "water_temple",
+    "category": "skulltula",
+    "number": 68,
+    "title": "Bombable wall in the blue-lit room",
+    "description": "With the water at the middle level, come up in the room lit in blue and blow open the wall.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Bombs",
+      "Zora Tunic"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-069",
+    "area": "water_temple",
+    "category": "skulltula",
+    "number": 69,
+    "title": "Over the turn of the whirlpool river",
+    "description": "In the river room with the whirlpools, look up at the point where the stream bends back on itself.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Longshot",
+      "Iron Boots",
+      "Zora Tunic"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-070",
+    "area": "water_temple",
+    "category": "skulltula",
+    "number": 70,
+    "title": "Ceiling inside the central pillar",
+    "description": "With the water at the middle level, go inside the central pillar and Longshot the panel on its ceiling.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Longshot",
+      "Zora Tunic"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-071",
+    "area": "water_temple",
+    "category": "skulltula",
+    "number": 71,
+    "title": "Waterfall in the boulder corridor",
+    "description": "In the corridor of rolling boulders near the Boss Key, look up into the water pouring down.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Longshot",
+      "Zora Tunic"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-091",
+    "area": "bottom_of_the_well",
+    "category": "skulltula",
+    "number": 91,
+    "title": "Wall beyond the Beamos room",
+    "description": "Go past the Beamos room, using the Lens of Truth to find solid floor, and kill the Like Like. It is on the wall there.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Lens of Truth"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-092",
+    "area": "bottom_of_the_well",
+    "category": "skulltula",
+    "number": 92,
+    "title": "Locked room on the east side",
+    "description": "Open the locked door in the east and use the Lens of Truth to see the safe route inside.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Lens of Truth"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-093",
+    "area": "bottom_of_the_well",
+    "category": "skulltula",
+    "number": 93,
+    "title": "Locked room west of the centre",
+    "description": "Open the locked door on the west side of the central area and kill the Deku Baba inside.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Lens of Truth"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-074",
+    "area": "shadow_temple",
+    "category": "skulltula",
+    "number": 74,
+    "title": "Chamber beyond the Like Like",
+    "description": "Past the invisible scythe trap, kill the Like Like. A door opens and it is in the room behind.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Lens of Truth",
+      "Hover Boots"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-075",
+    "area": "shadow_temple",
+    "category": "skulltula",
+    "number": 75,
+    "title": "Over the falling spike blocks",
+    "description": "Under the dropping spikes is an invisible block; push it out and climb from it onto the spike blocks. It is up on the left.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Lens of Truth",
+      "Hover Boots"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-076",
+    "area": "shadow_temple",
+    "category": "skulltula",
+    "number": 76,
+    "title": "Across the gap in the fan corridor",
+    "description": "In the corridor with the fans, hookshot over the gap next to one of them and turn around.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Hookshot",
+      "Iron Boots",
+      "Hover Boots"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-077",
+    "area": "shadow_temple",
+    "category": "skulltula",
+    "number": 77,
+    "title": "Top of the cell beside the elevator",
+    "description": "Take the elevator down toward the ghost ship and drag the block out of the cell. Call Pierre with the Scarecrow's Song and hookshot onto the cell's roof.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Scarecrow's Song",
+      "Hookshot",
+      "Hover Boots"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-078",
+    "area": "shadow_temple",
+    "category": "skulltula",
+    "number": 78,
+    "title": "Pots in the western room after the ship",
+    "description": "After the ghost ship ride, go into the room on the west and blow up the three pots.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Bombs",
+      "Hover Boots"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-081",
+    "area": "gerudo_fortress",
+    "category": "skulltula",
+    "number": 81,
+    "title": "Southern wall near the far east corridor",
+    "description": "Next to the doorway leading into the easternmost corridor, on the wall facing south.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-26",
+    "area": "gerudo_fortress",
+    "category": "heart_piece",
+    "number": 26,
+    "title": "Rooftop chest past the wide gap",
+    "description": "On the fortress rooftops, climb the broken slope in the southeast and double back north. At the wide gap, play the Scarecrow's Song and hookshot over to Pierre; the chest is to the left.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Scarecrow's Song",
+      "Hookshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-27",
+    "area": "gerudo_fortress",
+    "category": "heart_piece",
+    "number": 27,
+    "title": "Horseback archery, 1000 points",
+    "description": "In the daytime, leave the fortress by its southeast side to find the archery range and score at least 1000 points.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Gerudo Pass",
+      "Epona",
+      "Bow"
+    ],
+    "verified": true,
+    "source": {
+      "flag": "MiniGame_HorsebackArchery_GotaHeart"
+    }
+  },
+  {
+    "id": "upgrade-quiver-50",
+    "area": "gerudo_fortress",
+    "category": "upgrade",
+    "title": "Quiver (50)",
+    "description": "Score at least 1400 points in the horseback archery game at the fortress.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Gerudo Pass",
+      "Epona",
+      "Bow"
+    ],
+    "verified": true,
+    "source": {
+      "flag": "MiniGame_HorseBackArchery_Get_Quiver"
+    }
+  },
+  {
+    "id": "gs-082",
+    "area": "gerudo_fortress",
+    "category": "skulltula",
+    "number": 82,
+    "title": "Back of the northeast archery target",
+    "description": "Out on the horseback archery range, behind the target in the far northeast.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Gerudo Pass",
+      "Longshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "equipment-ice-arrows",
+    "area": "gerudo_fortress",
+    "category": "equipment",
+    "title": "Ice Arrows",
+    "description": "Enter the Gerudo Training Ground for 30 Rupees, gather all nine Small Keys and unlock your way to the large chest in the central room.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Gerudo Pass",
+      "Lens of Truth",
+      "Megaton Hammer",
+      "Hover Boots",
+      "Iron Boots",
+      "Scarecrow's Song"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_Arrow_Ice"
+    }
+  },
+  {
+    "id": "gs-083",
+    "area": "desert_colossus",
+    "category": "skulltula",
+    "number": 83,
+    "title": "Pit inside the wasteland shelter",
+    "description": "Longshot over the river of sand and follow the flags to the stone shelter. Jump down the hole inside it.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Gerudo Pass",
+      "Longshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-nayrus-love",
+    "area": "desert_colossus",
+    "category": "upgrade",
+    "title": "Nayru's Love",
+    "description": "Arriving at the Colossus from the wasteland, bomb the wall between the pair of palm trees on the right to find a Great Fairy Fountain. Play Zelda's Lullaby and pay 300 Rupees.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Gerudo Pass",
+      "Bombs",
+      "Zelda's Lullaby",
+      "300 Rupees"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_NayruLove"
+    }
+  },
+  {
+    "id": "gs-084",
+    "area": "desert_colossus",
+    "category": "skulltula",
+    "number": 84,
+    "title": "Below the circling birds",
+    "description": "At the northern end of the Desert Colossus, underneath the spot where birds fly in circles.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Gerudo Pass",
+      "Longshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-094",
+    "area": "desert_colossus",
+    "category": "skulltula",
+    "number": 94,
+    "title": "Soil patch at the Spirit Temple entrance",
+    "description": "Arrive as a child with the Requiem of Spirit and drop a bottled bug on the soft soil. Plant a Magic Bean too; an adult-era Skulltula and heart piece depend on it.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Requiem of Spirit",
+      "Bottled Bug"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-085",
+    "area": "desert_colossus",
+    "category": "skulltula",
+    "number": 85,
+    "title": "Bean plant flight, second rock outcrop",
+    "description": "Needs the bean planted during the child visit. Ride the plant to the left of the temple entrance and get off at the second rock outcrop.",
+    "era": [
+      "adult"
+    ],
+    "night": true,
+    "requires": [
+      "Magic Beans"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "hp-28",
+    "area": "desert_colossus",
+    "category": "heart_piece",
+    "number": 28,
+    "title": "Bean plant flight, third rock outcrop",
+    "description": "Ride the bean plant to the left of the Spirit Temple entrance and get off at the third rock outcrop.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Magic Beans"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-095",
+    "area": "spirit_temple",
+    "category": "skulltula",
+    "number": 95,
+    "title": "Beyond the gate opened by the crystals",
+    "description": "Child half. Collect the crystals to open the gate; it is right on the other side.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-096",
+    "area": "spirit_temple",
+    "category": "skulltula",
+    "number": 96,
+    "title": "Beside the statue, right of the map chest",
+    "description": "Child half. From the Dungeon Map chest, look all the way to the right, by the statue.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-097",
+    "area": "spirit_temple",
+    "category": "skulltula",
+    "number": 97,
+    "title": "Above the door of the sun block room",
+    "description": "Child half. On the way out of the block puzzle room containing the sun block, turn back and check over the doorway.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Boomerang"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-086",
+    "area": "spirit_temple",
+    "category": "skulltula",
+    "number": 86,
+    "title": "Nook behind the blue block",
+    "description": "Adult half, boulder room. Remove the blue block with the Song of Time to reveal the nook it sits in.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Silver Gauntlets",
+      "Song of Time"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "gs-087",
+    "area": "spirit_temple",
+    "category": "skulltula",
+    "number": 87,
+    "title": "Scarecrow ledge near the statue's hand",
+    "description": "Adult half, giant statue room. From the ledge closest to the statue's hand, play the Scarecrow's Song and Longshot to Pierre.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Silver Gauntlets",
+      "Scarecrow's Song",
+      "Longshot"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "upgrade-halved-damage",
+    "area": "ganons_castle",
+    "category": "upgrade",
+    "title": "Halved Damage",
+    "description": "Outside the castle, go back across the rainbow bridge and lift the golden boulder on the left to reach a Great Fairy Fountain. Play Zelda's Lullaby and pay 500 Rupees to take half damage from then on.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Golden Gauntlets",
+      "Zelda's Lullaby",
+      "500 Rupees"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Item_FairyBless_DefenseDouble"
+    }
+  },
+  {
+    "id": "song-zeldas-lullaby",
+    "area": "hyrule_castle",
+    "category": "song",
+    "title": "Zelda's Lullaby",
+    "description": "Taught by Impa in the castle courtyard right after the first meeting with Princess Zelda.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "flag": "IsGet.Item_Melody_ZeldaLullaby"
+    }
+  },
+  {
+    "id": "song-sarias-song",
+    "area": "lost_woods",
+    "category": "song",
+    "title": "Saria's Song",
+    "description": "Find Saria on her stump at the far end of the Sacred Forest Meadow, in front of the Forest Temple.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "flag": "IsGet.Item_Melody_SariaSong"
+    }
+  },
+  {
+    "id": "song-song-of-time",
+    "area": "castle_town",
+    "category": "song",
+    "title": "Song of Time",
+    "description": "With all three Spiritual Stones, return to Castle Town to see Zelda flee, then fish the Ocarina of Time out of the moat to learn it in a vision.",
+    "era": [
+      "child"
+    ],
+    "requires": [
+      "Kokiri Emerald",
+      "Goron Ruby",
+      "Zora Sapphire"
+    ],
+    "verified": false,
+    "source": {
+      "flag": "IsGet.Item_Melody_TimeSong"
+    }
+  },
+  {
+    "id": "song-song-of-storms",
+    "area": "kakariko_village",
+    "category": "song",
+    "title": "Song of Storms",
+    "description": "As an adult, take out the Ocarina in front of the organ grinder inside the Kakariko windmill.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "flag": "IsGet.Item_Melody_StormSong"
+    }
+  },
+  {
+    "id": "song-minuet-of-forest",
+    "area": "lost_woods",
+    "category": "song",
+    "title": "Minuet of Forest",
+    "description": "Sheik teaches it when you reach the Forest Temple entrance in the Sacred Forest Meadow as an adult.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "flag": "IsGet.Item_Melody_ForestMinuet"
+    }
+  },
+  {
+    "id": "song-bolero-of-fire",
+    "area": "death_mountain_crater",
+    "category": "song",
+    "title": "Bolero of Fire",
+    "description": "Sheik teaches it as you cross the bridge toward the Fire Temple inside the crater.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "flag": "IsGet.Item_Melody_FireBolero"
+    }
+  },
+  {
+    "id": "song-serenade-of-water",
+    "area": "ice_cavern",
+    "category": "song",
+    "title": "Serenade of Water",
+    "description": "Sheik teaches it at the end of the Ice Cavern once you open the Iron Boots chest.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "flag": "IsGet.Item_Melody_WaterSerenade"
+    }
+  },
+  {
+    "id": "song-nocturne-of-shadow",
+    "area": "kakariko_village",
+    "category": "song",
+    "title": "Nocturne of Shadow",
+    "description": "Enter Kakariko as an adult holding the Forest, Fire and Water Medallions to trigger the burning village scene with Sheik.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Forest Medallion",
+      "Fire Medallion",
+      "Water Medallion"
+    ],
+    "verified": false,
+    "source": {
+      "flag": "IsGet.Item_Melody_ShadowNocturne"
+    }
+  },
+  {
+    "id": "song-requiem-of-spirit",
+    "area": "desert_colossus",
+    "category": "song",
+    "title": "Requiem of Spirit",
+    "description": "Go into the Spirit Temple at the Desert Colossus and come back out; Sheik teaches it outside the entrance.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "flag": "IsGet.Item_Melody_SpiritRequiem"
+    }
+  },
+  {
+    "id": "song-prelude-of-light",
+    "area": "castle_town",
+    "category": "song",
+    "title": "Prelude of Light",
+    "description": "Go back to the Temple of Time after clearing the Forest Temple and Sheik teaches it.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Forest Medallion"
+    ],
+    "verified": false,
+    "source": {
+      "flag": "IsGet.Item_Melody_LightPrelude"
+    }
+  },
+  {
+    "id": "reward-kokiri-emerald",
+    "area": "deku_tree",
+    "category": "reward",
+    "title": "Kokiri Emerald",
+    "description": "Spiritual Stone of the Forest, entrusted to you by the Great Deku Tree after Queen Gohma is beaten.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "stock": "Item_Stone_Forest"
+    }
+  },
+  {
+    "id": "reward-goron-ruby",
+    "area": "dodongos_cavern",
+    "category": "reward",
+    "title": "Goron Ruby",
+    "description": "Spiritual Stone of Fire, given by Darunia after King Dodongo is beaten.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "stock": "Item_Stone_Fire"
+    }
+  },
+  {
+    "id": "reward-zora-sapphire",
+    "area": "jabu_jabu",
+    "category": "reward",
+    "title": "Zora Sapphire",
+    "description": "Spiritual Stone of Water, given by Princess Ruto after Barinade is beaten.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "stock": "Item_Stone_Water"
+    }
+  },
+  {
+    "id": "reward-light-medallion",
+    "area": "castle_town",
+    "category": "reward",
+    "title": "Light Medallion",
+    "description": "Rauru hands it over in the Chamber of Sages when you wake as an adult after drawing the Master Sword in the Temple of Time.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "stock": "Item_Medal_Light"
+    }
+  },
+  {
+    "id": "reward-forest-medallion",
+    "area": "forest_temple",
+    "category": "reward",
+    "title": "Forest Medallion",
+    "description": "Awarded by Saria after Phantom Ganon is beaten.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "stock": "Item_Medal_Forest"
+    }
+  },
+  {
+    "id": "reward-fire-medallion",
+    "area": "fire_temple",
+    "category": "reward",
+    "title": "Fire Medallion",
+    "description": "Awarded by Darunia after Volvagia is beaten.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "stock": "Item_Medal_Fire"
+    }
+  },
+  {
+    "id": "reward-water-medallion",
+    "area": "water_temple",
+    "category": "reward",
+    "title": "Water Medallion",
+    "description": "Awarded by Ruto after Morpha is beaten.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "stock": "Item_Medal_Water"
+    }
+  },
+  {
+    "id": "reward-shadow-medallion",
+    "area": "shadow_temple",
+    "category": "reward",
+    "title": "Shadow Medallion",
+    "description": "Awarded by Impa after Bongo Bongo is beaten.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "stock": "Item_Medal_Shadow"
+    }
+  },
+  {
+    "id": "reward-spirit-medallion",
+    "area": "spirit_temple",
+    "category": "reward",
+    "title": "Spirit Medallion",
+    "description": "Awarded by Nabooru after Twinrova is beaten.",
+    "era": [
+      "adult"
+    ],
+    "requires": [],
+    "verified": false,
+    "source": {
+      "stock": "Item_Medal_Spirit"
+    }
+  }
+]

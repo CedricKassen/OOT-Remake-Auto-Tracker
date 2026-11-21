@@ -1,0 +1,8 @@
+.dart_tool/
+build/
+*.iml
+.idea/
+.DS_Store
+/server/ootd
+__pycache__/
+data/local/

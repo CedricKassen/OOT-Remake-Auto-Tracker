@@ -1,0 +1,253 @@
+[
+  {
+    "id": "kokiri_forest",
+    "name": "Kokiri Forest",
+    "kind": "overworld",
+    "bancs": [
+      "KokiriForest"
+    ],
+    "visitFlag": "IsVisitLocation.KokiriForest"
+  },
+  {
+    "id": "deku_tree",
+    "name": "Inside the Deku Tree",
+    "kind": "dungeon",
+    "bancs": [
+      "InsideTheDekuTree"
+    ],
+    "visitFlag": "IsVisitLocation.InsideTheDekuTree"
+  },
+  {
+    "id": "hyrule_field",
+    "name": "Hyrule Field",
+    "kind": "overworld",
+    "bancs": [
+      "HyruleField"
+    ],
+    "visitFlag": "IsVisitLocation.HyruleField"
+  },
+  {
+    "id": "castle_town",
+    "name": "Castle Town & Temple of Time",
+    "kind": "overworld",
+    "bancs": [
+      "Market",
+      "TimeTemple"
+    ],
+    "visitFlag": "IsVisitLocation.Market"
+  },
+  {
+    "id": "hyrule_castle",
+    "name": "Hyrule Castle",
+    "kind": "overworld",
+    "bancs": [
+      "HyruleCastle"
+    ]
+  },
+  {
+    "id": "lon_lon_ranch",
+    "name": "Lon Lon Ranch",
+    "kind": "overworld",
+    "bancs": [
+      "LonLonRanch"
+    ]
+  },
+  {
+    "id": "kakariko_village",
+    "name": "Kakariko Village",
+    "kind": "overworld",
+    "bancs": [
+      "KakarikoVillage"
+    ],
+    "visitFlag": "IsVisitLocation.KakarikoVillage"
+  },
+  {
+    "id": "graveyard",
+    "name": "Kakariko Graveyard",
+    "kind": "overworld",
+    "bancs": [
+      "GraveYard",
+      "UnderTheGrave"
+    ]
+  },
+  {
+    "id": "death_mountain_trail",
+    "name": "Death Mountain Trail",
+    "kind": "overworld",
+    "bancs": [
+      "MountainTrail",
+      "DeathMountainTrail"
+    ]
+  },
+  {
+    "id": "goron_city",
+    "name": "Goron City",
+    "kind": "overworld",
+    "bancs": [
+      "GoronCity"
+    ]
+  },
+  {
+    "id": "lost_woods",
+    "name": "Lost Woods & Sacred Forest Meadow",
+    "kind": "overworld",
+    "bancs": [
+      "LostWood",
+      "SacredForestMeadow"
+    ],
+    "visitFlag": "IsVisitLocation.LostWood"
+  },
+  {
+    "id": "dodongos_cavern",
+    "name": "Dodongo's Cavern",
+    "kind": "dungeon",
+    "bancs": [
+      "DodongoCavern"
+    ],
+    "visitFlag": "IsVisitLocation.DodongoCavern"
+  },
+  {
+    "id": "death_mountain_crater",
+    "name": "Death Mountain Crater",
+    "kind": "overworld",
+    "bancs": [
+      "MountainCrater",
+      "DeathMtCrater",
+      "DeathMountainCrater"
+    ]
+  },
+  {
+    "id": "zoras_river",
+    "name": "Zora's River",
+    "kind": "overworld",
+    "bancs": [
+      "ZoraRiver"
+    ]
+  },
+  {
+    "id": "zoras_domain",
+    "name": "Zora's Domain & Fountain",
+    "kind": "overworld",
+    "bancs": [
+      "ZoraDomain",
+      "ZoraFountain"
+    ]
+  },
+  {
+    "id": "lake_hylia",
+    "name": "Lake Hylia",
+    "kind": "overworld",
+    "bancs": [
+      "HyliaLake",
+      "LakeHylia"
+    ]
+  },
+  {
+    "id": "jabu_jabu",
+    "name": "Jabu-Jabu's Belly",
+    "kind": "dungeon",
+    "bancs": [
+      "InsideJabuJabuBelly"
+    ],
+    "visitFlag": "IsVisitLocation.InsideJabuJabuBelly"
+  },
+  {
+    "id": "gerudo_valley",
+    "name": "Gerudo Valley",
+    "kind": "overworld",
+    "bancs": [
+      "GerudoValley"
+    ]
+  },
+  {
+    "id": "forest_temple",
+    "name": "Forest Temple",
+    "kind": "dungeon",
+    "bancs": [
+      "ForestTemple"
+    ],
+    "visitFlag": "IsVisitLocation.ForestTemple"
+  },
+  {
+    "id": "fire_temple",
+    "name": "Fire Temple",
+    "kind": "dungeon",
+    "bancs": [
+      "FireTemple"
+    ],
+    "visitFlag": "IsVisitLocation.FireTemple"
+  },
+  {
+    "id": "ice_cavern",
+    "name": "Ice Cavern",
+    "kind": "dungeon",
+    "bancs": [
+      "IceCavern"
+    ],
+    "visitFlag": "IsVisitLocation.IceCavern"
+  },
+  {
+    "id": "water_temple",
+    "name": "Water Temple",
+    "kind": "dungeon",
+    "bancs": [
+      "WaterTemple"
+    ],
+    "visitFlag": "IsVisitLocation.WaterTemple"
+  },
+  {
+    "id": "bottom_of_the_well",
+    "name": "Bottom of the Well",
+    "kind": "dungeon",
+    "bancs": [
+      "BottomOfTheWell"
+    ],
+    "visitFlag": "IsVisitLocation.BottomOfTheWell"
+  },
+  {
+    "id": "shadow_temple",
+    "name": "Shadow Temple",
+    "kind": "dungeon",
+    "bancs": [
+      "ShadowTemple"
+    ],
+    "visitFlag": "IsVisitLocation.ShadowTemple"
+  },
+  {
+    "id": "gerudo_fortress",
+    "name": "Gerudo's Fortress & Training Ground",
+    "kind": "overworld",
+    "bancs": [
+      "GerudoFortress",
+      "GerudoTrainingGround"
+    ],
+    "visitFlag": "IsVisitLocation.GerudoFortress"
+  },
+  {
+    "id": "desert_colossus",
+    "name": "Haunted Wasteland & Desert Colossus",
+    "kind": "overworld",
+    "bancs": [
+      "HountedWasteland",
+      "DesertColossus"
+    ]
+  },
+  {
+    "id": "spirit_temple",
+    "name": "Spirit Temple",
+    "kind": "dungeon",
+    "bancs": [
+      "SpiritTemple"
+    ],
+    "visitFlag": "IsVisitLocation.SpiritTemple"
+  },
+  {
+    "id": "ganons_castle",
+    "name": "Ganon's Castle",
+    "kind": "dungeon",
+    "bancs": [
+      "InsideGanonCastle"
+    ],
+    "visitFlag": "IsVisitLocation.InsideGanonCastle"
+  }
+]

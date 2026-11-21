@@ -1,0 +1,682 @@
+{
+ "gs-012": {
+  "instance": "9623998892552467148",
+  "confidence": "certain",
+  "why": "only skulltula in Kokiri Forest flagged IsMagicBeanSoil (linked to the bean soil patch actor)"
+ },
+ "gs-014": {
+  "instance": "17067594426901953848",
+  "confidence": "certain",
+  "why": "only other child-only skulltula in Kokiri Forest; Nocturnal, on a house in the west"
+ },
+ "gs-043": {
+  "instance": "7116603238806634901",
+  "confidence": "certain",
+  "why": "only adult-only skulltula in Kokiri Forest"
+ },
+ "gs-001": {
+  "instance": "13609975487234437568",
+  "confidence": "certain",
+  "why": "only one on the top floor (3F, room 3) which also holds the Compass chest and a guarding Skulltula"
+ },
+ "gs-002": {
+  "instance": "16101480770659370603",
+  "confidence": "certain",
+  "why": "basement room 4, at the east wall by the landing pool; the other room-4 skulltula sits on the water gate"
+ },
+ "gs-003": {
+  "instance": "18075358844331090388",
+  "confidence": "certain",
+  "why": "basement room 4, 1.6 m from the Deku_WaterGate actor at the north edge of the pool"
+ },
+ "gs-004": {
+  "instance": "17501688996789643983",
+  "confidence": "certain",
+  "why": "only one in the far north-west basement chamber (room 11)"
+ },
+ "gs-098": {
+  "instance": "2177746409373494991",
+  "confidence": "certain",
+  "why": "pop-out-of-tree parameters (AppearPopOut + AppearWarpRotOffset); on the map at the lone tree where the stream ends"
+ },
+ "gs-100": {
+  "instance": "12007978132755687032",
+  "confidence": "certain",
+  "why": "remaining Hyrule Field skulltula; map icon sits in the grove south of Lon Lon Ranch"
+ },
+ "gs-046": {
+  "instance": "9047381233010434881",
+  "confidence": "certain",
+  "why": "adult-only, linked to a breakable crate (IsAgonyStoneBoxConnect); map icon in the south-east marsh"
+ },
+ "hp-29": {
+  "instance": "14825051130171187671",
+  "confidence": "certain",
+  "why": "flag name HyruleField_Enemy_Scrub_Business_HeartPiece_01"
+ },
+ "hp-30": {
+  "instance": "2967378296224661060",
+  "confidence": "certain",
+  "why": "only chest heart piece in Hyrule Field, next to a fairy note (HrlField_Note_11) at the Gerudo Valley exit"
+ },
+ "gs-005": {
+  "instance": "8942465719711548237",
+  "confidence": "certain",
+  "why": "only skulltula in Castle Town; sits inside breakable crates next to soldiers"
+ },
+ "hp-06": {
+  "instance": "8568137720802848289",
+  "confidence": "certain",
+  "why": "flag name SubEvent_FindRichard_GetHeartPiece"
+ },
+ "hp-07": {
+  "instance": "11628104451986877978",
+  "confidence": "certain",
+  "why": "flag name MiniGame_BombchuBowling_ClearThirdTime"
+ },
+ "hp-33": {
+  "instance": "5215133574889185473",
+  "confidence": "certain",
+  "why": "flag name MiniGame_ChoiceTreasure_IsClear"
+ },
+ "gs-006": {
+  "instance": "2504273934093629549",
+  "confidence": "certain",
+  "why": "pop-out-of-tree parameters; the other HyruleCastle-scene skulltula is in a grotto"
+ },
+ "gs-041": {
+  "instance": "5626064870824758772",
+  "confidence": "certain",
+  "why": "only one placed in the GanonCastle (adult) scene"
+ },
+ "gs-090": {
+  "instance": "9162653017526462607",
+  "confidence": "certain",
+  "why": "grotto interior: next to a WallCrack and a Skullwalltula"
+ },
+ "gs-099": {
+  "instance": "341792603838029977",
+  "confidence": "certain",
+  "why": "pop-out-of-tree parameters; on the tree east of the house on the map"
+ },
+ "gs-033": {
+  "instance": "15889002414176907668",
+  "confidence": "likely",
+  "why": "on the wall of the ranch building on the map; the other night skulltula is at the silo"
+ },
+ "gs-034": {
+  "instance": "2730878115209290675",
+  "confidence": "likely",
+  "why": "at the south-west silo on the map, 10 m from the silo heart piece (but the game places it in both eras, checklist says child only)"
+ },
+ "hp-01": {
+  "instance": "9814903750835309225",
+  "confidence": "certain",
+  "why": "only heart piece at Lon Lon Ranch; behind crawl anchors at the silo"
+ },
+ "gs-007": {
+  "instance": "7677963516305772491",
+  "confidence": "certain",
+  "why": "only Kakariko skulltula with pop-out-of-tree parameters; on the central tree on the map"
+ },
+ "gs-008": {
+  "instance": "15314554401574296838",
+  "confidence": "certain",
+  "why": "1.5 m from the door of the spider-web decorated house (House of Skulltula)"
+ },
+ "gs-009": {
+  "instance": "14107117960174262321",
+  "confidence": "likely",
+  "why": "on the half-built scaffold building on the map"
+ },
+ "gs-010": {
+  "instance": "15118290503807073158",
+  "confidence": "likely",
+  "why": "on the small tower structure in the village centre on the map, highest of the child skulltulas (y 110.9)"
+ },
+ "gs-011": {
+  "instance": "11629189455828560791",
+  "confidence": "likely",
+  "why": "on the north-west-most house on the map"
+ },
+ "gs-042": {
+  "instance": "3310819903461047792",
+  "confidence": "certain",
+  "why": "only adult-only skulltula in Kakariko; behind the southernmost building"
+ },
+ "hp-02": {
+  "instance": "1416092057268113387",
+  "confidence": "certain",
+  "why": "reward flag Npc_Hylia_001_IsGetHeartPiece, NPC standing on a roof (y 107.5)"
+ },
+ "hp-35": {
+  "instance": "17926402522258180222",
+  "confidence": "certain",
+  "why": "freestanding piece 5 m from an Animal_Cow actor at the southern house"
+ },
+ "hp-17": {
+  "instance": "13389209437182306002",
+  "confidence": "certain",
+  "why": "freestanding piece at the windmill, linked to the Song of Storms event request"
+ },
+ "hp-36": {
+  "instance": "12012336414699946951",
+  "confidence": "certain",
+  "why": "reward flag of Npc_Hylia_025 with the GatheringTokenGold facility icon (House of Skulltula)"
+ },
+ "gs-013": {
+  "instance": "16798263777516949500",
+  "confidence": "certain",
+  "why": "only graveyard skulltula flagged IsMagicBeanSoil"
+ },
+ "gs-035": {
+  "instance": "229475726653285413",
+  "confidence": "certain",
+  "why": "the other graveyard skulltula; Nocturnal"
+ },
+ "hp-03": {
+  "instance": "10075158462075677237",
+  "confidence": "certain",
+  "why": "flag name GraveYard_DiggingHoleTour_Drop_HeartPiece"
+ },
+ "hp-34": {
+  "instance": "9622128545943056087",
+  "confidence": "certain",
+  "why": "chest on an underground altar (Graveyard_UnderGroundAltar), present in both eras"
+ },
+ "hp-18": {
+  "instance": "2157466067026784951",
+  "confidence": "certain",
+  "why": "only freestanding heart piece in the graveyard, above the bean soil patch"
+ },
+ "hp-19": {
+  "instance": "5534919361313859554",
+  "confidence": "certain",
+  "why": "chest with event MiniGame_DampeRace_OpenGoalTBox, linked to Dampe"
+ },
+ "gs-016": {
+  "instance": "17425319789138387506",
+  "confidence": "certain",
+  "why": "only Death Mountain Trail skulltula flagged IsMagicBeanSoil"
+ },
+ "gs-021": {
+  "instance": "351345377871782696",
+  "confidence": "certain",
+  "why": "only one present in both eras, next to a WallCrack (bombable cave)"
+ },
+ "gs-059": {
+  "instance": "832677387023638406",
+  "confidence": "certain",
+  "why": "adult, beside a breakable rock high up the trail (y 187), far from the cavern"
+ },
+ "gs-060": {
+  "instance": "17669199296215821346",
+  "confidence": "certain",
+  "why": "adult, beside a breakable rock 15 m from the Dodongo's Cavern soil patch"
+ },
+ "hp-21": {
+  "instance": "715147239509454487",
+  "confidence": "certain",
+  "why": "only heart piece on Death Mountain Trail"
+ },
+ "gs-022": {
+  "instance": "569390966671955163",
+  "confidence": "certain",
+  "why": "child-only, inside a breakable crate"
+ },
+ "gs-052": {
+  "instance": "18139423190738716302",
+  "confidence": "certain",
+  "why": "adult-only, at the city centre"
+ },
+ "hp-08": {
+  "instance": "3483734707455267135",
+  "confidence": "certain",
+  "why": "flag name GoronLargePot_IsGetHeartPiece"
+ },
+ "gs-015": {
+  "instance": "9333354743976439033",
+  "confidence": "certain",
+  "why": "bean soil skulltula (LostWood02) on the ledge 18 m from the bridge actor"
+ },
+ "gs-036": {
+  "instance": "17796658857969527112",
+  "confidence": "certain",
+  "why": "bean soil skulltula (LostWood01) 8 m from a grotto entrance, directly below the bean-flight skulltula"
+ },
+ "gs-044": {
+  "instance": "4335656213162247230",
+  "confidence": "certain",
+  "why": "only non-soil skulltula in the LostWood scene, 6 m above soil patch LostWood01"
+ },
+ "gs-045": {
+  "instance": "14473218207379268379",
+  "confidence": "certain",
+  "why": "only one in the SacredForestMeadow scene"
+ },
+ "hp-04": {
+  "instance": "605877630645816565",
+  "confidence": "certain",
+  "why": "flag name Npc_SkullKid_Child_IsGetHeartPiece"
+ },
+ "hp-05": {
+  "instance": "18092305056327665421",
+  "confidence": "certain",
+  "why": "flag name Minigame_SkullKidSession_IsGetHeartPiece"
+ },
+ "gs-017": {
+  "instance": "1171854281537584829",
+  "confidence": "certain",
+  "why": "room 3: the alcove south of the Baby Dodongo corridor (room 2, which has the WallCrack)"
+ },
+ "gs-018": {
+  "instance": "8470399761714006011",
+  "confidence": "certain",
+  "why": "room 10: the room with the bomb flower ring and Obj_DodongoCave_BrokenStair"
+ },
+ "gs-019": {
+  "instance": "4565265801822094851",
+  "confidence": "certain",
+  "why": "room 18: upper-floor side room with two Enemy_Dodongo and a WallCrack"
+ },
+ "gs-020": {
+  "instance": "13690401647626643497",
+  "confidence": "certain",
+  "why": "room 20: alcove behind the block puzzle room (room 19 with pushable boxes and a CrackWall)"
+ },
+ "gs-053": {
+  "instance": "960362013021648957",
+  "confidence": "certain",
+  "why": "room 2 (Baby Dodongo corridor), 5.7 m from the Pierre scarecrow marker"
+ },
+ "gs-023": {
+  "instance": "18219295034534354574",
+  "confidence": "certain",
+  "why": "inside breakable crates at the top entrance"
+ },
+ "gs-089": {
+  "instance": "6397182598322965076",
+  "confidence": "certain",
+  "why": "flagged IsMagicBeanSoil"
+ },
+ "hp-09": {
+  "instance": "10331043360028932045",
+  "confidence": "likely",
+  "why": "on the map between the two large rocks below the summit entrance, 11 m lower than the entrance crates"
+ },
+ "hp-10": {
+  "instance": "12493798230772313904",
+  "confidence": "certain",
+  "why": "flag name DeathMountain_Enemy_Scrub_Business_HeartPiece_01"
+ },
+ "hp-22": {
+  "instance": "744856631664786545",
+  "confidence": "likely",
+  "why": "on top of the volcano cone next to the warp platform on the map, 16 m above the bean soil"
+ },
+ "gs-024": {
+  "instance": "12370559827741970774",
+  "confidence": "certain",
+  "why": "flagged IsMagicBeanSoil, 1.6 m from the bean seller NPC"
+ },
+ "gs-025": {
+  "instance": "8695975724114049706",
+  "confidence": "certain",
+  "why": "only other child-only skulltula; at the round platform at the east end"
+ },
+ "gs-061": {
+  "instance": "10917372215719266172",
+  "confidence": "certain",
+  "why": "adult-only, on the raised ledge 20 m from the bean seller soil (west end)"
+ },
+ "gs-062": {
+  "instance": "9450239379321634455",
+  "confidence": "certain",
+  "why": "adult-only, on the cliff wall at the east end of the river"
+ },
+ "hp-11": {
+  "instance": "11455676800795329345",
+  "confidence": "likely",
+  "why": "on the mid-river ledge 20 m north of a grotto entrance at the same height"
+ },
+ "hp-12": {
+  "instance": "4189391771527808272",
+  "confidence": "likely",
+  "why": "on the high ledge at the far north-east end of the river on the map"
+ },
+ "hp-31": {
+  "instance": "18246168067761770276",
+  "confidence": "certain",
+  "why": "flag name MiniGame_FrogTenors_StormSong"
+ },
+ "hp-32": {
+  "instance": "4877056571307262080",
+  "confidence": "certain",
+  "why": "the other frog reward flag (MiniGame_FrogTenors_InsectRepellent)"
+ },
+ "gs-026": {
+  "instance": "17355397719442343054",
+  "confidence": "certain",
+  "why": "pop-out-of-tree parameters, ZoraFountain_Child"
+ },
+ "gs-037": {
+  "instance": "7152962033963346563",
+  "confidence": "certain",
+  "why": "only other child-only skulltula at Zora's Fountain; Nocturnal"
+ },
+ "gs-063": {
+  "instance": "9600417828645642589",
+  "confidence": "certain",
+  "why": "only one in the ZoraDomain_Adult scene"
+ },
+ "gs-088": {
+  "instance": "9537398183107003742",
+  "confidence": "certain",
+  "why": "cave interior at Zora's Fountain (cave props, Enemy_Skulltula 2.6 m away)"
+ },
+ "hp-13": {
+  "instance": "3130048366421939233",
+  "confidence": "certain",
+  "why": "only chest; spawned by event between two timed torches (ZoraDomain_Child)"
+ },
+ "hp-23": {
+  "instance": "12406896586250888098",
+  "confidence": "certain",
+  "why": "adult Zora's Fountain, at surface level (y 103) among snow/rubble"
+ },
+ "hp-24": {
+  "instance": "8030885465575590602",
+  "confidence": "certain",
+  "why": "adult Zora's Fountain, 32 m below the surface (y 71) among rupees"
+ },
+ "gs-027": {
+  "instance": "7014193622407727514",
+  "confidence": "certain",
+  "why": "flagged IsMagicBeanSoil, beside the laboratory"
+ },
+ "gs-028": {
+  "instance": "8655370827943125875",
+  "confidence": "certain",
+  "why": "only one in both eras, far south-west corner of the lake"
+ },
+ "gs-038": {
+  "instance": "13944703896577680014",
+  "confidence": "certain",
+  "why": "child-only, Nocturnal, on the laboratory"
+ },
+ "gs-072": {
+  "instance": "7388645484070660331",
+  "confidence": "certain",
+  "why": "adult-only, in a crate with IsWaterDepthJumpOut at the bottom of the laboratory tank"
+ },
+ "gs-073": {
+  "instance": "789492162651991711",
+  "confidence": "certain",
+  "why": "adult-only, Nocturnal, away from the laboratory"
+ },
+ "hp-14": {
+  "instance": "6175378250368022556",
+  "confidence": "certain",
+  "why": "flag name MiniGame_Fishing_GetHeartPiece"
+ },
+ "hp-20": {
+  "instance": "13469300937852836203",
+  "confidence": "certain",
+  "why": "only freestanding piece, on the laboratory roof (y 163)"
+ },
+ "hp-25": {
+  "instance": "3889886157160285015",
+  "confidence": "certain",
+  "why": "flag name Npc_Hylia_045_HasDived"
+ },
+ "gs-029": {
+  "instance": "11513774157335944149",
+  "confidence": "certain",
+  "why": "room 14: the room with the Dungeon Map chest and the raisable water plane"
+ },
+ "gs-030": {
+  "instance": "13852835165271311030",
+  "confidence": "likely",
+  "why": "room 3 below the holes; the more northern of the two, lower on the wall (y 88.4)"
+ },
+ "gs-031": {
+  "instance": "11283202900158580106",
+  "confidence": "likely",
+  "why": "room 3 below the holes; the western one at ceiling height (y 90.3) toward the elevator room"
+ },
+ "gs-032": {
+  "instance": "15983944335296207002",
+  "confidence": "certain",
+  "why": "room 5, on IvyClimbable vines; the other three are fixed to rooms 3 and 14"
+ },
+ "gs-039": {
+  "instance": "15265071047503310220",
+  "confidence": "certain",
+  "why": "child-only, Nocturnal"
+ },
+ "gs-040": {
+  "instance": "8326970197618554626",
+  "confidence": "certain",
+  "why": "flagged IsMagicBeanSoil, at the bottom of the canyon"
+ },
+ "gs-079": {
+  "instance": "13584527502619061465",
+  "confidence": "certain",
+  "why": "adult, 5 m from GerudoValley_RuinWall north of the tent"
+ },
+ "gs-080": {
+  "instance": "11535915511003753934",
+  "confidence": "certain",
+  "why": "adult, at the rock south of the tent on the map"
+ },
+ "hp-15": {
+  "instance": "15856256242099990922",
+  "confidence": "certain",
+  "why": "only chest heart piece in Gerudo Valley"
+ },
+ "hp-16": {
+  "instance": "16129198288828948135",
+  "confidence": "certain",
+  "why": "only freestanding piece; beside stairs at the waterfall in the north"
+ },
+ "gs-047": {
+  "instance": "11081821111317815057",
+  "confidence": "certain",
+  "why": "room 0 (entry room with the Wolfos)"
+ },
+ "gs-048": {
+  "instance": "17612196129225973969",
+  "confidence": "certain",
+  "why": "room 2 (lobby with the Poe torches and elevator)"
+ },
+ "gs-049": {
+  "instance": "10970805784153267902",
+  "confidence": "certain",
+  "why": "room 12 (courtyard with Deku Babas, Octorok)"
+ },
+ "gs-050": {
+  "instance": "2014780391754316762",
+  "confidence": "certain",
+  "why": "room 14, 3.2 m from the Pierre scarecrow marker"
+ },
+ "gs-051": {
+  "instance": "3072474196008424241",
+  "confidence": "certain",
+  "why": "room 27 on B2 (pivoting floor room)"
+ },
+ "gs-054": {
+  "instance": "6789992996625105554",
+  "confidence": "certain",
+  "why": "room 19: ledge with a Like Like next to the Song of Time block of the lava room"
+ },
+ "gs-055": {
+  "instance": "12751796212121957464",
+  "confidence": "certain",
+  "why": "room 5 (boulder maze), 1.8 m from Obj_FireTemple_CrackWall"
+ },
+ "gs-056": {
+  "instance": "5556173334779815044",
+  "confidence": "certain",
+  "why": "room 7: the climb shaft above the Pierre spot, before the door at the top"
+ },
+ "gs-057": {
+  "instance": "9172014785497046138",
+  "confidence": "certain",
+  "why": "room 8: the room beyond the door at the top of the shaft"
+ },
+ "gs-058": {
+  "instance": "14706322686481615109",
+  "confidence": "certain",
+  "why": "room 18 north of the first room, 1.7 m from a hammer-breakable rock"
+ },
+ "gs-064": {
+  "instance": "7165255787572043804",
+  "confidence": "certain",
+  "why": "room 3 (rotating blade room)"
+ },
+ "gs-065": {
+  "instance": "1612219105489330028",
+  "confidence": "certain",
+  "why": "room 6 (east, Compass chest room)"
+ },
+ "gs-066": {
+  "instance": "14822647495538506998",
+  "confidence": "certain",
+  "why": "room 8 (west, sliding block room)"
+ },
+ "gs-067": {
+  "instance": "16157272130665282352",
+  "confidence": "certain",
+  "why": "room 2 on B1 under the central pillar, with the hit switch and shutter"
+ },
+ "gs-068": {
+  "instance": "4399424945134189769",
+  "confidence": "certain",
+  "why": "room 25, next to Obj_WaterTemple_CrackWall"
+ },
+ "gs-069": {
+  "instance": "15506432733081566465",
+  "confidence": "certain",
+  "why": "room 21 (river with RiverRail and whirlpool holes)"
+ },
+ "gs-070": {
+  "instance": "11571778270592589517",
+  "confidence": "certain",
+  "why": "room 1 (inside the central pillar), at the ceiling beside a hookshot target (y 126)"
+ },
+ "gs-071": {
+  "instance": "186694424287048567",
+  "confidence": "certain",
+  "why": "room 24: waterfall corridor with a rolling rock next to the Boss Key room"
+ },
+ "gs-091": {
+  "instance": "3889761319471426870",
+  "confidence": "certain",
+  "why": "room 7 with the Like Like, beyond the Beamos room (room 6)"
+ },
+ "gs-092": {
+  "instance": "12165938013608963606",
+  "confidence": "certain",
+  "why": "room 4: the eastern of the two central side rooms, with lens-of-truth floor"
+ },
+ "gs-093": {
+  "instance": "7460556442932201772",
+  "confidence": "certain",
+  "why": "room 5 with the Deku Baba and chain-locked door, west of centre"
+ },
+ "gs-074": {
+  "instance": "16933078188088206331",
+  "confidence": "certain",
+  "why": "room 31, adjacent to the Like Like room (room 10)"
+ },
+ "gs-075": {
+  "instance": "15148554628675590606",
+  "confidence": "certain",
+  "why": "room 11 with the falling ceilings and the pushable block"
+ },
+ "gs-076": {
+  "instance": "15564367841356014861",
+  "confidence": "certain",
+  "why": "room 14 with the fans"
+ },
+ "gs-077": {
+  "instance": "8823884712433934372",
+  "confidence": "certain",
+  "why": "room 17 (ship dock), 6 m from the Pierre scarecrow spot and the pushable block"
+ },
+ "gs-078": {
+  "instance": "10270336409167849808",
+  "confidence": "certain",
+  "why": "room 20, linked to the skull pot drop controller"
+ },
+ "gs-081": {
+  "instance": "9362225887419425752",
+  "confidence": "certain",
+  "why": "on the fortress itself (east side); the other is on the archery range"
+ },
+ "gs-082": {
+  "instance": "13037049463363052038",
+  "confidence": "certain",
+  "why": "on the target in the far north-east loop of the archery range on the map"
+ },
+ "hp-26": {
+  "instance": "12343753510713797715",
+  "confidence": "certain",
+  "why": "only chest heart piece, on the fortress roof"
+ },
+ "hp-27": {
+  "instance": "3389467775572858537",
+  "confidence": "certain",
+  "why": "flag name MiniGame_HorsebackArchery_GotaHeart"
+ },
+ "gs-083": {
+  "instance": "14910672274965350769",
+  "confidence": "certain",
+  "why": "only one in the HountedWasteland scene"
+ },
+ "gs-084": {
+  "instance": "15057756765324812936",
+  "confidence": "likely",
+  "why": "Nocturnal, 18 m from the Guay flock (circling birds) centre at the north-west edge"
+ },
+ "gs-094": {
+  "instance": "234735562946824289",
+  "confidence": "certain",
+  "why": "flagged IsMagicBeanSoil, child-only"
+ },
+ "gs-085": {
+  "instance": "11160993739666517210",
+  "confidence": "likely",
+  "why": "Nocturnal, on top of a rock outcrop east of the temple; the other colossus skulltula is under the bird flock"
+ },
+ "hp-28": {
+  "instance": "10592092054086534681",
+  "confidence": "certain",
+  "why": "only heart piece at the Desert Colossus"
+ },
+ "gs-095": {
+  "instance": "10530233152473742636",
+  "confidence": "certain",
+  "why": "room 4 with the silver rupee tokens and the gate"
+ },
+ "gs-096": {
+  "instance": "12959656942046734931",
+  "confidence": "certain",
+  "why": "room 7 (statue room) on the Dungeon Map chest level, east of the chest"
+ },
+ "gs-097": {
+  "instance": "10127391959410674946",
+  "confidence": "certain",
+  "why": "room 10, next to the block puzzle room (room 9); only one left for the child half"
+ },
+ "gs-086": {
+  "instance": "8120267919866495114",
+  "confidence": "certain",
+  "why": "room 15, 2 m from a Song of Time block, with rolling rocks"
+ },
+ "gs-087": {
+  "instance": "5086449036385341804",
+  "confidence": "certain",
+  "why": "room 7 (statue room) upper level, 5.4 m from the Pierre scarecrow marker"
+ }
+}

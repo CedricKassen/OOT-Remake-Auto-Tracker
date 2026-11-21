@@ -1,0 +1,10 @@
+[
+  "IsGet.Item_Token_Gold", "IsGet.Obj_Heart_Piece", "IsGet.Obj_Heart_Container",
+  "IsVisitLocation.InsideTheDekuTree", "IsVisitLocation.DodongoCavern", "IsVisitLocation.InsideJabuJabuBelly",
+  "IsVisitLocation.ForestTemple", "IsVisitLocation.FireTemple", "IsVisitLocation.WaterTemple",
+  "IsVisitLocation.ShadowTemple", "IsVisitLocation.SpiritTemple", "IsVisitLocation.BottomOfTheWell",
+  "IsVisitLocation.IceCavern", "IsVisitLocation.GerudoTrainingGround", "IsVisitLocation.InsideGanonCastle",
+  "IsVisitLocation.GerudoFortress", "IsVisitLocation.KokiriForest", "IsVisitLocation.HyruleField",
+  "IsVisitLocation.KakarikoVillage", "IsVisitLocation.LostWood", "IsVisitLocation.Market",
+  "IsGet.Item_Melody_EponaSong", "IsGet.Item_Melody_SunSong", "IsGet.Item_Melody_TimeSong", "IsGet.Item_Melody_LightPrelude"
+]

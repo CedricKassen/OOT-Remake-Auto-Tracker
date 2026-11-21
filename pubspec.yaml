@@ -1,0 +1,9 @@
+name: oot_auto_tracker_workspace
+publish_to: none
+environment:
+  sdk: ^3.10.0
+workspace:
+  - packages/oot_save
+  - packages/oot_tracker
+  - server
+  - app

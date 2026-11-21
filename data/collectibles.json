@@ -1,0 +1,7492 @@
+[
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xA8D6182A5C956E16",
+  "name": null,
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "12165938013608963606",
+  "pos": [
+   2.646,
+   103.8,
+   -30.5
+  ],
+  "room": 4,
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x6789388E9FB9C92C",
+  "name": null,
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "7460556442932201772",
+  "pos": [
+   -8.221,
+   103.8,
+   -31.854
+  ],
+  "room": 5,
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x35FB354FAC262D36",
+  "name": null,
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "3889761319471426870",
+  "pos": [
+   31.991,
+   104.8,
+   -14.92
+  ],
+  "room": 7,
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xFCD7F04DCF755E8E",
+  "name": null,
+  "scene": "DeathMountainCrater_Child",
+  "scenes": [
+   "DeathMountainCrater_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "18219295034534354574",
+  "pos": [
+   -2.872,
+   128.194,
+   48.671
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_crater"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x58C75BADF059CA54",
+  "name": null,
+  "scene": "DeathMountainCrater_Child",
+  "scenes": [
+   "DeathMountainCrater_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "6397182598322965076",
+  "pos": [
+   3.75,
+   111.223,
+   -0.75
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_crater"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xF5359B24FC86AC22",
+  "name": null,
+  "scene": "DeathMountainTrail_Adult",
+  "scenes": [
+   "DeathMountainTrail_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "17669199296215821346",
+  "pos": [
+   -30.968,
+   125.081,
+   -17.965
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_trail"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x04E03AC27985E328",
+  "name": null,
+  "scene": "DeathMountainTrail_Adult",
+  "scenes": [
+   "DeathMountainTrail_Adult",
+   "DeathMountainTrail_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "351345377871782696",
+  "pos": [
+   -51.194,
+   102.795,
+   27.21
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_trail"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x0B8E43ABFA0B5F86",
+  "name": null,
+  "scene": "DeathMountainTrail_Adult",
+  "scenes": [
+   "DeathMountainTrail_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "832677387023638406",
+  "pos": [
+   3.173,
+   187.298,
+   -111.294
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_trail"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xF1D32C06612DA232",
+  "name": null,
+  "scene": "DeathMountainTrail_Child",
+  "scenes": [
+   "DeathMountainTrail_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "17425319789138387506",
+  "pos": [
+   -45.5,
+   109.196,
+   -20.25
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_trail"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x9AE3D0AC392E6CDA",
+  "name": null,
+  "scene": "DesertColossus_Adult",
+  "scenes": [
+   "DesertColossus_Adult",
+   "DesertColossus_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "11160993739666517210",
+  "pos": [
+   -73.9,
+   105.3,
+   -5.677
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "desert_colossus"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xD0F7E5FFA76BA288",
+  "name": null,
+  "scene": "DesertColossus_Adult",
+  "scenes": [
+   "DesertColossus_Adult",
+   "DesertColossus_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "15057756765324812936",
+  "pos": [
+   -170.117,
+   101.764,
+   -47.874
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "desert_colossus"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x0341F2C03598C861",
+  "name": null,
+  "scene": "DesertColossus_Child",
+  "scenes": [
+   "DesertColossus_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "234735562946824289",
+  "pos": [
+   -157.464,
+   95.659,
+   17.185
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "desert_colossus"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x0D53E429A1EF383D",
+  "name": null,
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "960362013021648957",
+  "pos": [
+   58.177,
+   104.5,
+   -19.874
+  ],
+  "room": 2,
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x10434342A3917EBD",
+  "name": null,
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "1171854281537584829",
+  "pos": [
+   64.0,
+   98.55,
+   15.854
+  ],
+  "room": 3,
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x758CE7B4868447FB",
+  "name": null,
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "8470399761714006011",
+  "pos": [
+   -48.421,
+   120.308,
+   -40.117
+  ],
+  "room": 10,
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x3F5B150F16D84603",
+  "name": null,
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "4565265801822094851",
+  "pos": [
+   21.473,
+   112.4,
+   -55.926
+  ],
+  "room": 18,
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xBDFE13C37F356829",
+  "name": null,
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "13690401647626643497",
+  "pos": [
+   -48.835,
+   96.6,
+   -104.25
+  ],
+  "room": 20,
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xB0F77B17CFB37458",
+  "name": null,
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "12751796212121957464",
+  "pos": [
+   59.044,
+   148.395,
+   -29.982
+  ],
+  "room": 5,
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x4D1B7E35CA0C6484",
+  "name": null,
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "5556173334779815044",
+  "pos": [
+   40.046,
+   189.1,
+   -19.75
+  ],
+  "room": 7,
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x7F498ADA1C2E9C7A",
+  "name": null,
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "9172014785497046138",
+  "pos": [
+   36.573,
+   187.7,
+   -5.178
+  ],
+  "room": 8,
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xCC175A90E0014905",
+  "name": null,
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "14706322686481615109",
+  "pos": [
+   11.25,
+   101.5,
+   -43.236
+  ],
+  "room": 18,
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x5E3AE6A7CF3AC292",
+  "name": null,
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "6789992996625105554",
+  "pos": [
+   67.728,
+   115.3,
+   -47.0
+  ],
+  "room": 19,
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x99CA89963485DF11",
+  "name": null,
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "11081821111317815057",
+  "pos": [
+   11.277,
+   119.844,
+   64.0
+  ],
+  "room": 0,
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xF46B1710ED0620D1",
+  "name": null,
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "17612196129225973969",
+  "pos": [
+   8.815,
+   109.558,
+   -23.557
+  ],
+  "room": 2,
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x984021BC20419EBE",
+  "name": null,
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "10970805784153267902",
+  "pos": [
+   -38.061,
+   112.857,
+   -4.376
+  ],
+  "room": 12,
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x1BF5F0176EF03BDA",
+  "name": null,
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "2014780391754316762",
+  "pos": [
+   44.275,
+   112.066,
+   -38.245
+  ],
+  "room": 14,
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x2AA39F00AAA2D331",
+  "name": null,
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "3072474196008424241",
+  "pos": [
+   -3.429,
+   65.603,
+   17.167
+  ],
+  "room": 27,
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x4E13CC311CD04DF4",
+  "name": null,
+  "scene": "GanonCastle",
+  "scenes": [
+   "GanonCastle"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "5626064870824758772",
+  "pos": [
+   78.401,
+   94.097,
+   328.381
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "hyrule_castle"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xB4ECE769E6F3A206",
+  "name": null,
+  "scene": "GerudoFortress_Adult",
+  "scenes": [
+   "GerudoFortress_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "13037049463363052038",
+  "pos": [
+   181.695,
+   125.557,
+   -88.605
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x81ED4ED76699E3D8",
+  "name": null,
+  "scene": "GerudoFortress_Adult",
+  "scenes": [
+   "GerudoFortress_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "9362225887419425752",
+  "pos": [
+   55.298,
+   131.872,
+   -70.22
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xA017CE09904C2DCE",
+  "name": null,
+  "scene": "GerudoValley_Adult",
+  "scenes": [
+   "GerudoValley_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "11535915511003753934",
+  "pos": [
+   -34.535,
+   109.962,
+   10.282
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xBC85EFCA2B222CD9",
+  "name": null,
+  "scene": "GerudoValley_Adult",
+  "scenes": [
+   "GerudoValley_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "13584527502619061465",
+  "pos": [
+   -45.682,
+   106.233,
+   -35.558
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xD3D86D3D6988ED8C",
+  "name": null,
+  "scene": "GerudoValley_Child",
+  "scenes": [
+   "GerudoValley_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "15265071047503310220",
+  "pos": [
+   50.806,
+   97.403,
+   5.091
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x738F5746CC517702",
+  "name": null,
+  "scene": "GerudoValley_Child",
+  "scenes": [
+   "GerudoValley_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "8326970197618554626",
+  "pos": [
+   -11.041,
+   48.041,
+   2.447
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xFBBC2D490276C68E",
+  "name": null,
+  "scene": "GoronCity_Adult",
+  "scenes": [
+   "GoronCity_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "18139423190738716302",
+  "pos": [
+   0.488,
+   113.358,
+   -1.228
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "goron_city"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x07E6E21142CC54DB",
+  "name": null,
+  "scene": "GoronCity_Child",
+  "scenes": [
+   "GoronCity_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "569390966671955163",
+  "pos": [
+   -48.25,
+   113.675,
+   -7.84
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "goron_city"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x032F42F523BE6425",
+  "name": null,
+  "scene": "Graveyard_Adult",
+  "scenes": [
+   "Graveyard_Adult",
+   "Graveyard_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "229475726653285413",
+  "pos": [
+   -20.2,
+   104.3,
+   26.4
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "graveyard"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xE91F6BE796358FFC",
+  "name": null,
+  "scene": "Graveyard_Child",
+  "scenes": [
+   "Graveyard_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "16798263777516949500",
+  "pos": [
+   -12.147,
+   103.369,
+   -12.197
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "graveyard"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xCEED596F17934971",
+  "name": null,
+  "scene": "HountedWasteland_Adult",
+  "scenes": [
+   "HountedWasteland_Adult",
+   "HountedWasteland_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "14910672274965350769",
+  "pos": [
+   16.013,
+   88.845,
+   -99.8
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "desert_colossus"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x22C0F7DFF5EBB86D",
+  "name": null,
+  "scene": "HyruleCastle",
+  "scenes": [
+   "HyruleCastle"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "2504273934093629549",
+  "pos": [
+   -12.365,
+   121.776,
+   -94.949
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "hyrule_castle"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x7F28485FA5D3688F",
+  "name": null,
+  "scene": "HyruleCastle",
+  "scenes": [
+   "HyruleCastle"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "9162653017526462607",
+  "pos": [
+   39.05,
+   101.05,
+   -116.13
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "hyrule_castle"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xA6A4E87DA18FA678",
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult",
+   "HyruleField_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "12007978132755687032",
+  "pos": [
+   -147.92,
+   129.893,
+   322.495
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x1E38E8D23596EECF",
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult",
+   "HyruleField_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "2177746409373494991",
+  "pos": [
+   70.53,
+   167.407,
+   263.838
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x25E6072D4DF023B3",
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult",
+   "HyruleField_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "2730878115209290675",
+  "pos": [
+   -147.439,
+   159.206,
+   268.232
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lon_lon_ranch"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x04BE4A8FF29F2099",
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult",
+   "HyruleField_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "341792603838029977",
+  "pos": [
+   -39.552,
+   158.25,
+   200.673
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lon_lon_ranch"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x6689BDEBC95368EB",
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "7388645484070660331",
+  "pos": [
+   -175.115,
+   128.462,
+   415.593
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lake_hylia"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x0AF4D6F063D3AE9F",
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "789492162651991711",
+  "pos": [
+   -196.95,
+   150.28,
+   517.385
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lake_hylia"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x781E0DE8EED42373",
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult",
+   "HyruleField_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "8655370827943125875",
+  "pos": [
+   -295.624,
+   131.975,
+   597.767
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lake_hylia"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x7D8EC14BDD1F6341",
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "9047381233010434881",
+  "pos": [
+   56.513,
+   126.333,
+   342.575
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xC1858A4FCD84A28E",
+  "name": null,
+  "scene": "HyruleField_Child",
+  "scenes": [
+   "HyruleField_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "13944703896577680014",
+  "pos": [
+   -178.253,
+   141.958,
+   426.404
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lake_hylia"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xDC8113831C56B194",
+  "name": null,
+  "scene": "HyruleField_Child",
+  "scenes": [
+   "HyruleField_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "15889002414176907668",
+  "pos": [
+   -63.216,
+   156.388,
+   212.386
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lon_lon_ranch"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x61576BEFD16C499A",
+  "name": null,
+  "scene": "HyruleField_Child",
+  "scenes": [
+   "HyruleField_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "7014193622407727514",
+  "pos": [
+   -167.691,
+   137.902,
+   413.483
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lake_hylia"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x63701A2CF70B201C",
+  "name": null,
+  "scene": "IceCavern",
+  "scenes": [
+   "IceCavern"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "7165255787572043804",
+  "pos": [
+   -1.417,
+   107.227,
+   -6.201
+  ],
+  "room": 3,
+  "collectedInFixtureSlot03": true,
+  "area": "ice_cavern"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x165FC0BC0ACA1F6C",
+  "name": null,
+  "scene": "IceCavern",
+  "scenes": [
+   "IceCavern"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "1612219105489330028",
+  "pos": [
+   83.674,
+   108.252,
+   -0.451
+  ],
+  "room": 6,
+  "collectedInFixtureSlot03": true,
+  "area": "ice_cavern"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xCDB49F5D0A67FCF6",
+  "name": null,
+  "scene": "IceCavern",
+  "scenes": [
+   "IceCavern"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "14822647495538506998",
+  "pos": [
+   -18.128,
+   108.677,
+   -16.562
+  ],
+  "room": 8,
+  "collectedInFixtureSlot03": true,
+  "area": "ice_cavern"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x9C95FD41B89C058A",
+  "name": null,
+  "scene": "InsideJabuJabuBelly",
+  "scenes": [
+   "InsideJabuJabuBelly"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "11283202900158580106",
+  "pos": [
+   -15.361,
+   90.341,
+   -82.933
+  ],
+  "room": 3,
+  "collectedInFixtureSlot03": true,
+  "area": "jabu_jabu"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xC03F282FF60942B6",
+  "name": null,
+  "scene": "InsideJabuJabuBelly",
+  "scenes": [
+   "InsideJabuJabuBelly"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "13852835165271311030",
+  "pos": [
+   -2.213,
+   88.409,
+   -94.956
+  ],
+  "room": 3,
+  "collectedInFixtureSlot03": true,
+  "area": "jabu_jabu"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xDDD260AFB6F2989A",
+  "name": null,
+  "scene": "InsideJabuJabuBelly",
+  "scenes": [
+   "InsideJabuJabuBelly"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "15983944335296207002",
+  "pos": [
+   38.289,
+   106.124,
+   -49.085
+  ],
+  "room": 5,
+  "collectedInFixtureSlot03": true,
+  "area": "jabu_jabu"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x9FC92497F014DBD5",
+  "name": null,
+  "scene": "InsideJabuJabuBelly",
+  "scenes": [
+   "InsideJabuJabuBelly"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "11513774157335944149",
+  "pos": [
+   17.372,
+   81.719,
+   -59.275
+  ],
+  "room": 14,
+  "collectedInFixtureSlot03": true,
+  "area": "jabu_jabu"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xBCE05898CE61F1C0",
+  "name": null,
+  "scene": "InsideTheDekuTree",
+  "scenes": [
+   "InsideTheDekuTree"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "13609975487234437568",
+  "pos": [
+   -29.765,
+   121.003,
+   13.04
+  ],
+  "room": 3,
+  "collectedInFixtureSlot03": true,
+  "area": "deku_tree"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xDF73F3739CEF466B",
+  "name": null,
+  "scene": "InsideTheDekuTree",
+  "scenes": [
+   "InsideTheDekuTree"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "16101480770659370603",
+  "pos": [
+   3.323,
+   86.862,
+   1.133
+  ],
+  "room": 4,
+  "collectedInFixtureSlot03": true,
+  "area": "deku_tree"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xFAD8931A0011E1D4",
+  "name": null,
+  "scene": "InsideTheDekuTree",
+  "scenes": [
+   "InsideTheDekuTree"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "18075358844331090388",
+  "pos": [
+   -18.129,
+   78.695,
+   -12.981
+  ],
+  "room": 4,
+  "collectedInFixtureSlot03": true,
+  "area": "deku_tree"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xF2E27D6A27026ACF",
+  "name": null,
+  "scene": "InsideTheDekuTree",
+  "scenes": [
+   "InsideTheDekuTree"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "17501688996789643983",
+  "pos": [
+   -81.904,
+   86.694,
+   -7.401
+  ],
+  "room": 11,
+  "collectedInFixtureSlot03": true,
+  "area": "deku_tree"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x2DF265292516BDF0",
+  "name": null,
+  "scene": "KakarikoVillage_Adult_Alternative",
+  "scenes": [
+   "KakarikoVillage_Adult",
+   "KakarikoVillage_Adult_Alternative"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "3310819903461047792",
+  "pos": [
+   -38.738,
+   113.699,
+   115.476
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xA1632E322C612B97",
+  "name": null,
+  "scene": "KakarikoVillage_Child",
+  "scenes": [
+   "KakarikoVillage_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "11629189455828560791",
+  "pos": [
+   -75.007,
+   105.288,
+   2.173
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xC3C68D0AC4B85831",
+  "name": null,
+  "scene": "KakarikoVillage_Child",
+  "scenes": [
+   "KakarikoVillage_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "14107117960174262321",
+  "pos": [
+   -60.712,
+   102.131,
+   59.55
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xD1CEF51CF294FB86",
+  "name": null,
+  "scene": "KakarikoVillage_Child",
+  "scenes": [
+   "KakarikoVillage_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "15118290503807073158",
+  "pos": [
+   -48.108,
+   110.91,
+   18.4
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xD4883A16973B1D06",
+  "name": null,
+  "scene": "KakarikoVillage_Child",
+  "scenes": [
+   "KakarikoVillage_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "15314554401574296838",
+  "pos": [
+   -29.076,
+   103.087,
+   60.512
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x6A8D9B2373D08FCB",
+  "name": null,
+  "scene": "KakarikoVillage_Child",
+  "scenes": [
+   "KakarikoVillage_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "7677963516305772491",
+  "pos": [
+   -73.6,
+   104.458,
+   43.477
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x62C340F0B876C195",
+  "name": null,
+  "scene": "KokiriForest_Adult",
+  "scenes": [
+   "KokiriForest_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "7116603238806634901",
+  "pos": [
+   18.04,
+   117.175,
+   18.876
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "kokiri_forest"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xECDC46B409ED7D38",
+  "name": null,
+  "scene": "KokiriForest_Child",
+  "scenes": [
+   "KokiriForest_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "17067594426901953848",
+  "pos": [
+   -83.79,
+   117.854,
+   -17.619
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "kokiri_forest"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x858F5000AD57B2CC",
+  "name": null,
+  "scene": "KokiriForest_Child",
+  "scenes": [
+   "KokiriForest_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "9623998892552467148",
+  "pos": [
+   8.242,
+   112.638,
+   -23.306
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "kokiri_forest"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x3C2B585AC5C0443E",
+  "name": null,
+  "scene": "LostWood_Adult",
+  "scenes": [
+   "LostWood_Adult",
+   "LostWood_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "4335656213162247230",
+  "pos": [
+   14.451,
+   105.851,
+   -56.418
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lost_woods"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xF6FA6EF0CA152948",
+  "name": null,
+  "scene": "LostWood_Child",
+  "scenes": [
+   "LostWood_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "17796658857969527112",
+  "pos": [
+   10.871,
+   99.775,
+   -52.066
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lost_woods"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x8186BCB07D6C2CF9",
+  "name": null,
+  "scene": "LostWood_Child",
+  "scenes": [
+   "LostWood_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "9333354743976439033",
+  "pos": [
+   -33.188,
+   100.168,
+   31.417
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lost_woods"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x7C1A05315F83C34D",
+  "name": null,
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "8942465719711548237",
+  "pos": [
+   17.381,
+   102.096,
+   58.357
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "castle_town"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xC8DB3346F78EA31B",
+  "name": null,
+  "scene": "SacredForestMeadow_Adult",
+  "scenes": [
+   "SacredForestMeadow_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "14473218207379268379",
+  "pos": [
+   7.753,
+   107.376,
+   13.21
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "lost_woods"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xD23A7A2C9ECED9CE",
+  "name": null,
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "15148554628675590606",
+  "pos": [
+   33.366,
+   73.765,
+   86.198
+  ],
+  "room": 11,
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xD7FFBE169189E50D",
+  "name": null,
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "15564367841356014861",
+  "pos": [
+   75.836,
+   53.409,
+   6.328
+  ],
+  "room": 14,
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x7A74BC651F9FE024",
+  "name": null,
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "8823884712433934372",
+  "pos": [
+   104.611,
+   52.011,
+   -39.786
+  ],
+  "room": 17,
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x8E87908CB035E950",
+  "name": null,
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "10270336409167849808",
+  "pos": [
+   -212.266,
+   41.303,
+   -37.399
+  ],
+  "room": 20,
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xEAFE60E592E9A3FB",
+  "name": null,
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "16933078188088206331",
+  "pos": [
+   179.787,
+   62.474,
+   96.864
+  ],
+  "room": 31,
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x9222E742B73D3D2C",
+  "name": null,
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "10530233152473742636",
+  "pos": [
+   -9.585,
+   107.422,
+   -55.997
+  ],
+  "room": 4,
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xB3D9F353599EEA53",
+  "name": null,
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "12959656942046734931",
+  "pos": [
+   14.746,
+   115.153,
+   -68.787
+  ],
+  "room": 7,
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x4696B2730DE0516C",
+  "name": null,
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "5086449036385341804",
+  "pos": [
+   -23.085,
+   129.668,
+   -66.679
+  ],
+  "room": 7,
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x8C8BB95471D20D02",
+  "name": null,
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "10127391959410674946",
+  "pos": [
+   -55.69,
+   136.629,
+   -7.304
+  ],
+  "room": 10,
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x70B0FCA66CA4808A",
+  "name": null,
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "8120267919866495114",
+  "pos": [
+   38.956,
+   104.171,
+   -62.89
+  ],
+  "room": 15,
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xA0973706F6415ECD",
+  "name": null,
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "11571778270592589517",
+  "pos": [
+   -1.189,
+   125.954,
+   -7.896
+  ],
+  "room": 1,
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xE03A2965DF9F7B30",
+  "name": null,
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "16157272130665282352",
+  "pos": [
+   1.396,
+   95.152,
+   0.545
+  ],
+  "room": 2,
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xD731EA6A04D0FD01",
+  "name": null,
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "15506432733081566465",
+  "pos": [
+   -54.542,
+   114.007,
+   -59.252
+  ],
+  "room": 21,
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x02974596F92CF377",
+  "name": null,
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "186694424287048567",
+  "pos": [
+   18.646,
+   107.5,
+   -65.66
+  ],
+  "room": 24,
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x3D0DE5ADAEB73CC9",
+  "name": null,
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "4399424945134189769",
+  "pos": [
+   35.08,
+   112.5,
+   -9.549
+  ],
+  "room": 25,
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x853B892663C0215D",
+  "name": null,
+  "scene": "ZoraDomain_Adult_Alternative",
+  "scenes": [
+   "ZoraDomain_Adult",
+   "ZoraDomain_Adult_Alternative"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "9600417828645642589",
+  "pos": [
+   17.288,
+   115.475,
+   2.725
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_domain"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x845BA51DC18C855E",
+  "name": null,
+  "scene": "ZoraFountain_Adult",
+  "scenes": [
+   "ZoraFountain_Adult",
+   "ZoraFountain_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "9537398183107003742",
+  "pos": [
+   79.962,
+   133.359,
+   12.896
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "zoras_domain"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xF0DAC245E2FC448E",
+  "name": null,
+  "scene": "ZoraFountain_Child",
+  "scenes": [
+   "ZoraFountain_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "17355397719442343054",
+  "pos": [
+   49.305,
+   110.365,
+   32.041
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_domain"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x63446D12663DAA83",
+  "name": null,
+  "scene": "ZoraFountain_Child",
+  "scenes": [
+   "ZoraFountain_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "7152962033963346563",
+  "pos": [
+   14.037,
+   107.789,
+   22.818
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_domain"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x97824C2FFEAA877C",
+  "name": null,
+  "scene": "ZoraRiver_Adult",
+  "scenes": [
+   "ZoraRiver_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "10917372215719266172",
+  "pos": [
+   -35.0,
+   118.75,
+   12.5
+  ],
+  "collectedInFixtureSlot03": false,
+  "area": "zoras_river"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x8325FEA55EDFBE97",
+  "name": null,
+  "scene": "ZoraRiver_Adult",
+  "scenes": [
+   "ZoraRiver_Adult"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "9450239379321634455",
+  "pos": [
+   76.285,
+   126.801,
+   -46.407
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_river"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xABAD0E9F0D471156",
+  "name": null,
+  "scene": "ZoraRiver_Child",
+  "scenes": [
+   "ZoraRiver_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "12370559827741970774",
+  "pos": [
+   -54.559,
+   100.604,
+   -11.857
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_river"
+ },
+ {
+  "kind": "skulltula",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x78AE4FD90B3CFAAA",
+  "name": null,
+  "scene": "ZoraRiver_Child",
+  "scenes": [
+   "ZoraRiver_Child"
+  ],
+  "actor": "Enemy_Skulltula_Gold",
+  "instance": "8695975724114049706",
+  "pos": [
+   112.6,
+   111.8,
+   -48.8
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_river"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x8F5F3D3321AEB7CD",
+  "name": null,
+  "scene": "DeathMountainCrater_Adult",
+  "scenes": [
+   "DeathMountainCrater_Adult",
+   "DeathMountainCrater_Child"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "10331043360028932045",
+  "pos": [
+   -0.5,
+   116.773,
+   32.34
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_crater"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x0A564328FAF93C71",
+  "name": null,
+  "scene": "DeathMountainCrater_Adult",
+  "scenes": [
+   "DeathMountainCrater_Adult",
+   "DeathMountainCrater_Child"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "744856631664786545",
+  "pos": [
+   -17.5,
+   127.151,
+   3.95
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_crater"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x6B8FC751",
+  "key64": null,
+  "name": "DeathMountain_Enemy_Scrub_Business_HeartPiece_01",
+  "scene": "DeathMountainCrater_Child",
+  "scenes": [
+   "DeathMountainCrater_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "12493798230772313904",
+  "pos": [
+   -23.0,
+   121.099,
+   33.0
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_crater"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x09ECB6A0150FEE97",
+  "name": null,
+  "scene": "DeathMountainTrail_Adult",
+  "scenes": [
+   "DeathMountainTrail_Adult",
+   "DeathMountainTrail_Child"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "715147239509454487",
+  "pos": [
+   -39.661,
+   122.212,
+   -26.001
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_trail"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x92FEAB9A9810C619",
+  "name": null,
+  "scene": "DesertColossus_Adult",
+  "scenes": [
+   "DesertColossus_Adult",
+   "DesertColossus_Child"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "10592092054086534681",
+  "pos": [
+   -137.132,
+   103.493,
+   10.506
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": false,
+  "area": "desert_colossus"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x689CEBE8",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12343753510713797715",
+  "scene": "GerudoFortress_Adult",
+  "scenes": [
+   "GerudoFortress_Adult"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "12343753510713797715",
+  "pos": [
+   28.978,
+   131.5,
+   -93.672
+  ],
+  "source": "chest",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x3F43245B",
+  "key64": null,
+  "name": "MiniGame_HorsebackArchery_GotaHeart",
+  "scene": "GerudoFortress_Adult",
+  "scenes": [
+   "GerudoFortress_Adult"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "3389467775572858537",
+  "pos": [
+   70.48,
+   115.001,
+   37.423
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x7001F17C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.15856256242099990922",
+  "scene": "GerudoValley_Adult",
+  "scenes": [
+   "GerudoValley_Adult",
+   "GerudoValley_Child"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "15856256242099990922",
+  "pos": [
+   -9.457,
+   90.45,
+   34.982
+  ],
+  "source": "chest",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xDFD66C63357CDEA7",
+  "name": null,
+  "scene": "GerudoValley_Adult",
+  "scenes": [
+   "GerudoValley_Adult",
+   "GerudoValley_Child"
+  ],
+  "actor": "Obj_GerudoValley_Heart_Piece",
+  "instance": "16129198288828948135",
+  "pos": [
+   4.853,
+   59.164,
+   -78.161
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x1D1793E9",
+  "key64": null,
+  "name": "GoronLargePot_IsGetHeartPiece",
+  "scene": "GoronCity_Child",
+  "scenes": [
+   "GoronCity_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "3483734707455267135",
+  "pos": [
+   0.0,
+   105.5,
+   0.0
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "goron_city"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x1DF0DBF50C1732B7",
+  "name": null,
+  "scene": "Graveyard_Adult",
+  "scenes": [
+   "Graveyard_Adult",
+   "Graveyard_Child"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "2157466067026784951",
+  "pos": [
+   -16.615,
+   108.019,
+   -8.912
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "graveyard"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x8331E107",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5534919361313859554",
+  "scene": "Graveyard_Adult",
+  "scenes": [
+   "Graveyard_Adult"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "5534919361313859554",
+  "pos": [
+   -6.031,
+   82.533,
+   77.658
+  ],
+  "source": "chest",
+  "collectedInFixtureSlot03": true,
+  "area": "graveyard"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x9C89C565",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9622128545943056087",
+  "scene": "Graveyard_Adult",
+  "scenes": [
+   "Graveyard_Adult",
+   "Graveyard_Child"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "9622128545943056087",
+  "pos": [
+   21.41,
+   85.81,
+   39.333
+  ],
+  "source": "chest",
+  "collectedInFixtureSlot03": true,
+  "area": "graveyard"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0xB5127E75",
+  "key64": null,
+  "name": "GraveYard_DiggingHoleTour_Drop_HeartPiece",
+  "scene": "Graveyard_Child",
+  "scenes": [
+   "Graveyard_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "10075158462075677237",
+  "pos": [
+   -4.635,
+   103.13,
+   -1.82
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "graveyard"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xBAEC91D6ED8DD96B",
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "13469300937852836203",
+  "pos": [
+   -180.582,
+   163.088,
+   424.973
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "lake_hylia"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0xDA9DFF2C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.2967378296224661060",
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Child"
+  ],
+  "actor": "Obj_TBox_A_01_memo11",
+  "instance": "2967378296224661060",
+  "pos": [
+   -213.295,
+   133.466,
+   138.685
+  ],
+  "source": "chest",
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0xAD7A21CE",
+  "key64": null,
+  "name": "Npc_Hylia_045_HasDived",
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult",
+   "HyruleField_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "3889886157160285015",
+  "pos": [
+   -174.393,
+   138.0,
+   418.017
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "lake_hylia"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0xE41E1597",
+  "key64": null,
+  "name": "HyruleField_Enemy_Scrub_Business_HeartPiece_01",
+  "scene": "HyruleField_Child",
+  "scenes": [
+   "HyruleField_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "14825051130171187671",
+  "pos": [
+   39.86,
+   152.447,
+   26.58
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0xF1891F6E",
+  "key64": null,
+  "name": "MiniGame_Fishing_GetHeartPiece",
+  "scene": "HyruleField_Child",
+  "scenes": [
+   "HyruleField_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "6175378250368022556",
+  "pos": [
+   -98.82,
+   134.764,
+   493.293
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "lake_hylia"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x88358AF5B5300AA9",
+  "name": null,
+  "scene": "HyruleField_Child",
+  "scenes": [
+   "HyruleField_Child"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "9814903750835309225",
+  "pos": [
+   -157.154,
+   150.931,
+   266.443
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "lon_lon_ranch"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x85D8113A",
+  "key64": null,
+  "name": "KakarikoVillage_IsAfterSave_Npc_Hylia_025",
+  "scene": "KakarikoVillage_Adult_Alternative",
+  "scenes": [
+   "KakarikoVillage_Adult",
+   "KakarikoVillage_Adult_Alternative",
+   "KakarikoVillage_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "12012336414699946951",
+  "pos": [
+   -27.759,
+   103.207,
+   80.588
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xB9D0070B468F26D2",
+  "name": null,
+  "scene": "KakarikoVillage_Adult_Alternative",
+  "scenes": [
+   "KakarikoVillage_Adult",
+   "KakarikoVillage_Adult_Alternative",
+   "KakarikoVillage_Child"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "13389209437182306002",
+  "pos": [
+   1.482,
+   108.905,
+   37.522
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0xA666BAA8",
+  "key64": null,
+  "name": "Npc_Hylia_001_IsGetHeartPiece",
+  "scene": "KakarikoVillage_Adult_Alternative",
+  "scenes": [
+   "KakarikoVillage_Adult",
+   "KakarikoVillage_Adult_Alternative",
+   "KakarikoVillage_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "1416092057268113387",
+  "pos": [
+   -36.104,
+   107.505,
+   28.966
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xF8C7601DA7DD887E",
+  "name": null,
+  "scene": "KakarikoVillage_Adult_Alternative",
+  "scenes": [
+   "KakarikoVillage_Adult",
+   "KakarikoVillage_Adult_Alternative",
+   "KakarikoVillage_Child"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "17926402522258180222",
+  "pos": [
+   -44.068,
+   107.971,
+   112.002
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x1657D7D8",
+  "key64": null,
+  "name": "Minigame_SkullKidSession_IsGetHeartPiece",
+  "scene": "LostWood_Child",
+  "scenes": [
+   "LostWood_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "18092305056327665421",
+  "pos": [
+   48.757,
+   98.341,
+   16.034
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "lost_woods"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x5FF7AA30",
+  "key64": null,
+  "name": "Npc_SkullKid_Child_IsGetHeartPiece",
+  "scene": "LostWood_Child",
+  "scenes": [
+   "LostWood_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "605877630645816565",
+  "pos": [
+   -34.015,
+   104.5,
+   -3.745
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "lost_woods"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x61CF7BA1",
+  "key64": null,
+  "name": "MiniGame_BombchuBowling_ClearThirdTime",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "11628104451986877978",
+  "pos": [
+   -22.007,
+   109.966,
+   9.208
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "castle_town"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0xB599AEED",
+  "key64": null,
+  "name": "MiniGame_ChoiceTreasure_IsClear",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "5215133574889185473",
+  "pos": [
+   -62.895,
+   110.669,
+   12.553
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "castle_town"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0xF2FAB510",
+  "key64": null,
+  "name": "SubEvent_FindRichard_GetHeartPiece",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "8568137720802848289",
+  "pos": [
+   1.661,
+   100.086,
+   26.596
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "castle_town"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0xA1678ED9",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3130048366421939233",
+  "scene": "ZoraDomain_Child",
+  "scenes": [
+   "ZoraDomain_Child"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "3130048366421939233",
+  "pos": [
+   28.8,
+   100.39,
+   -4.877
+  ],
+  "source": "chest",
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_domain"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xAC2E26B5EC7DA3A2",
+  "name": null,
+  "scene": "ZoraFountain_Adult",
+  "scenes": [
+   "ZoraFountain_Adult"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "12406896586250888098",
+  "pos": [
+   84.964,
+   103.145,
+   -34.798
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_domain"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x6F736FC80F7B0ACA",
+  "name": null,
+  "scene": "ZoraFountain_Adult",
+  "scenes": [
+   "ZoraFountain_Adult"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "8030885465575590602",
+  "pos": [
+   56.854,
+   70.929,
+   -27.41
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_domain"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x9EFABD5B0516C341",
+  "name": null,
+  "scene": "ZoraRiver_Adult",
+  "scenes": [
+   "ZoraRiver_Adult",
+   "ZoraRiver_Child"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "11455676800795329345",
+  "pos": [
+   -3.994,
+   111.422,
+   -34.297
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_river"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x3A23B59EAEDC0510",
+  "name": null,
+  "scene": "ZoraRiver_Adult",
+  "scenes": [
+   "ZoraRiver_Adult",
+   "ZoraRiver_Child"
+  ],
+  "actor": "Obj_Heart_Piece",
+  "instance": "4189391771527808272",
+  "pos": [
+   99.491,
+   120.101,
+   -61.734
+  ],
+  "source": "freestanding",
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_river"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0xD578DF95",
+  "key64": null,
+  "name": "MiniGame_FrogTenors_StormSong",
+  "scene": "ZoraRiver_Child",
+  "scenes": [
+   "ZoraRiver_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "18246168067761770276",
+  "pos": [
+   8.985,
+   101.886,
+   -50.852
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_river"
+ },
+ {
+  "kind": "heart_piece",
+  "store": "bool",
+  "hash": "0x8FFEC767",
+  "key64": null,
+  "name": "MiniGame_FrogTenors_InsectRepellent",
+  "scene": "ZoraRiver_Child",
+  "scenes": [
+   "ZoraRiver_Child"
+  ],
+  "actor": "HeartPieceAnchor",
+  "instance": "4877056571307262080",
+  "pos": [
+   8.985,
+   101.886,
+   -50.852
+  ],
+  "source": "reward",
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_river"
+ },
+ {
+  "kind": "heart_container",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x5262CEA56C53554D",
+  "name": null,
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Obj_Heart_Container",
+  "instance": "5936534468710061389",
+  "pos": [
+   24.0,
+   73.25,
+   -66.5
+  ],
+  "room": 22,
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "heart_container",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x8389CAFB1277D318",
+  "name": null,
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_Heart_Container",
+  "instance": "9478330070473364248",
+  "pos": [
+   -76.366,
+   102.5,
+   0.0
+  ],
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "heart_container",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xFF11593A22778E7E",
+  "name": null,
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_Heart_Container",
+  "instance": "18379569660496940670",
+  "pos": [
+   -3.238,
+   74.728,
+   -64.426
+  ],
+  "room": 29,
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "heart_container",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xF45F5319D88E7AC7",
+  "name": null,
+  "scene": "InsideJabuJabuBelly",
+  "scenes": [
+   "InsideJabuJabuBelly"
+  ],
+  "actor": "Obj_Heart_Container",
+  "instance": "17608884438514432711",
+  "pos": [
+   42.397,
+   102.01,
+   -108.167
+  ],
+  "room": 15,
+  "collectedInFixtureSlot03": true,
+  "area": "jabu_jabu"
+ },
+ {
+  "kind": "heart_container",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xF914FA367471A3E3",
+  "name": null,
+  "scene": "InsideTheDekuTree",
+  "scenes": [
+   "InsideTheDekuTree"
+  ],
+  "actor": "Obj_Heart_Container",
+  "instance": "17948245526767051747",
+  "pos": [
+   17.314,
+   47.0,
+   67.634
+  ],
+  "room": 10,
+  "collectedInFixtureSlot03": true,
+  "area": "deku_tree"
+ },
+ {
+  "kind": "heart_container",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xF43CCB260F5576DC",
+  "name": null,
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_Heart_Container",
+  "instance": "17599164808183510748",
+  "pos": [
+   -138.328,
+   -11.461,
+   26.007
+  ],
+  "room": 24,
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "heart_container",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0x41811F125B1EEDD5",
+  "name": null,
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_Heart_Container",
+  "instance": "4720088048159616469",
+  "pos": [
+   -2.696,
+   142.254,
+   -160.579
+  ],
+  "room": 33,
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "heart_container",
+  "store": "bool64",
+  "hash": null,
+  "key64": "0xC835E1D03656BF46",
+  "name": null,
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Obj_Heart_Container",
+  "instance": "14426685265732353862",
+  "pos": [
+   -4.5,
+   124.36,
+   -88.05
+  ],
+  "room": 23,
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x2CFEFFBF",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.15858708076894317041",
+  "scene": "BossRushIntervalRoom",
+  "scenes": [
+   "BossRushIntervalRoom"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "15858708076894317041",
+  "pos": [
+   0.0,
+   0.206,
+   -6.451
+  ],
+  "item": "TBox_Rupee_Gold",
+  "collectedInFixtureSlot03": false,
+  "area": null
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x0A4F7BD1",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.2854211238375368215",
+  "scene": "BossRushIntervalRoom",
+  "scenes": [
+   "BossRushIntervalRoom"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "2854211238375368215",
+  "pos": [
+   0.0,
+   0.206,
+   -6.451
+  ],
+  "item": "TBox_Rupee_Gold",
+  "collectedInFixtureSlot03": false,
+  "area": null
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xA10905E3",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3522439980243161940",
+  "scene": "BossRushIntervalRoom",
+  "scenes": [
+   "BossRushIntervalRoom"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "3522439980243161940",
+  "pos": [
+   0.0,
+   0.206,
+   -6.451
+  ],
+  "item": "TBox_Rupee_Gold",
+  "collectedInFixtureSlot03": false,
+  "area": null
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x21827E47",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4529748032854378492",
+  "scene": "BossRushIntervalRoom",
+  "scenes": [
+   "BossRushIntervalRoom"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "4529748032854378492",
+  "pos": [
+   0.0,
+   0.206,
+   -6.451
+  ],
+  "item": "TBox_Rupee_Gold",
+  "collectedInFixtureSlot03": false,
+  "area": null
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xAFBB5671",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.566103236844767323",
+  "scene": "BossRushIntervalRoom",
+  "scenes": [
+   "BossRushIntervalRoom"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "566103236844767323",
+  "pos": [
+   0.0,
+   0.206,
+   -6.451
+  ],
+  "item": "TBox_Rupee_Gold",
+  "collectedInFixtureSlot03": false,
+  "area": null
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x42CD6F18",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.7234638808238324101",
+  "scene": "BossRushIntervalRoom",
+  "scenes": [
+   "BossRushIntervalRoom"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "7234638808238324101",
+  "pos": [
+   0.0,
+   0.206,
+   -6.451
+  ],
+  "item": "TBox_Rupee_Gold",
+  "collectedInFixtureSlot03": false,
+  "area": null
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x709D94CC",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.7346745174625046398",
+  "scene": "BossRushIntervalRoom",
+  "scenes": [
+   "BossRushIntervalRoom"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "7346745174625046398",
+  "pos": [
+   0.0,
+   0.206,
+   -6.451
+  ],
+  "item": "TBox_Rupee_Gold",
+  "collectedInFixtureSlot03": false,
+  "area": null
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xD0B42FBD",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.7458365564915336038",
+  "scene": "BossRushIntervalRoom",
+  "scenes": [
+   "BossRushIntervalRoom"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "7458365564915336038",
+  "pos": [
+   0.0,
+   0.206,
+   -6.451
+  ],
+  "item": "TBox_Rupee_Gold",
+  "collectedInFixtureSlot03": false,
+  "area": null
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF93A9700",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.7589985979641292928",
+  "scene": "BossRushIntervalRoom",
+  "scenes": [
+   "BossRushIntervalRoom"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "7589985979641292928",
+  "pos": [
+   0.0,
+   0.206,
+   -6.451
+  ],
+  "item": "TBox_Rupee_Gold",
+  "collectedInFixtureSlot03": false,
+  "area": null
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x306CE15C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9947351236862205040",
+  "scene": "BossRushIntervalRoom",
+  "scenes": [
+   "BossRushIntervalRoom"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "9947351236862205040",
+  "pos": [
+   0.0,
+   0.206,
+   -6.451
+  ],
+  "item": "TBox_Rupee_Gold",
+  "collectedInFixtureSlot03": false,
+  "area": null
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x0B5AF5AF",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.10905582354954996284",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "10905582354954996284",
+  "pos": [
+   -29.59,
+   100.0,
+   -36.977
+  ],
+  "room": 1,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xD1EB2A11",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12988877782812797760",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "12988877782812797760",
+  "pos": [
+   19.858,
+   97.811,
+   -18.574
+  ],
+  "room": 1,
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x7C3DCC16",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.14911602953212243797",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "14911602953212243797",
+  "pos": [
+   -12.395,
+   100.117,
+   -10.959
+  ],
+  "room": 1,
+  "item": "Item_Dungeon_Compass",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x0B81BD32",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5429815628949128345",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "5429815628949128345",
+  "pos": [
+   -0.201,
+   96.193,
+   -5.0
+  ],
+  "room": 1,
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x39C8AEDB",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.631709185320708287",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "631709185320708287",
+  "pos": [
+   11.973,
+   100.0,
+   -11.061
+  ],
+  "room": 1,
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x4EE0B514",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.8397646530660039355",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "8397646530660039355",
+  "pos": [
+   10.57,
+   99.98,
+   -4.5
+  ],
+  "room": 1,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF9AA7A38",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.8975637636514249074",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "8975637636514249074",
+  "pos": [
+   -11.0,
+   99.98,
+   -5.431
+  ],
+  "room": 1,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x7F04A28A",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.11718708984125260282",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_GlassTruth_A_01",
+  "instance": "11718708984125260282",
+  "pos": [
+   0.022,
+   105.78,
+   -77.055
+  ],
+  "room": 2,
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x63C159D6",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.874970148260328653",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_A_06",
+  "instance": "874970148260328653",
+  "pos": [
+   33.85,
+   100.0,
+   -22.543
+  ],
+  "room": 6,
+  "item": "TBox_Shield_Deku",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x2B12706D",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16654774376625985726",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "16654774376625985726",
+  "pos": [
+   -0.045,
+   92.421,
+   -110.269
+  ],
+  "room": 8,
+  "item": "Item_GlassTruth",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x9EBB94FF",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9466613428674883506",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "9466613428674883506",
+  "pos": [
+   18.319,
+   87.449,
+   1.155
+  ],
+  "room": 9,
+  "item": "Item_Dungeon_Map",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xD9214B05",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.6064359710907908886",
+  "scene": "BottomOfTheWell",
+  "scenes": [
+   "BottomOfTheWell"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "6064359710907908886",
+  "pos": [
+   0.008,
+   102.17,
+   -100.469
+  ],
+  "room": 11,
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": true,
+  "area": "bottom_of_the_well"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x74EEDB5E",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1158729434763801603",
+  "scene": "DeathMountainCrater_Adult",
+  "scenes": [
+   "DeathMountainCrater_Adult",
+   "DeathMountainCrater_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "1158729434763801603",
+  "pos": [
+   -27.032,
+   67.625,
+   65.213
+  ],
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_crater"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x2243DE4F",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9128916506605227251",
+  "scene": "DeathMountainCrater_Adult",
+  "scenes": [
+   "DeathMountainCrater_Adult",
+   "DeathMountainCrater_Child"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "9128916506605227251",
+  "pos": [
+   -66.761,
+   70.386,
+   4.668
+  ],
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_crater"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x69D957A5",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9809508929088891725",
+  "scene": "DeathMountainTrail_Adult",
+  "scenes": [
+   "DeathMountainTrail_Adult",
+   "DeathMountainTrail_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "9809508929088891725",
+  "pos": [
+   -29.837,
+   120.251,
+   45.614
+  ],
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": true,
+  "area": "death_mountain_trail"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x96828946",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.10012167258643363548",
+  "scene": "DesertColossus_Adult",
+  "scenes": [
+   "DesertColossus_Adult",
+   "DesertColossus_Child"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "10012167258643363548",
+  "pos": [
+   -168.629,
+   113.25,
+   -8.629
+  ],
+  "item": "Item_Shield_Mirror",
+  "collectedInFixtureSlot03": false,
+  "area": "desert_colossus"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x50EB3D8E",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1186167733408299582",
+  "scene": "DesertColossus_Adult",
+  "scenes": [
+   "DesertColossus_Adult",
+   "DesertColossus_Child"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "1186167733408299582",
+  "pos": [
+   -129.539,
+   76.991,
+   -36.545
+  ],
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": false,
+  "area": "desert_colossus"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x0C3F127E",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.2490063409521505179",
+  "scene": "DesertColossus_Adult",
+  "scenes": [
+   "DesertColossus_Adult",
+   "DesertColossus_Child"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "2490063409521505179",
+  "pos": [
+   -168.637,
+   113.25,
+   29.546
+  ],
+  "item": "Item_Gauntlet_Silver",
+  "collectedInFixtureSlot03": false,
+  "area": "desert_colossus"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x35C75A99",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.7524527082521156886",
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Obj_TBox_A_06",
+  "instance": "7524527082521156886",
+  "pos": [
+   -20.75,
+   113.275,
+   -36.5
+  ],
+  "room": 1,
+  "item": "TBox_Shield_Deku",
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x57A4BD6D",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.8291119063305855945",
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "8291119063305855945",
+  "pos": [
+   -26.5,
+   100.25,
+   -38.0
+  ],
+  "room": 1,
+  "item": "Item_Dungeon_Map",
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xC46A2F36",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.8607798771661947511",
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "8607798771661947511",
+  "pos": [
+   -30.131,
+   100.0,
+   -8.003
+  ],
+  "room": 1,
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x7B876429",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.7764016096998075927",
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "7764016096998075927",
+  "pos": [
+   82.993,
+   100.6,
+   -55.625
+  ],
+  "room": 5,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xA9C7155E",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12253889300578348965",
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "12253889300578348965",
+  "pos": [
+   -48.979,
+   116.011,
+   -63.933
+  ],
+  "room": 10,
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x96200B9F",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.17531994809974271603",
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "17531994809974271603",
+  "pos": [
+   -49.0,
+   103.619,
+   7.5
+  ],
+  "room": 11,
+  "item": "Item_Dungeon_Compass",
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x23DFBCCF",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.11582649900854566065",
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Obj_TBox_A_06",
+  "instance": "11582649900854566065",
+  "pos": [
+   43.044,
+   113.156,
+   -8.75
+  ],
+  "room": 13,
+  "item": "TBox_Shield_Deku",
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF0324C6C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12161709650443144121",
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "12161709650443144121",
+  "pos": [
+   39.0,
+   115.718,
+   -23.0
+  ],
+  "room": 13,
+  "item": "Item_BombBag_Small",
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x88ABF94F",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.850464708089653824",
+  "scene": "DodongoCavern",
+  "scenes": [
+   "DodongoCavern"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "850464708089653824",
+  "pos": [
+   92.5,
+   114.975,
+   -50.25
+  ],
+  "room": 16,
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": true,
+  "area": "dodongos_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x946EFBE1",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3949488292768750868",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "3949488292768750868",
+  "pos": [
+   34.215,
+   105.3,
+   -46.457
+  ],
+  "room": 1,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xFAA8C214",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5634724236470386190",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "5634724236470386190",
+  "pos": [
+   -39.161,
+   104.991,
+   24.639
+  ],
+  "room": 2,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xB21E7A4E",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.8757492004108970488",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "8757492004108970488",
+  "pos": [
+   -6.98,
+   102.01,
+   -33.265
+  ],
+  "room": 3,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xE335247D",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16785682308850448108",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "16785682308850448108",
+  "pos": [
+   77.43,
+   141.126,
+   0.192
+  ],
+  "room": 4,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x393759F0",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12567412825200613393",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "12567412825200613393",
+  "pos": [
+   48.499,
+   146.997,
+   -43.392
+  ],
+  "room": 5,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xE5811BD4",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3688520809244472975",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "3688520809244472975",
+  "pos": [
+   58.228,
+   147.081,
+   40.552
+  ],
+  "room": 5,
+  "item": "Item_Dungeon_Map",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x586234B3",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9634924691849556346",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "9634924691849556346",
+  "pos": [
+   46.555,
+   150.5,
+   33.415
+  ],
+  "room": 5,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xEA529806",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.15073195886628236505",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "15073195886628236505",
+  "pos": [
+   31.698,
+   194.352,
+   -8.492
+  ],
+  "room": 8,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x38581536",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.17001858340376096722",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "17001858340376096722",
+  "pos": [
+   33.106,
+   194.352,
+   -9.924
+  ],
+  "room": 8,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x4DF1310A",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.862385681502746018",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "862385681502746018",
+  "pos": [
+   31.4,
+   194.354,
+   -10.188
+  ],
+  "room": 8,
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xBA01B6D8",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12945617941305968586",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "12945617941305968586",
+  "pos": [
+   -17.109,
+   146.985,
+   -31.074
+  ],
+  "room": 10,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x4958D1F3",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.10521366928524045067",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "10521366928524045067",
+  "pos": [
+   -37.835,
+   145.234,
+   -0.552
+  ],
+  "room": 11,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xCA47C799",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12083259659219538030",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "12083259659219538030",
+  "pos": [
+   -31.766,
+   196.1,
+   -12.711
+  ],
+  "room": 13,
+  "item": "Item_Hammer",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x907A497F",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16713240760352215634",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "16713240760352215634",
+  "pos": [
+   34.136,
+   147.066,
+   -5.746
+  ],
+  "room": 16,
+  "item": "Item_Dungeon_Compass",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x12A3B141",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.14060099092170010696",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_03",
+  "instance": "14060099092170010696",
+  "pos": [
+   -5.063,
+   100.9,
+   -8.7
+  ],
+  "room": 17,
+  "item": "Item_Dungeon_BossKey",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x34C864C6",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1705064956286753527",
+  "scene": "FireTemple",
+  "scenes": [
+   "FireTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "1705064956286753527",
+  "pos": [
+   39.449,
+   105.289,
+   51.247
+  ],
+  "room": 22,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "fire_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x893E0C3A",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5306318520835485827",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_03_NoBake",
+  "instance": "5306318520835485827",
+  "pos": [
+   -49.46,
+   129.5,
+   -63.706
+  ],
+  "item": "Item_Dungeon_BossKey",
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x8B9A3D0F",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1171460703078800858",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "1171460703078800858",
+  "pos": [
+   -9.854,
+   117.51,
+   64.372
+  ],
+  "room": 0,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x84EE2D58",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.14776684749746592758",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "14776684749746592758",
+  "pos": [
+   0.014,
+   105.785,
+   -62.75
+  ],
+  "room": 4,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xA61AE4AC",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.15920957434854338961",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "15920957434854338961",
+  "pos": [
+   -52.826,
+   115.0,
+   4.234
+  ],
+  "room": 8,
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": false,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x0CB94292",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3174893090599461927",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "3174893090599461927",
+  "pos": [
+   38.753,
+   101.413,
+   -35.75
+  ],
+  "room": 14,
+  "item": "Item_Dungeon_Map",
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x6F0D153F",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.6449977980406424425",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "6449977980406424425",
+  "pos": [
+   16.442,
+   88.025,
+   -42.56
+  ],
+  "room": 15,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x9B2E155F",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3433400840978782007",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "3433400840978782007",
+  "pos": [
+   -17.095,
+   114.816,
+   -63.643
+  ],
+  "room": 16,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xFEF0AA9C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.11082303891540711688",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "11082303891540711688",
+  "pos": [
+   0.2,
+   114.761,
+   -68.5
+  ],
+  "room": 17,
+  "item": "Item_Range_Bow",
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x3E05A646",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.6948525240950728236",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "6948525240950728236",
+  "pos": [
+   17.085,
+   114.819,
+   -63.616
+  ],
+  "room": 18,
+  "item": "Item_Dungeon_Compass",
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x196AF396",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.7535137041266964235",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "7535137041266964235",
+  "pos": [
+   -70.232,
+   107.1,
+   -26.486
+  ],
+  "room": 22,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x4C0AA7EA",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.15117164073907033527",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "15117164073907033527",
+  "pos": [
+   56.03,
+   103.997,
+   -22.796
+  ],
+  "room": 24,
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x548FD9D1",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9038700938965170329",
+  "scene": "ForestTemple",
+  "scenes": [
+   "ForestTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "9038700938965170329",
+  "pos": [
+   -16.259,
+   60.714,
+   12.605
+  ],
+  "room": 27,
+  "item": "TBox_ArrowBundle_Large",
+  "collectedInFixtureSlot03": true,
+  "area": "forest_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x689CEBE8",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12343753510713797715",
+  "scene": "GerudoFortress_Adult",
+  "scenes": [
+   "GerudoFortress_Adult"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "12343753510713797715",
+  "pos": [
+   28.978,
+   131.5,
+   -93.672
+  ],
+  "item": "Obj_Heart_Piece",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xE5AA28A1",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16619432200060282313",
+  "scene": "GerudoFortress_Adult",
+  "scenes": [
+   "GerudoFortress_Adult"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "16619432200060282313",
+  "pos": [
+   14.968,
+   89.151,
+   -67.693
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xD3B7B20F",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.10743352138513225188",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_06",
+  "instance": "10743352138513225188",
+  "pos": [
+   -9.0,
+   98.03,
+   -60.0
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x876B69BA",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.11182647876438515984",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_GlassTruth_A_01",
+  "instance": "11182647876438515984",
+  "pos": [
+   -7.644,
+   99.485,
+   -11.445
+  ],
+  "room": 0,
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x423B9E4D",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.2436665354602612279",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "2436665354602612279",
+  "pos": [
+   4.06,
+   99.468,
+   -11.431
+  ],
+  "room": 0,
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xDFA226EF",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.13501407288943710656",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "13501407288943710656",
+  "pos": [
+   -50.255,
+   98.134,
+   -15.587
+  ],
+  "room": 1,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF5DC6F20",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4519534997122863169",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "4519534997122863169",
+  "pos": [
+   -55.128,
+   104.019,
+   -90.285
+  ],
+  "room": 3,
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x66F10FDD",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.11563468890171962383",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "11563468890171962383",
+  "pos": [
+   -2.34,
+   96.269,
+   -77.329
+  ],
+  "room": 4,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x81EBAA2B",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4372363658229299619",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "4372363658229299619",
+  "pos": [
+   43.29,
+   98.445,
+   -82.44
+  ],
+  "room": 5,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x8278E92A",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4961588221597286817",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_06_NoBake",
+  "instance": "4961588221597286817",
+  "pos": [
+   43.5,
+   98.009,
+   -90.856
+  ],
+  "room": 5,
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x760940B1",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4709724720801091788",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "4709724720801091788",
+  "pos": [
+   44.439,
+   98.653,
+   -5.4
+  ],
+  "room": 7,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x905525CC",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.10696620323243142689",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "10696620323243142689",
+  "pos": [
+   -19.25,
+   98.03,
+   -46.25
+  ],
+  "room": 8,
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x616B6E42",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.11683433230229591151",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_06",
+  "instance": "11683433230229591151",
+  "pos": [
+   10.25,
+   98.03,
+   -50.5
+  ],
+  "room": 8,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xEA6CDE49",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1883068192328530224",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "1883068192328530224",
+  "pos": [
+   22.821,
+   98.03,
+   -45.624
+  ],
+  "room": 8,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x984CD824",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1941083939696166170",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "1941083939696166170",
+  "pos": [
+   -1.864,
+   98.03,
+   -48.0
+  ],
+  "room": 8,
+  "item": "Item_Arrow_Ice",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xFDE0EAA2",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.196331300747102419",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "196331300747102419",
+  "pos": [
+   5.5,
+   98.03,
+   -45.5
+  ],
+  "room": 8,
+  "item": "Item_BombchuBundle_Small",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x7D813872",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4320448574091221496",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "4320448574091221496",
+  "pos": [
+   -1.75,
+   105.027,
+   -37.88
+  ],
+  "room": 8,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x2CA9AFD9",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.8186301369655588602",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "8186301369655588602",
+  "pos": [
+   -13.25,
+   98.03,
+   -60.5
+  ],
+  "room": 8,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF33D12B3",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9911316961118170383",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "9911316961118170383",
+  "pos": [
+   -1.476,
+   105.004,
+   -48.05
+  ],
+  "room": 8,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x2B899495",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3717705376223508790",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "3717705376223508790",
+  "pos": [
+   78.514,
+   94.03,
+   -43.9
+  ],
+  "room": 9,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x19F4DECD",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.11754783663699171680",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "11754783663699171680",
+  "pos": [
+   -53.659,
+   103.52,
+   -131.795
+  ],
+  "room": 10,
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x8602C326",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3750231902048775592",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "3750231902048775592",
+  "pos": [
+   -39.455,
+   103.518,
+   -130.767
+  ],
+  "room": 10,
+  "item": "Item_BombBundle_Small",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x2E46DE13",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5329807728555596183",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_GlassTruth_A_01",
+  "instance": "5329807728555596183",
+  "pos": [
+   -42.099,
+   104.215,
+   -137.671
+  ],
+  "room": 10,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x49443F24",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.6897789835137994741",
+  "scene": "GerudoTrainingGround",
+  "scenes": [
+   "GerudoTrainingGround"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "6897789835137994741",
+  "pos": [
+   -42.242,
+   104.215,
+   -123.615
+  ],
+  "room": 10,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_fortress"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x15F33BA0",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.13612880783193811229",
+  "scene": "GerudoValley_Adult",
+  "scenes": [
+   "GerudoValley_Adult"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "13612880783193811229",
+  "pos": [
+   -33.711,
+   102.19,
+   22.059
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x7001F17C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.15856256242099990922",
+  "scene": "GerudoValley_Adult",
+  "scenes": [
+   "GerudoValley_Adult",
+   "GerudoValley_Child"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "15856256242099990922",
+  "pos": [
+   -9.457,
+   90.45,
+   34.982
+  ],
+  "item": "Obj_Heart_Piece",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xA1F6B6AE",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.17750686910716887133",
+  "scene": "GerudoValley_Adult",
+  "scenes": [
+   "GerudoValley_Adult",
+   "GerudoValley_Child"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "17750686910716887133",
+  "pos": [
+   -47.273,
+   84.039,
+   -46.029
+  ],
+  "item": "TBox_Rupee_Green",
+  "collectedInFixtureSlot03": true,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x7386EC19",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.18413589940135955604",
+  "scene": "GerudoValley_Adult",
+  "scenes": [
+   "GerudoValley_Adult"
+  ],
+  "actor": "Obj_TBox_GlassTruth_A_01",
+  "instance": "18413589940135955604",
+  "pos": [
+   -43.273,
+   84.044,
+   -46.029
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xFAC869DD",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.6463521162691873710",
+  "scene": "GerudoValley_Adult",
+  "scenes": [
+   "GerudoValley_Adult",
+   "GerudoValley_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "6463521162691873710",
+  "pos": [
+   31.194,
+   -22.598,
+   37.018
+  ],
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x6A8C1BDF",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.6205043616869463865",
+  "scene": "GerudoValley_Child",
+  "scenes": [
+   "GerudoValley_Child"
+  ],
+  "actor": "Obj_TBox_GlassTruth_A_01",
+  "instance": "6205043616869463865",
+  "pos": [
+   -43.273,
+   84.044,
+   -46.029
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "gerudo_valley"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x37F0E791",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.10944569637726152230",
+  "scene": "GoronCity_Adult",
+  "scenes": [
+   "GoronCity_Adult",
+   "GoronCity_Child"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "10944569637726152230",
+  "pos": [
+   -52.174,
+   94.795,
+   26.314
+  ],
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": false,
+  "area": "goron_city"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF4BDE2F0",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1176975953041865014",
+  "scene": "GoronCity_Adult",
+  "scenes": [
+   "GoronCity_Adult",
+   "GoronCity_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "1176975953041865014",
+  "pos": [
+   -47.35,
+   113.684,
+   -2.35
+  ],
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": true,
+  "area": "goron_city"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x3EBAE67C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.14647422914070455120",
+  "scene": "GoronCity_Adult",
+  "scenes": [
+   "GoronCity_Adult",
+   "GoronCity_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "14647422914070455120",
+  "pos": [
+   -47.35,
+   113.684,
+   -5.15
+  ],
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": true,
+  "area": "goron_city"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x930B1A9C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3870071239709713434",
+  "scene": "GoronCity_Adult",
+  "scenes": [
+   "GoronCity_Adult",
+   "GoronCity_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "3870071239709713434",
+  "pos": [
+   -43.238,
+   113.684,
+   -8.374
+  ],
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": false,
+  "area": "goron_city"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x773742B8",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4402942101476009858",
+  "scene": "GoronCity_Adult",
+  "scenes": [
+   "GoronCity_Adult",
+   "GoronCity_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "4402942101476009858",
+  "pos": [
+   -48.413,
+   113.684,
+   1.99
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "goron_city"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x9ECB3ABC",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9159710900681116662",
+  "scene": "GoronCity_Adult",
+  "scenes": [
+   "GoronCity_Adult",
+   "GoronCity_Child"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "9159710900681116662",
+  "pos": [
+   -52.174,
+   94.796,
+   31.989
+  ],
+  "item": "TBox_Rupee_Green",
+  "collectedInFixtureSlot03": false,
+  "area": "goron_city"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xBF84D098",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16041366920820397198",
+  "scene": "Graveyard_Adult",
+  "scenes": [
+   "Graveyard_Adult"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "16041366920820397198",
+  "pos": [
+   -6.031,
+   82.537,
+   77.66
+  ],
+  "item": "Item_Hookshot",
+  "collectedInFixtureSlot03": true,
+  "area": "graveyard"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x39E4B7EC",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16912540161937823130",
+  "scene": "Graveyard_Adult",
+  "scenes": [
+   "Graveyard_Adult",
+   "Graveyard_Child"
+  ],
+  "actor": "Obj_TBox_A_06",
+  "instance": "16912540161937823130",
+  "pos": [
+   38.334,
+   86.287,
+   11.234
+  ],
+  "item": "TBox_Shield_Hylian",
+  "collectedInFixtureSlot03": false,
+  "area": "graveyard"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xCD9DA287",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.234006393181394602",
+  "scene": "Graveyard_Adult",
+  "scenes": [
+   "Graveyard_Adult"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "234006393181394602",
+  "pos": [
+   -5.991,
+   82.533,
+   77.626
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "graveyard"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x7FE6AC15",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4322670163630771947",
+  "scene": "Graveyard_Adult",
+  "scenes": [
+   "Graveyard_Adult"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "4322670163630771947",
+  "pos": [
+   -5.993,
+   82.533,
+   77.623
+  ],
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": false,
+  "area": "graveyard"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x8331E107",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5534919361313859554",
+  "scene": "Graveyard_Adult",
+  "scenes": [
+   "Graveyard_Adult"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "5534919361313859554",
+  "pos": [
+   -6.031,
+   82.533,
+   77.658
+  ],
+  "item": "Obj_Heart_Piece",
+  "collectedInFixtureSlot03": true,
+  "area": "graveyard"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x9C89C565",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9622128545943056087",
+  "scene": "Graveyard_Adult",
+  "scenes": [
+   "Graveyard_Adult",
+   "Graveyard_Child"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "9622128545943056087",
+  "pos": [
+   21.41,
+   85.81,
+   39.333
+  ],
+  "item": "Obj_Heart_Piece",
+  "collectedInFixtureSlot03": true,
+  "area": "graveyard"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xD2B4F309",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.8825521833684392638",
+  "scene": "HountedWasteland_Adult",
+  "scenes": [
+   "HountedWasteland_Adult",
+   "HountedWasteland_Child"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "8825521833684392638",
+  "pos": [
+   16.013,
+   87.664,
+   -98.346
+  ],
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": false,
+  "area": "desert_colossus"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x76E7DB96",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1163740567397714729",
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "1163740567397714729",
+  "pos": [
+   -5.732,
+   146.19,
+   406.862
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "lake_hylia"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF549F813",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.17023457248274633121",
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "17023457248274633121",
+  "pos": [
+   -297.435,
+   131.293,
+   558.109
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "lake_hylia"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x900D9849",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.17445672702269453589",
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult",
+   "HyruleField_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "17445672702269453589",
+  "pos": [
+   -151.875,
+   162.03,
+   265.294
+  ],
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": false,
+  "area": "lon_lon_ranch"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xDA9DFF2C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.2967378296224661060",
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult",
+   "HyruleField_Child"
+  ],
+  "actor": "Obj_TBox_A_01_memo11",
+  "instance": "2967378296224661060",
+  "pos": [
+   -213.295,
+   133.466,
+   138.685
+  ],
+  "item": "Obj_Heart_Piece",
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x78751372",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5755485285664292988",
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult",
+   "HyruleField_Child"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "5755485285664292988",
+  "pos": [
+   152.232,
+   136.022,
+   16.734
+  ],
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xCA18A6ED",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.6900843020594897860",
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult",
+   "HyruleField_Child"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "6900843020594897860",
+  "pos": [
+   -214.905,
+   98.023,
+   449.12
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "lake_hylia"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xB1C841F9",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9891111455604007674",
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "9891111455604007674",
+  "pos": [
+   84.399,
+   152.636,
+   45.362
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xB494A299",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.11498802739257120175",
+  "scene": "IceCavern",
+  "scenes": [
+   "IceCavern"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "11498802739257120175",
+  "pos": [
+   3.38,
+   113.713,
+   -80.2
+  ],
+  "room": 5,
+  "item": "Item_Dungeon_Map",
+  "collectedInFixtureSlot03": true,
+  "area": "ice_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x27A33A9A",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.13542013937093159888",
+  "scene": "IceCavern",
+  "scenes": [
+   "IceCavern"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "13542013937093159888",
+  "pos": [
+   90.216,
+   104.513,
+   2.922
+  ],
+  "room": 6,
+  "item": "Item_Dungeon_Compass",
+  "collectedInFixtureSlot03": true,
+  "area": "ice_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xDBD41178",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4128092231168513176",
+  "scene": "IceCavern",
+  "scenes": [
+   "IceCavern"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "4128092231168513176",
+  "pos": [
+   -53.109,
+   107.193,
+   -34.196
+  ],
+  "room": 8,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "ice_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xE2650329",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.6859289214373847284",
+  "scene": "IceCavern",
+  "scenes": [
+   "IceCavern"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "6859289214373847284",
+  "pos": [
+   -46.225,
+   109.71,
+   42.527
+  ],
+  "room": 10,
+  "item": "Item_HeavyBoot",
+  "collectedInFixtureSlot03": true,
+  "area": "ice_cavern"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x16C793EB",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16913531450403950487",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "16913531450403950487",
+  "pos": [
+   25.261,
+   103.0,
+   23.695
+  ],
+  "room": 2,
+  "item": "TBox_ArrowBundle_Medium",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF140F290",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.14404733996390762670",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "14404733996390762670",
+  "pos": [
+   56.394,
+   99.495,
+   -15.179
+  ],
+  "room": 5,
+  "item": "Item_BombchuBundle_Small",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x13699922",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.17657623307936361670",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "17657623307936361670",
+  "pos": [
+   48.286,
+   104.007,
+   -105.303
+  ],
+  "room": 8,
+  "item": "Item_Gauntlet_Gold",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x56426EFC",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.18277713685010400796",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "18277713685010400796",
+  "pos": [
+   12.584,
+   103.9,
+   -65.894
+  ],
+  "room": 8,
+  "item": "TBox_ArrowBundle_Medium",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xC545CFD7",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1029712040059298120",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "1029712040059298120",
+  "pos": [
+   -36.028,
+   99.745,
+   -16.492
+  ],
+  "room": 12,
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x326DABC5",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.14046623154429024571",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "14046623154429024571",
+  "pos": [
+   -40.558,
+   99.745,
+   -27.345
+  ],
+  "room": 12,
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x965D2A40",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.14962432460641118089",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "14962432460641118089",
+  "pos": [
+   -40.447,
+   99.863,
+   -20.997
+  ],
+  "room": 12,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xCB885192",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.7461796063704896255",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "7461796063704896255",
+  "pos": [
+   -45.055,
+   99.745,
+   -16.609
+  ],
+  "room": 12,
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF66A9AF3",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.15320975652699461295",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_GlassTruth_A_01",
+  "instance": "15320975652699461295",
+  "pos": [
+   -52.187,
+   99.995,
+   -16.506
+  ],
+  "room": 13,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x246FF3A0",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4733634471038136588",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "4733634471038136588",
+  "pos": [
+   -52.192,
+   99.995,
+   -25.485
+  ],
+  "room": 13,
+  "item": "TBox_Rupee_Green",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x8526343C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.7899179288432849355",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "7899179288432849355",
+  "pos": [
+   -38.028,
+   104.001,
+   13.322
+  ],
+  "room": 17,
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xD5B8BC12",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.17092385671602176550",
+  "scene": "InsideGanonCastle",
+  "scenes": [
+   "InsideGanonCastle"
+  ],
+  "actor": "Obj_TBox_A_03_NoBake",
+  "instance": "17092385671602176550",
+  "pos": [
+   0.073,
+   149.65,
+   -24.685
+  ],
+  "room": 24,
+  "item": "Item_Dungeon_BossKey",
+  "collectedInFixtureSlot03": false,
+  "area": "ganons_castle"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xE2A0A25D",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5527401621172639818",
+  "scene": "InsideJabuJabuBelly",
+  "scenes": [
+   "InsideJabuJabuBelly"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "5527401621172639818",
+  "pos": [
+   -31.304,
+   92.393,
+   -131.909
+  ],
+  "room": 9,
+  "item": "Item_Boomerang",
+  "collectedInFixtureSlot03": true,
+  "area": "jabu_jabu"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x2AE47917",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3510516276638146208",
+  "scene": "InsideJabuJabuBelly",
+  "scenes": [
+   "InsideJabuJabuBelly"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "3510516276638146208",
+  "pos": [
+   25.517,
+   92.294,
+   -175.931
+  ],
+  "room": 12,
+  "item": "Item_Dungeon_Compass",
+  "collectedInFixtureSlot03": true,
+  "area": "jabu_jabu"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xDF36E422",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3609242017501283521",
+  "scene": "InsideJabuJabuBelly",
+  "scenes": [
+   "InsideJabuJabuBelly"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "3609242017501283521",
+  "pos": [
+   -34.184,
+   82.469,
+   -51.981
+  ],
+  "room": 13,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "jabu_jabu"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x4650CE74",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.14933854942830098290",
+  "scene": "InsideJabuJabuBelly",
+  "scenes": [
+   "InsideJabuJabuBelly"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "14933854942830098290",
+  "pos": [
+   37.7,
+   77.55,
+   -57.118
+  ],
+  "room": 14,
+  "item": "Item_Dungeon_Map",
+  "collectedInFixtureSlot03": true,
+  "area": "jabu_jabu"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xE4FB555D",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.8579518566955184384",
+  "scene": "InsideTheDekuTree",
+  "scenes": [
+   "InsideTheDekuTree"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "8579518566955184384",
+  "pos": [
+   6.514,
+   108.4,
+   7.246
+  ],
+  "room": 0,
+  "item": "Item_Dungeon_Map",
+  "collectedInFixtureSlot03": true,
+  "area": "deku_tree"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x4D191DC2",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.13027331340815880287",
+  "scene": "InsideTheDekuTree",
+  "scenes": [
+   "InsideTheDekuTree"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "13027331340815880287",
+  "pos": [
+   -42.916,
+   116.2,
+   19.346
+  ],
+  "room": 2,
+  "item": "TBox_DekuNutBundle",
+  "collectedInFixtureSlot03": true,
+  "area": "deku_tree"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x40F83AD5",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.821372075822700622",
+  "scene": "InsideTheDekuTree",
+  "scenes": [
+   "InsideTheDekuTree"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "821372075822700622",
+  "pos": [
+   -54.387,
+   111.958,
+   12.21
+  ],
+  "room": 2,
+  "item": "Item_Range_SlingShot",
+  "collectedInFixtureSlot03": true,
+  "area": "deku_tree"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF90B34B9",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.11368028582977069031",
+  "scene": "InsideTheDekuTree",
+  "scenes": [
+   "InsideTheDekuTree"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "11368028582977069031",
+  "pos": [
+   -65.241,
+   125.625,
+   0.024
+  ],
+  "room": 3,
+  "item": "TBox_DekuNutBundle",
+  "collectedInFixtureSlot03": true,
+  "area": "deku_tree"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x31A0367C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9284193025315608699",
+  "scene": "InsideTheDekuTree",
+  "scenes": [
+   "InsideTheDekuTree"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "9284193025315608699",
+  "pos": [
+   -48.294,
+   120.365,
+   0.0
+  ],
+  "room": 3,
+  "item": "Item_Dungeon_Compass",
+  "collectedInFixtureSlot03": true,
+  "area": "deku_tree"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x2412FFFB",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12889104996486369065",
+  "scene": "InsideTheDekuTree",
+  "scenes": [
+   "InsideTheDekuTree"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "12889104996486369065",
+  "pos": [
+   -10.399,
+   79.384,
+   -12.56
+  ],
+  "room": 4,
+  "item": "Item_DekuStickBundle_Small",
+  "collectedInFixtureSlot03": true,
+  "area": "deku_tree"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x8DBE7CF1",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.11929552275106311978",
+  "scene": "KakarikoVillage_Adult",
+  "scenes": [
+   "KakarikoVillage_Adult"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "11929552275106311978",
+  "pos": [
+   5.56,
+   130.166,
+   41.433
+  ],
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": false,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x6CE4E57A",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12902291359202819102",
+  "scene": "KakarikoVillage_Adult_Alternative",
+  "scenes": [
+   "KakarikoVillage_Adult",
+   "KakarikoVillage_Adult_Alternative",
+   "KakarikoVillage_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "12902291359202819102",
+  "pos": [
+   -41.687,
+   79.717,
+   11.395
+  ],
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": true,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x1B07478F",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.13080955777249750889",
+  "scene": "KakarikoVillage_Adult_Alternative",
+  "scenes": [
+   "KakarikoVillage_Adult_Alternative"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "13080955777249750889",
+  "pos": [
+   5.56,
+   130.166,
+   41.433
+  ],
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": false,
+  "area": "kakariko_village"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x316D8A20",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.10831981390482426294",
+  "scene": "KokiriForest_Adult",
+  "scenes": [
+   "KokiriForest_Adult",
+   "KokiriForest_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "10831981390482426294",
+  "pos": [
+   -50.286,
+   112.264,
+   -42.033
+  ],
+  "item": "TBox_Rupee_Green",
+  "collectedInFixtureSlot03": true,
+  "area": "kokiri_forest"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x467020FD",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12786193094758345086",
+  "scene": "KokiriForest_Adult",
+  "scenes": [
+   "KokiriForest_Adult",
+   "KokiriForest_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "12786193094758345086",
+  "pos": [
+   -53.199,
+   112.264,
+   -42.099
+  ],
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": true,
+  "area": "kokiri_forest"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xB5EB0E2D",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.14818888396401495482",
+  "scene": "KokiriForest_Adult",
+  "scenes": [
+   "KokiriForest_Adult",
+   "KokiriForest_Child"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "14818888396401495482",
+  "pos": [
+   -70.837,
+   103.575,
+   -63.388
+  ],
+  "item": "TBox_Rupee_Green",
+  "collectedInFixtureSlot03": true,
+  "area": "kokiri_forest"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x15C74DE1",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16757992849254467386",
+  "scene": "KokiriForest_Adult",
+  "scenes": [
+   "KokiriForest_Adult",
+   "KokiriForest_Child"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "16757992849254467386",
+  "pos": [
+   -82.623,
+   122.263,
+   32.954
+  ],
+  "item": "Item_Sword_Kokiri",
+  "collectedInFixtureSlot03": true,
+  "area": "kokiri_forest"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xE51565C5",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4349272251343787229",
+  "scene": "KokiriForest_Adult",
+  "scenes": [
+   "KokiriForest_Adult",
+   "KokiriForest_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "4349272251343787229",
+  "pos": [
+   -132.183,
+   123.888,
+   -16.005
+  ],
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": false,
+  "area": "kokiri_forest"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xC8643846",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4555665598794293658",
+  "scene": "KokiriForest_Adult",
+  "scenes": [
+   "KokiriForest_Adult",
+   "KokiriForest_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "4555665598794293658",
+  "pos": [
+   -54.211,
+   112.264,
+   -40.879
+  ],
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": true,
+  "area": "kokiri_forest"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF870D00B",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9725242744547055868",
+  "scene": "KokiriForest_Adult",
+  "scenes": [
+   "KokiriForest_Adult",
+   "KokiriForest_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "9725242744547055868",
+  "pos": [
+   -49.318,
+   112.264,
+   -40.89
+  ],
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": true,
+  "area": "kokiri_forest"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x6AA4ADA3",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.17479747339356189279",
+  "scene": "LostWood_Adult",
+  "scenes": [
+   "LostWood_Adult",
+   "LostWood_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "17479747339356189279",
+  "pos": [
+   -49.401,
+   104.531,
+   71.854
+  ],
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": true,
+  "area": "lost_woods"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x9B34346D",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12114077686306649660",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_01",
+  "instance": "12114077686306649660",
+  "pos": [
+   -85.915,
+   97.884,
+   15.652
+  ],
+  "item": "TBox_Rupee_Green",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x05323B8E",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12763522142548402103",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_01",
+  "instance": "12763522142548402103",
+  "pos": [
+   -96.915,
+   97.884,
+   9.665
+  ],
+  "item": "Obj_MiniGame_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x0D6DDDAC",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.13633455645485504369",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_01",
+  "instance": "13633455645485504369",
+  "pos": [
+   -107.915,
+   97.884,
+   15.652
+  ],
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x9131C13F",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.15659683110284072977",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_01",
+  "instance": "15659683110284072977",
+  "pos": [
+   -118.915,
+   97.884,
+   15.652
+  ],
+  "item": "TBox_Rupee_Blue",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x6E1B94A8",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16881481538337649070",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_02",
+  "instance": "16881481538337649070",
+  "pos": [
+   -131.578,
+   97.891,
+   12.671
+  ],
+  "item": "Obj_Heart_Piece",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x0A8A6796",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1775586642693927992",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_01",
+  "instance": "1775586642693927992",
+  "pos": [
+   -74.915,
+   97.884,
+   9.665
+  ],
+  "item": "Obj_MiniGame_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x39E5FA12",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.18239509117326156183",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_01",
+  "instance": "18239509117326156183",
+  "pos": [
+   -118.915,
+   97.884,
+   9.665
+  ],
+  "item": "Obj_MiniGame_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x2618F189",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5350594583391365806",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_01",
+  "instance": "5350594583391365806",
+  "pos": [
+   -85.915,
+   97.884,
+   9.665
+  ],
+  "item": "Obj_MiniGame_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x24428B72",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.6478285350658826847",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_01",
+  "instance": "6478285350658826847",
+  "pos": [
+   -107.915,
+   97.884,
+   9.665
+  ],
+  "item": "Obj_MiniGame_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xA2DAACFB",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.6781536951709667179",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_02",
+  "instance": "6781536951709667179",
+  "pos": [
+   -131.578,
+   97.891,
+   12.671
+  ],
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xB2051F78",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.7390716194495618474",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_01",
+  "instance": "7390716194495618474",
+  "pos": [
+   -74.915,
+   97.884,
+   15.652
+  ],
+  "item": "TBox_Rupee_Green",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x843899EE",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9591654059707200528",
+  "scene": "Market_Child",
+  "scenes": [
+   "Market_Child"
+  ],
+  "actor": "Obj_HrlCity_Shop_TBox_A_01",
+  "instance": "9591654059707200528",
+  "pos": [
+   -96.915,
+   97.884,
+   15.652
+  ],
+  "item": "TBox_Rupee_Green",
+  "collectedInFixtureSlot03": false,
+  "area": "castle_town"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x9367C55C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1764383515296652106",
+  "scene": "SacredForestMeadow_Adult",
+  "scenes": [
+   "SacredForestMeadow_Adult",
+   "SacredForestMeadow_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "1764383515296652106",
+  "pos": [
+   12.102,
+   95.982,
+   -73.771
+  ],
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": false,
+  "area": "lost_woods"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x3AF5E0E3",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.7995233962349162969",
+  "scene": "SacredForestMeadow_Adult",
+  "scenes": [
+   "SacredForestMeadow_Adult",
+   "SacredForestMeadow_Child"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "7995233962349162969",
+  "pos": [
+   -3.704,
+   82.285,
+   67.234
+  ],
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": true,
+  "area": "lost_woods"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x066A78B4",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.13528903653876646082",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "13528903653876646082",
+  "pos": [
+   2.631,
+   90.542,
+   -26.214
+  ],
+  "room": 3,
+  "item": "Item_Dungeon_Map",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xF703AB6F",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.14535080241831873137",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "14535080241831873137",
+  "pos": [
+   -72.624,
+   90.521,
+   -10.149
+  ],
+  "room": 4,
+  "item": "Item_HoverBoot",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x93712B23",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1111717451118505545",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "1111717451118505545",
+  "pos": [
+   98.895,
+   87.187,
+   -25.659
+  ],
+  "room": 6,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x5D93713B",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1733372171176975157",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "1733372171176975157",
+  "pos": [
+   84.082,
+   87.315,
+   22.875
+  ],
+  "room": 7,
+  "item": "Item_Dungeon_Compass",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x62789454",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5781953901224064730",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "5781953901224064730",
+  "pos": [
+   -1.47,
+   63.5,
+   98.646
+  ],
+  "room": 11,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x9EF7B8CA",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.8858270325665149688",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "8858270325665149688",
+  "pos": [
+   21.131,
+   56.4,
+   98.359
+  ],
+  "room": 11,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x1B7261EF",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12345747231768877602",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_GlassTruth_A_01",
+  "instance": "12345747231768877602",
+  "pos": [
+   128.019,
+   51.98,
+   10.487
+  ],
+  "room": 15,
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xD38DFE04",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.169081039115821925",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_GlassTruth_A_01",
+  "instance": "169081039115821925",
+  "pos": [
+   118.387,
+   52.136,
+   -17.669
+  ],
+  "room": 16,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xB7B0C604",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5681107746948738726",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "5681107746948738726",
+  "pos": [
+   101.19,
+   52.1,
+   -17.6
+  ],
+  "room": 16,
+  "item": "TBox_Rupee_Green",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x4A9A8AD6",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9221365632831348137",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_A_03",
+  "instance": "9221365632831348137",
+  "pos": [
+   -173.23,
+   41.41,
+   -69.1
+  ],
+  "room": 19,
+  "item": "Item_Dungeon_BossKey",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x612320F9",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9852624243105848451",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "9852624243105848451",
+  "pos": [
+   -190.057,
+   41.288,
+   -69.427
+  ],
+  "room": 19,
+  "item": "Tbox_MagicJar_Large",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x59D7231E",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.17902550525792072472",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "17902550525792072472",
+  "pos": [
+   -181.861,
+   41.388,
+   -12.583
+  ],
+  "room": 21,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x83BA7974",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.10344372963276519235",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "10344372963276519235",
+  "pos": [
+   177.763,
+   60.905,
+   95.239
+  ],
+  "room": 31,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x7F715807",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3718790579351798247",
+  "scene": "ShadowTemple",
+  "scenes": [
+   "ShadowTemple"
+  ],
+  "actor": "Obj_TBox_GlassTruth_A_01",
+  "instance": "3718790579351798247",
+  "pos": [
+   177.763,
+   60.905,
+   98.611
+  ],
+  "room": 31,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "shadow_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x04FE28F1",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5309180490719879013",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_06",
+  "instance": "5309180490719879013",
+  "pos": [
+   -56.028,
+   104.748,
+   -67.569
+  ],
+  "room": 2,
+  "item": "TBox_Shield_Deku",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xD683AA25",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.5703423643219134246",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "5703423643219134246",
+  "pos": [
+   -15.323,
+   104.739,
+   -60.245
+  ],
+  "room": 4,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x7ECA2517",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.1501288453962537671",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "1501288453962537671",
+  "pos": [
+   -39.248,
+   119.15,
+   -39.617
+  ],
+  "room": 6,
+  "item": "Item_BombchuBundle_Small",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xE4D694F3",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.13852283723126411131",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "13852283723126411131",
+  "pos": [
+   0.0,
+   114.15,
+   -57.581
+  ],
+  "room": 7,
+  "item": "Item_Dungeon_Map",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xC6E1ED2D",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.2203243501006528435",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "2203243501006528435",
+  "pos": [
+   -10.895,
+   124.759,
+   -60.569
+  ],
+  "room": 7,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x66741A95",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.17407066694905911064",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "17407066694905911064",
+  "pos": [
+   -61.225,
+   132.75,
+   -27.679
+  ],
+  "room": 9,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x3B0228D0",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.15633505270333176438",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "15633505270333176438",
+  "pos": [
+   13.0,
+   104.761,
+   -63.743
+  ],
+  "room": 14,
+  "item": "Item_Dungeon_Compass",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xCDC08C75",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.4277978357934400600",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "4277978357934400600",
+  "pos": [
+   48.889,
+   100.28,
+   -77.98
+  ],
+  "room": 16,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xEF6A19F7",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12909857529499414969",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "12909857529499414969",
+  "pos": [
+   43.402,
+   119.15,
+   -47.54
+  ],
+  "room": 18,
+  "item": "Item_BombBundle_Small",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xCAD2F5F6",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.14040210993541550542",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_GlassTruth_A_01",
+  "instance": "14040210993541550542",
+  "pos": [
+   57.958,
+   132.1,
+   4.736
+  ],
+  "room": 23,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x04B87F4A",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.9143177002861777924",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_GlassTruth_A_01",
+  "instance": "9143177002861777924",
+  "pos": [
+   53.658,
+   132.1,
+   4.736
+  ],
+  "room": 23,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x4E36E8CB",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.12042193296697281461",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "12042193296697281461",
+  "pos": [
+   55.8,
+   130.892,
+   -50.026
+  ],
+  "room": 26,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x4F583BA3",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16272168033146555902",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_03",
+  "instance": "16272168033146555902",
+  "pos": [
+   19.8,
+   151.02,
+   -65.09
+  ],
+  "room": 29,
+  "item": "Item_Dungeon_BossKey",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xAD1F9D9B",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.13828480906010430010",
+  "scene": "SpiritTemple",
+  "scenes": [
+   "SpiritTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "13828480906010430010",
+  "pos": [
+   -25.433,
+   158.214,
+   -51.285
+  ],
+  "room": 31,
+  "item": "Item_BombBundle_Small",
+  "collectedInFixtureSlot03": false,
+  "area": "spirit_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x62B2DA2C",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.11682974908842171598",
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "11682974908842171598",
+  "pos": [
+   12.0,
+   92.709,
+   -4.5
+  ],
+  "room": 2,
+  "item": "TBox_Rupee_Red",
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xCD8A5078",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16424266294822218796",
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "16424266294822218796",
+  "pos": [
+   -68.256,
+   104.26,
+   20.15
+  ],
+  "room": 3,
+  "item": "Item_Dungeon_Compass",
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xB6B6070B",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16490222392193949581",
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "16490222392193949581",
+  "pos": [
+   56.865,
+   118.39,
+   -28.12
+  ],
+  "room": 4,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x241997F9",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.18059711820131847165",
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "18059711820131847165",
+  "pos": [
+   -77.9,
+   126.6,
+   -99.166
+  ],
+  "room": 7,
+  "item": "Item_Longshot",
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x7F4783E6",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.2503861086004941173",
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "2503861086004941173",
+  "pos": [
+   -44.0,
+   102.3,
+   -19.504
+  ],
+  "room": 8,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x88B6CF77",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.10378828369334876242",
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Obj_TBox_A_03",
+  "instance": "10378828369334876242",
+  "pos": [
+   33.12,
+   103.655,
+   -81.489
+  ],
+  "room": 15,
+  "item": "Item_Dungeon_BossKey",
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x8169322D",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.16384925224245172970",
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Obj_TBox_A_02",
+  "instance": "16384925224245172970",
+  "pos": [
+   36.75,
+   119.51,
+   -4.49
+  ],
+  "room": 17,
+  "item": "Item_Dungeon_Map",
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x8914A506",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.18099019250896853049",
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Obj_TBox_A_01_NoBake",
+  "instance": "18099019250896853049",
+  "pos": [
+   43.75,
+   99.979,
+   -4.5
+  ],
+  "room": 18,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x7EA60E52",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3693930347660122883",
+  "scene": "WaterTemple",
+  "scenes": [
+   "WaterTemple"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "3693930347660122883",
+  "pos": [
+   -1.214,
+   112.0,
+   -51.85
+  ],
+  "room": 20,
+  "item": "Item_Dungeon_SmallKey",
+  "collectedInFixtureSlot03": true,
+  "area": "water_temple"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0xA1678ED9",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.3130048366421939233",
+  "scene": "ZoraDomain_Child",
+  "scenes": [
+   "ZoraDomain_Child"
+  ],
+  "actor": "Obj_TBox_A_02_NoBake",
+  "instance": "3130048366421939233",
+  "pos": [
+   28.8,
+   100.39,
+   -4.877
+  ],
+  "item": "Obj_Heart_Piece",
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_domain"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x3A2A1559",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.15055117029957340138",
+  "scene": "ZoraFountain_Adult",
+  "scenes": [
+   "ZoraFountain_Adult"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "15055117029957340138",
+  "pos": [
+   33.005,
+   108.49,
+   1.698
+  ],
+  "item": "TBox_Rupee_Purple",
+  "collectedInFixtureSlot03": false,
+  "area": "zoras_domain"
+ },
+ {
+  "kind": "chest",
+  "store": "bool",
+  "hash": "0x6F484A36",
+  "key64": null,
+  "name": "IsTreasureBoxOpen.8838426083116998768",
+  "scene": "ZoraRiver_Adult",
+  "scenes": [
+   "ZoraRiver_Adult",
+   "ZoraRiver_Child"
+  ],
+  "actor": "Obj_TBox_A_01",
+  "instance": "8838426083116998768",
+  "pos": [
+   -16.722,
+   74.929,
+   29.726
+  ],
+  "item": "Item_ScrubBusinessSeed",
+  "collectedInFixtureSlot03": true,
+  "area": "zoras_river"
+ }
+]
