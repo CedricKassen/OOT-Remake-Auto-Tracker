@@ -68,6 +68,7 @@ Ready-made builds are attached to each
 |---|---|
 | Items, equipment, upgrades, masks, bottles, songs, dungeon rewards | Read from the save, per entry |
 | Gold Skulltulas (100), Heart Pieces (36) | Read from the save, per entry. `data/check_links.json` says which save flag is which entry; 11 of the 136 links rest on map position alone and are tagged as not certain in the app |
+| Big Poes (10) | Read from the save, per Poe, once sold to the Poe collector |
 | Cuccos, Epona, Scarecrow's Song | Ticked by hand |
 
 ## Map
@@ -172,8 +173,7 @@ on Linux.
 
 `data/checks.json` entries have a `source` that says how the save answers them:
 `{"stock": "<actor>"}`, `{"flag": "<field name>"}`, `{"hash": "0x…"}`,
-`{"magic": 48}`, `{"bottle": n}` (owns n bottles), `{"bottleBeyond": [flags]}`
-(more bottles than the listed flags explain), or `null` for manual. Entries with
+`{"magic": 48}`, `{"bottle": n}`, or `null` for manual. Entries with
 `"verified": false` were written from the original game and not checked
 against the remake. After editing: `curl -X POST localhost:7437/api/v1/reload`.
 

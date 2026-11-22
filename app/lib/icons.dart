@@ -5,7 +5,7 @@ import 'package:oot_tracker/oot_tracker.dart';
 
 /// Icons drawn by this app, for things the stock icon sets have no fitting
 /// picture of.
-enum Glyph { rupee, skull, bottle, medallion }
+enum Glyph { rupee, skull, bottle, medallion, ghost }
 
 /// Shows a stock icon ([IconData]) or one of the app's own ([Glyph]).
 class AppIcon extends StatelessWidget {
@@ -116,6 +116,23 @@ class _GlyphPainter extends CustomPainter {
           false,
           cutLine,
         );
+      case Glyph.ghost:
+        // A hooded shape with a wavy hem and two eyes cut out.
+        final body = Path()
+          ..moveTo(4.5, 21.5)
+          ..lineTo(4.5, 10)
+          ..cubicTo(4.5, 4.8, 7.8, 1.8, 12, 1.8)
+          ..cubicTo(16.2, 1.8, 19.5, 4.8, 19.5, 10)
+          ..lineTo(19.5, 21.5)
+          ..lineTo(16.9, 18.8)
+          ..lineTo(14.5, 21.5)
+          ..lineTo(12, 18.8)
+          ..lineTo(9.5, 21.5)
+          ..lineTo(7.1, 18.8)
+          ..close();
+        canvas.drawPath(body, fill);
+        canvas.drawOval(Rect.fromCenter(center: const Offset(9.2, 9.8), width: 2.8, height: 3.8), cut);
+        canvas.drawOval(Rect.fromCenter(center: const Offset(14.8, 9.8), width: 2.8, height: 3.8), cut);
       case Glyph.medallion:
         // A disc with an inner ring and a boss in the centre.
         canvas.drawCircle(const Offset(12, 12), 10.2, fill);

@@ -141,6 +141,8 @@ def validate(checks, cols, forced, links):
             errs.append('missing link for %s' % cid)
     used = collections.defaultdict(list)
     for cid, l in links.items():
+        if cid.startswith('poe-'):
+            continue  # Big Poes are linked by the game's own PoeBig_FenceID, nothing to match
         c = cby.get(cid)
         if c is None:
             errs.append('%s: not a skulltula / heart piece check id' % cid)

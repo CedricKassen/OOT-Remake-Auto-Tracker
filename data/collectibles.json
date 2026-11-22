@@ -2833,6 +2833,256 @@
   "area": "zoras_river"
  },
  {
+  "kind": "big_poe",
+  "store": "listed",
+  "hash": null,
+  "key64": null,
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Poe_Big",
+  "instance": "11942482632588488560",
+  "pos": [
+   -117.265,
+   152.597,
+   310.699
+  ],
+  "listed": {
+   "ids": "0xE1A508C4",
+   "flags": "0x40772671",
+   "id": 7
+  },
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "big_poe",
+  "store": "listed",
+  "hash": null,
+  "key64": null,
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Poe_Big",
+  "instance": "13083428023969258779",
+  "pos": [
+   -48.861,
+   155.317,
+   59.881
+  ],
+  "listed": {
+   "ids": "0xE1A508C4",
+   "flags": "0x40772671",
+   "id": 3
+  },
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "big_poe",
+  "store": "listed",
+  "hash": null,
+  "key64": null,
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Poe_Big",
+  "instance": "14243249953385923196",
+  "pos": [
+   -55.259,
+   157.497,
+   150.961
+  ],
+  "listed": {
+   "ids": "0xE1A508C4",
+   "flags": "0x40772671",
+   "id": 2
+  },
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "big_poe",
+  "store": "listed",
+  "hash": null,
+  "key64": null,
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Poe_Big",
+  "instance": "14251224488536515648",
+  "pos": [
+   -0.473,
+   156.835,
+   108.599
+  ],
+  "listed": {
+   "ids": "0xE1A508C4",
+   "flags": "0x40772671",
+   "id": 1
+  },
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "big_poe",
+  "store": "listed",
+  "hash": null,
+  "key64": null,
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Poe_Big",
+  "instance": "1678473494217528635",
+  "pos": [
+   100.177,
+   167.219,
+   297.992
+  ],
+  "listed": {
+   "ids": "0xE1A508C4",
+   "flags": "0x40772671",
+   "id": 9
+  },
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "big_poe",
+  "store": "listed",
+  "hash": null,
+  "key64": null,
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Poe_Big",
+  "instance": "17062001970451212242",
+  "pos": [
+   -114.484,
+   154.158,
+   175.049
+  ],
+  "listed": {
+   "ids": "0xE1A508C4",
+   "flags": "0x40772671",
+   "id": 4
+  },
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "big_poe",
+  "store": "listed",
+  "hash": null,
+  "key64": null,
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Poe_Big",
+  "instance": "3265900466216953621",
+  "pos": [
+   20.468,
+   164.173,
+   234.169
+  ],
+  "listed": {
+   "ids": "0xE1A508C4",
+   "flags": "0x40772671",
+   "id": 10
+  },
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "big_poe",
+  "store": "listed",
+  "hash": null,
+  "key64": null,
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Poe_Big",
+  "instance": "8090701722613921954",
+  "pos": [
+   -184.477,
+   146.093,
+   227.535
+  ],
+  "listed": {
+   "ids": "0xE1A508C4",
+   "flags": "0x40772671",
+   "id": 6
+  },
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "big_poe",
+  "store": "listed",
+  "hash": null,
+  "key64": null,
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Poe_Big",
+  "instance": "8804587356294582290",
+  "pos": [
+   -12.738,
+   153.594,
+   376.769
+  ],
+  "listed": {
+   "ids": "0xE1A508C4",
+   "flags": "0x40772671",
+   "id": 8
+  },
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
+  "kind": "big_poe",
+  "store": "listed",
+  "hash": null,
+  "key64": null,
+  "name": null,
+  "scene": "HyruleField_Adult",
+  "scenes": [
+   "HyruleField_Adult"
+  ],
+  "actor": "Enemy_Poe_Big",
+  "instance": "9905882851420639939",
+  "pos": [
+   -214.215,
+   137.51,
+   183.15
+  ],
+  "listed": {
+   "ids": "0xE1A508C4",
+   "flags": "0x40772671",
+   "id": 5
+  },
+  "collectedInFixtureSlot03": false,
+  "area": "hyrule_field"
+ },
+ {
   "kind": "heart_container",
   "store": "bool64",
   "hash": null,

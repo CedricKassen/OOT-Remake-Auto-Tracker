@@ -16,6 +16,7 @@ const List<String> categories = [
   'upgrade',
   'mask',
   'bottle',
+  'big_poe',
 ];
 
 const Map<String, String> categoryNames = {
@@ -28,6 +29,7 @@ const Map<String, String> categoryNames = {
   'upgrade': 'Upgrades',
   'mask': 'Masks',
   'bottle': 'Bottles',
+  'big_poe': 'Big Poes',
 };
 
 class AreaDef {
@@ -90,7 +92,7 @@ class CheckDef {
 
   /// How completion is read from the save; null means ticked by hand.
   /// One of `{stock: actor}`, `{flag: name}`, `{hash: "0x…"}`,
-  /// `{magic: n}`, `{bottle: n}`, `{bottleBeyond: [flags]}`.
+  /// `{magic: n}`, `{bottle: n}`.
   final Json? source;
 
   factory CheckDef.fromJson(Json j) => CheckDef(
@@ -111,7 +113,7 @@ class CheckDef {
 /// A collectible whose save flag is known, but not which checklist entry it
 /// is. It still tells how many of a category were collected in an area.
 class Collectible {
-  Collectible({required this.area, required this.category, this.instance = '', this.scenes = const [], this.hash, this.key64, this.pos});
+  Collectible({required this.area, required this.category, this.instance = '', this.scenes = const [], this.hash, this.key64, this.listed, this.pos});
   final String area;
   final String category;
 
@@ -126,13 +128,20 @@ class Collectible {
 
   /// its key in the save's 64-bit key store.
   final int? key64;
+
+  /// or its place in two parallel array fields: `ids` (IntArray) lists the
+  /// ids of the ones met so far, `flags` (BoolArray) says in the same order
+  /// which of those are done. `id` is this one's id. Used for Big Poes.
+  final ({int ids, int flags, int id})? listed;
   final List<double>? pos;
 
   /// Reads an entry of `collectibles.json`; null if it has no area or flag.
   static Collectible? fromJson(Json j) {
     final hash = j['hash'] as String?;
     final key = j['key64'] as String?;
-    if (j['area'] == null || (hash == null && key == null)) return null;
+    final listed = j['listed'] as Map?;
+    if (j['area'] == null || (hash == null && key == null && listed == null)) return null;
+    int hex(Object? v) => int.parse((v as String).substring(2), radix: 16);
     return Collectible(
       area: j['area'] as String,
       category: j['kind'] as String,
@@ -140,6 +149,7 @@ class Collectible {
       scenes: (j['scenes'] as List? ?? [j['scene']]).whereType<String>().toList(),
       hash: hash == null ? null : int.parse(hash.substring(2), radix: 16),
       key64: key == null ? null : BigInt.parse(key.substring(2), radix: 16).toSigned(64).toInt(),
+      listed: listed == null ? null : (ids: hex(listed['ids']), flags: hex(listed['flags']), id: listed['id'] as int),
       pos: (j['pos'] as List?)?.map((v) => (v as num).toDouble()).toList(),
     );
   }

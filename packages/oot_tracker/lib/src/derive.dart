@@ -40,12 +40,6 @@ bool? evaluateSource(SaveFile save, Json? source) {
   if (source['bottle'] case final int count) {
     return _bottleSlots.where((slot) => _stock(save, slot) > 0).length >= count;
   }
-  // A bottle without a flag of its own: owned once there are more bottles
-  // than the listed flags (the other bottles) account for.
-  if (source['bottleBeyond'] case final List<dynamic> others) {
-    final owned = _bottleSlots.where((slot) => _stock(save, slot) > 0).length;
-    return owned > others.where((name) => save.booleanNamed(name as String) ?? false).length;
-  }
   return null;
 }
 
@@ -115,7 +109,14 @@ TrackerState deriveState(
   String? error,
 }) {
   final save = slot?.progress;
-  bool has(Collectible c) => c.key64 != null ? save!.hasKey64(c.key64!) : save!.boolean(c.hash!) ?? false;
+  bool has(Collectible c) {
+    if (c.listed case final listed?) {
+      final at = save!.array(listed.ids)?.indexOf(listed.id) ?? -1;
+      final flags = save.array(listed.flags);
+      return at >= 0 && flags != null && at < flags.length && flags[at] == true;
+    }
+    return c.key64 != null ? save!.hasKey64(c.key64!) : save!.boolean(c.hash!) ?? false;
+  }
   final byInstance = {for (final c in data.collectibles) c.instance: c};
   final checkOfInstance = {for (final e in data.links.entries) e.value.$1: e.key};
 

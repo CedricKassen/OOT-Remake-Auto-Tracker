@@ -678,5 +678,55 @@
   "instance": "5086449036385341804",
   "confidence": "certain",
   "why": "room 7 (statue room) upper level, 5.4 m from the Pierre scarecrow marker"
+ },
+ "poe-01": {
+  "instance": "14251224488536515648",
+  "confidence": "certain",
+  "why": "PoeBig_FenceID 1 in the game data, which the save lists for met Big Poes; confirmed in play"
+ },
+ "poe-02": {
+  "instance": "14243249953385923196",
+  "confidence": "certain",
+  "why": "PoeBig_FenceID 2 in the game data, which the save lists for met Big Poes; confirmed in play"
+ },
+ "poe-03": {
+  "instance": "13083428023969258779",
+  "confidence": "certain",
+  "why": "PoeBig_FenceID 3 in the game data, which the save lists for met Big Poes; confirmed in play"
+ },
+ "poe-04": {
+  "instance": "17062001970451212242",
+  "confidence": "certain",
+  "why": "PoeBig_FenceID 4 in the game data, which the save lists for met Big Poes; confirmed in play"
+ },
+ "poe-05": {
+  "instance": "9905882851420639939",
+  "confidence": "certain",
+  "why": "PoeBig_FenceID 5 in the game data, which the save lists for met Big Poes; confirmed in play"
+ },
+ "poe-06": {
+  "instance": "8090701722613921954",
+  "confidence": "certain",
+  "why": "PoeBig_FenceID 6 in the game data, which the save lists for met Big Poes; confirmed in play"
+ },
+ "poe-07": {
+  "instance": "11942482632588488560",
+  "confidence": "certain",
+  "why": "PoeBig_FenceID 7 in the game data, which the save lists for met Big Poes; confirmed in play"
+ },
+ "poe-08": {
+  "instance": "8804587356294582290",
+  "confidence": "certain",
+  "why": "PoeBig_FenceID 8 in the game data, which the save lists for met Big Poes; confirmed in play"
+ },
+ "poe-09": {
+  "instance": "1678473494217528635",
+  "confidence": "certain",
+  "why": "PoeBig_FenceID 9 in the game data, which the save lists for met Big Poes; confirmed in play"
+ },
+ "poe-10": {
+  "instance": "3265900466216953621",
+  "confidence": "certain",
+  "why": "PoeBig_FenceID 10 in the game data, which the save lists for met Big Poes; confirmed in play"
  }
 }

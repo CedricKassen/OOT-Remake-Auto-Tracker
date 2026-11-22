@@ -35,6 +35,7 @@ class CategoryStyle {
     'upgrade': CategoryStyle(Icons.keyboard_double_arrow_up, Color(0xFF9CCC65)),
     'mask': CategoryStyle(Icons.theater_comedy, Color(0xFFC79BE0)),
     'bottle': CategoryStyle(Glyph.bottle, Color(0xFF6FD0E8)),
+    'big_poe': CategoryStyle(Glyph.ghost, Color(0xFFB39DDB)),
   };
 
   static CategoryStyle of(String category) => _styles[category] ?? const CategoryStyle(Icons.check_circle, Colors.grey);

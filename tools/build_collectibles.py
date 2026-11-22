@@ -31,6 +31,7 @@ from recover_names import murmur3, gamedata
 
 ROOT = os.path.dirname(HERE)
 KEY64_SECTION = 32
+BIG_POE_IDS, BIG_POE_SOLD = '0xE1A508C4', '0x40772671'  # unnamed fields, found in the save journal
 
 
 def read_save(path):
@@ -89,6 +90,12 @@ def build(img):
         actor = l[0]['actor']
         if actor == 'Enemy_Skulltula_Gold' and int(inst) in keys64:
             out.append(as_key64(base('skulltula', l), inst))
+        elif actor == 'Enemy_Poe_Big':
+            # Not a flag of its own: the save lists the Big Poes met so far (IntArray of
+            # PoeBig_FenceID) and keeps a "sold to the Poe collector" BoolArray in the same order.
+            d = base('big_poe', l, store='listed')
+            d['listed'] = {'ids': BIG_POE_IDS, 'flags': BIG_POE_SOLD, 'id': l[0]['dynamic']['PoeBig_FenceID']}
+            out.append(d)
         elif actor == 'Obj_Heart_Container':
             out.append(as_key64(base('heart_container', l), inst))
         elif 'TBox' in actor:
@@ -123,6 +130,8 @@ def build(img):
 
 
 def collected(entry, bools, keys):
+    if entry['store'] == 'listed':
+        return False  # adult-only late-game errand; read_save does not decode arrays
     if entry['store'] == 'bool64':
         return int(entry['key64'], 16) in keys
     return bool(bools.get(int(entry['hash'], 16), 0))
@@ -139,7 +148,7 @@ def main():
     bools, keys = read_save(args.save)
     for e in out:
         e['collectedInFixtureSlot03'] = collected(e, bools, keys)
-    order = {'skulltula': 0, 'heart_piece': 1, 'heart_container': 2, 'chest': 3}
+    order = {'skulltula': 0, 'heart_piece': 1, 'big_poe': 2, 'heart_container': 3, 'chest': 4}
     out.sort(key=lambda e: (order[e['kind']], e['scene'], e.get('room', -1), e['instance']))
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     with open(args.out, 'w') as f:

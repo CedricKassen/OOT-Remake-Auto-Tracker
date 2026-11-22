@@ -53,22 +53,6 @@ void main() {
     });
   });
 
-  test('a bottle without its own flag is the one the others do not explain', () {
-    // The fixture owns four bottles: potion shop, Super Cucco, Cucco Lady and Ruto's Letter.
-    final save = slots.first.progress;
-    const others = [
-      'Npc_Hylia_020_Shop_Item_Bottle_Present',
-      'IsClear_Minigame_FindOutCucco',
-      'MiniGame_CatchCucco_IsCompleted',
-      'Get_StoneOfWater_GetRutoLetter',
-    ];
-    for (final flag in others) {
-      expect(evaluateSource(save, {'flag': flag}), isTrue, reason: flag);
-    }
-    expect(evaluateSource(save, {'bottleBeyond': others}), isFalse);
-    expect(evaluateSource(save, {'bottleBeyond': others.sublist(1)}), isTrue);
-  });
-
   group('deriveState', () {
     test('reads the player and totals from the newest slot', () {
       final state = deriveState(data, newestSlot(slots));
@@ -142,11 +126,26 @@ void main() {
       expect(jsonEncode(copy.toJson()), jsonEncode(state.toJson()));
     });
 
+    test('Big Poes sold are read per Poe and add up to the Poe collector\'s points', () {
+      for (final slot in slots) {
+        final state = deriveState(data, slot);
+        final poes = state.checks.where((c) => c.def.category == 'big_poe').toList();
+        expect(poes, hasLength(10));
+        expect(poes.every((c) => c.auto), isTrue);
+        expect(
+          poes.where((c) => c.done).length * 100,
+          slot.progress.integerNamed('GhostShop_CouponNum'),
+          reason: slot.id,
+        );
+        expect(state.pins.where((pin) => pin.category == 'big_poe' && pin.done).length, poes.where((c) => c.done).length);
+      }
+    });
+
     test('every located collectible is on a map of its own area', () {
       final index = MapIndex.fromJson(jsonDecode(File(p.join(root, 'data', 'maps.json')).readAsStringSync()) as Json);
       final state = deriveState(data, newestSlot(slots));
-      expect(state.pins.length, 136);
-      expect(state.pins.where((pin) => pin.done).length, 82 + 29);
+      expect(state.pins.length, 136 + 10);
+      expect(state.pins.where((pin) => pin.done && pin.category != 'big_poe').length, 82 + 29);
       final lost = <String>[];
       for (final pin in state.pins) {
         final maps = index.ofArea(pin.area);

@@ -304,7 +304,7 @@ class TrackerService {
     _lastValues = values;
     _lastKeys = save.keys64;
     if (journalPath == null || previous.isEmpty) return;
-    String hex(int key) => '0x${key.toUnsigned(64).toRadixString(16).padLeft(16, '0').toUpperCase()}';
+    String hex(int key) => '0x${BigInt.from(key).toUnsigned(64).toRadixString(16).padLeft(16, '0').toUpperCase()}';
     final changes = [
       for (final e in values.entries)
         if (previous[e.key] != e.value)

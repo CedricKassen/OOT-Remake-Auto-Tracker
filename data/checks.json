@@ -209,6 +209,186 @@
     "source": null
   },
   {
+    "id": "poe-01",
+    "area": "hyrule_field",
+    "category": "big_poe",
+    "number": 1,
+    "title": "Big Poe: South of the drawbridge",
+    "description": "On the road just south of the Castle Town drawbridge. Shoot the Big Poe from Epona's back, catch it in a bottle and sell it to the Poe collector in Castle Town.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona",
+      "Bow",
+      "Bottle"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "poe-02",
+    "area": "hyrule_field",
+    "category": "big_poe",
+    "number": 2,
+    "title": "Big Poe: Between drawbridge and ranch",
+    "description": "Between the Castle Town drawbridge and Lon Lon Ranch, off the north-east corner of the ranch hill. Shoot the Big Poe from Epona's back, catch it in a bottle and sell it to the Poe collector in Castle Town.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona",
+      "Bow",
+      "Bottle"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "poe-03",
+    "area": "hyrule_field",
+    "category": "big_poe",
+    "number": 3,
+    "title": "Big Poe: By the castle moat",
+    "description": "West of the Castle Town drawbridge, along the moat. Shoot the Big Poe from Epona's back, catch it in a bottle and sell it to the Poe collector in Castle Town.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona",
+      "Bow",
+      "Bottle"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "poe-04",
+    "area": "hyrule_field",
+    "category": "big_poe",
+    "number": 4,
+    "title": "Big Poe: North of Lon Lon Ranch",
+    "description": "Right below the north side of the Lon Lon Ranch hill. Shoot the Big Poe from Epona's back, catch it in a bottle and sell it to the Poe collector in Castle Town.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona",
+      "Bow",
+      "Bottle"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "poe-05",
+    "area": "hyrule_field",
+    "category": "big_poe",
+    "number": 5,
+    "title": "Big Poe: Towards Gerudo Valley",
+    "description": "In the west of the field on the way to Gerudo Valley, north-west of Lon Lon Ranch. Shoot the Big Poe from Epona's back, catch it in a bottle and sell it to the Poe collector in Castle Town.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona",
+      "Bow",
+      "Bottle"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "poe-06",
+    "area": "hyrule_field",
+    "category": "big_poe",
+    "number": 6,
+    "title": "Big Poe: West of Lon Lon Ranch",
+    "description": "Just west of the Lon Lon Ranch hill. Shoot the Big Poe from Epona's back, catch it in a bottle and sell it to the Poe collector in Castle Town.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona",
+      "Bow",
+      "Bottle"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "poe-07",
+    "area": "hyrule_field",
+    "category": "big_poe",
+    "number": 7,
+    "title": "Big Poe: South of Lon Lon Ranch",
+    "description": "South of the Lon Lon Ranch hill, on the way to Lake Hylia. Shoot the Big Poe from Epona's back, catch it in a bottle and sell it to the Poe collector in Castle Town.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona",
+      "Bow",
+      "Bottle"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "poe-08",
+    "area": "hyrule_field",
+    "category": "big_poe",
+    "number": 8,
+    "title": "Big Poe: Near the Lake Hylia entrance",
+    "description": "In the south of the field, east of the entrance to Lake Hylia. Shoot the Big Poe from Epona's back, catch it in a bottle and sell it to the Poe collector in Castle Town.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona",
+      "Bow",
+      "Bottle"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "poe-09",
+    "area": "hyrule_field",
+    "category": "big_poe",
+    "number": 9,
+    "title": "Big Poe: Towards Kokiri Forest",
+    "description": "In the south-east of the field, between Lon Lon Ranch and the entrance to Kokiri Forest. Shoot the Big Poe from Epona's back, catch it in a bottle and sell it to the Poe collector in Castle Town.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona",
+      "Bow",
+      "Bottle"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
+    "id": "poe-10",
+    "area": "hyrule_field",
+    "category": "big_poe",
+    "number": 10,
+    "title": "Big Poe: East of Lon Lon Ranch",
+    "description": "East of the Lon Lon Ranch hill, in the middle of the field. Shoot the Big Poe from Epona's back, catch it in a bottle and sell it to the Poe collector in Castle Town.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Epona",
+      "Bow",
+      "Bottle"
+    ],
+    "verified": true,
+    "source": null
+  },
+  {
     "id": "gs-005",
     "area": "castle_town",
     "category": "skulltula",
@@ -324,7 +504,7 @@
     "area": "castle_town",
     "category": "bottle",
     "title": "Bottle: Poe Shop reward",
-    "description": "On Epona, ride over the purple lantern glows in Hyrule Field, shoot the Big Poe that appears and bottle it. Each one sold at the Poe Shop in Castle Town is worth 100 points, and 500 points earns the bottle.",
+    "description": "Shoot the Big Poes in Hyrule Field from Epona's back, bottle them and sell them to the Poe collector in Castle Town. Each one is worth 100 points, and 500 points earns the bottle.",
     "era": [
       "adult"
     ],
@@ -335,12 +515,7 @@
     ],
     "verified": true,
     "source": {
-      "bottleBeyond": [
-        "Npc_Hylia_020_Shop_Item_Bottle_Present",
-        "IsClear_Minigame_FindOutCucco",
-        "MiniGame_CatchCucco_IsCompleted",
-        "Get_StoneOfWater_GetRutoLetter"
-      ]
+      "hash": "0xE27B136D"
     }
   },
   {
