@@ -3318,6 +3318,24 @@
     "source": null
   },
   {
+    "id": "equipment-golden-gauntlets",
+    "area": "ganons_castle",
+    "category": "equipment",
+    "title": "Golden Gauntlets",
+    "description": "Inside Ganon's Castle, make your way through the Shadow Trial; the large chest on the way across the chasm holds the gauntlets.",
+    "era": [
+      "adult"
+    ],
+    "requires": [
+      "Lens of Truth",
+      "Hover Boots"
+    ],
+    "verified": true,
+    "source": {
+      "stock": "Armor_Adult_Gauntlet_Gold"
+    }
+  },
+  {
     "id": "upgrade-halved-damage",
     "area": "ganons_castle",
     "category": "upgrade",
