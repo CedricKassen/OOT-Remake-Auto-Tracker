@@ -204,6 +204,49 @@ Future<RawDatagramSocket> _bind({bool shared = true}) async {
   return socket;
 }
 
+/// One usable IPv4 address for each network interface.
+Future<List<InternetAddress>> _interfaceAddresses() async {
+  try {
+    return [
+      for (final interface in await NetworkInterface.list(type: InternetAddressType.IPv4))
+        ?interface.addresses.where((a) => !a.isLoopback && !a.isLinkLocal).firstOrNull,
+    ];
+  } on SocketException {
+    return const [];
+  }
+}
+
+/// Sends a message to the mDNS group through every interface in
+/// [interfaces]. Left alone, the system picks a single interface for
+/// multicast, and on a machine with virtual adapters (Hyper-V, WSL, VPN) that
+/// is often not the one the home network is on. [message] gets the address
+/// of the interface it goes out on, or null when the system has to choose.
+void _sendToGroup(
+  RawDatagramSocket socket,
+  List<InternetAddress> interfaces,
+  Uint8List Function(InternetAddress? own) message,
+) {
+  var sent = 0;
+  for (final own in interfaces) {
+    try {
+      socket.setRawOption(
+        RawSocketOption(RawSocketOption.levelIPv4, RawSocketOption.IPv4MulticastInterface, own.rawAddress),
+      );
+      if (socket.send(message(own), _group, _port) > 0) sent++;
+    } on SocketException {
+      // This interface cannot send right now.
+    } on OSError {
+      // Same.
+    }
+  }
+  if (sent > 0) return;
+  try {
+    socket.send(message(null), _group, _port);
+  } on SocketException {
+    // No route right now (network down): the next round tries again.
+  }
+}
+
 /// The local IPv4 addresses that other devices could reach.
 Future<List<InternetAddress>> localAddresses() async {
   try {
@@ -274,17 +317,13 @@ class MdnsResponder {
     _socket = null;
   }
 
-  Future<void> _announce(int ttl) async {
-    final addresses = await localAddresses();
-    _send(_response(addresses.take(1).toList(), ttl), _group, _port);
-  }
+  Future<void> _announce(int ttl) => _toGroup((own) => _response([?own], ttl));
 
-  void _send(Uint8List bytes, InternetAddress to, int port) {
-    try {
-      _socket?.send(bytes, to, port);
-    } on SocketException {
-      // No route right now (network down): the next query gets an answer.
-    }
+  /// Sends to the group on every interface, each with its own address.
+  Future<void> _toGroup(Uint8List Function(InternetAddress? own) message) async {
+    final interfaces = await _interfaceAddresses();
+    final socket = _socket;
+    if (socket != null) _sendToGroup(socket, interfaces, message);
   }
 
   Uint8List _response(List<InternetAddress> addresses, int ttl) {
@@ -321,17 +360,23 @@ class MdnsResponder {
         final w = _Writer()
           ..header(response: true, answers: 1)
           ..record(q.name, _typePtr, 120, _Writer.encodeName(_service));
-        _send(w.bytes(), _group, _port);
+        final bytes = w.bytes();
+        unawaited(_toGroup((_) => bytes));
       }
     }
     if (!wanted) return;
-    // Offer the address the asker can most likely reach: the one sharing the
-    // longest prefix with its own.
-    final addresses = (await localAddresses()).toList()
-      ..sort((a, b) => _commonBits(b, packet.address).compareTo(_commonBits(a, packet.address)));
-    final bytes = _response(addresses.take(1).toList(), 120);
-    if (unicast) _send(bytes, packet.address, packet.port);
-    if (packet.port == _port) _send(bytes, _group, _port);
+    if (unicast) {
+      // Offer the address the asker can most likely reach: the one sharing
+      // the longest prefix with its own.
+      final addresses = (await localAddresses()).toList()
+        ..sort((a, b) => _commonBits(b, packet.address).compareTo(_commonBits(a, packet.address)));
+      try {
+        _socket?.send(_response(addresses.take(1).toList(), 120), packet.address, packet.port);
+      } on SocketException {
+        // No route back right now; the asker asks again.
+      }
+    }
+    if (packet.port == _port) await _toGroup((own) => _response([?own], 120));
   }
 }
 
@@ -347,51 +392,75 @@ class MdnsBrowser {
   /// Called with the current list whenever it changes.
   final void Function(List<MdnsService> services) onChange;
 
-  RawDatagramSocket? _socket;
-  StreamSubscription<RawSocketEvent>? _events;
+  /// Listens on the mDNS port for what is announced to everyone.
+  RawDatagramSocket? _shared;
+
+  /// Asks from a port of its own and gets direct replies. That also works
+  /// where the mDNS port is taken exclusively, or where a firewall (Windows)
+  /// lets no multicast through to this program but does let replies in.
+  RawDatagramSocket? _direct;
+  final List<StreamSubscription<RawSocketEvent>> _events = [];
   Timer? _timer;
+  bool _running = false;
   int _round = 0;
   final Map<String, ({MdnsService service, DateTime seen})> _found = {};
 
   String get _service => '$type.local';
 
   Future<void> start() async {
-    RawDatagramSocket socket;
+    SocketException? failure;
     try {
-      socket = await _bind();
-    } on SocketException {
-      // Port 5353 is taken exclusively: ask from another port and rely on
-      // direct replies.
-      socket = await _bind(shared: false);
+      _shared = await _bind();
+    } on SocketException catch (e) {
+      failure = e;
     }
-    _socket = socket;
-    _events = socket.listen((event) {
-      if (event != RawSocketEvent.read) return;
-      for (var packet = socket.receive(); packet != null; packet = socket.receive()) {
-        _onPacket(packet);
-      }
-    });
-    _query();
+    try {
+      _direct = await _bind(shared: false);
+    } on SocketException catch (e) {
+      failure = e;
+    }
+    if (_shared == null && _direct == null) throw failure!;
+    for (final socket in [?_shared, ?_direct]) {
+      _events.add(
+        socket.listen((event) {
+          if (event != RawSocketEvent.read) return;
+          for (var packet = socket.receive(); packet != null; packet = socket.receive()) {
+            _onPacket(packet);
+          }
+        }),
+      );
+    }
+    _running = true;
+    unawaited(_query());
   }
 
   void stop() {
+    _running = false;
     _timer?.cancel();
-    _events?.cancel();
-    _socket?.close();
-    _socket = null;
+    for (final events in _events) {
+      events.cancel();
+    }
+    _events.clear();
+    _shared?.close();
+    _direct?.close();
+    _shared = _direct = null;
   }
 
-  void _query() {
+  Uint8List _question({required bool unicast}) {
     final w = _Writer()
       ..header(response: false, questions: 1)
       ..name(_service)
       ..u16(_typePtr)
-      ..u16(1);
-    try {
-      _socket?.send(w.bytes(), _group, _port);
-    } on SocketException {
-      // Network down; try again on the next round.
-    }
+      ..u16(unicast ? 0x8001 : 1);
+    return w.bytes();
+  }
+
+  Future<void> _query() async {
+    final interfaces = await _interfaceAddresses();
+    if (!_running) return;
+    final shared = _shared, direct = _direct;
+    if (shared != null) _sendToGroup(shared, interfaces, (_) => _question(unicast: false));
+    if (direct != null) _sendToGroup(direct, interfaces, (_) => _question(unicast: true));
     // Forget servers that stopped answering.
     final limit = DateTime.now().subtract(const Duration(seconds: 45));
     final before = _found.length;
@@ -428,8 +497,18 @@ class MdnsBrowser {
         host: (address ?? packet.address).address,
         port: record.port!,
       );
-      changed = changed || _found[key]?.service != service;
-      _found[key] = (service: service, seen: DateTime.now());
+      // A server on several networks answers once for each. Stay with the
+      // address in use for as long as it keeps being confirmed.
+      final known = _found[key];
+      final now = DateTime.now();
+      if (known != null &&
+          known.service.port == service.port &&
+          known.service.host != service.host &&
+          now.difference(known.seen) < const Duration(seconds: 25)) {
+        continue;
+      }
+      changed = changed || known?.service != service;
+      _found[key] = (service: service, seen: now);
     }
     if (changed) _notify();
   }

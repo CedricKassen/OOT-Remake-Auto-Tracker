@@ -102,7 +102,8 @@ class TrackerClient extends ChangeNotifier {
   }
 
   /// Looks for servers without help from the system; used where the system
-  /// has no service discovery to offer (Linux) or it fails.
+  /// has no service discovery to offer (Linux), where it proved unreliable
+  /// (Windows) or when it fails.
   Future<void> _startBrowser() async {
     try {
       final browser = MdnsBrowser(
@@ -117,7 +118,10 @@ class TrackerClient extends ChangeNotifier {
   }
 
   Future<void> _startDiscovery() async {
-    if (Platform.isLinux) return _startBrowser();
+    // On Windows the plugin goes through the system's resolver in three steps
+    // (browse, resolve, look up the ".local" name) and a server is dropped
+    // without a word if any of them fails.
+    if (Platform.isLinux || Platform.isWindows) return _startBrowser();
     try {
       final discovery = await nsd.startDiscovery(trackerServiceType, ipLookupType: nsd.IpLookupType.v4);
       _discovery = discovery;
