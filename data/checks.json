@@ -251,7 +251,7 @@
     "requires": [],
     "verified": true,
     "source": {
-      "bottle": 1
+      "flag": "Npc_Hylia_020_Shop_Item_Bottle_Present"
     }
   },
   {
@@ -335,7 +335,12 @@
     ],
     "verified": true,
     "source": {
-      "bottle": 4
+      "bottleBeyond": [
+        "Npc_Hylia_020_Shop_Item_Bottle_Present",
+        "IsClear_Minigame_FindOutCucco",
+        "MiniGame_CatchCucco_IsCompleted",
+        "Get_StoneOfWater_GetRutoLetter"
+      ]
     }
   },
   {
@@ -434,7 +439,7 @@
     "requires": [],
     "verified": true,
     "source": {
-      "bottle": 2
+      "flag": "IsClear_Minigame_FindOutCucco"
     }
   },
   {
@@ -619,7 +624,7 @@
     "requires": [],
     "verified": true,
     "source": {
-      "bottle": 3
+      "flag": "MiniGame_CatchCucco_IsCompleted"
     }
   },
   {
@@ -1447,7 +1452,7 @@
     "id": "upgrade-stick-bag-20",
     "area": "lost_woods",
     "category": "upgrade",
-    "title": "Deku Stick Bag (20)",
+    "title": "Deku Stick Bag (Business Scrub)",
     "description": "On the ledge above the forest bridge (left at the Skull Kid's stump, then through the tunnel), beat the Business Scrub and buy the upgrade for 40 Rupees.",
     "era": [
       "child"
@@ -1457,7 +1462,7 @@
     ],
     "verified": true,
     "source": {
-      "stock": "Item_StickBag_Medium"
+      "flag": "LostWood_Enemy_Scrub_Business_DekuStickPouch_01"
     }
   },
   {
@@ -1475,7 +1480,7 @@
     ],
     "verified": true,
     "source": {
-      "stock": "Item_NutBag_Medium"
+      "flag": "Lostwood_Enemy_Scrub_Business_DekuNutsPouch_01"
     }
   },
   {
@@ -1498,7 +1503,7 @@
     "id": "upgrade-stick-bag-30",
     "area": "lost_woods",
     "category": "upgrade",
-    "title": "Deku Stick Bag (30)",
+    "title": "Deku Stick Bag (Forest Stage)",
     "description": "Drop into the Forest Stage hole (right, left, right, left, left from the Kokiri Forest entrance, in the grass) wearing the Skull Mask and talk to the large scrub.",
     "era": [
       "child"
@@ -1508,7 +1513,7 @@
     ],
     "verified": true,
     "source": {
-      "stock": "Item_StickBag_Large"
+      "flag": "LostWood_ScrubForestStage_SkullMaskEventLaunched"
     }
   },
   {
@@ -1540,7 +1545,7 @@
     ],
     "verified": true,
     "source": {
-      "stock": "Item_NutBag_Large"
+      "flag": "LostWood_ScrubForestStage_TrueMaskEventLaunched"
     }
   },
   {
@@ -2173,6 +2178,21 @@
     "verified": true,
     "source": {
       "stock": "Item_Arrow_Fire"
+    }
+  },
+  {
+    "id": "bottle-rutos-letter",
+    "area": "lake_hylia",
+    "category": "bottle",
+    "title": "Bottle: Ruto's Letter",
+    "description": "On the lake bed of Lake Hylia, right in front of the underwater shortcut to Zora's Domain, lies a bottle with Princess Ruto's letter inside. Dive down to pick it up and show the letter to King Zora; the empty bottle is yours afterwards.",
+    "era": [
+      "child"
+    ],
+    "requires": [],
+    "verified": true,
+    "source": {
+      "flag": "Get_StoneOfWater_GetRutoLetter"
     }
   },
   {
@@ -3311,7 +3331,7 @@
       "child"
     ],
     "requires": [],
-    "verified": false,
+    "verified": true,
     "source": {
       "stock": "Item_Stone_Forest"
     }
@@ -3326,7 +3346,7 @@
       "child"
     ],
     "requires": [],
-    "verified": false,
+    "verified": true,
     "source": {
       "stock": "Item_Stone_Fire"
     }
@@ -3341,7 +3361,7 @@
       "child"
     ],
     "requires": [],
-    "verified": false,
+    "verified": true,
     "source": {
       "stock": "Item_Stone_Water"
     }
@@ -3356,7 +3376,7 @@
       "adult"
     ],
     "requires": [],
-    "verified": false,
+    "verified": true,
     "source": {
       "stock": "Item_Medal_Light"
     }
@@ -3371,7 +3391,7 @@
       "adult"
     ],
     "requires": [],
-    "verified": false,
+    "verified": true,
     "source": {
       "stock": "Item_Medal_Forest"
     }
@@ -3386,7 +3406,7 @@
       "adult"
     ],
     "requires": [],
-    "verified": false,
+    "verified": true,
     "source": {
       "stock": "Item_Medal_Fire"
     }
@@ -3401,7 +3421,7 @@
       "adult"
     ],
     "requires": [],
-    "verified": false,
+    "verified": true,
     "source": {
       "stock": "Item_Medal_Water"
     }
@@ -3416,7 +3436,7 @@
       "adult"
     ],
     "requires": [],
-    "verified": false,
+    "verified": true,
     "source": {
       "stock": "Item_Medal_Shadow"
     }
@@ -3431,7 +3451,7 @@
       "adult"
     ],
     "requires": [],
-    "verified": false,
+    "verified": true,
     "source": {
       "stock": "Item_Medal_Spirit"
     }

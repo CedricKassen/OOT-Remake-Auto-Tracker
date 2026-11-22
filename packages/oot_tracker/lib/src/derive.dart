@@ -40,6 +40,12 @@ bool? evaluateSource(SaveFile save, Json? source) {
   if (source['bottle'] case final int count) {
     return _bottleSlots.where((slot) => _stock(save, slot) > 0).length >= count;
   }
+  // A bottle without a flag of its own: owned once there are more bottles
+  // than the listed flags (the other bottles) account for.
+  if (source['bottleBeyond'] case final List<dynamic> others) {
+    final owned = _bottleSlots.where((slot) => _stock(save, slot) > 0).length;
+    return owned > others.where((name) => save.booleanNamed(name as String) ?? false).length;
+  }
   return null;
 }
 

@@ -90,7 +90,7 @@ class CheckDef {
 
   /// How completion is read from the save; null means ticked by hand.
   /// One of `{stock: actor}`, `{flag: name}`, `{hash: "0x…"}`,
-  /// `{magic: n}`, `{bottle: n}`.
+  /// `{magic: n}`, `{bottle: n}`, `{bottleBeyond: [flags]}`.
   final Json? source;
 
   factory CheckDef.fromJson(Json j) => CheckDef(

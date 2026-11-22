@@ -53,6 +53,22 @@ void main() {
     });
   });
 
+  test('a bottle without its own flag is the one the others do not explain', () {
+    // The fixture owns four bottles: potion shop, Super Cucco, Cucco Lady and Ruto's Letter.
+    final save = slots.first.progress;
+    const others = [
+      'Npc_Hylia_020_Shop_Item_Bottle_Present',
+      'IsClear_Minigame_FindOutCucco',
+      'MiniGame_CatchCucco_IsCompleted',
+      'Get_StoneOfWater_GetRutoLetter',
+    ];
+    for (final flag in others) {
+      expect(evaluateSource(save, {'flag': flag}), isTrue, reason: flag);
+    }
+    expect(evaluateSource(save, {'bottleBeyond': others}), isFalse);
+    expect(evaluateSource(save, {'bottleBeyond': others.sublist(1)}), isTrue);
+  });
+
   group('deriveState', () {
     test('reads the player and totals from the newest slot', () {
       final state = deriveState(data, newestSlot(slots));
